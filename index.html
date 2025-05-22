@@ -20,7 +20,8 @@
         }
         .nav-link {
             cursor: pointer;
-            @apply px-4 py-2 rounded-md transition-colors duration-200 hover:bg-blue-600 hover:text-white;
+            /* Increased padding for larger "borders" around navigation links */
+            @apply px-6 py-3 rounded-md transition-colors duration-200 hover:bg-blue-600 hover:text-white;
         }
         .active-link {
             @apply bg-blue-700 text-white;
@@ -38,7 +39,7 @@
         .btn-secondary {
             @apply bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-300 transition-colors duration-300;
         }
-        /* Loading spinner styles */
+        /* Loading spinner styles - no longer needed but kept for completeness */
         .loader {
             border: 4px solid #f3f3f3; /* Light grey */
             border-top: 4px solid #3498db; /* Blue */
@@ -47,23 +48,30 @@
             height: 30px;
             animation: spin 1s linear infinite;
             display: none; /* Hidden by default */
+            margin-right: 8px; /* Space between spinner and text */
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        /* Summarizer container - no longer needed but kept for completeness */
+        .summarizer-container {
+            display: none; /* Hidden by default */
+        }
     </style>
 </head>
 <body class="antialiased">
-    <header class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-6 shadow-lg">
+    <header class="bg-[#ffc629] py-6 shadow-lg">
         <div class="container flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-4xl font-bold mb-4 md:mb-0">Regenerative Plasticity Lab</h1>
-            <p class="text-lg text-blue-100 text-center md:text-right">Understanding the intersection of behavior, neuroplasticity, and regeneration.</p>
+            <h1 class="text-4xl font-bold mb-4 md:mb-0 text-black">Regenerative Plasticity Lab</h1>
+            <p class="text-lg text-black text-center md:text-right">
+                Understanding the intersection of<br> behavior, neuroplasticity, and regeneration.
+            </p>
         </div>
     </header>
 
     <nav class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
-        <div class="container flex flex-wrap justify-center md:justify-start py-3">
+        <div class="container flex flex-wrap justify-center md:justify-start py-4 space-x-4">
             <a class="nav-link active-link" data-section="home">Home</a>
             <a class="nav-link" data-section="about">About the Lab</a>
             <a class="nav-link" data-section="research">Research</a>
@@ -78,7 +86,7 @@
 
     <main class="container py-8">
         <section id="home" class="section-content active bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">Welcome to the Regenerative Plasticity Lab</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Welcome to the Regenerative Plasticity Lab</h2>
             <p class="text-lg leading-relaxed mb-6">
                 Welcome to the Regenerative Plasticity Lab at Kennesaw State University. Led by Dr. Justin Varholick, we study how structural regeneration interacts with the environment, neuroplasticity, and behavior following injury. Our interdisciplinary research aims to reveal how organisms recover — from skin to brain — to improve regenerative medicine and rehabilitation strategies.
             </p>
@@ -88,15 +96,15 @@
                 <button class="btn-primary" onclick="showSection('publications')">Recent Publications</button>
             </div>
             <div class="w-full h-64 md:h-96 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center text-gray-500 text-xl font-medium">
-                <img src="https://placehold.co/1200x400/cbd5e1/475569?text=Lab+Banner+Image" alt="Lab Banner Image" class="w-full h-full object-cover">
+                <img src="images/banner.tif" onerror="this.onerror=null;this.src='https://placehold.co/1200x400/cbd5e1/475569?text=Lab+Banner+Image';" alt="Lab Banner Image" class="w-full h-full object-cover">
             </div>
         </section>
 
         <section id="about" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">About the Lab</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">About the Lab</h2>
             <h3 class="text-2xl font-medium text-gray-700 mb-4">Our Mission</h3>
             <p class="text-lg leading-relaxed mb-6">
-                We investigate the <strong class="text-blue-600">plasticity of wound healing</strong> by integrating behavioral biology, developmental neuroscience, and regenerative physiology. Our long-term goal is to translate insights from highly regenerative species into therapies for humans.
+                We investigate the <strong class="text-gray-900">plasticity of wound healing</strong> by integrating behavioral biology, developmental neuroscience, and regenerative physiology. Our long-term goal is to translate insights from highly regenerative species into therapies for humans.
             </p>
             <h3 class="text-2xl font-medium text-gray-700 mb-4">Background</h3>
             <p class="text-lg leading-relaxed">
@@ -105,18 +113,18 @@
         </section>
 
         <section id="research" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">Research Themes</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Research Themes</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                 <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-medium text-blue-700 mb-2">🧠 Behavior-Regeneration Interplay</h3>
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">🧠 Behavior-Regeneration Interplay</h3>
                     <p class="text-gray-700">How injury affects behavior, and how behavior shapes recovery.</p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-medium text-blue-700 mb-2">📈 Regenerative History of Behavior</h3>
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">📈 Regenerative History of Behavior</h3>
                     <p class="text-gray-700">Tracing the entire behavioral profile post-injury to define recovery.</p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-medium text-blue-700 mb-2">⏳ Critical Periods</h3>
+                    <h3 class="text-xl font-medium text-gray-800 mb-2">⏳ Critical Periods</h3>
                     <p class="text-gray-700">When is the system most plastic during healing, and how can we leverage that?</p>
                 </div>
             </div>
@@ -140,84 +148,207 @@
         </section>
 
         <section id="team" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">Our Team</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Our Team</h2>
             <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <div class="flex-shrink-0">
-                    <img src="https://placehold.co/200x200/cbd5e1/475569?text=Dr.+Varholick" alt="Dr. Justin Varholick" class="rounded-full w-48 h-48 object-cover border-4 border-blue-200 shadow-md">
+                    <img src="images/varholick-profile.JPG" onerror="this.onerror=null;this.src='https://placehold.co/200x200/cbd5e1/475569?text=Dr.+Varholick';" alt="Dr. Justin Varholick" class="rounded-full w-48 h-48 object-cover border-4 border-blue-200 shadow-md">
                 </div>
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 mb-2">Dr. Justin Varholick</h3>
                     <p class="text-xl font-medium text-gray-600 mb-4">Lab Director</p>
-                    <p class="text-lg leading-relaxed mb-4">
-                        Dr. Varholick holds an M.S. in Biopsychology from UNC Greensboro and a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern. He trained in regenerative biology under Prof. Malcolm Maden at the University of Florida. His work has contributed to establishing behavioral frameworks for studying tissue regeneration in <em class="font-semibold">Acomys</em> and mice.
-                    </p>
-                    <p class="text-lg font-semibold text-blue-600">Currently recruiting undergraduate and graduate researchers.</p>
+                    <p class="text-lg font-semibold text-gray-900">Currently recruiting undergraduate and graduate researchers.</p>
                 </div>
             </div>
         </section>
 
         <section id="publications" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">Publications</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Publications</h2>
             <p class="text-lg leading-relaxed mb-4">
-                This section displays our latest publications. You can also use the tool below to get a concise summary of any scientific text.
+                This section displays our latest publications.
             </p>
+
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Peer-Reviewed Publications</h3>
             <div class="space-y-6 mb-8">
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick J, et al. (2023). Behavioral modulation of tissue regeneration in Acomys. J Regen Biol.</p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium">
-                        <a href="#" class="hover:underline">DOI link</a>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(15) Varholick, J.A., *Kondapaneni, R., Maden, M. (2025, Accepted). Spiny mice (<em class="italic">Acomys</em>) regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation. <em class="italic">npj Regenerative Medicine</em></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1038/s41536-024-00386-8" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
                         <a href="#" class="hover:underline">PDF</a>
                         <span class="text-gray-400">|</span>
                         <a href="#" class="hover:underline">Press release if available</a>
                     </div>
                 </div>
+
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Another Publication Title, et al. (Year). Journal Name.</p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium">
-                        <a href="#" class="hover:underline">DOI link</a>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(14) Varholick, J.A. (2025). Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">Developmental Dynamics</em> Early View. <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="text-blue-600 hover:underline">doi: 10.1002/dvdy.70021</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(13) *Kidd, B.M., Varholick, J.A., Tuyn, D.M., Kamat, P.K., Simon, Z.D., Liu, L., Meckler, M.P., Pompilus, M., Bubenik, J.L., Davenport, M.L., Carter, H.A., Grudny, M.M., Barbazuk, W.B., Doré, S., Febo, M., Candelario-Jalil, E., Maden, M., Swanson, M.S. (2024). Stroke-induced neuroplasticity in the spiny mouse, <em class="italic">Acomys cahirinus</em>. <em class="italic">npj Regenerative Medicine</em> 9, 41. <a href="https://doi.org/10.1038/s41536-024-00386-8" target="_blank" class="hover:underline">doi: 10.1038/s41536-024-00386-8</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1038/s41536-024-00386-8" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(12) Bailoo, J.D., Bergeson, S.E., Ponomarev, I., Wilms, J.O., Kisby, B.R., Cornwall, G.A., MacDonald, C.C., Lawrence, J.J., Ganapathy, V., Sivaprakasam, S., Panthagani, P., Trasti, S., Varholick, J.A., Findlater, M., Deonarine, A. (2024). A bespoke water T-maze apparatus and protocol: An optimized, reliable, and repeatable method for screening learning, memory, and executive functioning in laboratory mice. <em class="italic">Frontiers in Behavioral Neuroscience, Learning and Memory</em>, 18. <a href="https://doi.org/10.3389/fnbeh.2024.1492327" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2024.1492327</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.3389/fnbeh.2024.1492327" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(11) Varholick, J.A., *Thermolice, J., *Godinez, G., *Dos Santos, V., *Kondapaneni, R., Maden, M. (2024). Older spiny mice (<em class="italic">Acomys cahirinus</em>) have delayed and spatially heterogeneous ear wound regeneration. <em class="italic">Biology Open</em>, 13 (10): bio060565. <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="hover:underline">doi: 10.1242/bio.060565</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(10) Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Maden, M. (2023). Bite wounds and dominance structures in male and female African spiny mice (<em class="italic">Acomys cahirinus</em>): Implications for animal welfare and the generalizability of results. <em class="italic">Animals</em>, 14 (1), 64. <a href="https://doi.org/10.3390/ani14010064" target="_blank" class="hover:underline">doi: 10.3390/ani14010064</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.3390/ani14010064" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(9) Gaire, J., Varholick, J.A., Rana, S., Sunshine, M.D., Ahmad, A.S., Chan, K.M., Allen, K., Doré, S., Fuller, D.D., Maden, M., Simmons, C. (2021). Spiny Mouse (<em class="italic">Acomys</em>): As an emerging research organism for regenerative medicine with applications beyond the skin. <em class="italic">npj Regenerative Medicine</em>, 6(1), 1-6. <a href="https://doi.org/10.1038/s41536-020-00111-1" target="_blank" class="hover:underline">doi: 10.1038/s41536-020-00111-1</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1038/s41536-020-00111-1" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(8) Varholick, J.A., Bailoo, J.D., *Jenkins, A., Voelkl, B., Würbel, H. (2021). A systematic review and meta-analysis of the relationship between social dominance status and common behavioral phenotypes in male laboratory mice. <em class="italic">Frontiers in Behavioral Neuroscience</em>, 14(624036). <a href="https://doi.org/10.3389/fnbeh.2020.624036" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2020.624036</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.3389/fnbeh.2020.624036" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(7) Bailoo, J.D., Voelkl, B., Varholick, J.A., Novak, J., Eimear, M., Russo, M., Palme, R., Würbel, H. (2020). Effects of weaning age and housing conditions on phenotypic differences in mice. <em class="italic">Scientific Reports</em>, 10(11684). <a href="https://doi.org/10.1038/s41598-020-68549-3" target="_blank" class="hover:underline">doi: 10.1038/s41598-020-68549-3</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1038/s41598-020-68549-3" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(6) Maden, M., Varholick, J.A. (2020). Model systems for regeneration: the spiny mouse, <em class="italic">Acomys cahirinus</em>. <em class="italic">Development</em>, 147(dev167718). <a href="https://doi.org/10.1242/dev.167718" target="_blank" class="hover:underline">doi: 10.1242/dev.167718</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1242/dev.167718" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(5) Varholick, J.A., *Pontiggia, A., Murphy, E., *Daniele, V., Palme, R., Voelkl, B., Würbel, H., Bailoo, J.D. (2019). Social dominance hierarchy type and rank contribute to phenotypic variation within cages of laboratory mice. <em class="italic">Scientific Reports</em>, 9(13650). <a href="https://doi.org/10.1038/s41598-019-49612-0" target="_blank" class="hover:underline">doi: 10.1038/s41598-019-49612-0</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1038/s41598-019-49612-0" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(4) Bailoo, J.D., Murphy, E., Boada-Sana, M., Varholick, J.A., Hintze, S., Baussiere, C., Hahn, K.C., Gopfert, C., Palme, R., Voelkl, B., Würbel, H. (2018). Effects of cage enrichment on behavior, welfare and outcome variability in female mice. <em class="italic">Frontiers in Behavioral Neuroscience</em>, 12, p 232. <a href="https://doi.org/10.3389/fnbeh.2018.00232" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2018.00232</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.3389/fnbeh.2018.00232" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(3) Varholick, J.A., Bailoo, J.D., Palme, R., Würbel, H. (2018). Phenotypic variability between social dominance ranks in laboratory mice. <em class="italic">Scientific Reports</em>, 8(6593). <a href="https://doi.org/10.1038/s41598-018-24624-4" target="_blank" class="hover:underline">doi: 10.1038/s41598-018-24624-4</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1038/s41598-018-24624-4" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(2) Bailoo, J.D., Murphy, E., Varholick, J.A., Novak, J., Palme, R., Würbel, H. (2018) Evaluation of space allowance on measures of animal welfare and outcome variation in laboratory mice. <em class="italic">Scientific Reports</em>, 8(713). <a href="https://doi.org/10.1038/s41598-017-18493-6" target="_blank" class="hover:underline">doi: 10.1038/s41598-017-18493-6</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1038/s41598-017-18493-6" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">(1) Bailoo, J. D., Varholick, J. A., Garza, X. J., Jordan, R. L., & Hintze, S. (2016). Maternal separation followed by isolation-housing differentially affects prepulse inhibition of the acoustic startle response in C57BL/6 mice. <em class="italic">Developmental Psychobiology</em>, 58(8), 937-944. <a href="https://doi.org/10.1002/dev.21422" target="_blank" class="hover:underline">doi: 10.1002/dev.21422</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1002/dev.21422" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
                         <a href="#" class="hover:underline">PDF</a>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-blue-50 p-8 rounded-xl shadow-inner border border-blue-200">
-                <h3 class="text-2xl font-semibold text-blue-800 mb-4">✨ Publication Summarizer ✨</h3>
-                <p class="text-gray-700 mb-4">Paste a scientific abstract or text below, and I'll provide a concise summary using AI.</p>
-                <textarea id="publicationInput" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4 h-32 resize-y" placeholder="Paste publication abstract or text here..."></textarea>
-                <button id="summarizeBtn" class="btn-primary flex items-center justify-center gap-2">
-                    <span class="loader" id="summarizeLoader"></span>
-                    <span>Summarize Publication</span>
-                </button>
-                <div id="summaryOutput" class="mt-6 p-4 bg-white rounded-lg shadow-md border border-gray-200 text-gray-800 leading-relaxed hidden">
-                    <h4 class="text-xl font-semibold text-blue-700 mb-2">Summary:</h4>
-                    <p id="summaryText"></p>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Preprints</h3>
+            <div class="space-y-6 mb-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A. (2024). Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">OSF Preprints</em>. <a href="https://doi.org/10.31219/osf.io/h4rcw" target="_blank" class="hover:underline">https://doi.org/10.31219/osf.io/h4rcw</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.31219/osf.io/h4rcw" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
                 </div>
-                <div id="errorMessage" class="mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded-lg hidden" role="alert"></div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Romeo, R.D., Corll, J., Barbazuk, W., Maden, M. (2022). Social dominance status and social stability in spiny mice (<em class="italic">Acomys cahirinus</em>) and its relation to ear-hole regeneration and glucocorticoids. <em class="italic">bioRxiv</em>, 2022.09. 13.507818. <a href="https://doi.org/10.1101/2022.09.13.507818" target="_blank" class="hover:underline">doi: 10.1101/2022.09.13.507818</a></p>
+                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
+                        <a href="https://doi.org/10.1101/2022.09.13.507818" target="_blank" class="hover:underline">DOI link</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="hover:underline">PDF</a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="news" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">News & Updates</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">News & Updates</h2>
             <div class="space-y-6">
                 <div class="bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
-                    <p class="text-lg font-medium text-blue-800 mb-1">🎉 Fall 2025</p>
+                    <p class="text-lg font-medium text-gray-800 mb-1">🎉 Fall 2025</p>
                     <p class="text-gray-700">Lab officially opens at Kennesaw State!</p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
-                    <p class="text-lg font-medium text-blue-800 mb-1">🔬 Spring 2026</p>
+                    <p class="text-lg font-medium text-gray-800 mb-1">🔬 Spring 2026</p>
                     <p class="text-gray-700">Recruiting first graduate student cohort!</p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
-                    <p class="text-lg font-medium text-blue-800 mb-1">📰 Upcoming Talk</p>
+                    <p class="text-lg font-medium text-gray-800 mb-1">📰 Upcoming Talk</p>
                     <p class="text-gray-700">Dr. Varholick presents at [Conference Name].</p>
                 </div>
             </div>
         </section>
 
         <section id="joinus" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">Join Us</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Join Us</h2>
             <h3 class="text-2xl font-medium text-gray-700 mb-4">Now Recruiting!</h3>
             <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4">
                 <li>Undergraduate researchers (Fall 2025)</li>
@@ -238,7 +369,7 @@
         </section>
 
         <section id="data-resources" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">Data & Resources</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Data & Resources</h2>
             <p class="text-lg leading-relaxed mb-4">
                 This section will host future content as projects develop.
             </p>
@@ -250,7 +381,7 @@
         </section>
 
         <section id="contact" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-blue-800 mb-6">Contact Us</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Contact Us</h2>
             <div class="text-lg leading-relaxed space-y-2">
                 <p><strong class="font-semibold">Justin Varholick, Ph.D.</strong></p>
                 <p>Assistant Professor of Physiology</p>
@@ -266,7 +397,7 @@
     <footer class="bg-gray-900 text-white py-6 mt-8 shadow-inner">
         <div class="container text-center text-gray-300">
             <p>&copy; 2025 Regenerative Plasticity Lab. All rights reserved.</p>
-            <p class="mt-2">Built with ❤️ and science.</p>
+            <p class="mt-2">Built with ❤️, AI, and science.</p>
         </div>
     </footer>
 
@@ -322,76 +453,6 @@
                 // Default to home section if no hash or invalid hash
                 showSection('home');
             }
-
-            // Gemini API Integration - Publication Summarizer
-            const publicationInput = document.getElementById('publicationInput');
-            const summarizeBtn = document.getElementById('summarizeBtn');
-            const summarizeLoader = document.getElementById('summarizeLoader');
-            const summaryOutput = document.getElementById('summaryOutput');
-            const summaryText = document.getElementById('summaryText');
-            const errorMessage = document.getElementById('errorMessage');
-
-            summarizeBtn.addEventListener('click', async () => {
-                const textToSummarize = publicationInput.value.trim();
-
-                // Clear previous messages and hide output
-                summaryText.textContent = '';
-                summaryOutput.classList.add('hidden');
-                errorMessage.classList.add('hidden');
-                errorMessage.textContent = '';
-
-                if (!textToSummarize) {
-                    errorMessage.textContent = 'Please paste some text to summarize.';
-                    errorMessage.classList.remove('hidden');
-                    return;
-                }
-
-                // Show loading spinner
-                summarizeLoader.style.display = 'block';
-                summarizeBtn.disabled = true; // Disable button during processing
-
-                try {
-                    let chatHistory = [];
-                    const prompt = `Summarize the following scientific publication abstract or text concisely in a few sentences, highlighting the main findings and conclusions:\n\n${textToSummarize}`;
-                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-
-                    const payload = { contents: chatHistory };
-                    const apiKey = ""; // Canvas will automatically provide this at runtime
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!response.ok) {
-                        const errorData = await response.json();
-                        throw new Error(`API error: ${response.status} ${response.statusText} - ${errorData.error?.message || 'Unknown error'}`);
-                    }
-
-                    const result = await response.json();
-
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        summaryText.textContent = text;
-                        summaryOutput.classList.remove('hidden');
-                    } else {
-                        errorMessage.textContent = 'Could not generate a summary. Please try again or provide different text.';
-                        errorMessage.classList.remove('hidden');
-                    }
-                } catch (error) {
-                    console.error('Error summarizing publication:', error);
-                    errorMessage.textContent = `Failed to summarize: ${error.message}. Please check your input and try again.`;
-                    errorMessage.classList.remove('hidden');
-                } finally {
-                    // Hide loading spinner and re-enable button
-                    summarizeLoader.style.display = 'none';
-                    summarizeBtn.disabled = false;
-                }
-            });
         });
     </script>
 </body>
