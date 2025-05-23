@@ -65,21 +65,21 @@
         <div class="container flex flex-col md:flex-row justify-between items-center">
             <h1 class="text-4xl font-bold mb-4 md:mb-0 text-black">Regenerative Plasticity Lab</h1>
             <p class="text-lg text-black text-center md:text-right">
-                Understanding the intersection of<br> behavior, neuroplasticity, and regeneration.
+                Understanding the intersection of<br> behavior, neuroplasticity, and tissue regeneration.
             </p>
         </div>
     </header>
 
     <nav class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
-        <div class="container flex flex-wrap justify-center md:justify-start py-4 space-x-4">
+        <div class="container flex flex-wrap justify-center md:justify-start py-4 space-x-8">
             <a class="nav-link active-link" data-section="home">Home</a>
             <a class="nav-link" data-section="about">About the Lab</a>
             <a class="nav-link" data-section="research">Research</a>
             <a class="nav-link" data-section="team">Team</a>
             <a class="nav-link" data-section="publications">Publications</a>
-            <a class="nav-link" data-section="news">News & Updates</a>
-            <a class="nav-link" data-section="joinus">Join Us</a>
-            <a class="nav-link" data-section="data-resources">Data & Resources</a>
+            <a class="nav-link" data-section="news">News</a>
+            <a class="nav-link" data-section="joinus">Join Us!</a>
+            <a class="nav-link" data-section="data-resources">Resources</a>
             <a class="nav-link" data-section="contact">Contact</a>
         </div>
     </nav>
@@ -91,12 +91,16 @@
                 Welcome to the Regenerative Plasticity Lab at Kennesaw State University. Led by Dr. Justin Varholick, we study how structural regeneration interacts with the environment, neuroplasticity, and behavior following injury. Our interdisciplinary research aims to reveal how organisms recover — from skin to brain — to improve regenerative medicine and rehabilitation strategies.
             </p>
             <div class="flex flex-wrap gap-4 justify-center mb-8">
-                <button class="btn-primary" onclick="showSection('joinus')">Join the Lab</button>
-                <button class="btn-primary" onclick="showSection('research')">Explore Our Research</button>
-                <button class="btn-primary" onclick="showSection('publications')">Recent Publications</button>
+                <button class="btn-primary text-blue-600 underline" onclick="showSection('joinus')">Join the Lab</button>
+                <button class="btn-primary text-blue-600 underline" onclick="showSection('research')">Explore Our Research</button>
+                <button class="btn-primary text-blue-600 underline" onclick="showSection('publications')">Recent Publications</button>
             </div>
             <div class="w-full h-64 md:h-96 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center text-gray-500 text-xl font-medium">
                 <img src="images/banner.jpg" onerror="this.onerror=null;this.src='https://placehold.co/1200x400/cbd5e1/475569?text=Lab+Banner+Image';" alt="Lab Banner Image" class="w-full h-full object-cover">
+            </div>
+            <div class="mt-2 text-sm text-gray-600 text-center">
+                <p>Tissue regeneration is part of a dynamical system, coacting with our biology and environment.</p>
+                 <a href="https://x.com/just_varholick/status/1915036002579591457" class="text-blue-600 hover:text-blue-800 underline">Read more from a recent publication</a>
             </div>
         </section>
 
@@ -129,21 +133,19 @@
                 </div>
             </div>
 
-            <h3 class="text-2xl font-medium text-gray-700 mb-4">Models Used</h3>
+            <h3 class="text-2xl font-medium text-gray-700 mb-4">Models we use</h3>
             <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4">
                 <li>Neonatal & adult <em class="font-semibold">Mus musculus</em></li>
                 <li>Spiny mouse (<em class="font-semibold">Acomys cahirinus</em>)</li>
                 <li>Future: Bioengineered human skin and salamanders via collaborations</li>
             </ul>
 
-            <h3 class="text-2xl font-medium text-gray-700 mb-4">Visuals</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center text-gray-500 text-lg h-64">
-                    <img src="images/mus_uninjuredpad.png" alt="Whisker pad" class="w-full h-full object-cover">
-                </div>
-                <div class="bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center text-gray-500 text-lg h-64">
-                    <img src="images/ear-histology.jpg" alt="ear histology" class="w-full h-full object-cover">
-                </div>
+            <h3 class="text-2xl font-medium text-gray-700 mb-4">Summary of Findings</h3>
+            <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4 flex flex-col space-y-4">
+                <li class="mb-4"><strong class="text-xl font-medium">Modelling cutaneous sensory nerve regeneration:</strong> Mouse whisker pads are highly sensitive, much like human fingertips. Spiny mice are known for their ability to heal skin without scarring. We combined these two bits of knowledge and discovered that the highly sensitive whisker follicles regrow with 75% of their innervation after removal and nerve transection.<em class="font-italic"> Publication accepted</em></li>
+                <li class="mb-4"><strong class="text-xl font-medium">Age is linked to regenerative rate and fidelity in spiny mice:</strong> There's large variability in the rate and fidelity of spiny mouse ear tissue regeneration in the literature. We showed this can be attributed to age because 3-4mos regenerated faster and with better quality than 6-9mos. Such signficant variation within the first year of life suggests a link to pubertal hormones. <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="text-blue-600 underline">Link to publication</a></li>
+                <li class="mb-4"><strong class="text-xl font-medium">Established framework for Behavior-Regeneration interplay:</strong> Co-opting frameworks from developmental psychobiology, we derived new frameworks for regenerative biology: probabilistic regenesis and regenerative history. Probabilistic regenesis argues that sensorimotor behaviors in three-dimensional space have an equal role as genes and cells in regeneration. Regenerative history provides an opportunity to determine factors that induce, facilitate, and maintain the recovery of function after injury. <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="text-blue-600 underline">Link to publication</a></li> 
+            </ul>
             </div>
         </section>
 
@@ -151,12 +153,12 @@
             <h2 class="text-3xl font-semibold text-gray-900 mb-6">Our Team</h2>
             <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <div class="flex-shrink-0">
-                    <img src="images/varholick-profile.JPG" onerror="this.onerror=null;this.src='https://placehold.co/200x200/cbd5e1/475569?text=Dr.+Varholick';" alt="Dr. Justin Varholick" class="rounded-full w-48 h-48 object-cover border-4 border-blue-200 shadow-md">
+                    <img src="images/varholick-profile.JPG" onerror="this.onerror=null;this.src='https://placehold.co/200x200/cbd5e1/475569?text=Dr.+Varholick';" alt="Dr. Justin Varholick" class="rounded-full w-48 h-48 object-cover border-4 border-[#ffc629] shadow-md">
                 </div>
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 mb-2">Justin Varholick, PhD</h3>
                     <p class="text-xl font-medium text-gray-600 mb-4">Principal Investigator</p>
-                    <p class="text-lg leading-relaxed mb-6"> Dr. Varholick holds a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern and an M.S. in Biopsychology from UNC Greensboro. He trained in regenerative biology during his postdoc under Prof. Malcolm Maden at the University of Florida. His work has contributed to understanding the phenotypic variability in tissue regeneration and establishing behavioral frameworks for studying tissue regeneration in animal models.</p>
+                    <p class="text-lg leading-relaxed mb-6"> Dr. Varholick holds a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern and an M.A. in Biopsychology from UNC Greensboro. He trained in regenerative biology during his postdoc under Prof. Malcolm Maden at the University of Florida. His work has contributed to understanding the phenotypic variability in tissue regeneration and establishing behavioral frameworks for studying tissue regeneration in animal models.</p>
                     <p class="text-lg font-semibold text-gray-900">Currently recruiting undergraduate and graduate researchers.</p>
                 </div>
             </div>
@@ -164,10 +166,6 @@
 
         <section id="publications" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
             <h2 class="text-3xl font-semibold text-gray-900 mb-6">Publications</h2>
-            <p class="text-lg leading-relaxed mb-4">
-                This section displays our latest publications.
-            </p>
-
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">Peer-Reviewed Publications</h3>
             <div class="space-y-6 mb-8">
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
@@ -176,18 +174,15 @@
                         <a href="https://doi.org/10.1038/s41536-024-00386-8" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
                         <a href="#" class="hover:underline">PDF</a>
-                        <span class="text-gray-400">|</span>
                     </div>
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">(14) Varholick, J.A. (2025). Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">Developmental Dynamics</em> Early View. <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="text-blue-600 hover:underline">doi: 10.1002/dvdy.70021</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(14) Varholick, J.A. (2025). Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">Developmental Dynamics</em> Early View.</p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="https://journals.biologists.com/bio/article/13/10/bio061731/362309/First-person-Justin-Varholick" class="hover:underline">First Author Interview</a>
+                        <a href="pdfs/Varholick 2025.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -196,7 +191,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1038/s41536-024-00386-8" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Kidd et al. 2024 - stroke spiny.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -205,7 +200,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.3389/fnbeh.2024.1492327" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Bailoo et al. 2024.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -214,7 +209,9 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Varholick et al. 2024.pdf" target="_blank" class="hover:underline">PDF</a>
+                        <span class="text-gray-400">|</span>
+                        <a href="https://journals.biologists.com/bio/article/13/10/bio061731/362309/First-person-Justin-Varholick" class="hover:underline">First Author Interview</a>
                     </div>
                 </div>
 
@@ -223,7 +220,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.3390/ani14010064" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Varholick et al. 2023 - bite wounds dominance acomys.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -232,16 +229,16 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1038/s41536-020-00111-1" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Gaire et al.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">(8) Varholick, J.A., Bailoo, J.D., *Jenkins, A., Voelkl, B., Würbel, H. (2021). A systematic review and meta-analysis of the relationship between social dominance status and common behavioral phenotypes in male laboratory mice. <em class="italic">Frontiers in Behavioral Neuroscience</em>, 14(624036). <a href="https://doi.org/10.3389/fnbeh.2020.624036" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2020.624036</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(8) Varholick, J.A., Bailoo, J.D., *Jenkins, A., Voelkl, B., Würbel, H. (2021). A systematic review and meta-analysis of the relationship between social dominance status and common behavioral phenotypes in male laboratory mice. <em class="italic">Frontiers in Behavioral Neuroscience, Learning and Memory</em>, 14(624036). <a href="https://doi.org/10.3389/fnbeh.2020.624036" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2020.624036</a></p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.3389/fnbeh.2020.624036" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Varholick et al. 2020 - SR dominance.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -250,7 +247,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1038/s41598-020-68549-3" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Bailoo et al. 2020.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -259,7 +256,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1242/dev.167718" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/MadenVarholick2020.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -268,7 +265,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1038/s41598-019-49612-0" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Varholick et al. 2019.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -277,7 +274,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.3389/fnbeh.2018.00232" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Bailoo et al. 2018 - cage enrichment females.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -286,7 +283,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1038/s41598-018-24624-4" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Varholick et al. 2018.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -295,7 +292,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1038/s41598-017-18493-6" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Bailoo et al. 2018 space allowance.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -304,7 +301,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1002/dev.21422" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Bailoo et al. 2016.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
             </div>
@@ -316,7 +313,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.31219/osf.io/h4rcw" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/RB and DPB_v5.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
 
@@ -325,7 +322,7 @@
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1101/2022.09.13.507818" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
-                        <a href="#" class="hover:underline">PDF</a>
+                        <a href="pdfs/Varholick et al. 2022 - dominance ear biorxiv.pdf" target="_blank" class="hover:underline">PDF</a>
                     </div>
                 </div>
             </div>
@@ -359,7 +356,7 @@
             <h3 class="text-2xl font-medium text-gray-700 mb-4">How to apply:</h3>
             <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4">
                 <li>Email Dr. Varholick with your CV and a short statement of interest.</li>
-                <li>See KSU application info <a href="#" class="text-blue-600 hover:underline">[Link to EEOB Department]</a></li>
+                <p class="italic text-slate-500 mb-4">Hint, read some publications and ask questions.</p>
             </ul>
             <p class="text-lg text-gray-700">
                 Email: <a href="mailto:j.a.varholick@gmail.com" class="text-blue-600 hover:underline">j.a.varholick@gmail.com</a>
@@ -367,13 +364,13 @@
         </section>
 
         <section id="data-resources" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Data & Resources</h2>
+            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Resources & Data</h2>
             <p class="text-lg leading-relaxed mb-4">
                 This section will host future content as projects develop.
             </p>
             <ul class="list-disc list-inside text-lg leading-relaxed pl-4 space-y-2">
                 <li>Protocols</li>
-                <li>datasets</li>
+                <li>Datasets</li>
                 <li>R scripts (<a href="https://github.com/javarhol" target="_blank" class="text-blue-600 hover:underline">GitHub-linked</a>)</li>
             </ul>
         </section>
