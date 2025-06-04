@@ -3,10 +3,7 @@
 <head>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-558XS5BM');</script>
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-558XS5BM');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +14,84 @@
         /* Custom styles for the website */
         body {
             font-family: 'Inter', sans-serif;
+            /* Default light mode background and text colors */
             background-color: #f8fafc; /* Light gray background */
             color: #334155; /* Darker gray text */
         }
+
+        /* Dark mode styles */
+        html.dark body {
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
+        }
+
+        /* Ensure header background and text remain as specified */
+        .bg-[#ffc629] { /* Header background */
+            background-color: #ffc629 !important; /* Keep it yellow */
+        }
+
+        .text-black { /* Header text color */
+            color: #000000 !important; /* Keep it black */
+        }
+
+        html.dark .bg-gray-800 { /* Nav background */
+            background-color: #1a202c; /* Darker nav */
+        }
+
+        html.dark .text-white { /* Nav text */
+            color: #e2e8f0; /* Light text */
+        }
+
+        html.dark .section-content { /* Section background */
+            background-color: #2d3748; /* Darker section */
+        }
+
+        html.dark .text-gray-900 { /* Section headings */
+            color: #e2e8f0; /* Light text */
+        }
+
+        html.dark .text-gray-700 { /* Section paragraphs */
+            color: #cbd5e1; /* Lighter gray text */
+        }
+
+        html.dark .text-gray-600 { /* Section smaller text */
+            color: #a0aec0;
+        }
+
+        html.dark .bg-blue-50 { /* Research theme boxes */
+            background-color: #4a5568; /* Darker blue */
+            color: #e2e8f0;
+        }
+
+        html.dark .bg-gray-50 { /* Publication boxes */
+            background-color: #4a5568; /* Darker gray */
+            color: #e2e8f0;
+        }
+
+        html.dark .border-gray-200 { /* Publication box border */
+            border-color: #4a5568;
+        }
+
+        html.dark .text-gray-800 { /* Publication titles */
+            color: #e2e8f0;
+        }
+
+        html.dark .text-blue-600 { /* Links */
+            color: #90cdf4; /* Lighter blue for dark mode links */
+        }
+
+        html.dark .hover:text-blue-800:hover { /* Link hover */
+            color: #63b3ed;
+        }
+
+        html.dark .bg-gray-900 { /* Footer background */
+            background-color: #1a202c; /* Darker footer */
+        }
+
+        html.dark .text-gray-300 { /* Footer text */
+            color: #a0aec0;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -33,6 +105,11 @@
         .active-link {
             @apply bg-blue-700 text-white;
         }
+        /* Dark mode specific for active link */
+        html.dark .active-link {
+            @apply bg-blue-500 text-white;
+        }
+
         .section-content {
             display: none; /* Hidden by default */
         }
@@ -65,16 +142,36 @@
         .summarizer-container {
             display: none; /* Hidden by default */
         }
+
+        /* Dark mode toggle button styles */
+        #darkModeToggle {
+            @apply p-2 rounded-full transition-colors duration-200;
+            background-color: #ffc629 !important; /* Match header yellow */
+            color: #000000 !important; /* Black icon for contrast */
+        }
+        #darkModeToggle:hover {
+            /* Keep hover effect consistent or adjust as needed */
+            background-color: #e0b024 !important; /* Slightly darker yellow on hover */
+        }
     </style>
 </head>
 <body class="antialiased">
-    <header class="bg-[#ffc629] py-6 shadow-lg">
+    <header class="bg-[#ffc629] py-6 shadow-lg relative"> <!-- Added 'relative' for absolute positioning of toggle -->
         <div class="container flex flex-col md:flex-row justify-between items-center">
             <h1 class="text-4xl font-bold mb-4 md:mb-0 text-black">REPAIR Lab</h1>
             <p class="text-lg text-black text-center md:text-right">
                 Restoring Emergent Pathways through Adaptive Integration and Regeneration.
             </p>
         </div>
+        <!-- Dark Mode Toggle Button moved here and positioned absolutely -->
+        <button id="darkModeToggle" aria-label="Toggle dark mode" class="absolute top-4 right-4">
+            <svg id="moonIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+            <svg id="sunIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.325-4.757l-.707-.707M6.343 17.657l-.707.707M16.95 18.364l.707.707M7.05 6.343l-.707-.707M12 18a6 6 0 100-12 6 6 0 000 12z"></path>
+            </svg>
+        </button>
     </header>
 
     <nav class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
@@ -140,7 +237,7 @@
             <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4 flex flex-col space-y-4">
                 <li class="mb-4"><strong class="text-xl font-medium">Modelling cutaneous sensory nerve regeneration:</strong> Mouse whisker pads are highly sensitive, much like human fingertips. Spiny mice are known for their ability to heal skin without scarring. We combined these two bits of knowledge and discovered that the highly sensitive whisker follicles regrow with 75% of their innervation after removal and nerve transection. <a href="https://doi.org/10.1038/s41536-025-00415-0" target="_blank" class="text-blue-600 underline">Link to publication</a></li></li>
                 <li class="mb-4"><strong class="text-xl font-medium">Age is linked to regenerative rate and fidelity in spiny mice:</strong> There's large variability in the rate and fidelity of spiny mouse ear tissue regeneration in the literature. We showed this can be attributed to age because 3-4mos regenerated faster and with better quality than 6-9mos. Such signficant variation within the first year of life suggests a link to pubertal hormones. <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="text-blue-600 underline">Link to publication</a></li>
-                <li class="mb-4"><strong class="text-xl font-medium">Established framework for Behavior-Regeneration interplay:</strong> Co-opting frameworks from developmental psychobiology, we derived new frameworks for regenerative biology: probabilistic regenesis and regenerative history. Probabilistic regenesis argues that sensorimotor behaviors in three-dimensional space have an equal role as genes and cells in regeneration. Regenerative history provides an opportunity to determine factors that induce, facilitate, and maintain the recovery of function after injury. <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="text-blue-600 underline">Link to publication</a></li> 
+                <li class="mb-4"><strong class="text-xl font-medium">Established framework for Behavior-Regeneration interplay:</strong> Co-opting frameworks from developmental psychobiology, we derived new frameworks for regenerative biology: probabilistic regenesis and regenerative history. Probabilistic regenesis argues that sensorimotor behaviors in three-dimensional space have an equal role as genes and cells in regeneration. Regenerative history provides an opportunity to determine factors that induce, facilitate, and maintain the recovery of function after injury. <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="text-blue-600 underline">Link to publication</a></li>
             </ul>
             </div>
         </section>
@@ -212,7 +309,7 @@
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">(10) Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Maden, M. (2023). Bite wounds and dominance structures in male and female African spiny mice (<em class="italic">Acomys cahirinus</em>): Implications for animal welfare and the generalizability of results. <em class="italic">Animals</em>, 14 (1), 64. <a href="https://doi.org/10.3390/ani14010064" target="_blank" class="hover:underline">doi: 10.3390/ani14010064</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(10) Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Maden, M. (2023). Bite wounds and dominance structures in male and female African spiny mice (<em class="italic">Acomys cahirinus</em>): Implications for animal welfare and the generalizability of results. <em class="italic">Animals</em class="italic">, 14 (1), 64. <a href="https://doi.org/10.3390/ani14010064" target="_blank" class="hover:underline">doi: 10.3390/ani14010064</a></p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.3390/ani14010064" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
@@ -266,7 +363,7 @@
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">(4) Bailoo, J.D., Murphy, E., Boada-Sana, M., Varholick, J.A., Hintze, S., Baussiere, C., Hahn, K.C., Gopfert, C., Palme, R., Voelkl, B., Würbel, H. (2018). Effects of cage enrichment on behavior, welfare and outcome variability in female mice. <em class="italic">Frontiers in Behavioral Neuroscience</em>, 12, p 232. <a href="https://doi.org/10.3389/fnbeh.2018.00232" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2018.00232</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(4) Bailoo, J.D., Murphy, E., Boada-Sana, M., Varholick, J.A., Hintze, S., Baussiere, C., Hahn, K.C., Gopfert, C., Palme, R., Voelkl, B., Würbel, H. (2018). Effects of cage enrichment on behavior, welfare and outcome variability in female mice. <em class="italic">Frontiers in Behavioral Neuroscience</em class="italic">, 12, p 232. <a href="https://doi.org/10.3389/fnbeh.2018.00232" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2018.00232</a></p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.3389/fnbeh.2018.00232" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
@@ -275,7 +372,7 @@
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">(3) Varholick, J.A., Bailoo, J.D., Palme, R., Würbel, H. (2018). Phenotypic variability between social dominance ranks in laboratory mice. <em class="italic">Scientific Reports</em>, 8(6593). <a href="https://doi.org/10.1038/s41598-018-24624-4" target="_blank" class="hover:underline">doi: 10.1038/s41598-018-24624-4</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(3) Varholick, J.A., Bailoo, J.D., Palme, R., Würbel, H. (2018). Phenotypic variability between social dominance ranks in laboratory mice. <em class="italic">Scientific Reports</em class="italic">, 8(6593). <a href="https://doi.org/10.1038/s41598-018-24624-4" target="_blank" class="hover:underline">doi: 10.1038/s41598-018-24624-4</a></p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1038/s41598-018-24624-4" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
@@ -284,7 +381,7 @@
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">(2) Bailoo, J.D., Murphy, E., Varholick, J.A., Novak, J., Palme, R., Würbel, H. (2018) Evaluation of space allowance on measures of animal welfare and outcome variation in laboratory mice. <em class="italic">Scientific Reports</em>, 8(713). <a href="https://doi.org/10.1038/s41598-017-18493-6" target="_blank" class="hover:underline">doi: 10.1038/s41598-017-18493-6</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(2) Bailoo, J.D., Murphy, E., Varholick, J.A., Novak, J., Palme, R., Würbel, H. (2018) Evaluation of space allowance on measures of animal welfare and outcome variation in laboratory mice. <em class="italic">Scientific Reports</em class="italic">, 8(713). <a href="https://doi.org/10.1038/s41598-017-18493-6" target="_blank" class="hover:underline">doi: 10.1038/s41598-017-18493-6</a></p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1038/s41598-017-18493-6" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
@@ -293,7 +390,7 @@
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">(1) Bailoo, J. D., Varholick, J. A., Garza, X. J., Jordan, R. L., & Hintze, S. (2016). Maternal separation followed by isolation-housing differentially affects prepulse inhibition of the acoustic startle response in C57BL/6 mice. <em class="italic">Developmental Psychobiology</em>, 58(8), 937-944. <a href="https://doi.org/10.1002/dev.21422" target="_blank" class="hover:underline">doi: 10.1002/dev.21422</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">(1) Bailoo, J. D., Varholick, J. A., Garza, X. J., Jordan, R. L., & Hintze, S. (2016). Maternal separation followed by isolation-housing differentially affects prepulse inhibition of the acoustic startle response in C57BL/6 mice. <em class="italic">Developmental Psychobiology</em class="italic">, 58(8), 937-944. <a href="https://doi.org/10.1002/dev.21422" target="_blank" class="hover:underline">doi: 10.1002/dev.21422</a></p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1002/dev.21422" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
@@ -305,7 +402,7 @@
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">Preprints</h3>
             <div class="space-y-6 mb-8">
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A. (2024). Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">OSF Preprints</em>. <a href="https://doi.org/10.31219/osf.io/h4rcw" target="_blank" class="hover:underline">https://doi.org/10.31219/osf.io/h4rcw</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A. (2024). Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">OSF Preprints</em class="italic">. <a href="https://doi.org/10.31219/osf.io/h4rcw" target="_blank" class="hover:underline">https://doi.org/10.31219/osf.io/h4rcw</a></p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.31219/osf.io/h4rcw" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
@@ -314,7 +411,7 @@
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Romeo, R.D., Corll, J., Barbazuk, W., Maden, M. (2022). Social dominance status and social stability in spiny mice (<em class="italic">Acomys cahirinus</em>) and its relation to ear-hole regeneration and glucocorticoids. <em class="italic">bioRxiv</em>, 2022.09. 13.507818. <a href="https://doi.org/10.1101/2022.09.13.507818" target="_blank" class="hover:underline">doi: 10.1101/2022.09.13.507818</a></p>
+                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Romeo, R.D., Corll, J., Barbazuk, W., Maden, M. (2022). Social dominance status and social stability in spiny mice (<em class="italic">Acomys cahirinus</em>) and its relation to ear-hole regeneration and glucocorticoids. <em class="italic">bioRxiv</em class="italic">, 2022.09. 13.507818. <a href="https://doi.org/10.1101/2022.09.13.507818" target="_blank" class="hover:underline">doi: 10.1101/2022.09.13.507818</a></p>
                     <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
                         <a href="https://doi.org/10.1101/2022.09.13.507818" target="_blank" class="hover:underline">DOI link</a>
                         <span class="text-gray-400">|</span>
@@ -402,6 +499,11 @@
             const navLinks = document.querySelectorAll('.nav-link');
             // Get all content sections
             const sections = document.querySelectorAll('.section-content');
+            // Get the dark mode toggle button and icons
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const moonIcon = document.getElementById('moonIcon');
+            const sunIcon = document.getElementById('sunIcon');
+            const htmlElement = document.documentElement; // Get the root html element
 
             // Function to show a specific section and update active navigation link
             // Added `updateUrl` parameter to control when the URL hash is updated.
@@ -439,6 +541,39 @@
                     }
                 }
             };
+
+            // Function to toggle dark mode
+            const toggleDarkMode = () => {
+                // Toggle the 'dark' class on the html element
+                htmlElement.classList.toggle('dark');
+
+                // Save the current mode to local storage
+                if (htmlElement.classList.contains('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                    moonIcon.classList.add('hidden');
+                    sunIcon.classList.remove('hidden');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                    moonIcon.classList.remove('hidden');
+                    sunIcon.classList.add('hidden');
+                }
+            };
+
+            // Check for saved theme in local storage on page load
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                htmlElement.classList.add('dark');
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+            } else {
+                // Default to light mode if no preference or 'light' is saved
+                htmlElement.classList.remove('dark');
+                moonIcon.classList.remove('hidden');
+                sunIcon.classList.add('hidden');
+            }
+
+            // Add click event listener to the dark mode toggle button
+            darkModeToggle.addEventListener('click', toggleDarkMode);
 
             // Add click event listeners to navigation links
             navLinks.forEach(link => {
