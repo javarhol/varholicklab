@@ -388,7 +388,6 @@
             <p class="mt-2">Built with ❤️, AI, and science.</p>
         </div>
     </footer>
-
     <script>
         // JavaScript for navigation and section display
         document.addEventListener('DOMContentLoaded', () => {
@@ -398,7 +397,8 @@
             const sections = document.querySelectorAll('.section-content');
 
             // Function to show a specific section and update active navigation link
-            window.showSection = (sectionId) => {
+            // Added `updateUrl` parameter to control when the URL hash is updated.
+            window.showSection = (sectionId, updateUrl = true) => {
                 // Hide all sections
                 sections.forEach(section => {
                     section.classList.remove('active');
@@ -421,25 +421,34 @@
                     activeNavLink.classList.add('active-link');
                 }
 
-                // Update URL hash for direct linking and refresh
-                history.pushState(null, '', `#${sectionId}`);
+                // Only update URL hash if `updateUrl` is true
+                if (updateUrl) {
+                    history.pushState(null, '', `#${sectionId}`);
+                } else {
+                    // For initial load of 'home' section without a hash,
+                    // ensure the URL doesn't get a hash.
+                    if (sectionId === 'home') {
+                        history.replaceState(null, '', window.location.pathname + window.location.search);
+                    }
+                }
             };
 
             // Add click event listeners to navigation links
             navLinks.forEach(link => {
                 link.addEventListener('click', (event) => {
                     const sectionId = event.target.dataset.section;
-                    showSection(sectionId);
+                    showSection(sectionId, true); // User click, so update URL hash
                 });
             });
 
             // Handle initial section display based on URL hash
             const initialHash = window.location.hash.substring(1); // Remove '#'
             if (initialHash && document.getElementById(initialHash)) {
-                showSection(initialHash);
+                showSection(initialHash, true); // User provided hash, update URL
             } else {
-                // Default to home section if no hash or invalid hash
-                showSection('home');
+                // Default to home section if no hash or invalid hash.
+                // Do NOT update URL hash on initial load if none was present.
+                showSection('home', false);
             }
         });
     </script>
