@@ -7,7 +7,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REPAIR lab</title>
+    <title>The REPAIR lab</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -26,12 +26,12 @@
         }
 
         /* Ensure header background and text remain as specified */
-        .bg-[#ffc629] { /* Header background */
-            background-color: #ffc629 !important; /* Keep it yellow */
+        .header-bg-custom { /* Custom class for header background color */
+            background-color: #9676ff !important; /* New header background color */
         }
 
         .text-black { /* Header text color */
-            color: #000000 !important; /* Keep it black */
+            color: #FFFFFF !important; /* Keep it white */
         }
 
         html.dark .bg-gray-800 { /* Nav background */
@@ -146,12 +146,11 @@
         /* Dark mode toggle button styles */
         #darkModeToggle {
             @apply p-2 rounded-full transition-colors duration-200;
-            background-color: #ffc629 !important; /* Match header yellow */
-            color: #000000 !important; /* Black icon for contrast */
+            background-color: #9676ff !important; /* Match new header background */
+            color: #ffffff !important; /* White icon */
         }
         #darkModeToggle:hover {
-            /* Keep hover effect consistent or adjust as needed */
-            background-color: #e0b024 !important; /* Slightly darker yellow on hover */
+            background-color: #9676ff !important; /* Keep the same blue on hover */
         }
     </style>
 </head>
@@ -165,15 +164,21 @@
   gtag('config', 'G-0KTDB5JTCL');
 </script>
 <body class="antialiased">
-    <header class="bg-[#ffc629] py-6 shadow-lg relative"> <!-- Added 'relative' for absolute positioning of toggle -->
-        <div class="container flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-4xl font-bold mb-4 md:mb-0 text-black">REPAIR Lab</h1>
-            <p class="text-lg text-black text-center md:text-right">
-                Restoring Emergent nerve Pathways through Adaptive Integration and Regeneration.
+    <header class="header-bg-custom py-6 shadow-lg relative overflow-hidden">
+        <div class="container flex flex-col md:flex-row justify-between items-center relative z-20">
+            <!-- New div for title and logo -->
+            <div class="relative flex items-center mb-4 md:mb-0">
+                <img src="images/repairlablogo.png" alt="REPAIR Lab Logo"
+                     class="absolute w-auto h-auto object-contain opacity-80 z-10 pointer-events-none -right-10 top-1/2 -translate-y-1/2"
+                     onerror="this.onerror=null;this.src='https://placehold.co/200x200/cbd5e1/475569?text=Logo+Placeholder';">
+                <h1 class="text-4xl font-bold text-white relative z-20 ml-20">The REPAIR Lab</h1>
+            </div>
+            <p class="text-lg text-white text-center md:text-right z-20">
+                REstoring nerve Pathways through Adaptive Integration and Regeneration.
             </p>
         </div>
-        <!-- Dark Mode Toggle Button moved here and positioned absolutely -->
-        <button id="darkModeToggle" aria-label="Toggle dark mode" class="absolute top-4 right-4">
+        <!-- Dark Mode Toggle Button positioned absolutely -->
+        <button id="darkModeToggle" aria-label="Toggle dark mode" class="absolute top-4 right-4 z-30">
             <svg id="moonIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
             </svg>
@@ -200,9 +205,9 @@
         <section id="home" class="section-content active bg-white p-8 rounded-xl shadow-lg mb-8">
             <h2 class="text-3xl font-semibold text-gray-900 mb-6">Welcome to the REPAIR Lab!</h2>
             <p class="text-lg leading-relaxed mb-6">
-                Welcome to the REPAIR Lab at Kennesaw State University! Led by Dr. Justin Varholick, we're passionate about exploring how to <strong>Restore</strong> the <strong>Emergent Pathways</strong> of the nervous system through <strong>Adaptive Integration</strong> and tissue <strong>Regeneration</strong>. Our bodies are closely integrated with our brains via the peripheral nervous system. This means that when injuries happen — whether from accidents, surgery, or disease — the communication lines to the brain are injured.</p>
+                Welcome to the REPAIR Lab at Kennesaw State University! Led by Dr. Justin Varholick, we're passionate about exploring how to <strong>REstore</strong> nerve <strong>Pathways</strong> through <strong>Adaptive Integration</strong> and tissue <strong>Regeneration</strong>. Our bodies are closely integrated with our brains via the peripheral nervous system. This means that when the skin or organs become damaged — whether from accidents, surgery, or disease — the communication lines to the brain are also damaged.</p>
             <p class="text-lg leading-relaxed mb-6">
-                While the peripheral nervous system does have some ability to heal itself through regeneration, the process isn't perfect—it often is missing important components like connective tissue and insulation. Also, the brain adapts to peripheral injuries and regeneration/healing, making the recovery process complex. Our team is dedicated to finding ways to improve this regeneration and to better understand how the brain adapts during recovery. Long-term, our goal is to develop methods that enable fully integrated and functional healing, helping to advance regenerative medicine and rehabilitative therapies for better patient outcomes. Short-term, we're working to establish a basic understanding of the relationship between healed peripheral tissue and the brain, and inspiring the next generation of scientific thinkers.
+                While the peripheral nervous system does have some ability to heal itself through regeneration, the process isn't perfect — it often is missing important components like connective tissue and insulation. Also, the brain adapts to peripheral damage and regeneration/healing, making the recovery process complex. Our team is dedicated to finding ways to improve this regeneration and to better understand how the brain adapts during recovery. In the long-term, our goal is to develop methods that enable fully integrated and functional healing, helping to advance regenerative medicine and rehabilitative therapies for better patient outcomes. In the short-term, we're working to establish a basic understanding of the relationship between regenerated peripheral tissue and the brain, and inspiring the next generation of scientific thinkers.
             </p>
             <div class="flex flex-wrap gap-4 justify-center mb-8">
                 <button class="btn-primary text-blue-600 underline" onclick="showSection('joinus')">Join the Lab</button>
@@ -246,7 +251,7 @@
             <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4 flex flex-col space-y-4">
                 <li class="mb-4"><strong class="text-xl font-medium">Modelling cutaneous sensory nerve regeneration:</strong> Mouse whisker pads are highly sensitive, much like human fingertips. Spiny mice are known for their ability to heal skin without scarring. We combined these two bits of knowledge and discovered that the highly sensitive whisker follicles regrow with 75% of their innervation after removal and nerve transection. <a href="https://doi.org/10.1038/s41536-025-00415-0" target="_blank" class="text-blue-600 underline">Link to publication</a></li></li>
                 <li class="mb-4"><strong class="text-xl font-medium">Age is linked to regenerative rate and fidelity in spiny mice:</strong> There's large variability in the rate and fidelity of spiny mouse ear tissue regeneration in the literature. We showed this can be attributed to age because 3-4mos regenerated faster and with better quality than 6-9mos. Such signficant variation within the first year of life suggests a link to pubertal hormones. <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="text-blue-600 underline">Link to publication</a></li>
-                <li class="mb-4"><strong class="text-xl font-medium">Established framework for Behavior-Regeneration interplay:</strong> Co-opting frameworks from developmental psychobiology, we derived new frameworks for regenerative biology: probabilistic regenesis and regenerative history. Probabilistic regenesis argues that sensorimotor behaviors in three-dimensional space have an equal role as genes and cells in regeneration. Regenerative history provides an opportunity to determine factors that induce, facilitate, and maintain the recovery of function after injury. <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="text-blue-600 underline">Link to publication</a></li>
+                <li class="mb-4"><strong class="text-xl font-medium">Established framework for Behavior-Regeneration interplay:</strong> Co-opting frameworks from developmental psychobiology, we derived new frameworks for regenerative biology: probabilistic regenesis and regenerative history. Probabilistic regenesis argues that sensorimotor behaviors in three-dimensional space have an equal role as genes and cells in regeneration. Regenerative history provides an opportunity to determine factors that induce, facilitate, and maintain the recovery of function after injury. <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="hover:underline">Link to publication</a></li>
             </ul>
             </div>
         </section>
@@ -255,7 +260,7 @@
             <h2 class="text-3xl font-semibold text-gray-900 mb-6">Our Team</h2>
             <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <div class="flex-shrink-0">
-                    <img src="images/varholick-profile.JPG" onerror="this.onerror=null;this.src='https://placehold.co/200x200/cbd5e1/475569?text=Dr.+Varholick';" alt="Dr. Justin Varholick" class="rounded-full w-48 h-48 object-cover border-4 border-[#ffc629] shadow-md">
+                    <img src="images/varholick-profile.JPG" onerror="this.onerror=null;this.src='https://placehold.co/200x200/cbd5e1/475569?text=Dr.+Varholick';" alt="Dr. Justin Varholick" class="rounded-full w-48 h-48 object-cover border-4 border-[#3900f5] shadow-md">
                 </div>
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 mb-2">Justin Varholick, PhD</h3>
@@ -435,7 +440,7 @@
             <div class="space-y-6">
                 <div class="bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
                     <p class="text-lg font-medium text-gray-800 mb-1">🎉 Fall 2025</p>
-                    <p class="text-gray-700">REPAIR Lab officially opens at Kennesaw State!</p>
+                    <p class="text-gray-700">The REPAIR Lab officially opens at Kennesaw State!</p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
                     <p class="text-lg font-medium text-gray-800 mb-1">📄 Spiny mouse whisker regeneration paper published!</p>
@@ -497,7 +502,7 @@
 
     <footer class="bg-gray-900 text-white py-6 mt-8 shadow-inner">
         <div class="container text-center text-gray-300">
-            <p>&copy; 2025 REPAIR Lab @ KSU. All rights reserved.</p>
+            <p>&copy; 2025 The REPAIR Lab @ KSU. All rights reserved.</p>
             <p class="mt-2">Built with ❤️, AI, and science.</p>
         </div>
     </footer>
