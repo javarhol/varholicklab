@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Varholick Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        section[id] {
+            scroll-margin-top: 4rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:bg-gray-100 transition-colors flex items-center gap-2">
+                <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-16 w-16 mr-4 object-contain">
+                <span>The Varholick Lab</span>
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">About</a></li>
+                <li><a href="index.html#research" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Research</a></li>
+                <li><a href="index.html#publications" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Publications</a></li>
+                <li><a href="index.html#team" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Team</a></li>
+                <li><a href="index.html#news" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">News</a></li>
+                <li><a href="index.html#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="index.html#about" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="index.html#research" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Research</a>
+            <a href="index.html#publications" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Publications</a>
+            <a href="index.html#team" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Team</a>
+            <a href="index.html#news" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">News</a>
+            <a href="index.html#contact" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20 flex flex-col min-h-screen">
+        
+        <section id="publications-full" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 md:px-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-2">All Publications</h2>
+                <h4 class="text-xl font-medium text-center text-gray-900 mb-12">*denotes students supervised by Dr. Varholick</h4>
+                
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-8 border-b-2 pb-2">Peer-Reviewed Articles</h3>
+                    <h3 class="text-2xl font-semibod text-gray-800 mb-2 pb-2">Tissue Regeneration</h3>
+                    <div class="space-y-8">
+                      <!-- -->
+                        <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                                  <div class="flex-shrink-0 w-32 md:w-48">
+                                      <img src="pub_thumbnails/whisker2025.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                                  </div>
+                                  <div>
+                                      <h4 class="text-xl font-semibold text-gray-800 mb-2">Spiny mice (<em class="italic">Acomys</em>) regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation.</h4>
+                                      <p class="text-gray-600 mb-2">Varholick, J.A., *Kondapaneni, R., Maden, M. (2025). <em class="italic">npj Regenerative Medicine, 10:28</em></p>
+                                      <p class="text-sm text-gray-500 mb-3">
+                                          This is the first study to demonstrate that spiny mice can regenerate their whisker follicles and the associated structures after removal. Starting a new model system for studying cutaneous nerve regeneration.
+                                      </p>
+                                      <a href="pdfs/Varholick et al. 2025 - whisker regen.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1038/s41536-025-00415-0" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                                  </div>
+                              </div>
+                      <!-- -->
+                        <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                                  <div class="flex-shrink-0 w-32 md:w-48">
+                                      <img src="pub_thumbnails/theory2025.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                                  </div>
+                                  <div>
+                                      <h4 class="text-xl font-semibold text-gray-800 mb-2">Integrating regenerative biology with developmental psychobiology to understand behavioral recovery.</h4>
+                                      <p class="text-gray-600 mb-2">Varholick, J.A. (2025). <em class="italic">Developmental Dynamics</em> Early View</p>
+                                      <p class="text-sm text-gray-500 mb-3">
+                                          This is a theory paper establishing the intimate connection of behavior and neuroplasticity with tissue regeneration.
+                                      </p>
+                                      <a href="pdfs/Varholick 2025.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1002/dvdy.70021" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                                  </div>
+                              </div>
+                      <!-- -->
+                        <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                                  <div class="flex-shrink-0 w-32 md:w-48">
+                                      <img src="pub_thumbnails/stroke.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                                  </div>
+                                  <div>
+                                      <h4 class="text-xl font-semibold text-gray-800 mb-2">Stroke-induced neuroplasticity in the spiny mouse, <em class="italic">Acomys cahirinus</em>.</h4>
+                                      <p class="text-gray-600 mb-2">*Kidd, B.M., Varholick, J.A., *Tuyn, D.M., Kamat, P.K., Simon, Z.D., Liu, L., Meckler, M.P., Pompilus, M., Bubenik, J.L., Davenport, M.L., Carter, H.A., Grudny, M.M., Barbazuk, W.B., Doré, S., Febo, M., Candelario-Jalil, E., Maden, M., Swanson, M.S. (2024). <em class="italic">npj Regenerative Medicine</em> 9, 41.</p>
+                                      <p class="text-sm text-gray-500 mb-3">
+                                          After a severe stroke, spiny mice couldn't regenerate their brain, but they fully recovered behaviors within 48 hours. We collaborated on behavioral ethograms and assisted with MRI scans for this project.
+                                      </p>
+                                      <a href="pdfs/Kidd et al. 2024 - stroke spiny.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1038/s41536-024-00386-8" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                                  </div>
+                              </div>
+                    </div>
+                    <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/earquality.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Older 6-9-month-old spiny mice (<em class="italic">Acomys cahirinus</em>) have delayed and spatially heterogeneous ear wound regeneration.</h4>
+                                  <p class="text-gray-600 mb-2">Varholick, J.A., *Thermolice, J., *Godinez, G., *Dos Santos, V., *Kondapaneni, R., Maden, M. (2024). <em class="italic">Biology Open</em>, 13 (10): bio060565.</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      Some previous studies showed spiny mice regenrate slower in old age, here we found that regeneration speed quickly decreases within the first year of life, associated with a reduction in regeneration quality. 
+                                  </p>
+                                  <a href="pdfs/Varholick et al. 2024.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1242/bio.060565" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link,</a>    <a href="https://journals.biologists.com/bio/article/13/10/bio061731/362309/First-person-Justin-Varholick" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">First Author Interview</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/bitewound.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Bite wounds and dominance structures in male and female African spiny mice (<em class="italic">Acomys cahirinus</em>): Implications for animal welfare and the generalizability of results.</h4>
+                                  <p class="text-gray-600 mb-2">Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Maden, M. (2023). <em class="italic">Animals</em>, 14 (1), 64.</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      Weak skin and frequent fighting can lead to worrisome bite wounds in spiny mice. We determined that most animals will have a bite wound in their lifetime despite having stable dominance structures.
+                                  </p>
+                                  <a href="pdfs/Varholick et al. 2023 - bite wounds dominance acomys.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.3390/ani14010064" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/gairereview.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Spiny Mouse (<em class="italic">Acomys</em>): As an emerging research organism for regenerative medicine with applications beyond the skin.</h4>
+                                  <p class="text-gray-600 mb-2">Gaire, J., Varholick, J.A., Rana, S., Sunshine, M.D., Ahmad, A.S., Chan, K.M., Allen, K., Doré, S., Fuller, D.D., Maden, M., Simmons, C. (2021). <em class="italic">npj Regenerative Medicine</em>, 6(1), 1-6.</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      An overview of regeneration studies in spiny mice to acquaint translational researchers to this model organism.
+                                  </p>
+                                  <a href="pdfs/Gaire et al.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1038/s41536-020-00111-1" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/madenvarholickrvw.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Model systems for regeneration: the spiny mouse, <em class="italic">Acomys cahirinus</em>.</h4>
+                                  <p class="text-gray-600 mb-2">Maden, M., Varholick, J.A. (2020). <em class="italic">Development</em>, 147(dev167718).</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      Here, we provide a primer for regenerative biologists to understand and begin studying regeneration in spiny mice.
+                                  </p>
+                                  <a href="pdfs/MadenVarholick2020.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1242/dev.167718" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+
+                    <h3 class="text-2xl font-semibod text-gray-800 mb-2 pb-2 p-6">Phenotypic variation in laboratory mice</h3>
+                    <div class="space-y-8">
+                      <!-- -->
+                        <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                                  <div class="flex-shrink-0 w-32 md:w-48">
+                                      <img src="pub_thumbnails/tmaze.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                                  </div>
+                                  <div>
+                                      <h4 class="text-xl font-semibold text-gray-800 mb-2">A bespoke water T-maze apparatus and protocol: An optimized, reliable, and repeatable method for screening learning, memory, and executive functioning in laboratory mice.</h4>
+                                      <p class="text-gray-600 mb-2">Bailoo, J.D., Bergeson, S.E., Ponomarev, I., Wilms, J.O., Kisby, B.R., Cornwall, G.A., MacDonald, C.C., Lawrence, J.J., Ganapathy, V., Sivaprakasam, S., Panthagani, P., Trasti, S., Varholick, J.A., Findlater, M., Deonarine, A. (2024). <em class="italic">Frontiers in Behavioral Neuroscience, Learning and Memory</em>, 18.</p>
+                                      <p class="text-sm text-gray-500 mb-3">
+                                          This work introduces a novel water T-maze that is less stressful, more efficient, and more reliable compared to the traditional Morris water maze.
+                                      </p>
+                                      <a href="pdfs/Bailoo et al. 2024.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.3389/fnbeh.2024.1492327" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                                  </div>
+                              </div>
+                        
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/sysrvw.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">A systematic review and meta-analysis of the relationship between social dominance status and common behavioral phenotypes in male laboratory mice.</h4>
+                                  <p class="text-gray-600 mb-2">Varholick, J.A., Bailoo, J.D., *Jenkins, A., Voelkl, B., Würbel, H. (2021). <em class="italic">Frontiers in Behavioral Neuroscience, Learning and Memory</em>, 14(624036).</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      It is well known that lab mice establish dominance structures in their home-cage, this systematic review determined that methods of measuring dominance and stability are too heterogenous to conclude whether dominance is impacting common behavioral measures in neuroscience.
+                                  </p>
+                                  <a href="pdfs/Varholick et al. 2020 - SR dominance.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.3389/fnbeh.2020.624036" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/weaninghousing.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Effects of weaning age and housing conditions on phenotypic differences in mice.</h4>
+                                  <p class="text-gray-600 mb-2">Bailoo, J.D., Voelkl, B., Varholick, J.A., Novak, J., Eimear, M., Russo, M., Palme, R., Würbel, H. (2020). <em class="italic">Scientific Reports</em>, 10(11684).</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      The time of weaning and the type of housing (grouped vs single) varies across experiments. However, in the wild, mice naturally wean themselves. Unexpectedly, altering weaning time and housing type had minimal effects on a broad range of phenotypic measures and likely has little effect on reproducibility in mouse experiments.
+                                  </p>
+                                  <a href="pdfs/Bailoo et al. 2020.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1038/s41598-020-68549-3" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/dom2study.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Social dominance hierarchy type and rank contribute to phenotypic variation within cages of laboratory mice.</h4>
+                                  <p class="text-gray-600 mb-2">Varholick, J.A., *Pontiggia, A., Murphy, E., *Daniele, V., Palme, R., Voelkl, B., Würbel, H., Bailoo, J.D. (2019). <em class="italic">Scientific Reports</em>, 9(13650).</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      The stability of dominance relationships and the position within, consistently accounts for random variation on a range of phenotypic measures.
+                                  </p>
+                                  <a href="pdfs/Varholick et al. 2019.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1038/s41598-019-49612-0" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/enrichment.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Effects of cage enrichment on behavior, welfare and outcome variability in female mice.</h4>
+                                  <p class="text-gray-600 mb-2">Bailoo, J.D., Murphy, E., Boada-Sana, M., Varholick, J.A., Hintze, S., Baussiere, C., Hahn, K.C., Gopfert, C., Palme, R., Voelkl, B., Würbel, H. (2018). <em class="italic">Frontiers in Behavioral Neuroscience</em>, 12, p 232.</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      Environmental enrichment is thought to increase phenotypic variation within studies, here we provide evidence that variability in enriched animals was similar to those housed in barren conditions. Moreover, enriched conditions reduced stereotypic behavior.
+                                  </p>
+                                  <a href="pdfs/Bailoo et al. 2018 - cage enrichment females.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.3389/fnbeh.2018.00232" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/dom1study.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Phenotypic variability between social dominance ranks in laboratory mice.</h4>
+                                  <p class="text-gray-600 mb-2">Varholick, J.A., Bailoo, J.D., Palme, R., Würbel, H. (2018). <em class="italic">Scientific Reports</em>, 8(6593).</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      While it is generally thought that mice have stable dominance relationships in their home-cage, we found that dominance was more dynamic and has little effect on a range of phenotypic measures.
+                                  </p>
+                                  <a href="pdfs/Varholick et al. 2018.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1038/s41598-018-24624-4" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/space.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Evaluation of space allowance on measures of animal welfare and outcome variation in laboratory mice.</h4>
+                                  <p class="text-gray-600 mb-2">Bailoo, J.D., Murphy, E., Varholick, J.A., Novak, J., Palme, R., Voelkl, B., Würbel, H. (2018). <em class="italic">Scientific Reports</em>, 8(713).</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                      Despite discussion of larger cage size and variability in group size affecting results, we found no such effects. Thus, studies should consider group housing mice in larger cages. Albeit large groups can become problematic for fighting in males.
+                                  </p>
+                                  <a href="pdfs/Bailoo et al. 2018 space allowance.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1038/s41598-017-18493-6" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                        <!-- -->
+                          <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="flex-shrink-0 w-32 md:w-48">
+                                  <img src="pub_thumbnails/startle.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                              </div>
+                              <div>
+                                  <h4 class="text-xl font-semibold text-gray-800 mb-2">Maternal separation followed by isolation-housing differentially affects prepulse inhibition of the acoustic startle response in C57BL/6 mice.</h4>
+                                  <p class="text-gray-600 mb-2">Bailoo, J. D., Varholick, J. A., Garza, X. J., Jordan, R. L., & Hintze, S. (2016). <em class="italic">Developmental Psychobiology</em>, 58(8), 937-944.</p>
+                                  <p class="text-sm text-gray-500 mb-3">
+                                  </p>
+                                  <a href="pdfs/Bailoo et al. 2016.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1002/dev.21422" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                              </div>
+                          </div>
+                    </div>
+
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold text-gray-800 mb-8 border-b-2 pb-2 p-6">Preprints and Book Chapters</h3>
+                    <div class="space-y-8">
+                        <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                                  <div class="flex-shrink-0 w-32 md:w-48">
+                                      <img src="pub_thumbnails/rpbpreprint.png" alt="Preprint Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                                  </div>
+                                  <div>
+                                      <h4 class="text-xl font-semibold text-gray-800 mb-2">Integrating regenerative biology with developmental psychobiology to understand behavioral recovery.</h4>
+                                      <p class="text-gray-600 mb-2">Varholick, J.A. (2024). Preprint on OSF Preprints.</p>
+                                      <p class="text-sm text-gray-500 mb-3">
+                                          This is an earlier and extended version of the theory paper published in Developmental Dynamics in 2025.
+                                      </p>
+                                      <a href="pdfs/RB and DPB_v5.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.31219/osf.io/h4rcw" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                                  </div>
+                              </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                                  <div class="flex-shrink-0 w-32 md:w-48">
+                                      <img src="pub_thumbnails/acodombiorxiv.png" alt="Preprint Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                                  </div>
+                                  <div>
+                                      <h4 class="text-xl font-semibold text-gray-800 mb-2">Social dominance status and social stability in spiny mice (<em class="italic">Acomys cahirinus</em>) and its relation to ear-hole regeneration and glucocorticoids.</h4>
+                                      <p class="text-gray-600 mb-2">Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Romeo, R.D., Corll, J., Barbazuk, W., Maden, M. (2022).  Preprint on Biorxiv.</p>
+                                      <p class="text-sm text-gray-500 mb-3">
+                                          This is an earlier version of our dominance research on spiny mice that wasn't sufficient for publication due to constraints with low numbers of animals. It serves as a preliminary data for follow-up studies.
+                                      </p>
+                                      <a href="pdfs/Varholick et al. 2022 - dominance ear biorxiv.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1101/2022.09.13.507818" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                                  </div>
+                              </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <p class="mb-4 md:mb-0">&copy; 2025 Varholick Lab. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

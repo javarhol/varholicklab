@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Varholick Lab</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        section[id] {
+            scroll-margin-top: 4rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:bg-gray-100 transition-colors flex items-center gap-2">
+                <!-- Placeholder for Lab Logo -->
+                <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-16 w-16 mr-4 object-contain">
+                <span>The Varholick Lab</span>
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">About</a></li>
+                <li><a href="index.html#research" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Research</a></li>
+                <li><a href="index.html#publications" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Publications</a></li>
+                <li><a href="index.html#team" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Team</a></li>
+                <li><a href="index.html#news" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">News</a></li>
+                <li><a href="index.html#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="index.html#about" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="index.html#research" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Research</a>
+            <a href="index.html#publications" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Publications</a>
+            <a href="index.html#team" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Team</a>
+            <a href="index.html#news" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">News</a>
+            <a href="index.html#contact" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20 flex flex-col min-h-screen">
+        <!-- News/Updates Section -->
+        <section id="news-full" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 md:px-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Latest News & Updates</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- News Item 1 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <p class="text-sm text-gray-500 mb-2">Fall 2025</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">The Varholick Lab officially opens at Kennesaw State University</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Stop by SC 360 and say hello. Hopefully we'll start antibody staining soon, and have animals next semester.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More &rarr;</a>
+                    </div>
+                    <!-- News Item 2 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <p class="text-sm text-gray-500 mb-2">August 2025</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Whisker research presented at ISRB 2025</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Prof. Malcolm Maden from the University of Florida presented our research on cutaneous nerve and whisker follicle regeneration at ISRB 2025. 
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More &rarr;</a>
+                    </div>
+                    <!-- News Item 3 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <p class="text-sm text-gray-500 mb-2">June 2025</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">New Publication in npj Regenerative Medicine</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Here, Dr. Varholick and his team at the University of Florida, showed that Spiny Mice can regenerate their whisker follicles after they are removed from the face alongside regeneration of the muscles and cutaneous nerves with sheathing and all. 
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More &rarr;</a>
+                    </div>
+                    <!-- Add more news items as needed -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <p class="mb-4 md:mb-0">&copy; 2025 Varholick Lab. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

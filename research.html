@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varholick Lab - Research</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        section[id] {
+            scroll-margin-top: 4rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">The Varholick Lab</a>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html#about" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">About</a>
+                <a href="index.html#research" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">Research</a>
+                <a href="index.html#team" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">Team</a>
+                <a href="index.html#publications" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">Publications</a>
+                <a href="index.html#contact" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Sidebar -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+        <div class="p-6">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <nav class="mt-8 space-y-4 flex flex-col">
+                <a href="index.html#about" class="text-gray-800 hover:text-gray-600">About</a>
+                <a href="index.html#research" class="text-gray-800 hover:text-gray-600">Research</a>
+                <a href="index.html#team" class="text-gray-800 hover:text-gray-600">Team</a>
+                <a href="index.html#publications" class="text-gray-800 hover:text-gray-600">Publications</a>
+                <a href="index.html#contact" class="text-gray-800 hover:text-gray-600">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <main class="pt-24 pb-12">
+        <div class="container mx-auto px-6 md:px-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">Research</h1>
+
+            <!-- Background Section -->
+            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-12">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Our Research</h2>
+                <!-- Large image now placed here -->
+                <img src="images/researchoverview.png" alt="A large placeholder image representing the lab's overview." class="block mx-auto w-full max-w-xl h-auto rounded-xl shadow-md mb-8">
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    We are building evidence that tissue regeneration is an emergent property of the coaction between genetic, cellular, environmental, behavioral, neural signals etc. We place structural recovery and behavioral recovery at the center of our research, studying how genetic, cellular, environmental, behavioral, neural signals etc. impact structural and behavioral recovery. Our goal is to optimize healing and then unravel the biology underlying this healing.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    The diagram above represents the coactions and the emergence of regeneration. Solid lines represent coactions we are directly interested in, while dottled lines represent coactions that exist but are secondary interests. Circles can change in size as the process of regeneration occurs over time, represented by the horizontal arrow on the bottom. The numbers represent our three main projects that begin to tackle this complex and dynamic system.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Currently we focus on three main questions: 1) How can we optimize peripheral nerve healing? 2) What separates the behavior and neuroplasticity of highly regenerative animals from non-regenerative animals? and 3) What are the critical or sensitive periods for optimal tissue regeneration?
+                </p>
+            </section>
+
+            <!-- Research Section 1 -->
+            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-12">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Project 1: 👋 How can we optimize peripheral nerve healing?</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    This project investigates how we can optimize peripheral nerve regeneration. We are currently focused on cutaneous nerve regeneration in rodents using the whisker pad skin of Spiny Mice and cutaneous nerves in neonatal lab mice. The long-term goal is to guide peripheral nerves in humans to regenerate the neural connective tissues that insulate and support nerves. At the moment humans can only regenerate single myelinated axons rather than bundles of nerves.
+                </p>
+                <h3 class="text-2xl font-medium text-gray-700 mb-4">Relevant Publications</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>Varholick et al. (2025). "Spiny mice (<em class="italic">Acomys</em>) regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation." <em class="italic">npj Regenerative Medicine</em>, 10:28. <a href="pdfs/Varholick et al. 2025 - whisker regen.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1038/s41536-025-00415-0" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a></li>
+                </ul>
+            </section>
+
+            <!-- Research Section 2 -->
+            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-12">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Project 2: 🧠 The behavior and neuroplasticity of highly regenerative animals</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Highly regenerative animals like salamanders, zebrafish, spiny mice, etc. not only regenerate missing tissue, they also use the new tissue as if the injury never occured. Research in behavioral neuroscience shows that injuries lead to brain reorganization and that behavioral therapies like constraint induced movement therapy can improve recovery after limb loss, stroke, or cerebral palsy. Do highly regenerative animals use novel behaviors to optimize behavioral recovery? Do brain connections change after injury and then remap as the structure regenerates? These questions and many more remain unexplored, but could be essential for bringing successful regenerative therapies to the clinic.
+                </p>
+                <h3 class="text-2xl font-medium text-gray-700 mb-4">Relevant Publications</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>Varholick (2025). "Integrating regenerative biology with developmental psychobiology to understand behavioral recovery." <em class="italic">Developmental Dynamics</em> Early View. <a href="pdfs/Varholick 2025.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1002/dvdy.70021" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a></li>
+                    <li>Kidd et al. (2024). "Stroke-induced neuroplasticity in the spiny mouse, <em class="italic">Acomys cahirinus</em>." <em class="italic">npj Regenerative Medicine</em> 9, 41. <a href="pdfs/Kidd et al. 2024 - stroke spiny.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1038/s41536-024-00386-8" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a></li>
+                </ul>
+            </section>
+
+            <!-- Research Section 3 -->
+            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-12">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Project 3: 🕔 When is the sensitive period for tissue regeneration?</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Development has sensitive periods when critical events must occur for the next "step" of development. Regeneration is considered to be a window into development, reusing developmental programs -- it is essentially re-opening a critical period of development to restart the development of the injured tissue. If we can undestand when these sensitive periods occur during regeneration, we can optimize the quality of regeneration and ensure that abnormal development or an undesired outlier phenotype does not occur. 
+                </p>
+                <h3 class="text-2xl font-medium text-gray-700 mb-4">Relevant Publications</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>Varholick et al. (2024). "Older 6-9-month-old spiny mice (<em class="italic">Acomys cahirinus</em>) have delayed and spatially heterogeneous ear wound regeneration." <em class="italic">Biology Open</em>, 13 (10): bio060565. <a href="pdfs/Varholick et al. 2024.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1242/bio.060565" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link,</a>    <a href="https://journals.biologists.com/bio/article/13/10/bio061731/362309/First-person-Justin-Varholick" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">First Author Interview</a></li>
+                </ul>
+            </section>
+
+            <!-- "View All Publications" Button -->
+            <div class="flex justify-center mt-8">
+                <a href="publications.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    View All Publications
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8 px-6 md:px-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Varholick Lab. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

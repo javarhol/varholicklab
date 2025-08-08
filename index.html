@@ -1,640 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n    })(window,document,'script','dataLayer','GTM-558XS5BM');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The REPAIR lab</title>
+    <title>Varholick Lab</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom styles for the website */
         body {
             font-family: 'Inter', sans-serif;
-            /* Default light mode background and text colors */
-            background-color: #f8fafc; /* Light gray background */
-            color: #334155; /* Darker gray text */
-        }
-
-        /* Dark mode styles */
-        html.dark body {
-            background-color: #1a202c; /* Dark background */
-            color: #e2e8f0; /* Light text */
-        }
-
-        /* Ensure header background and text remain as specified */
-        .header-bg-custom { /* Custom class for header background color */
-            background-color: #1a202c!important; /* New header background color */
-        }
-
-        .text-black { /* Header text color */
-            color: #FFFFFF !important; /* Keep it white */
-        }
-
-        html.dark .bg-gray-800 { /* Nav background */
-            background-color: #1a202c; /* Darker nav */
-        }
-
-        html.dark .text-white { /* Nav text */
-            color: #e2e8f0; /* Light text */
-        }
-
-        html.dark .section-content { /* Section background */
-            background-color: #2d3748; /* Darker section */
-        }
-
-        html.dark .text-gray-900 { /* Section headings */
-            color: #e2e8f0; /* Light text */
-        }
-
-        html.dark .text-gray-700 { /* Section paragraphs */
-            color: #cbd5e1; /* Lighter gray text */
-        }
-
-        html.dark .text-gray-600 { /* Section smaller text */
-            color: #a0aec0;
-        }
-
-        html.dark .bg-blue-50 { /* Research theme boxes */
-            background-color: #4a5568; /* Darker blue */
-            color: #e2e8f0;
-        }
-
-        html.dark .bg-gray-50 { /* Publication boxes */
-            background-color: #4a5568; /* Darker gray */
-            color: #e2e8f0;
-        }
-
-        html.dark .border-gray-200 { /* Publication box border */
-            border-color: #4a5568;
-        }
-
-        html.dark .text-gray-800 { /* Publication titles */
-            color: #e2e8f0;
-        }
-
-        html.dark .text-blue-600 { /* Links */
-            color: #90cdf4; /* Lighter blue for dark mode links */
-        }
-
-        html.dark .hover:text-blue-800:hover { /* Link hover */
-            color: #63b3ed;
-        }
-
-        html.dark .bg-gray-900 { /* Footer background */
-            background-color: #1a202c; /* Darker footer */
-        }
-
-        html.dark .text-gray-300 { /* Footer text */
-            color: #a0aec0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
+            color: #333;
         }
         .nav-link {
-            cursor: pointer;
-            /* Increased padding for larger "borders" around navigation links */
-            @apply px-6 py-3 rounded-md transition-colors duration-200 hover:bg-blue-600 hover:text-white;
+            position: relative;
+            padding-bottom: 4px;
         }
-        .active-link {
-            @apply bg-blue-700 text-white;
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease-in-out;
         }
-        /* Dark mode specific for active link */
-        html.dark .active-link {
-            @apply bg-blue-500 text-white;
+        .nav-link:hover::after {
+            width: 100%;
         }
-
-        .section-content {
-            display: none; /* Hidden by default */
-        }
-        .section-content.active {
-            display: block; /* Shown when active */
-        }
-        /* Custom button styling */
-        .btn-primary {
-            @apply bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300;
-        }
-        .btn-secondary {
-            @apply bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-gray-300 transition-colors duration-300;
-        }
-        /* Loading spinner styles - no longer needed but kept for completeness */
-        .loader {
-            border: 4px solid #f3f3f3; /* Light grey */
-            border-top: 4px solid #3498db; /* Blue */
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-            display: none; /* Hidden by default */
-            margin-right: 8px; /* Space between spinner and text */
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        /* Summarizer container - no longer needed but kept for completeness */
-        .summarizer-container {
-            display: none; /* Hidden by default */
-        }
-
-        /* Dark mode toggle button styles */
-        #darkModeToggle {
-            @apply p-2 rounded-full transition-colors duration-200;
-            background-color: #1a202c!important; /* Match new header background */
-            color: #ffffff !important; /* White icon */
-        }
-        #darkModeToggle:hover {
-            background-color: #1a202c !important; /* Keep the same blue on hover */
+        section[id] {
+            scroll-margin-top: 4rem;
         }
     </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KTDB5JTCL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0KTDB5JTCL');
-</script>
-<body class="antialiased">
-    <header class="header-bg-custom py-6 shadow-lg relative overflow-hidden">
-        <div class="container flex flex-col md:flex-row justify-between items-center relative z-20">
-            <div class="flex items-center mb-4 md:mb-0">
-                <img src="images/repairlablogo.png" alt="REPAIR Lab Logo"
-                 class="h-16 w-16 mr-4 object-contain"
-                 onerror="this.onerror=null;this.src='https://placehold.co/200x200/cbd5e1/475569?text=Logo+Placeholder';">
-                <h1 class="text-4xl font-bold text-white">The REPAIR Lab</h1>
-            </div>
-            <p class="text-lg text-white text-center md:text-right">
-            REstoring nerve Pathways through Adaptive Integration and Regeneration.
-            </p>
+<body class="bg-gray-50">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:bg-gray-100 transition-colors flex items-center gap-2">
+                <!-- Placeholder for Lab Logo -->
+                <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-16 w-16 mr-4 object-contain">
+                <span>The Varholick Lab</span>
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">About</a></li>
+                <li><a href="#research" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Research</a></li>
+                <li><a href="#publications" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Publications</a></li>
+                <li><a href="#team" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Team</a></li>
+                <li><a href="#news" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">News</a></li>
+                <li><a href="#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="#about" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="#research" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Research</a>
+            <a href="#publications" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Publications</a>
+            <a href="#team" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Team</a>
+            <a href="#news" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">News</a>
+            <a href="#contact" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
         </div>
-        <button id="darkModeToggle" aria-label="Toggle dark mode" class="absolute top-4 right-4 z-30">
-            <svg id="moonIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-            </svg>
-            <svg id="sunIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.325-4.757l-.707-.707M6.343 17.657l-.707.707M16.95 18.364l.707.707M7.05 6.343l-.707-.707M12 18a6 6 0 100-12 6 6 0 000 12z"></path>
-            </svg>
-        </button>
     </header>
 
-    <nav class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
-        <div class="container flex flex-wrap justify-center md:justify-start py-4 space-x-8">
-            <a class="nav-link active-link" data-section="home">Home</a>
-            <a class="nav-link" data-section="research">Research</a>
-            <a class="nav-link" data-section="team">Team</a>
-            <a class="nav-link" data-section="publications">Publications</a>
-            <a class="nav-link" data-section="news">News</a>
-            <a class="nav-link" data-section="joinus">Join Us!</a>
-            <a class="nav-link" data-section="data-resources">Resources</a>
-            <a class="nav-link" data-section="contact">Contact</a>
-        </div>
-    </nav>
+    <main class="pt-20 flex flex-col min-h-screen">
 
-    <main class="container py-8">
-        <section id="home" class="section-content active bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Welcome to the REPAIR Lab!</h2>
-            <p class="text-lg leading-relaxed mb-6">
-                We study how behaviors and neuroplasticity interact with tissue regeneration and healing. Our main focus is to <strong>REstore</strong> damaged nerve <strong>Pathways</strong> through <strong>Adaptive Integration</strong> and tissue <strong>Regeneration</strong>.</p>
-            <p class="text-lg leading-relaxed mb-6">
-                Our bodies are closely integrated with our brains via the peripheral nervous system. Thus, accidents, surgery, or disease to our skin and organs can damage communication lines to the brain. While these lines have some ability to heal through regeneration and adapt via neuroplasticity, the process isn't perfect.</p>
-            <p class="text-lg leading-relaxed mb-6"> 
-                Our team is dedicated to finding ways to improve regeneration and to better understand how the brain adapts during recovery. In the long-term, our goal is to develop methods that enable fully integrated and functional healing, helping to advance regenerative medicine and rehabilitative therapies for better patient outcomes. In the short-term, we're working to establish a basic understanding of the relationship between regenerated peripheral tissue and the brain, and inspiring the next generation of scientific thinkers.
-            </p>
-            <div class="flex flex-wrap gap-4 justify-center mb-8">
-                <button class="btn-primary text-blue-600 underline" onclick="showSection('joinus')">Join the Lab</button>
-                <button class="btn-primary text-blue-600 underline" onclick="showSection('research')">Explore Our Research</button>
-                <button class="btn-primary text-blue-600 underline" onclick="showSection('publications')">Recent Publications</button>
+        <!-- Hero Section -->
+        <section id="home" class="relative bg-gradient-to-r from-blue-600 to-purple-300 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
+            <div class="container mx-auto text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 rounded-md p-2">Advancing Research in Healing</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto rounded-md p-2">Exploring the frontiers of tissue regeneration to make meaningful discoveries and improve life after injury.</p>
+                <div class="space-x-4">
+                    <a href="#research" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Our Research</a>
+                    <a href="team.html#joinus" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Join Us!</a>
+                </div>
             </div>
-            <div class="w-full h-64 md:h-96 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center text-gray-500 text-xl font-medium">
-                <img src="images/banner.JPG" onerror="this.onerror=null;this.src='https://placehold.co/1200x400/cbd5e1/475569?text=Lab+Banner+Image';" alt="Lab Banner Image" class="w-full h-full object-cover">
-            </div>
-            <div class="mt-2 text-sm text-gray-600 text-center">
-                <p>Tissue regeneration is an emergent property of a dynamical system, coacting with our biology and environment.</p>
-                 <a href="https://x.com/just_varholick/status/1915036002579591457" class="text-blue-600 hover:text-blue-800 underline">Read more from a recent publication</a>
-            </div>
+            <!-- Placeholder for Hero Image/Video - Consider a subtle background pattern or animation -->
+            <!-- <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('https://placehold.co/1920x1080/000000/FFFFFF?text=Lab+Hero+Image');"></div> -->
         </section>
 
-        <section id="research" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Research Themes</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-medium text-gray-800 mb-2">🧠 Behavior-Regeneration Interplay</h3>
-                    <p class="text-gray-700">How injury affects behavior, and how behavior shapes recovery.</p>
-                </div>
-                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-medium text-gray-800 mb-2">📈 Regenerative History of Behavior</h3>
-                    <p class="text-700">Tracing the entire behavioral profile post-injury to define recovery.</p>
-                </div>
-                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
-                    <h3 class="text-xl font-medium text-gray-800 mb-2">⏳ Critical Periods</h3>
-                    <p class="text-gray-700">When is the system most plastic during healing, and how can we leverage that?</p>
-                </div>
-            </div>
-
-            <h3 class="text-2xl font-medium text-gray-700 mb-4">Models we use</h3>
-            <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4">
-                <li>Neonatal & adult <em class="font-semibold">Mus musculus</em></li>
-                <li>Spiny mouse (<em class="font-semibold">Acomys cahirinus</em>)</li>
-                <li>Future: Bioengineered human skin and salamanders via collaborations</li>
-            </ul>
-
-            <h3 class="text-2xl font-medium text-gray-700 mb-4">Summary of Findings</h3>
-            <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4 flex flex-col space-y-4">
-                <li class="mb-4"><strong class="text-xl font-medium">Modelling cutaneous sensory nerve regeneration:</strong> Mouse whisker pads are highly sensitive, much like human fingertips. Spiny mice are known for their ability to heal skin without scarring. We combined these two bits of knowledge and discovered that the highly sensitive whisker follicles regrow with 75% of their innervation after removal and nerve transection. <a href="https://doi.org/10.1038/s41536-025-00415-0" target="_blank" class="text-blue-600 underline">Link to publication</a></li></li>
-                <li class="mb-4"><strong class="text-xl font-medium">Age is linked to regenerative rate and fidelity in spiny mice:</strong> There's large variability in the rate and fidelity of spiny mouse ear tissue regeneration in the literature. We showed this can be attributed to age because 3-4mos regenerated faster and with better quality than 6-9mos. Such signficant variation within the first year of life suggests a link to pubertal hormones. <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="text-blue-600 underline">Link to publication</a></li>
-                <li class="mb-4"><strong class="text-xl font-medium">Established framework for Behavior-Regeneration interplay:</strong> Co-opting frameworks from developmental psychobiology, we derived new frameworks for regenerative biology: probabilistic regenesis and regenerative history. Probabilistic regenesis argues that sensorimotor behaviors in three-dimensional space have an equal role as genes and cells in regeneration. Regenerative history provides an opportunity to determine factors that induce, facilitate, and maintain the recovery of function after injury. <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="text-blue-600 underline">Link to publication</a></li>
-            </ul>
-            </div>
-        </section>
-
-        <section id="team" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Our Team</h2>
-            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-                <div class="flex-shrink-0">
-                    <img src="images/varholick-profile.JPG" onerror="this.onerror=null;this.src='https://placehold.co/200x200/cbd5e1/475569?text=Dr.+Varholick';" alt="Dr. Justin Varholick" class="rounded-full w-48 h-48 object-cover border-4 border-[#3900f5] shadow-md">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Justin Varholick, PhD</h3>
-                    <p class="text-xl font-medium text-gray-600 mb-4">Principal Investigator</p>
-                    <p class="text-lg leading-relaxed mb-6"> Dr. Varholick (Dr. V) holds a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern in Switzerland and an M.A. in Biopsychology from UNC Greensboro. He trained in regenerative biology during his postdoc under Prof. Malcolm Maden at the University of Florida, and was supported by an Early Postdoctoral grant from the Swiss National Science Foundation and an NIH Training Grant in Regenerative Medicine. His work has contributed to understanding the phenotypic variability in tissue regeneration and establishing behavioral frameworks for studying tissue regeneration in animal models.</p>
-                </div>
-            </div>
-            
-            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mt-8">
-                <div class="flex-shrink-0">
-                    <img src="https://placehold.co/200x200/cbd5e1/475569?text=Your+picture+here!" alt="Placeholder image" class="rounded-full w-48 h-48 object-cover border-4 border-[#3900f5] shadow-md">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Your Name Here</h3>
-                    <p class="text-xl font-medium text-gray-600 mb-4">Graduate Researcher</p>
-                    <p class="text-lg leading-relaxed mb-6"> Driven by a passion for understanding the body's ability to heal, I have a deep curiosity about how the brain responds to injury and healing. My current project focuses on understanding skin regeneration in neonatal mice, and whether their cutaneous nerves regain endoneurial sheathing and sensation after injury.
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">About The Varholick Lab</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Severe injuries and surgeries often damage peripheral nerves, disconnecting the brain from the body. While peripheral nerves can heal and regenerate, the quality of the healing is poor. This leads to pain, numbness, motor problems, organ dysfunction, etc. 
                     </p>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mt-8">
-                <div class="flex-shrink-0">
-                    <img src="https://placehold.co/200x200/cbd5e1/475569?text=Your+picture+here!" alt="Placeholder image" class="rounded-full w-48 h-48 object-cover border-4 border-[#3900f5] shadow-md">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Your Name Here</h3>
-                    <p class="text-xl font-medium text-gray-600 mb-4">Undergraduate Researcher</p>
-                    <p class="text-lg leading-relaxed mb-6"> As a young scientist, I'm captivated by the complexity of the nervous system and the incredible potential for regeneration. In the REPAIR lab, I'm learning to transform my classroom knowledge into hands-on discovery and contribute to human knowledge on regeneration. 
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our goal is to REPAIR: REstore nerve Pathways through Adaptive Integration and Regeneration. Essentailly, we aim to improve our understanding of healing and recovery. We are working towards building systems with optimal healing after injury using molecular, cellular, and behavioral therapies. We will then unravel these systems to translate them to humans.
                     </p>
+                    <a href="#team" class="inline-block mt-8 text-blue-600 hover:text-blue-800 font-semibold transition-colors">Meet Our Team &rarr;</a>
+                </div>
+                <div class="md:w-1/2">
+                    <!-- Placeholder for Lab Photo or Principal Investigator Photo -->
+                    <img src="images/regeneratedwhisker.jpg" alt="Varholick Lab" class="rounded-lg shadow-xl w-full h-auto object-cover">
                 </div>
             </div>
         </section>
 
-        <section id="publications" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Publications</h2><h4 class="text-xl font-medium text-gray-900 mb-2">*denotes students supervised by Dr. Varholick</h4>
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Peer-Reviewed Publications</h3>
-            <div class="space-y-6 mb-8">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., *Kondapaneni, R., Maden, M. (2025). Spiny mice (<em class="italic">Acomys</em>) regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation. <em class="italic">npj Regenerative Medicine</em></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1038/s41536-025-00415-0" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Varholick et al. 2025 - whisker regen.pdf" class="hover:underline">PDF</a>
+        <!-- Research Areas Section -->
+        <section id="research" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 md:px-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Research Areas</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Research Area 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">👋 How can we optimize peripheral nerve healing?</h3>
+                        <p class="text-gray-700 mb-4">
+                            Although humans can regenerate their peripheral nerves after injury, the quality of regeneration is poor. This leads to pain, numbness, poor motor control, poor organ functioning, etc. Highly regenerative animals, however, have optimal nerve regeneration targetting the affected organ, with good insulation for nerve conduction, and plenty of nerves for good signals. Our goal is to translate this optimal nerve regeneration into humans and other mammals to improve behavioral recovery as if the injury or damage never occured. 
+                        </p>
+                        <a href="research.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More &rarr;</a>
                     </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A. (2025). Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">Developmental Dynamics</em> Early View.</p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1002/dvdy.70021" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Varholick 2025.pdf" target="_blank" class="hover:underline">PDF</a>
+                    <!-- Research Area 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">🧠 Understanding the behaviors and neuroplasticity of highly regenerative animals</h3>
+                        <p class="text-gray-700 mb-4">
+                            Highly regenerative animals don't just regrow the damaged tissue, they also use it as if it was never damaged. Behavior and neuroplasticity are central to this process of recovery, but little is known. We believe that the brains and behaviors of these animals hold a secret to full recovery that has yet to be discovered, and will fundamentally change our application of regenerative medicine in the clinic.
+                        </p>
+                        <a href="research.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More &rarr;</a>
                     </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">*Kidd, B.M., Varholick, J.A., Tuyn, D.M., Kamat, P.K., Simon, Z.D., Liu, L., Meckler, M.P., Pompilus, M., Bubenik, J.L., Davenport, M.L., Carter, H.A., Grudny, M.M., Barbazuk, W.B., Doré, S., Febo, M., Candelario-Jalil, E., Maden, M., Swanson, M.S. (2024). Stroke-induced neuroplasticity in the spiny mouse, <em class="italic">Acomys cahirinus</em>. <em class="italic">npj Regenerative Medicine</em> 9, 41. <a href="https://doi.org/10.1038/s41536-024-00386-8" target="_blank" class="hover:underline">doi: 10.1038/s41536-024-00386-8</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1038/s41536-024-00386-8" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Kidd et al. 2024 - stroke spiny.pdf" target="_blank" class="hover:underline">PDF</a>
+                    <!-- Research Area 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">🕔 When are the sensitive periods for tissue regeneration?</h3>
+                        <p class="text-gray-700 mb-4">
+                            It's well established that critical or sensitive periods exist within development, allowing development to continue towards the mean or stall towards an outlier phenotype. We are studying whether this also occurs during regeneration, determining when the system is most plastic during regeneration and how this can be leveraged to optimize healing and recovery.
+                        </p>
+                        <a href="research.html" class="text-blue-600 hover:text-blue-800 font-semibold">Learn More &rarr;</a>
                     </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Bailoo, J.D., Bergeson, S.E., Ponomarev, I., Wilms, J.O., Kisby, B.R., Cornwall, G.A., MacDonald, C.C., Lawrence, J.J., Ganapathy, V., Sivaprakasam, S., Panthagani, P., Trasti, S., Varholick, J.A., Findlater, M., Deonarine, A. (2024). A bespoke water T-maze apparatus and protocol: An optimized, reliable, and repeatable method for screening learning, memory, and executive functioning in laboratory mice. <em class="italic">Frontiers in Behavioral Neuroscience, Learning and Memory</em>, 18. <a href="https://doi.org/10.3389/fnbeh.2024.1492327" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2024.1492327</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.3389/fnbeh.2024.1492327" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Bailoo et al. 2024.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., *Thermolice, J., *Godinez, G., *Dos Santos, V., *Kondapaneni, R., Maden, M. (2024). Older spiny mice (<em class="italic">Acomys cahirinus</em>) have delayed and spatially heterogeneous ear wound regeneration. <em class="italic">Biology Open</em>, 13 (10): bio060565. <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="hover:underline">doi: 10.1242/bio.060565</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1242/bio.060565" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Varholick et al. 2024.pdf" target="_blank" class="hover:underline">PDF</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="https://journals.biologists.com/bio/article/13/10/bio061731/362309/First-person-Justin-Varholick" class="hover:underline">First Author Interview</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Maden, M. (2023). Bite wounds and dominance structures in male and female African spiny mice (<em class="italic">Acomys cahirinus</em>): Implications for animal welfare and the generalizability of results. <em class="italic">Animals</em class="italic">, 14 (1), 64. <a href="https://doi.org/10.3390/ani14010064" target="_blank" class="hover:underline">doi: 10.3390/ani14010064</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.3390/ani14010064" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Varholick et al. 2023 - bite wounds dominance acomys.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Gaire, J., Varholick, J.A., Rana, S., Sunshine, M.D., Ahmad, A.S., Chan, K.M., Allen, K., Doré, S., Fuller, D.D., Maden, M., Simmons, C. (2021). Spiny Mouse (<em class="italic">Acomys</em>): As an emerging research organism for regenerative medicine with applications beyond the skin. <em class="italic">npj Regenerative Medicine</em>, 6(1), 1-6. <a href="https://doi.org/10.1038/s41536-020-00111-1" target="_blank" class="hover:underline">doi: 10.1038/s41536-020-00111-1</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1038/s41536-020-00111-1" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Gaire et al.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., Bailoo, J.D., *Jenkins, A., Voelkl, B., Würbel, H. (2021). A systematic review and meta-analysis of the relationship between social dominance status and common behavioral phenotypes in male laboratory mice. <em class="italic">Frontiers in Behavioral Neuroscience, Learning and Memory</em>, 14(624036). <a href="https://doi.org/10.3389/fnbeh.2020.624036" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2020.624036</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.3389/fnbeh.2020.624036" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Varholick et al. 2020 - SR dominance.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Bailoo, J.D., Voelkl, B., Varholick, J.A., Novak, J., Eimear, M., Russo, M., Palme, R., Würbel, H. (2020). Effects of weaning age and housing conditions on phenotypic differences in mice. <em class="italic">Scientific Reports</em>, 10(11684). <a href="https://doi.org/10.1038/s41598-020-68549-3" target="_blank" class="hover:underline">doi: 10.1038/s41598-020-68549-3</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1038/s41598-020-68549-3" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Bailoo et al. 2020.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Maden, M., Varholick, J.A. (2020). Model systems for regeneration: the spiny mouse, <em class="italic">Acomys cahirinus</em>. <em class="italic">Development</em>, 147(dev167718). <a href="https://doi.org/10.1242/dev.167718" target="_blank" class="hover:underline">doi: 10.1242/dev.167718</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1242/dev.167718" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/MadenVarholick2020.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., *Pontiggia, A., Murphy, E., *Daniele, V., Palme, R., Voelkl, B., Würbel, H., Bailoo, J.D. (2019). Social dominance hierarchy type and rank contribute to phenotypic variation within cages of laboratory mice. <em class="italic">Scientific Reports</em>, 9(13650). <a href="https://doi.org/10.1038/s41598-019-49612-0" target="_blank" class="hover:underline">doi: 10.1038/s41598-019-49612-0</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1038/s41598-019-49612-0" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Varholick et al. 2019.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Bailoo, J.D., Murphy, E., Boada-Sana, M., Varholick, J.A., Hintze, S., Baussiere, C., Hahn, K.C., Gopfert, C., Palme, R., Voelkl, B., Würbel, H. (2018). Effects of cage enrichment on behavior, welfare and outcome variability in female mice. <em class="italic">Frontiers in Behavioral Neuroscience</em class="italic">, 12, p 232. <a href="https://doi.org/10.3389/fnbeh.2018.00232" target="_blank" class="hover:underline">doi: 10.3389/fnbeh.2018.00232</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.3389/fnbeh.2018.00232" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Bailoo et al. 2018 - cage enrichment females.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., Bailoo, J.D., Palme, R., Würbel, H. (2018). Phenotypic variability between social dominance ranks in laboratory mice. <em class="italic">Scientific Reports</em class="italic">, 8(6593). <a href="https://doi.org/10.1038/s41598-018-24624-4" target="_blank" class="hover:underline">doi: 10.1038/s41598-018-24624-4</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1038/s41598-018-24624-4" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Varholick et al. 2018.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Bailoo, J.D., Murphy, E., Varholick, J.A., Novak, J., Palme, R., Würbel, H. (2018) Evaluation of space allowance on measures of animal welfare and outcome variation in laboratory mice. <em class="italic">Scientific Reports</em class="italic">, 8(713). <a href="https://doi.org/10.1038/s41598-017-18493-6" target="_blank" class="hover:underline">doi: 10.1038/s41598-017-18493-6</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1038/s41598-017-18493-6" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Bailoo et al. 2018 space allowance.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Bailoo, J. D., Varholick, J. A., Garza, X. J., Jordan, R. L., & Hintze, S. (2016). Maternal separation followed by isolation-housing differentially affects prepulse inhibition of the acoustic startle response in C57BL/6 mice. <em class="italic">Developmental Psychobiology</em class="italic">, 58(8), 937-944. <a href="https://doi.org/10.1002/dev.21422" target="_blank" class="hover:underline">doi: 10.1002/dev.21422</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1002/dev.21422" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Bailoo et al. 2016.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">Preprints</h3>
-            <div class="space-y-6 mb-8">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A. (2024). Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">OSF Preprints</em class="italic">. <a href="https://doi.org/10.31219/osf.io/h4rcw" target="_blank" class="hover:underline">https://doi.org/10.31219/osf.io/h4rcw</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.31219/osf.io/h4rcw" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/RB and DPB_v5.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
-                    <p class="text-xl font-medium text-gray-800 mb-2">Varholick, J.A., *Godinez, G., *Jenkins, A., *Mobin, S., Romeo, R.D., Corll, J., Barbazuk, W., Maden, M. (2022). Social dominance status and social stability in spiny mice (<em class="italic">Acomys cahirinus</em>) and its relation to ear-hole regeneration and glucocorticoids. <em class="italic">bioRxiv</em class="italic">, 2022.09. 13.507818. <a href="https://doi.org/10.1101/2022.09.13.507818" target="_blank" class="hover:underline">doi: 10.1101/2022.09.13.507818</a></p>
-                    <div class="flex flex-wrap gap-3 text-blue-600 text-sm font-medium mb-3">
-                        <a href="https://doi.org/10.1101/2022.09.13.507818" target="_blank" class="hover:underline">DOI link</a>
-                        <span class="text-gray-400">|</span>
-                        <a href="pdfs/Varholick et al. 2022 - dominance ear biorxiv.pdf" target="_blank" class="hover:underline">PDF</a>
-                    </div>
+                    <!-- Add more research areas as needed -->
                 </div>
             </div>
         </section>
 
-        <section id="news" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">News & Updates</h2>
-            <div class="space-y-6">
-                <div class="bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
-                    <p class="text-lg font-medium text-gray-800 mb-1">🎉 Fall 2025</p>
-                    <p class="text-gray-700">The REPAIR Lab officially opens at Kennesaw State!</p>
+        <!-- Publications Section -->
+        <section id="publications" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 md:px-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Recent Publications</h2>
+                <div class="space-y-8">
+                    <!-- -->
+                        <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                                  <div class="flex-shrink-0 w-32 md:w-48">
+                                      <img src="pub_thumbnails/whisker2025.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                                  </div>
+                                  <div>
+                                      <h4 class="text-xl font-semibold text-gray-800 mb-2">Spiny mice (<em class="italic">Acomys</em>) regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation.</h4>
+                                      <p class="text-gray-600 mb-2">Varholick, J.A., *Kondapaneni, R., Maden, M. (2025). <em class="italic">npj Regenerative Medicine, 10:28</em></p>
+                                      <p class="text-sm text-gray-500 mb-3">
+                                          This is the first study to demonstrate that spiny mice can regenerate their whisker follicles and the associated structures after removal. Starting a new model system for studying cutaneous nerve regeneration.
+                                      </p>
+                                      <a href="pdfs/Varholick et al. 2025 - whisker regen.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1038/s41536-025-00415-0" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                                  </div>
+                              </div>
+                      <!-- -->
+                        <div class="bg-gray-50 rounded-lg shadow-sm p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+                                  <div class="flex-shrink-0 w-32 md:w-48">
+                                      <img src="pub_thumbnails/theory2025.png" alt="Publication Thumbnail" class="rounded-md object-cover max-w-full h-auto">
+                                  </div>
+                                  <div>
+                                      <h4 class="text-xl font-semibold text-gray-800 mb-2">Integrating regenerative biology with developmental psychobiology to understand behavioral recovery.</h4>
+                                      <p class="text-gray-600 mb-2">Varholick, J.A. (2025). <em class="italic">Developmental Dynamics</em> Early View</p>
+                                      <p class="text-sm text-gray-500 mb-3">
+                                          This is a theory paper establishing the intimate connection of behavior and neuroplasticity with tissue regeneration.
+                                      </p>
+                                      <a href="pdfs/Varholick 2025.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1002/dvdy.70021" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a>
+                                  </div>
+                              </div>
+                    <!-- Add more publications as needed -->
                 </div>
-                <div class="bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
-                    <p class="text-lg font-medium text-gray-800 mb-1">📄 Spiny mouse whisker regeneration paper published!</p>
-                    <p class="text-gray-700">Here, Dr. Varholick and his team at the University of Florida, demonstrated that Spiny Mice can regenerate their whisker follicles with significant targeted innervation. <a href="htps://doi.org/10.1038/s41536-025-00415-0" target = "_blank" class="text-blue-600 underline">Link to publication</a></p>
-                </div>
-                <div class="bg-blue-50 p-6 rounded-lg shadow-sm border border-blue-200">
-                    <p class="text-lg font-medium text-gray-800 mb-1">🔬 Spring 2026</p>
-                    <p class="text-gray-700">Recruiting first graduate student cohort!</p>
+                <div class="text-center mt-12">
+                    <a href="publications.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">View All Publications</a>
                 </div>
             </div>
         </section>
 
-        <section id="joinus" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Join Us</h2>
-            <h3 class="text-2xl font-medium text-gray-700 mb-4">Now Recruiting!</h3>
-            <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4">
-                <li>Undergraduate researchers (Fall 2025)</li>
-                <li>Graduate students (Spring 2026)</li>
-            </ul>
-            <h3 class="text-2xl font-medium text-gray-700 mb-4">Why join us?</h3>
-            <p class="text-lg leading-relaxed mb-6">
-                The REPAIR Lab fosters interdisciplinary curiosity, hands-on training, and a supportive environment for diverse scientists interested in regeneration, neurobiology, and behavior.
-            </p>
-            <h3 class="text-2xl font-medium text-gray-700 mb-4">How to apply:</h3>
-            <ul class="list-disc list-inside text-lg leading-relaxed mb-6 pl-4">
-                <li>Email Dr. V with your CV and a short statement of interest.</li>
-                <p class="italic text-slate-500 mb-4">Hint, read some publications and ask questions.</p>
-            </ul>
-            <p class="text-lg text-gray-700">
-                Email: <a href="mailto:jvarhol2@kennesaw.edu" class="text-blue-600 hover:underline">jvarhol2[at]kennesaw[dot]edu</a>
-            </p>
+        <!-- Team Section -->
+        <section id="team" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 md:px-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="images/varholick-profile.JPG" alt="Team Member Name" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Dr. Justin Varholick</h3>
+                        <p class="text-blue-600 font-medium mb-3">Principal Investigator</p>
+                        <p class="text-gray-700 text-sm">Dr. Varholick (Dr. V) holds a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern in Switzerland and an M.A. in Biopsychology from UNC Greensboro. He trained in regenerative biology during his postdoc under Prof. Malcolm Maden at the University of Florida, and was supported by an Early Postdoctoral grant from the Swiss National Science Foundation and an NIH Training Grant in Regenerative Medicine. His work has contributed to understanding the phenotypic variability in tissue regeneration and establishing behavioral frameworks for studying tissue regeneration in animal models.</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/150x150/D0D0D0/333333?text=Member+2" alt="Your Picture Here!" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Your Name Here!</h3>
+                        <p class="text-gray-600 font-medium mb-3">Graduate Researcher</p>
+                        <p class="text-gray-700 text-sm">Driven by a passion for understanding the body's ability to heal, I have a deep curiosity about how the brain responds to injury and healing. My current project focuses on understanding skin regeneration in neonatal mice, and whether their cutaneous nerves regain endoneurial sheathing and sensation after injury.</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/150x150/D0D0D0/333333?text=Member+3" alt="Your Picture Here!" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Your Name Here!</h3>
+                        <p class="text-gray-600 font-medium mb-3">Undergraduate Researcher</p>
+                        <p class="text-gray-700 text-sm">As a young scientist, I'm captivated by the complexity of the nervous system and the incredible potential for regeneration. In The Varholick Lab, I'm learning to transform my classroom knowledge into hands-on discovery and contribute to human knowledge on regeneration.</p>
+                    </div>
+                    <!-- Add more team members as needed -->
+                </div>
+                <div class="text-center mt-12">
+                    <a href="team.html#joinus" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Join Our Team</a>
+                </div>
+            </div>
         </section>
 
-        <section id="data-resources" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Resources & Data</h2>
-            <p class="text-lg leading-relaxed mb-4">
-                This section will host future content as projects develop.
-            </p>
-            <ul class="list-disc list-inside text-lg leading-relaxed pl-4 space-y-2">
-                <li>Protocols</li>
-                <li>Datasets</li>
-                <li>R scripts (<a href="https://github.com/javarhol" target="_blank" class="text-blue-600 hover:underline">GitHub-linked</a>)</li>
-            </ul>
+        <!-- News/Updates Section -->
+        <section id="news" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6 md:px-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Latest News & Updates</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- News Item 1 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <p class="text-sm text-gray-500 mb-2">Fall 2025</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">The Varholick Lab officially opens at Kennesaw State University</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Stop by SC 360 and say hello. Hopefully we'll start antibody staining soon, and have animals next semester.
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More &rarr;</a>
+                    </div>
+                    <!-- News Item 2 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <p class="text-sm text-gray-500 mb-2">August 2025</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Whisker research presented at ISRB 2025</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Prof. Malcolm Maden from the University of Florida presented our research on cutaneous nerve and whisker follicle regeneration at ISRB 2025. 
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More &rarr;</a>
+                    </div>
+                    <!-- News Item 3 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out">
+                        <p class="text-sm text-gray-500 mb-2">June 2025</p>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">New Publication in npj Regenerative Medicine</h3>
+                        <p class="text-gray-700 text-sm mb-4">
+                            Here, Dr. Varholick and his team at the University of Florida, showed that Spiny Mice can regenerate their whisker follicles after they are removed from the face alongside regeneration of the muscles and cutaneous nerves with sheathing and all. 
+                        </p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read More &rarr;</a>
+                    </div>
+                    <!-- Add more news items as needed -->
+                </div>
+                <div class="text-center mt-12">
+                    <a href="news.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">View All News</a>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="section-content bg-white p-8 rounded-xl shadow-lg mb-8">
-            <h2 class="text-3xl font-semibold text-gray-900 mb-6">Contact Us</h2>
-            <div class="text-lg leading-relaxed space-y-2">
-                <p><strong class="font-semibold">Justin Varholick, Ph.D.</strong></p>
-                <p>Assistant Professor of Biology</p>
-                <p>Ecology, Evolution, and Organismal Biology</p>
-                <p>Kennesaw State University</p>
-                <p>📍SC 329</p>
-                <p>📞 470-578-5100</p>
-                <p>📧 <a href="mailto:jvarhol2@kennesaw.edu" class="text-blue-600 hover:underline">jvarhol2[at]kennesaw[dot]edu</a></p>
-                <p><a href="https://github.com/javarhol" target="_blank" class="text-blue-600 hover:underline">GitHub</a></p>
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-purple-300 text-white">
+            <div class="container mx-auto px-6 md:px-12 text-center">
+                <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                    We're always open to collaborations, inquiries, and new talent. Reach out to us!
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-xl w-full md:w-1/3">
+                        <h3 class="text-2xl font-semibold mb-4">Email Us</h3>
+                        <p class="text-lg mb-4">
+                            <a href="mailto:jvarhol2@kennesaw.edu" class="text-blue-600 hover:underline">jvarhol2[at]kennesaw[dot]edu</a>
+                        </p>
+                    </div>
+                    <div class="bg-white text-gray-800 p-8 rounded-lg shadow-xl w-full md:w-1/3">
+                        <h3 class="text-2xl font-semibold mb-4">Visit Us</h3>
+                        <p class="text-lg mb-4">
+                            Science Building, Room 360<br>
+                            Kennesaw State University<br>
+                            Dept. of Ecology, Evolution, and Organismal Biology<br>
+                            Kennesaw, Georgia<br>
+                        </p>
+                        <!-- Optional: Add a map link -->
+                        <a href="https://maps.app.goo.gl/tapfgM6zesQWtbbs5" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">View on Map</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-900 text-white py-6 mt-8 shadow-inner">
-        <div class="container text-center text-gray-300">
-            <p>&copy; 2025 The REPAIR Lab @ KSU. All rights reserved.</p>
-            <p class="mt-2">Built with ❤️, AI, and science.</p>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <p class="mb-4 md:mb-0">&copy; 2025 Varholick Lab. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
+            </div>
         </div>
     </footer>
+
     <script>
-        // JavaScript for navigation and section display
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get all navigation links
-            const navLinks = document.querySelectorAll('.nav-link');
-            // Get all content sections
-            const sections = document.querySelectorAll('.section-content');
-            // Get the dark mode toggle button and icons
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const moonIcon = document.getElementById('moonIcon');
-            const sunIcon = document.getElementById('sunIcon');
-            const htmlElement = document.documentElement; // Get the root html element
-
-            // Function to show a specific section and update active navigation link
-            // Added `updateUrl` parameter to control when the URL hash is updated.
-            window.showSection = (sectionId, updateUrl = true) => {
-                // Hide all sections
-                sections.forEach(section => {
-                    section.classList.remove('active');
-                });
-
-                // Show the target section
-                const targetSection = document.getElementById(sectionId);
-                if (targetSection) {
-                    targetSection.classList.add('active');
-                }
-
-                // Remove active class from all nav links
-                navLinks.forEach(link => {
-                    link.classList.remove('active-link');
-                });
-
-                // Add active class to the clicked nav link
-                const activeNavLink = document.querySelector(`.nav-link[data-section="${sectionId}"]`);
-                if (activeNavLink) {
-                    activeNavLink.classList.add('active-link');
-                }
-
-                // Only update URL hash if `updateUrl` is true
-                if (updateUrl) {
-                    history.pushState(null, '', `#${sectionId}`);
-                } else {
-                    // For initial load of 'home' section without a hash,
-                    // ensure the URL doesn't get a hash.
-                    if (sectionId === 'home') {
-                        history.replaceState(null, '', window.location.pathname + window.location.search);
-                    }
-                }
-            };
-
-            // Function to toggle dark mode
-            const toggleDarkMode = () => {
-                // Toggle the 'dark' class on the html element
-                htmlElement.classList.toggle('dark');
-
-                // Save the current mode to local storage
-                if (htmlElement.classList.contains('dark')) {
-                    localStorage.setItem('theme', 'dark');
-                    moonIcon.classList.add('hidden');
-                    sunIcon.classList.remove('hidden');
-                } else {
-                    localStorage.setItem('theme', 'light');
-                    moonIcon.classList.remove('hidden');
-                    sunIcon.classList.add('hidden');
-                }
-            };
-
-            // Check for saved theme in local storage on page load
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'dark') {
-                htmlElement.classList.add('dark');
-                moonIcon.classList.add('hidden');
-                sunIcon.classList.remove('hidden');
-            } else {
-                // Default to light mode if no preference or 'light' is saved
-                htmlElement.classList.remove('dark');
-                moonIcon.classList.remove('hidden');
-                sunIcon.classList.add('hidden');
-            }
-
-            // Add click event listener to the dark mode toggle button
-            darkModeToggle.addEventListener('click', toggleDarkMode);
-
-            // Add click event listeners to navigation links
-            navLinks.forEach(link => {
-                link.addEventListener('click', (event) => {
-                    const sectionId = event.target.dataset.section;
-                    showSection(sectionId, true); // User click, so update URL hash
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
             });
+        });
 
-            // Handle initial section display based on URL hash
-            const initialHash = window.location.hash.substring(1); // Remove '#'
-            if (initialHash && document.getElementById(initialHash)) {
-                showSection(initialHash, true); // User provided hash, update URL
-            } else {
-                // Default to home section if no hash or invalid hash.
-                // Do NOT update URL hash on initial load if none was present.
-                showSection('home', false);
-            }
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
     </script>
 </body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-558XS5BM"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 </html>
+

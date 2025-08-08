@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Varholick Lab</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        section[id] {
+            scroll-margin-top: 4rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:bg-gray-100 transition-colors flex items-center gap-2">
+                <!-- Placeholder for Lab Logo -->
+                <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-16 w-16 mr-4 object-contain">
+                <span>The Varholick Lab</span>
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">About</a></li>
+                <li><a href="index.html#research" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Research</a></li>
+                <li><a href="index.html#publications" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Publications</a></li>
+                <li><a href="index.html#team" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Team</a></li>
+                <li><a href="index.html#news" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">News</a></li>
+                <li><a href="index.html#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="index.html#about" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="index.html#research" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Research</a>
+            <a href="index.html#publications" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Publications</a>
+            <a href="index.html#team" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Team</a>
+            <a href="index.html#news" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">News</a>
+            <a href="index.html#contact" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-20 flex flex-col min-h-screen">
+        <!-- Team Section -->
+        <section id="team-full" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 md:px-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="images/varholick-profile.JPG" alt="Team Member Name" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Dr. Justin Varholick</h3>
+                        <p class="text-blue-600 font-medium mb-3">Principal Investigator</p>
+                        <p class="text-gray-700 text-sm">Dr. Varholick (Dr. V) holds a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern in Switzerland and an M.A. in Biopsychology from UNC Greensboro. He trained in regenerative biology during his postdoc under Prof. Malcolm Maden at the University of Florida, and was supported by an Early Postdoctoral grant from the Swiss National Science Foundation and an NIH Training Grant in Regenerative Medicine. His work has contributed to understanding the phenotypic variability in tissue regeneration and establishing behavioral frameworks for studying tissue regeneration in animal models.</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/150x150/D0D0D0/333333?text=Member+2" alt="Your Picture Here!" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Your Name Here!</h3>
+                        <p class="text-gray-600 font-medium mb-3">Graduate Researcher</p>
+                        <p class="text-gray-700 text-sm">Driven by a passion for understanding the body's ability to heal, I have a deep curiosity about how the brain responds to injury and healing. My current project focuses on understanding skin regeneration in neonatal mice, and whether their cutaneous nerves regain endoneurial sheathing and sensation after injury.</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/150x150/D0D0D0/333333?text=Member+3" alt="Your Picture Here!" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Your Name Here!</h3>
+                        <p class="text-gray-600 font-medium mb-3">Undergraduate Researcher</p>
+                        <p class="text-gray-700 text-sm">As a young scientist, I'm captivated by the complexity of the nervous system and the incredible potential for regeneration. In The Varholick Lab, I'm learning to transform my classroom knowledge into hands-on discovery and contribute to human knowledge on regeneration.</p>
+                    </div>
+                    <!-- Add more team members as needed -->
+                </div>
+        </section>
+
+
+        <!-- Join Us Section -->
+        <section id="joinus" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 md:px-12">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Join Our Team!</h2>
+                <div class="text-center mt-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4"></h3>
+                    <p class="text-gray-700 max-w-2xl mx-auto mb-6">
+                        We are always looking for passionate and driven individuals to join our team. If you are interested in a graduate or undergraduate research position, please send an email with your CV and a brief statement of interest.
+                    </p>
+                    <a href="mailto:jvarhol2@kennesaw.edu" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Apply Today!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <p class="mb-4 md:mb-0">&copy; 2025 Varholick Lab. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
