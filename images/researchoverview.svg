@@ -807,6 +807,9 @@
     <path
        style="fill:none;fill-opacity:0.996923;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#DartArrow)"
        d="M 43.722387,169.96534 H 250.77761"
-       id="path8" />
+       id="path8"
+       inkscape:export-filename="researchoverview.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
   </g>
 </svg>
