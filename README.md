@@ -1,1 +1,1 @@
-# regenerative-plasticity-lab-website
+# Lab website for the Varholick Lab at KSU
