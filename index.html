@@ -39,10 +39,18 @@
     <!-- Header/Navigation Bar -->
     <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
         <nav class="container mx-auto flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:bg-gray-100 transition-colors flex items-center gap-2">
+            <a href="#home" class="flex items-center gap-4 rounded-md p-2 hover:bg-gray-100 transition-colors group">
                 <!-- Placeholder for Lab Logo -->
-                <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-16 w-16 mr-4 object-contain">
-                <span>The Varholick Lab</span>
+                <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-14 w-auto object-contain">
+                <div class="flex flex-col">
+                    <span class="text-2xl font-bold text-gray-900 uppercase tracking-wide leading-none group-hover:text-black">
+                        Varholick Lab
+                    </span>
+
+                    <span class="text-sm text-gray-500 italic font-light leading-tight mt-1">
+                        Decode Repair. Restore Function.
+                     </span>
+                </div>
             </a>
             <ul class="hidden md:flex space-x-8">
                 <li><a href="#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">About</a></li>
@@ -76,8 +84,8 @@
         <!-- Hero Section -->
         <section id="home" class="relative bg-gradient-to-r from-blue-600 to-purple-300 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
             <div class="container mx-auto text-center px-4">
-                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 rounded-md p-2">Restoring the body after injury</h1>
-                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto rounded-md p-2">What is the precise neuro-immune-behavioral mechanism that restores the body after injury?</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 rounded-md p-2">Decode Repair. Restore Function.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto rounded-md p-2">Working to understand the precise neuro-immune-behavioral mechanism that restores the body after injury</p>
                 <div class="space-x-4">
                     <a href="#research" class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Our Research</a>
                     <a href="team.html#joinus" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Join Us!</a>
@@ -93,7 +101,10 @@
                 <div class="md:w-1/2">
                     <h2 class="text-4xl font-bold text-gray-800 mb-6">About The Varholick Lab</h2>
                     <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                        How can we optimize recovery after injury and disease? The body normally heals through scarring (i.e., fibrosis), leading to poor recovery and diminished abilities. Regenerative animals can often restore the tissue using stem cells, but how they recover functionality is understudied. Specifically, how does a salamander walk again after regenerating its limb? Or, how does a spiny mouse feel sensation after regenerating its skin? We study the neuro-immune-behavioral intersection to understand how to optimize recovery after injury.
+                        The body normally heals through scarring (i.e., fibrosis), leading to poor recovery and diminished abilities. Regenerative animals can often restore their tissue using stem or stem-like cells, but how they recover functionality is understudied. 
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        How does a salamander walk again after regenerating its limb? How does a spiny mouse feel sensation after regenerating its skin? We study the neuro-immune-behavioral intersection to understand how to decode mechanisms of repair and optimize recovery after injury. This is done by studying the molecules and cells underlying repair all the way to the brain and behaviors underlying functional restoration.
                     </p>
                     <a href="#team" class="inline-block mt-8 text-blue-600 hover:text-blue-800 font-semibold transition-colors">Meet Our Team &rarr;</a>
                 </div>

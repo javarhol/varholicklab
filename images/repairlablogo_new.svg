@@ -24,17 +24,88 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.78400698"
-     inkscape:cx="623.08118"
-     inkscape:cy="491.06705"
-     inkscape:window-width="2560"
-     inkscape:window-height="1387"
+     inkscape:zoom="1.2420828"
+     inkscape:cx="638.8463"
+     inkscape:cy="401.342"
+     inkscape:window-width="1512"
+     inkscape:window-height="854"
      inkscape:window-x="0"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
+    <linearGradient
+       id="linearGradient8"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#fbfaff;stop-opacity:1;"
+         offset="0.13864818"
+         id="stop7" />
+      <stop
+         style="stop-color:#825cff;stop-opacity:0.99769056;"
+         offset="1"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#825cfe;stop-opacity:1;"
+         offset="0.6481775"
+         id="stop4" />
+      <stop
+         style="stop-color:#f9f9f9;stop-opacity:0.9835729;"
+         offset="1"
+         id="stop5" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect4"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8"
+       id="linearGradient3"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1.406461,0,0,1.406461,135.70362,-62.337223)"
+       x1="-1.1987343"
+       y1="136.99995"
+       x2="15.198145"
+       y2="136.99995" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4"
+       id="linearGradient5"
+       x1="77.174616"
+       y1="126.64537"
+       x2="151.48133"
+       y2="126.64537"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-0.62858582)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="-1.1987343"
+       y1="136.99995"
+       x2="15.198145"
+       y2="136.99995"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1.540918,0,0,1.540918,61.525193,-174.56347)" />
     <linearGradient
        id="linearGradient1"
        inkscape:collect="always">
@@ -47,38 +118,95 @@
          offset="1"
          id="stop2" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1"
-       id="linearGradient2"
-       x1="-1.1987343"
-       y1="136.99995"
-       x2="15.198145"
-       y2="136.99995"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,1,94.548376,-44.882979)" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-size:47.625px;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:#ffffff;stroke-width:0.499999;stroke-dasharray:0.499999, 0.499999"
-       x="4.0212803"
-       y="153.37057"
-       id="text1"><tspan
-         sodipodi:role="line"
-         id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:47.625px;font-family:AppleGothic;-inkscape-font-specification:AppleGothic;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-opacity:1"
-         x="4.0212803"
-         y="153.37057">Varholick Lab</tspan></text>
+    <circle
+       style="fill:#626262;fill-opacity:1;stroke-width:0.532983;stroke-dasharray:0.532983, 0.532983"
+       id="path2-5"
+       cx="113.69939"
+       cy="126.64537"
+       r="52.5" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.499999;stroke-dasharray:0.499999, 0.499999"
+       id="path2"
+       cx="113.69939"
+       cy="126.64537"
+       r="49.250977" />
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:0.499999;stroke-dasharray:0.499999, 0.499999"
+       id="path2-7"
+       cx="16.316307"
+       cy="169.41187"
+       r="49.250977"
+       transform="matrix(-0.6766439,0.73631042,0.73631042,0.6766439,0,0)" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:url(#linearGradient5);stroke-width:1.47871;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path2-3"
+       cx="113.69939"
+       cy="126.64537"
+       r="36.414001" />
     <path
-       id="path1"
-       style="fill:url(#linearGradient2);stroke:none;stroke-width:0.5;stroke-dasharray:0.5, 0.5;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 91.496741 73.457532 L 79.350195 106.28809 L 79.350195 106.29015 L 67.20365 73.460116 L 62.953263 73.460116 L 77.591646 110.77877 L 79.350195 110.77877 L 79.350195 110.77618 L 81.108744 110.77618 L 95.747127 73.457532 L 91.496741 73.457532 z "
+       id="path1-6"
+       style="fill:url(#linearGradient3);stroke:none;stroke-width:0.703;stroke-dasharray:0.703, 0.703;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 131.41161,104.10412 -17.08364,46.17491 v 0.003 L 97.244322,104.10775 h -5.978 L 111.85464,156.595 h 2.47333 v -0.004 h 2.47333 l 6.27506,-15.99728 14.31326,-36.48938 z"
        inkscape:export-filename="V_LOGO.png"
        inkscape:export-xdpi="600"
-       inkscape:export-ydpi="600" />
+       inkscape:export-ydpi="600"
+       sodipodi:nodetypes="cccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:oblique;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46667px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Light Oblique';text-align:start;letter-spacing:0.529167px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#626262;fill-opacity:1;stroke-width:0.499999;stroke-dasharray:0.499999, 0.499999"
+       id="text3"
+       transform="translate(0.1155366,-3.629544)"><textPath
+         xlink:href="#path2-7"
+         id="textPath8"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;fill:#ffffff;fill-opacity:1"
+           id="tspan8">VARHOLICK LAB</tspan></textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:center;letter-spacing:0.529167px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:none;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-dasharray:0.499999, 0.499999;stroke-opacity:1"
+       id="text4"
+       transform="matrix(0.12156785,0.82362602,-0.82362602,0.12156785,203.98885,17.830116)"><textPath
+         xlink:href="#path2"
+         startOffset="50%"
+         id="textPath4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Helvetica;-inkscape-font-specification:Helvetica;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-opacity:1">      DECODING REPAIR. RESTORING FUNCTION.</textPath></text>
+    <path
+       id="path1"
+       style="fill:url(#linearGradient2);stroke:none;stroke-width:0.770459;stroke-dasharray:0.770459, 0.770459;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 56.822881,7.7895442 38.106044,58.378745 v 0.0031 L 19.389221,7.7935352 H 12.839719 L 35.396262,65.298515 h 2.709782 v -0.0046 h 2.709781 L 47.690785,47.76729 63.372368,7.7895442 Z"
+       inkscape:export-filename="V_LOGOwSlogan.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       sodipodi:nodetypes="cccccccccccc" />
+    <g
+       id="g366"
+       transform="matrix(1.540918,0,0,1.540918,0.30450515,-6.0307845)">
+      <text
+         xml:space="preserve"
+         style="font-size:14.1111px;font-family:Helvetica;-inkscape-font-specification:Helvetica;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:none;stroke:#ffffff;stroke-width:0.499999;stroke-dasharray:0.499999, 0.499999"
+         x="50.825504"
+         y="25.880898"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-opacity:1"
+           x="50.825504"
+           y="25.880898">VARHOLICK LAB</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:oblique;font-variant:normal;font-weight:300;font-stretch:normal;font-size:8.46667px;font-family:Helvetica;-inkscape-font-specification:'Helvetica Light Oblique';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#825cff;stroke-width:0.499999;stroke-dasharray:0.499999, 0.499999"
+         x="37.934643"
+         y="38.049389"
+         id="text2"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="font-size:8.46667px;fill:#5b5b5b;fill-opacity:1;stroke-width:0.5"
+           x="37.934643"
+           y="38.049389">Decoding Repair. Restoring Function.</tspan></text>
+    </g>
   </g>
 </svg>
