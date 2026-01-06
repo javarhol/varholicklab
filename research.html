@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varholick Lab - Research</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -36,23 +34,19 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Header/Navigation Bar -->
     <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
         <nav class="container mx-auto flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-4 rounded-md p-2 hover:bg-gray-100 transition-colors group">
-                <!-- Placeholder for Lab Logo -->
                 <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-14 w-auto object-contain">
                 <div class="flex flex-col">
                     <span class="text-2xl font-bold text-gray-900 uppercase tracking-wide leading-none group-hover:text-black">
                         Varholick Lab
                     </span>
-
                     <span class="text-sm text-gray-500 italic font-light leading-tight mt-1">
-                        Decoding Repair. Restoring Function.
+                        Rewriting the rules of recovery.
                      </span>
                 </div>
             </a>
-            <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-8">
                 <a href="index.html#about" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">About</a>
                 <a href="index.html#research" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">Research</a>
@@ -60,7 +54,6 @@
                 <a href="index.html#publications" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">Publications</a>
                 <a href="index.html#contact" class="text-gray-600 hover:text-gray-900 transition-colors nav-link">Contact</a>
             </div>
-            <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +64,6 @@
         </nav>
     </header>
 
-    <!-- Mobile Menu Sidebar -->
     <div id="mobile-menu" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
         <div class="p-6">
             <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600">
@@ -89,78 +81,138 @@
         </div>
     </div>
 
-    <!-- Main Content Section -->
     <main class="pt-24 pb-12">
         <div class="container mx-auto px-6 md:px-12">
-            <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">Research</h1>
+            
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Our Research Framework</h1>
+            </div>
 
-            <!-- Background Section -->
-            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-12">
-                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Our Research</h2>
-                <!-- Large image now placed here -->
-                <img src="images/researchoverview.png" alt="A large placeholder image representing the lab's overview." class="block mx-auto w-full max-w-xl h-auto rounded-xl shadow-md mb-8">
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    We are building evidence that tissue regeneration is an emergent property of the coaction between genetic, cellular, environmental, behavioral, neural signals etc. Thus, the process of tissue regeneration is variable and plastic depending on a multitude of factors. We place structural recovery and behavioral recovery at the center of our research, studying how genetic, cellular, environmental, behavioral, neural signals etc. impact the variability in structural and behavioral recovery. Our goal is to optimize structural and functional healing and then unravel the biology underlying this healing.
-                </p>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    The diagram above represents the coactions and the emergence of regeneration. Solid lines represent coactions we are directly interested in, while dottled lines represent coactions that exist but are secondary interests. Circles can change in size as the process of regeneration occurs over time, represented by the horizontal arrow on the bottom. Each organism may follow a different healing process, leading to variability in a population and across a lifetime. The numbers represent our three main projects that begin to tackle this complex and dynamic system.
-                </p>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Currently we focus on three main questions: 1) How can we optimize peripheral nerve healing? 2) What separates the behavior and neuroplasticity of highly regenerative animals from non-regenerative animals? and 3) What are the critical or sensitive periods for optimal tissue regeneration?
-                </p>
+            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-16 border-l-4 border-gray-800">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Regeneration is an Emergent Property</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            We are building evidence that tissue regeneration is not a single genetic switch, but an emergent property of the coaction between genetic, cellular, environmental, and behavioral signals. 
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            The diagram represents these coactions. Solid lines represent coactions we are directly interested in, while dotted lines represent secondary interests. By placing structural and behavioral recovery at the center, we aim to unravel the biology underlying the variability of healing.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                         <img src="images/researchoverview.png" alt="A large placeholder image representing the lab's overview." class="block w-full h-auto rounded-lg shadow-sm">
+                    </div>
+                </div>
             </section>
 
-            <!-- Research Section 1 -->
-            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-12">
-                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Project 1: 👋 How can we optimize peripheral nerve healing?</h2>
+            <section id="biology" class="relative bg-white rounded-xl shadow-md p-8 md:p-12 mb-12 overflow-hidden">
+                <div class="absolute top-0 right-0 bg-blue-100 text-blue-600 font-bold px-4 py-2 rounded-bl-lg text-lg">01</div>
+                
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">The Behavioral Biology of Super-Healers</h2>
+                <h3 class="text-lg text-blue-600 font-medium mb-6 uppercase tracking-wide">Investigating Nature's Models</h3>
+                
                 <p class="text-gray-600 leading-relaxed mb-6">
-                    This project investigates how we can optimize peripheral nerve regeneration. We are currently focused on cutaneous nerve regeneration in rodents using the whisker pad skin of Spiny Mice and cutaneous nerves in neonatal lab mice. The long-term goal is to guide peripheral nerves in humans to regenerate the neural connective tissues that insulate and support nerves. At the moment humans can only regenerate single myelinated axons rather than bundles of nerves.
+                    Before we can mimic regeneration, we must understand the diverse physiological toolkits of the animals that master it. We are expanding our research beyond standard injury models to investigate the ethology and unique biology of the African Spiny Mouse (<em>Acomys</em>) and Salamanders.
                 </p>
-                <h3 class="text-2xl font-medium text-gray-700 mb-4">Relevant Publications</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-600">
-                    <li>Varholick et al. (2025). "Spiny mice (<em class="italic">Acomys</em>) regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation." <em class="italic">npj Regenerative Medicine</em>, 10:28. <a href="pdfs/Varholick et al. 2025 - whisker regen.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1038/s41536-025-00415-0" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a></li>
-                </ul>
+               
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">🧠 Memory of Spiny Mice</h4>
+                        <p class="text-gray-600">
+                            We are characterizing the long-term memory of Spiny mice to understand the cognitive baseline for studies invesigating memory after injury. This work is supported by an internal PrePI grant from Kennesaw State University, with Dr. Vishnu Suppiramaniam and Dr. Erica Holliday.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Olfactory and Tactile Sensation in Salamanders</h4>
+                        <p class="text-gray-600">
+                            How do regenerative animals perceive their world? We are launching new studies into sensory and olfactory communication in Salamanders to understand the sensory baseline before injury. This work is supported by an internal Mentor Protege grant from Kennesaw State University, with Dr. Todd Pierson.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-100">
+                    <h4 class="text-sm font-bold text-gray-400 uppercase mb-3">Key Publications</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                         <li><span class="font-semibold text-gray-800">Varholick (2025).</span> "Bite wounds and dominance structures in male and female African spiny mice..." <em class="italic">Animals</em>. <a href="https://www.mdpi.com/2076-2615/14/1/64" class="text-blue-600 hover:underline">Link</a></li>
+                    </ul>
+                </div>
             </section>
 
-            <!-- Research Section 2 -->
-            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-12">
-                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Project 2: 🧠 The behavior and neuroplasticity of highly regenerative animals</h2>
+            <section id="behavior" class="relative bg-white rounded-xl shadow-md p-8 md:p-12 mb-12 overflow-hidden border-t-4 border-purple-500">
+                <div class="absolute top-0 right-0 bg-purple-100 text-purple-600 font-bold px-4 py-2 rounded-bl-lg text-lg">02</div>
+                
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Behavior as a Driver of Repair</h2>
+                <h3 class="text-lg text-purple-600 font-medium mb-6 uppercase tracking-wide">Identifying the Role of Sensation & Plasticity</h3>
+                
                 <p class="text-gray-600 leading-relaxed mb-6">
-                    Highly regenerative animals like salamanders, zebrafish, spiny mice, etc. not only regenerate missing tissue, they also use the new tissue as if the injury never occured. Research in behavioral neuroscience shows that injuries lead to brain reorganization and that behavioral therapies like "constraint induced movement therapy" can improve recovery after limb loss, stroke, or cerebral palsy. Do highly regenerative animals use novel behaviors to optimize their behavioral recovery? Do brain connections change after injury and then remap as the structure regenerates? These questions and many more remain unexplored, but could be essential for functional recovery and bringing successful regenerative therapies to the clinic.
+                    Regeneration doesn't happen in a petri dish; it happens in a behaving animal. We hypothesize that behavior and neuroplasticity are not just outcomes of recovery, but active drivers of it.
                 </p>
-                <h3 class="text-2xl font-medium text-gray-700 mb-4">Relevant Publications</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-600">
-                    <li>Varholick (2025). "Integrating regenerative biology with developmental psychobiology to understand behavioral recovery." <em class="italic">Developmental Dynamics</em> Early View. <a href="pdfs/Varholick 2025.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1002/dvdy.70021" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a></li>
-                    <li>Kidd et al. (2024). "Stroke-induced neuroplasticity in the spiny mouse, <em class="italic">Acomys cahirinus</em>." <em class="italic">npj Regenerative Medicine</em> 9, 41. <a href="pdfs/Kidd et al. 2024 - stroke spiny.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>   <a href="https://doi.org/10.1038/s41536-024-00386-8" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link</a></li>
-                </ul>
+
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">🧠 Neuroplasticity & Sensation</h4>
+                        <p class="text-gray-600">
+                             Do highly regenerative animals use novel behaviors to optimize their recovery? We investigate how the brain "remaps" after injury and how restored sensation (like that in our whisker pad model) feeds back into the brain to close the loop of functional recovery.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">🕔 Sensitive Periods in Regeneration</h4>
+                        <p class="text-gray-600">
+                            Development has sensitive periods—critical windows where the system is plastic. We believe regeneration re-opens these windows. By identifying <em>when</em> the system is most sensitive to behavioral inputs, we can determine the optimal time to intervene.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-100">
+                    <h4 class="text-sm font-bold text-gray-400 uppercase mb-3">Key Publications</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                         <li><span class="font-semibold text-gray-800">Varholick (2025).</span> "Integrating regenerative biology with developmental psychobiology..." <em class="italic">Developmental Dynamics</em>. <a href="https://anatomypubs.onlinelibrary.wiley.com/doi/10.1002/dvdy.70021" class="text-blue-600 hover:underline">Link</a></li>
+                         <li><span class="font-semibold text-gray-800">Varholick et al. (2024).</span> "Older 6-9-month-old spiny mice have delayed... ear wound regeneration." <em class="italic">Biology Open</em>. <a href="https://journals.biologists.com/bio/article/13/10/bio060565/362307/Older-6-9-month-old-spiny-mice-Acomys-cahirinus" class="text-blue-600 hover:underline">Link</a></li>
+                    </ul>
+                </div>
             </section>
 
-            <!-- Research Section 3 -->
-            <section class="bg-white rounded-xl shadow-md p-8 md:p-12 mb-12">
-                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Project 3: 🕔 When is the sensitive period for tissue regeneration?</h2>
+            <section id="application" class="relative bg-white rounded-xl shadow-md p-8 md:p-12 mb-12 overflow-hidden">
+                <div class="absolute top-0 right-0 bg-blue-100 text-blue-600 font-bold px-4 py-2 rounded-bl-lg text-lg">03</div>
+                
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Biobehavioral Therapies for Human Recovery</h2>
+                <h3 class="text-lg text-blue-600 font-medium mb-6 uppercase tracking-wide">Applying Lessons to the Clinic</h3>
+                
                 <p class="text-gray-600 leading-relaxed mb-6">
-                    Development has sensitive periods when critical events must occur for the next "step" of development. Regeneration is considered to be a window into development, reusing developmental programs -- it is essentially re-opening a critical period of development to restart the development of the injured tissue. If we can undestand when these sensitive periods occur during regeneration, we can optimize the quality of regeneration and ensure that abnormal development or an undesired outlier phenotype does not occur. 
+                    Our ultimate goal is translation. We apply the lessons learned from Spiny mice to challenge the limitations of human biology.
                 </p>
-                <h3 class="text-2xl font-medium text-gray-700 mb-4">Relevant Publications</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-600">
-                    <li>Varholick et al. (2024). "Older 6-9-month-old spiny mice (<em class="italic">Acomys cahirinus</em>) have delayed and spatially heterogeneous ear wound regeneration." <em class="italic">Biology Open</em>, 13 (10): bio060565. <a href="pdfs/Varholick et al. 2024.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">PDF,</a>    <a href="https://doi.org/10.1242/bio.060565" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">DOI Link,</a>    <a href="https://journals.biologists.com/bio/article/13/10/bio061731/362309/First-person-Justin-Varholick" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">First Author Interview</a></li>
-                </ul>
+                
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <div class="flex-1">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Optimizing Peripheral Nerve Healing</h4>
+                        <p class="text-gray-600 mb-4">
+                            Humans can regenerate single axons, but we fail to regenerate the complex neural architecture required for full sensation. Using the Spiny mouse whisker pad as a template, we are working to identify the signals required to guide peripheral nerves and regenerate the connective tissues that support them in humans.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <h4 class="text-sm font-bold text-gray-400 uppercase mb-3">Key Publications</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                         <li><span class="font-semibold text-gray-800">Varholick et al. (2025).</span> "Spiny mice regenerate wounded whisker pad skin with whisker follicles..." <em class="italic">npj Regenerative Medicine</em>. <a href="#" class="text-blue-600 hover:underline">PDF</a></li>
+                    </ul>
+                </div>
             </section>
 
-            <!-- "View All Publications" Button -->
-            <div class="flex justify-center mt-8">
-                <a href="publications.html" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                    View All Publications
+            <div class="flex justify-center mt-12 mb-12">
+                <a href="publications.html" class="inline-block bg-gray-900 text-white hover:bg-gray-800 font-bold py-4 px-10 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    View Full Publication List
                 </a>
             </div>
 
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-gray-400 py-8 px-6 md:px-12">
         <div class="container mx-auto text-center">
-            <p>&copy; 2024 Varholick Lab. All rights reserved.</p>
+            <p>&copy; 2025 Varholick Lab. All rights reserved.</p>
             <div class="flex justify-center space-x-6 mt-4">
                 <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
                 <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
