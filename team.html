@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team - Varholick Lab</title>
+    <title>Team — Varholick Lab</title>
+    <meta name="description" content="Meet the Varholick Lab team at Kennesaw State University. We are a collaborative group studying tissue regeneration, behavioral neuroscience, and peripheral nerve recovery.">
+    <meta property="og:title" content="Team — Varholick Lab">
+    <meta property="og:description" content="A team of curious problem-solvers studying regeneration, behavior, and neuroplasticity.">
+    <meta property="og:image" content="images/mus_uninjuredpad.png">
+    <meta name="twitter:card" content="summary_large_image">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Inter Font -->
@@ -39,7 +44,7 @@
     <!-- Header/Navigation Bar -->
     <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
         <nav class="container mx-auto flex justify-between items-center">
-            <a href="#home" class="flex items-center gap-4 rounded-md p-2 hover:bg-gray-100 transition-colors group">
+            <a href="index.html" class="flex items-center gap-4 rounded-md p-2 hover:bg-gray-100 transition-colors group">
                 <!-- Placeholder for Lab Logo -->
                 <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-14 w-auto object-contain">
                 <div class="flex flex-col">
@@ -48,7 +53,7 @@
                     </span>
 
                     <span class="text-sm text-gray-500 italic font-light leading-tight mt-1">
-                        Rewriting the rules of recovery.
+                        Decoding Repair. Restoring Function.
                      </span>
                 </div>
             </a>
@@ -89,7 +94,12 @@
                     <div id="justin" class="bg-white rounded-lg shadow-md p-8 text-center transform hover:scale-105 transition duration-300 ease-in-out scroll-mt-24">
                         <img src="images/varholick-profile.JPG" alt="Team Member Name" class="w-36 h-36 rounded-full mx-auto mb-6 object-cover">
                         <h3 class="text-xl font-semibold text-gray-800 mb-2">Dr. Justin Varholick</h3>
-                        <p class="text-blue-600 font-medium mb-3">Principal Investigator</p>
+                        <p class="text-blue-600 font-medium mb-2">Principal Investigator</p>
+                        <div class="flex justify-center gap-3 text-sm mb-3">
+                            <a href="https://scholar.google.com/citations?user=JustinVarholick" class="text-gray-500 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                            <span class="text-gray-300">|</span>
+                            <a href="https://orcid.org/0000-0003-2822-9045" class="text-gray-500 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">ORCID</a>
+                        </div>
                         <p class="text-gray-700 text-sm">Dr. Varholick (Dr. V) holds a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern in Switzerland and an M.A. in Biopsychology from UNC Greensboro. He trained in regenerative biology during his postdoc under Prof. Malcolm Maden at the University of Florida, and was supported by an Early Postdoctoral grant from the Swiss National Science Foundation and an NIH Training Grant in Regenerative Medicine. His work has contributed to integrating animal behavior and phenotypic variability into basic biomedical research and establishing new model systems and frameworks to integrate animal behavior and phenotypic variablity into tissue regeneration research.</p>
                     </div>
                     <!-- Team Member 2 -->
@@ -134,17 +144,59 @@
 
 
         <!-- Join Us Section -->
-        <section id="joinus" class="py-16 md:py-24 bg-gray-50">
+        <section id="joinus" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6 md:px-12">
-                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Join Our Team!</h2>
-                <div class="text-center mt-12">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4"></h3>
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-4">Join Our Team</h2>
+                <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                    We are always looking for passionate and driven individuals. We believe good science is a team sport, and every member of the lab — from first-year undergrads to graduate students — contributes meaningfully to our research.
+                </p>
+
+                <!-- What You'll Gain -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">What You'll Gain</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                        <div class="bg-gray-50 rounded-lg p-6 text-center">
+                            <h4 class="font-semibold text-gray-800 mb-2">Histology & Immunohistochemistry</h4>
+                            <p class="text-gray-600 text-sm">Hands-on tissue processing, sectioning, staining, and microscopy from day one.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 text-center">
+                            <h4 class="font-semibold text-gray-800 mb-2">Animal Behavior Quantification</h4>
+                            <p class="text-gray-600 text-sm">Design ethograms, conduct behavioral assays, and analyze video data in live animals.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 text-center">
+                            <h4 class="font-semibold text-gray-800 mb-2">Scientific Writing & Presentations</h4>
+                            <p class="text-gray-600 text-sm">Co-author manuscripts, present at conferences, and develop your scientific voice.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 text-center">
+                            <h4 class="font-semibold text-gray-800 mb-2">Bioinformatics Exposure</h4>
+                            <p class="text-gray-600 text-sm">Learn data analysis, statistics, and computational approaches to biological questions.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 text-center">
+                            <h4 class="font-semibold text-gray-800 mb-2">Mentorship from Day One</h4>
+                            <p class="text-gray-600 text-sm">Regular one-on-one meetings, career guidance, and support for graduate school or professional applications.</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 text-center">
+                            <h4 class="font-semibold text-gray-800 mb-2">Collaborative Lab Culture</h4>
+                            <p class="text-gray-600 text-sm">Work alongside peers on real research questions in a supportive, team-oriented environment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Voices (placeholder) -->
+                <div class="mb-12 max-w-3xl mx-auto">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">From Our Students</h3>
+                    <div class="bg-gray-50 rounded-lg p-8 italic text-gray-600 text-center">
+                        <p class="mb-4">"Student testimonials coming soon — check back as our team grows!"</p>
+                    </div>
+                </div>
+
+                <!-- Open Positions & CTA -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Open Positions</h3>
                     <p class="text-gray-700 max-w-2xl mx-auto mb-6">
-                        We are always looking for passionate and driven individuals to join our team. We are currently looking for a graduate student to join under the <a href="https://www.kennesaw.edu/csm/bridges/index.php" class="text-blue-600 underline hover:text-blue-800" target="_blank" rel="noopener">
-        "Peach State Bridges to Doctorate Program."
-    </a> If you are interested in a graduate or undergraduate research position, please send an email with your CV and a brief statement of interest.
+                        We are currently looking for a graduate student to join under the <a href="https://www.kennesaw.edu/csm/bridges/index.php" class="text-blue-600 underline hover:text-blue-800" target="_blank" rel="noopener">"Peach State Bridges to Doctorate Program."</a> Undergraduate positions are also available. If you are interested, please send an email with your CV and a brief statement of interest.
                     </p>
-                    <a href="mailto:jvarhol2@kennesaw.edu" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Apply Today!</a>
+                    <a href="mailto:jvarhol2@kennesaw.edu" class="inline-block bg-blue-600 text-white hover:bg-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">Apply Today</a>
                 </div>
             </div>
         </section>
@@ -153,11 +205,7 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8 px-6 md:px-12">
         <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
-            <p class="mb-4 md:mb-0">&copy; 2025 Varholick Lab. All rights reserved.</p>
-            <div class="flex justify-center space-x-6">
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Use</a>
-            </div>
+            <p class="mb-4 md:mb-0">&copy; 2026 Varholick Lab. All rights reserved.</p>
         </div>
     </footer>
 
