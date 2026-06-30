@@ -152,6 +152,13 @@
         mobileMenuButton.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
         closeMobileMenu.addEventListener('click', () => mobileMenu.classList.add('hidden'));
 
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
         // Library Logic
         let allPapers = [];
         let filteredPapers = [];
