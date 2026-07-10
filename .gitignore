@@ -1,0 +1,4 @@
+
+# Ignore downloaded Acomys PDFs to avoid copyright issues and repo bloat
+acomys_library/papers_pdf/
+papers_pdf/

@@ -11,6 +11,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FlexSearch Library -->
+    <script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.31/dist/flexsearch.bundle.js"></script>
     <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -71,6 +73,7 @@
                 <li><a href="../index.html#research" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Research</a></li>
                 <li><a href="../index.html#publications" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Publications</a></li>
                 <li><a href="index.html" class="nav-link text-blue-600 font-medium border-b-2 border-blue-600">Acomys Library</a></li>
+
                 <li><a href="../index.html#team" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Team</a></li>
                 <li><a href="../index.html#news" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">News</a></li>
                 <li><a href="../index.html#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Contact</a></li>
@@ -87,6 +90,7 @@
             <a href="../index.html#research" class="nav-link text-gray-700 hover:text-gray-900">Research</a>
             <a href="../index.html#publications" class="nav-link text-gray-700 hover:text-gray-900">Publications</a>
             <a href="index.html" class="nav-link text-blue-600 font-medium">Acomys Library</a>
+
             <a href="../index.html#team" class="nav-link text-gray-700 hover:text-gray-900">Team</a>
             <a href="../index.html#news" class="nav-link text-gray-700 hover:text-gray-900">News</a>
             <a href="../index.html#contact" class="nav-link text-gray-700 hover:text-gray-900">Contact</a>
@@ -105,16 +109,28 @@
         </div>
 
         <!-- Controls -->
-        <div class="flex flex-col md:flex-row gap-4 mb-8 justify-center items-center">
-            <input type="text" id="searchInput" placeholder="Search by title, author, or keyword..." class="w-full md:w-1/2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <select id="topicFilter" class="w-full md:w-1/4 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="">All Topics</option>
-                <!-- Dynamically populated -->
-            </select>
-            <select id="sortOrder" class="w-full md:w-1/4 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="year-desc">Newest First</option>
-                <option value="year-asc">Oldest First</option>
-            </select>
+        <div class="flex flex-col gap-4 mb-8 max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <input type="text" id="searchInput" placeholder="Search by title, author, or keyword..." class="w-full md:w-1/2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select id="topicFilter" class="w-full md:w-1/4 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-opacity duration-300">
+                    <option value="">All Topics</option>
+                    <!-- Dynamically populated -->
+                </select>
+                <select id="sortOrder" class="w-full md:w-1/4 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-opacity duration-300">
+                    <option value="year-desc">Newest First</option>
+                    <option value="year-asc">Oldest First</option>
+                </select>
+            </div>
+            
+            <!-- Search Mode Toggle -->
+            <div class="flex justify-center items-center space-x-4">
+                <span class="text-sm font-medium text-gray-700" id="searchModeLabelMetadata">Metadata Search</span>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="deepSearchToggle" class="sr-only peer">
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                </label>
+                <span class="text-sm font-medium text-gray-500" id="searchModeLabelDeep">Deep Text Search</span>
+            </div>
         </div>
 
         <div id="statsContainer" class="text-gray-600 text-sm font-medium mb-4 text-center">
@@ -172,6 +188,55 @@
         const topicFilter = document.getElementById('topicFilter');
         const sortOrder = document.getElementById('sortOrder');
         const statsContainer = document.getElementById('statsContainer');
+        const deepSearchToggle = document.getElementById('deepSearchToggle');
+        
+        let flexIndex;
+        let deepSearchData = [];
+        let isDeepSearchReady = false;
+
+        deepSearchToggle.addEventListener('change', (e) => {
+            const isDeep = e.target.checked;
+            document.getElementById('searchModeLabelMetadata').classList.toggle('text-gray-500', isDeep);
+            document.getElementById('searchModeLabelMetadata').classList.toggle('text-gray-700', !isDeep);
+            document.getElementById('searchModeLabelDeep').classList.toggle('text-gray-700', isDeep);
+            document.getElementById('searchModeLabelDeep').classList.toggle('text-gray-500', !isDeep);
+            
+            if (isDeep) {
+                topicFilter.classList.add('opacity-50', 'pointer-events-none');
+                sortOrder.classList.add('opacity-50', 'pointer-events-none');
+                searchInput.placeholder = "Deep Search: e.g. blastema, fibronectin...";
+                if (!isDeepSearchReady) loadDeepSearch();
+            } else {
+                topicFilter.classList.remove('opacity-50', 'pointer-events-none');
+                sortOrder.classList.remove('opacity-50', 'pointer-events-none');
+                searchInput.placeholder = "Search by title, author, or keyword...";
+            }
+            applyFilters();
+        });
+
+        async function loadDeepSearch() {
+            statsContainer.textContent = "Loading deep search index... (This may take a moment)";
+            try {
+                flexIndex = new FlexSearch.Document({
+                    document: { id: "uid", index: ["text"], store: true },
+                    tokenize: "forward"
+                });
+                const response = await fetch('search_index.json');
+                if (!response.ok) throw new Error("Failed to load search_index.json");
+                deepSearchData = await response.json();
+                
+                let uidCounter = 0;
+                deepSearchData.forEach(chunk => {
+                    chunk.uid = uidCounter++;
+                    flexIndex.add(chunk);
+                });
+                isDeepSearchReady = true;
+                applyFilters(); // Re-trigger search if user typed something
+            } catch (error) {
+                console.error("Deep search error:", error);
+                statsContainer.innerHTML = `<span class="text-red-500">Failed to load Deep Search index.</span>`;
+            }
+        }
 
         async function init() {
             try {
@@ -212,7 +277,34 @@
         }
 
         function applyFilters() {
-            const query = searchInput.value.toLowerCase();
+            const query = searchInput.value.toLowerCase().trim();
+            const isDeep = deepSearchToggle.checked;
+
+            if (isDeep) {
+                if (!isDeepSearchReady) return; // Wait until loaded
+                if (!query) {
+                    container.innerHTML = `<p class="text-gray-500 text-center py-10">Type a keyword to perform a deep text search.</p>`;
+                    statsContainer.textContent = "";
+                    loadMoreBtn.classList.add('hidden');
+                    return;
+                }
+                
+                const searchResults = flexIndex.search(query, { enrich: true, limit: 50 });
+                if (searchResults.length === 0 || searchResults[0].result.length === 0) {
+                    container.innerHTML = `<p class="text-gray-500 text-center py-10">No paragraphs found matching "${query}".</p>`;
+                    statsContainer.textContent = "0 results";
+                    loadMoreBtn.classList.add('hidden');
+                    return;
+                }
+                
+                const hits = searchResults[0].result;
+                statsContainer.textContent = `Found ${hits.length} matching paragraphs`;
+                renderDeepSearchResults(hits, query);
+                loadMoreBtn.classList.add('hidden'); // Pagination not needed for top 50 chunks
+                return;
+            }
+
+            // Normal Metadata Search
             const topic = topicFilter.value;
             const sort = sortOrder.value;
 
@@ -234,6 +326,75 @@
             currentPage = 1;
             statsContainer.textContent = `Showing ${filteredPapers.length} results`;
             renderPapers(true);
+        }
+
+        function renderDeepSearchResults(hits, query) {
+            container.innerHTML = '';
+            
+            const groupedByPaper = {};
+            hits.forEach(hit => {
+                const doc = hit.doc;
+                if (!groupedByPaper[doc.id]) {
+                    groupedByPaper[doc.id] = {
+                        title: doc.title,
+                        authors: doc.authors,
+                        year: doc.year,
+                        journal: doc.journal,
+                        chunks: []
+                    };
+                }
+                groupedByPaper[doc.id].chunks.push(doc.text);
+            });
+
+            for (const paperId in groupedByPaper) {
+                const paper = groupedByPaper[paperId];
+                
+                const paperCard = document.createElement('div');
+                paperCard.className = 'bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden';
+                
+                const header = document.createElement('div');
+                header.className = 'bg-gray-50 px-6 py-4 border-b border-gray-200';
+                
+                const titleLink = document.createElement('a');
+                titleLink.href = `https://openalex.org/${paperId.replace('OA_', 'W')}`;
+                titleLink.target = '_blank';
+                titleLink.className = 'text-lg font-bold text-blue-700 hover:text-blue-900 transition-colors leading-snug block';
+                titleLink.textContent = paper.title;
+                
+                const meta = document.createElement('p');
+                meta.className = 'text-sm text-gray-600 mt-2';
+                meta.innerHTML = `<span class="font-medium">${paper.authors || "Unknown Authors"}</span> &bull; ${paper.year || "N/A"} &bull; <span class="italic">${paper.journal || "Unknown Journal"}</span>`;
+                
+                header.appendChild(titleLink);
+                header.appendChild(meta);
+                paperCard.appendChild(header);
+                
+                const chunksContainer = document.createElement('div');
+                chunksContainer.className = 'px-6 py-4 space-y-4';
+                
+                paper.chunks.forEach(text => {
+                    const p = document.createElement('p');
+                    p.className = 'text-gray-800 text-base leading-relaxed pl-4 border-l-4 border-blue-200 bg-gray-50/50 py-2 pr-2 rounded-r-md';
+                    p.innerHTML = highlightTerms(text, query);
+                    chunksContainer.appendChild(p);
+                });
+                
+                paperCard.appendChild(chunksContainer);
+                container.appendChild(paperCard);
+            }
+        }
+
+        function highlightTerms(text, query) {
+            if (!query) return text;
+            const terms = query.split(/\\s+/).filter(t => t.length > 2);
+            if (terms.length === 0) return text;
+            
+            let highlighted = text;
+            terms.forEach(term => {
+                const regex = new RegExp(`(${term.replace(/[.*+?^$\\{\\}()|[\\]\\\\]/g, '\\\\$&')})`, 'gi');
+                highlighted = highlighted.replace(regex, '<mark class="bg-yellow-200 text-gray-800 font-medium px-1 rounded-sm">$1</mark>');
+            });
+            return highlighted;
         }
 
         function renderPapers(reset = false) {
