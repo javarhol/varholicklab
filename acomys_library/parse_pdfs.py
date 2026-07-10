@@ -58,6 +58,18 @@ def main():
         return
 
     search_index = []
+    indexed_ids = set()
+    
+    if os.path.exists('search_index.json'):
+        try:
+            with open('search_index.json', 'r', encoding='utf-8') as f:
+                search_index = json.load(f)
+                for chunk in search_index:
+                    if 'id' in chunk:
+                        indexed_ids.add(chunk['id'])
+            print(f"Loaded existing search index with {len(indexed_ids)} papers.")
+        except Exception as e:
+            print("Could not load search_index.json", e)
     
     pdf_files = [f for f in os.listdir(pdf_dir) if f.endswith('.pdf')]
     print(f"Found {len(pdf_files)} PDFs to process.")
@@ -72,6 +84,10 @@ def main():
         if not paper_meta:
             print(f"  -> WARNING: Could not match {filename} to database. Skipping.")
             unmatched_count += 1
+            continue
+            
+        if paper_meta['id'] in indexed_ids:
+            print(f"  -> Already indexed ({paper_meta['id']}). Skipping.")
             continue
             
         matched_count += 1

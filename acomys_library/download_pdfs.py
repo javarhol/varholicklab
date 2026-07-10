@@ -14,6 +14,16 @@ def main():
         print("Error: acomys_library.json not found.")
         return
 
+    indexed_ids = set()
+    try:
+        with open('search_index.json', 'r', encoding='utf-8') as f:
+            search_index = json.load(f)
+            for chunk in search_index:
+                if 'id' in chunk:
+                    indexed_ids.add(chunk['id'])
+    except FileNotFoundError:
+        print("Notice: search_index.json not found. Will download all missing PDFs.")
+
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36',
         'Accept': 'application/pdf'
@@ -32,6 +42,10 @@ def main():
         if not pdf_url:
             continue
             
+        if paper_id in indexed_ids:
+            skipped += 1
+            continue
+
         file_path = os.path.join('papers_pdf', f"{paper_id}.pdf")
         
         if os.path.exists(file_path):

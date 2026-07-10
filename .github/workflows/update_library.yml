@@ -21,20 +21,12 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests pymupdf thefuzz
 
       - name: Run update script
         run: |
           cd acomys_library
           python update_library.py
-
-      - name: Check for changes and commit
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add acomys_library/acomys_library.json
-          git commit -m "Auto-update Acomys library" || echo "No changes to commit"
-          git push
 
       - name: Check if there are new papers
         id: check_new
@@ -49,6 +41,21 @@ jobs:
             cat new_papers_report.txt >> $GITHUB_ENV
             echo "EOF" >> $GITHUB_ENV
           fi
+
+      - name: Update Deep Search Index
+        if: steps.check_new.outputs.has_new == 'true'
+        run: |
+          cd acomys_library
+          python download_pdfs.py
+          python parse_pdfs.py
+
+      - name: Check for changes and commit
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add acomys_library/acomys_library.json acomys_library/search_index.json
+          git commit -m "Auto-update Acomys library and deep search index" || echo "No changes to commit"
+          git push
 
       - name: Send Email Notification
         if: steps.check_new.outputs.has_new == 'true'
