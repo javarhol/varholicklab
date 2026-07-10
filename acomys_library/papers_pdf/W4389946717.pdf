@@ -1,0 +1,992 @@
+
+		
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+		<head>
+			<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+			<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+			<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+			
+		<meta name="description" content="We report the first documented record of Acomys dimidiatus (Cretzschmar, 1826) from Lebanon. An opportunistic trapping was carried on in Hima Ibl Al Saqi, southern Lebanon for five consecutive nights during the spring and fall of 2022. Four spiny mice were trapped, and their morphometric measurements were recorded. These measurements resemble those documented for this species in other parts of the Middle East. Our new record extends the known distribution of Acomys dimidiatus approximately 45 km away from its most northern known geographic range."/>
+	<meta name="keywords" content="Geographic distribution;Sherman traps;Middle East"/>
+	<meta name="author" content="Mounir R. Abi-Said, Elie El Haddad"/>
+	<meta name="distribution" content="global"/>
+	<meta name="robots" content="index, follow, all"/>
+	<meta property="og:image" content="https://checklist.pensoft.net/showimg/d200x_954804.jpg"/>
+	<meta property="og:title" content="The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon"/>
+	<meta property="og:description" content="We report the first documented record of Acomys dimidiatus (Cretzschmar, 1826) from Lebanon. An opportunistic trapping was carried on in Hima Ibl Al Saqi, southern Lebanon for five consecutive nights during the spring and fall of 2022. Four spiny mice were trapped, and their morphometric measurements were recorded. These measurements resemble those documented for this species in other parts of the Middle East. Our new record extends the known distribution of Acomys dimidiatus approximately 45 km away from its most northern known geographic range."/>
+	<meta property="fb:app_id" content="1129013080805726"/>
+	<meta property="og:url" content="https://checklist.pensoft.net/article/109012/"/>
+	<meta property="og:site_name" content="Check List"/>
+	<meta property="og:type" content="article"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:site" content="@cklistjournal"/>
+	<meta name="twitter:title" content="The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon"/>
+	<meta name="twitter:description" content="We report the first documented record of Acomys dimidiatus (Cretzschmar, 1826) from Lebanon. An opportunistic trapping was carried on in Hima Ibl Al Saqi, southern Lebanon for five consecutive nights during the spring and fall of 2022. Four spiny mice were trapped, and their morphometric measurements were recorded. These measurements resemble those documented for this species in other parts of the Middle East. Our new record extends the known distribution of Acomys dimidiatus approximately 45 km away from its most northern known geographic range."/>
+	<meta name="twitter:image" content="https://checklist.pensoft.net/showimg/d200x_954804.jpg"/>
+	<meta name="twitter:url" content="https://checklist.pensoft.net/article/109012/"/>
+	<meta name="citation_fulltext_world_readable" content=""/>
+	<meta name="citation_access" content="all"/>
+	<meta name="citation_journal_title" content="Check List"/>
+	<meta name="citation_publisher" content="Pensoft Publishers"/>
+	<meta name="citation_title" content="The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon"/>
+	<meta name="citation_abstract" content="We report the first documented record of Acomys dimidiatus (Cretzschmar, 1826) from Lebanon. An opportunistic trapping was carried on in Hima Ibl Al Saqi, southern Lebanon for five consecutive nights during the spring and fall of 2022. Four spiny mice were trapped, and their morphometric measurements were recorded. These measurements resemble those documented for this species in other parts of the Middle East. Our new record extends the known distribution of Acomys dimidiatus approximately 45 km away from its most northern known geographic range."/>
+	<meta name="citation_volume" content="19"/>
+	<meta name="citation_issue" content="6"/>
+	<meta name="citation_firstpage" content="1061"/>
+	<meta name="citation_lastpage" content="1064"/>
+	<meta name="citation_doi" content="10.15560/19.6.1061"/>
+	<meta name="citation_id" content="109012"/>
+	<meta name="citation_publication_date" content="2023/12/20"/>
+	<meta name="citation_public_url" content="https://checklist.pensoft.net/article/109012/"/>
+	<meta name="citation_abstract_html_url" content="https://checklist.pensoft.net/article/109012/"/>
+	<meta name="citation_pdf_url" content="https://checklist.pensoft.net/article/109012/download/pdf/"/>
+	<meta name="citation_xml_url" content="https://checklist.pensoft.net/article/109012/download/xml/"/>
+	<meta name="citation_article_type" content="article-journal"/>
+	<meta name="citation_keywords" content="Geographic distribution;Sherman traps;Middle East"/>
+	<meta name="dc.title" content="The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon"/>
+	<meta name="dc.type" content="Notes on Geographic Distribution"/>
+	<meta name="dc.source" content="Check List 19(6): 1061-1064"/>
+	<meta name="dc.date" content="2023/12/20"/>
+	<meta name="dc.identifier" content="doi:10.15560/19.6.1061"/>
+	<meta name="dc.publisher" content="Pensoft Publishers"/>
+	<meta name="dc.rights" content="http://creativecommons.org/licenses/by/4.0/"/>
+	<meta name="dc.format" content="text/html"/>
+	<meta name="dc.language" content="en"/>
+	<meta name="prism.publicationName" content="The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon"/>
+	<meta name="prism.issn" content="1809-127X"/>
+	<meta name="prism.publicationDate" content="2023/12/20"/>
+	<meta name="prism.volume" content="19"/>
+	<meta name="prism:issueIdentifier " content="6"/>
+	<meta name="prism.doi" content="10.15560/19.6.1061"/>
+	<meta name="prism.section" content="Notes on Geographic Distribution"/>
+	<meta name="prism.startingPage" content="1061"/>
+	<meta name="prism.endingPage" content="1064"/>
+	<meta name="prism.pageRange" content="1061-1064"/>
+	<meta name="prism.copyright" content="2023 Mounir R. Abi-Said, Elie El Haddad"/>
+	<meta name="prism.rightsAgent" content="checklist@pensoft.net"/>
+	<meta name="eprints.title" content="The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon"/>
+	<meta name="eprints.type" content="Notes on Geographic Distribution"/>
+	<meta name="eprints.datestamp" content="2023/12/20"/>
+	<meta name="eprints.ispublished" content="pub"/>
+	<meta name="eprints.date" content="2023"/>
+	<meta name="eprints.date_type" content="published"/>
+	<meta name="eprints.publication" content="Pensoft Publishers"/>
+	<meta name="eprints.volume" content="19"/>
+	<meta name="eprints.number" content="6"/>
+	<meta name="eprints.pagerange" content="1061-1064"/>
+	<meta itemprop="name" content="The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon"/>
+	<meta name="dc.creator" content="Mounir R. Abi-Said"/>
+	<meta name="dc.creator" content="Elie El Haddad"/>
+	<meta name="dc.contributor" content="Mounir R. Abi-Said"/>
+	<meta name="dc.contributor" content="Elie El Haddad"/>
+	<meta name="eprints.creators_name" content="Mounir R. Abi-Said"/>
+	<meta name="eprints.creators_name" content="Elie El Haddad"/>
+	<meta name="citation_author" content="Mounir R. Abi-Said"/>
+	<meta name="citation_author_institution" content="Lebanese University, Fanar, Lebanon"/>
+	<meta name="citation_author_email" content="mabisaid9@gmail.com"/>
+	<meta name="citation_author_orcid" content="https://orcid.org/0009-0007-0219-4768"/>
+	<meta name="citation_author" content="Elie El Haddad"/>
+	<meta name="citation_author_institution" content="Society for the Protection of Nature in Lebanon, Beirut, Lebanon"/>
+	<meta name="citation_author_orcid" content="https://orcid.org/0009-0000-2160-6093"/>
+	<meta name="citation_issn" content="1809-127X"/>
+	
+	
+			<title>The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon</title>
+			<base href="https://checklist.pensoft.net/" />
+			<link rel="SHORTCUT ICON" href="/i/ico/checklist.ico" />
+			<link type="text/css" rel="stylesheet" href="/lib/css/langs/en.css?v=1723472591" media="all" title="default" />
+	
+			<script type="text/javascript" src="/lib/js/build/output/article_en.bundle.js?v=1781766027"></script>
+	
+			<link type="text/css" rel="stylesheet" href="/lib/css/journals/journal_67.css?v=1774450112" media="all" title="default" />
+	
+			
+			<!-- CKEditor BEGIN -->
+			<script type="text/javascript" src="/lib/editors/ckeditor_4.4/plugins/lite/lite-interface.js?v=1723472590"></script>
+	
+			<script type="text/javascript" src="/lib/editors/ckeditor_4.4/ckeditor.js?v=1723472590"></script>
+	
+			<script type="text/javascript" src="/lib/editors/ckeditor_4.4/adapters/jquery.js?v=1723472590"></script>
+	
+	
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKyRTU3XxGYW-p7f7-1O3QMVKfStCOOYM&callback=Function.prototype"></script>
+			
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML&noContrib"></script>
+			<script type="text/javascript">
+				MathJax.Hub.Config({
+					config: ["MMLorHTML.js"],
+					jax: ["input/TeX","input/MathML","input/AsciiMath","output/SVG", "output/PreviewHTML"],
+					extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js", "[a11y]/accessibility-menu.js"],
+					TeX: {
+						extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+					}
+				});
+		</script>
+	
+			
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic,300,300italic,600italic,700italic,800,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet" >
+	
+
+			<script type="text/javascript">
+				$(window).on("load", function(){
+					init_lang_switcher()
+					
+					gWindowIsLoaded = true;
+				});
+			</script>
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			
+		<script type="text/javascript">
+			google.charts.load('current',
+			{
+				packages: ['corechart', 'bar']
+			});
+		</script>
+	
+			<!-- Start of CREDIT Script -->
+				<!-- script src="https://api.profeza.com/alpha/js/credit.js"></script -->
+			<!-- End of Script -->
+		</head>
+		<body class="journal_67 pensoft lang_en">
+		
+	
+			<div id="container" class="AOF">
+				<div id="header" class="no-annotations">
+					
+		 <div id="nav" class="P-Nav-Article">
+			<div class="constrained">
+				
+		<a target="_blank" href="/"><img src="/i/aof_journal_logos/AOF_checklist_logo.svg" alt="logo" class="logo" /></a>
+	
+				
+			<div id="menu" class="journal">
+	<a class="menu_btn" target="_blank" href="">Home</a><a class="menu_btn" target="_blank" href="articles">Articles</a><a class="menu_btn" target="_blank" href="about">About</a>
+			</div>
+	
+				
+			<div id="menu" class="pensoft">
+	<a class="menu_btn" target="_blank" href="https://pensoft.net/about">About Pensoft</a><a class="menu_btn" target="_blank" href="https://pensoft.net/books">Books</a><a class="menu_btn" target="_blank" href="https://pensoft.net/journals">Journals</a><a class="menu_btn" target="_blank" href="https://blog.pensoft.net/">Blog</a>
+			</div>
+	
+				
+				<div class="login_wrapper">
+					
+					
+					<div class="combine_cart_profile">
+						
+						
+						<div class="loginOrRegister">
+							<a href="https://pensoft.net/register.php?register=1&amp;gotourl=checklist.pensoft.net%2Farticle%2F109012%2F">Register</a> |
+							<a href="login.php?redirurl=%2Farticle%2F109012%2F">Login</a>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="P-Clear"></div>
+	
+				</div><!-- END header -->
+				
+			
+			<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@id": "https://checklist.pensoft.net/article/109012",
+    "@type": "ScholarlyArticle",
+    "url": "https://checklist.pensoft.net/article/109012",
+    "headline": "The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon",
+    "name": "The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon",
+    "datePublished": "2023-12-20",
+    "dateCreated": "2023-07-04",
+    "dateModified": "2023-12-11",
+    "genre": "Notes on Geographic Distribution",
+    "keywords": [
+        "Geographic distribution",
+        "Sherman traps",
+        "Middle East"
+    ],
+    "abstract": "We report the first documented record of Acomys dimidiatus (Cretzschmar, 1826) from Lebanon. An opportunistic trapping was carried on in Hima Ibl Al Saqi, southern Lebanon for five consecutive nights during the spring and fall of 2022. Four spiny mice were trapped, and their morphometric measurements were recorded. These measurements resemble those documented for this species in other parts of the Middle East. Our new record extends the known distribution of Acomys dimidiatus approximately 45 km away from its most northern known geographic range.",
+    "image": "https://checklist.pensoft.net//img/7TVeXpoqfNYT89tyrm3ifrTeG9Wv8P676JSQp/H2pj9hhtoybol4GF7LAr3pPRTSvhFnLoLQsd8ZLZBnZlqzZAzBFvt9dtcPUw==.jpg",
+    "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "url": "https://doi.org/10.15560/19.6.1061",
+        "value": "10.15560/19.6.1061"
+    },
+    "sameAs": "https://doi.org/10.15560/19.6.1061",
+    "offers": {
+        "@type": "Offer",
+        "price": "3.90",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "Order Printed version"
+    },
+    "associatedMedia": [
+        {
+            "@type": "DataDownload",
+            "contentUrl": "https://checklist.pensoft.net/article/109012/download/pdf",
+            "description": "The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon PDF download"
+        }
+    ],
+    "publisher": {
+        "@identifier": "https://oceanexpert.org/institution/24685",
+        "@type": "Organization",
+        "name": "Pensoft Publishers",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://pensoft.net/new_images/pensoft_logo.svg"
+        }
+    },
+    "creditText": [
+        "Abi-Said M, El Haddad E (2023) The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon. Check List 19(6): 1061-1064. https://doi.org/10.15560/19.6.1061"
+    ],
+    "articleSection": [
+        "Asia",
+        "Lebanon",
+        "Middle East"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Mounir R. Abi-Said",
+            "@id": "https://orcid.org/0009-0007-0219-4768",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Lebanese University, Fanar, Lebanon"
+                },
+                {
+                    "@type": "Organization",
+                    "name": "Animal Encounter, Aley, Lebanon"
+                }
+            ]
+        },
+        {
+            "@type": "Person",
+            "name": "Elie El Haddad",
+            "@id": "https://orcid.org/0009-0000-2160-6093",
+            "affiliation": [
+                {
+                    "@type": "Organization",
+                    "name": "Society for the Protection of Nature in Lebanon, Beirut, Lebanon"
+                }
+            ]
+        }
+    ],
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://checklist.pensoft.net/article/109012"
+    }
+}</script>
+			<script type="text/javascript">SetArticleId(109012);</script>
+			<script type="text/javascript">SetArticlePreviewLang('en', 'en');</script>
+			<!-- div class="articlePath">
+				<div class="articlePath-links"><a href="">Journal home</a> <a href="about">About</a> <a href="articles">Browse articles</a></div>
+			</div -->
+			
+			<div class="Main-Content">
+				<div class="P-Article-Content-Wrapper">
+					
+					<div id="article-head" class="no-annotations">
+						<div class="row middle-xs between-xs m0">
+							<div>
+								<div class="PaperType bra">Notes on Geographic Distribution</div>
+								<div id="article-id">
+									<a class="article-issue" target="_blank" href="issue/4698/">Check List 19(6): 1061-1064</a>
+									<br/>
+									<a class="article-id-doi" href="https://doi.org/10.15560/19.6.1061">https://doi.org/10.15560/19.6.1061</a> (20 Dec 2023)
+								</div>
+							</div>
+							<div class="col-lg-4 col-md end-xs" style="padding: 0px; display: flex;">
+								
+								
+								
+								<div class="P-Article-Type-Holder">
+									
+									
+									<div class="P-Article-Previous-Versions">
+										<div class="P-Article-Versions-Title">Other versions:</div>
+										
+									</div>
+								</div>
+								
+								
+							</div>
+							<div style="float:right" id="info_menu-id" onClick="showInfoBar();" class="icon-mobile-menu"></div>
+						</div>
+					</div>
+					<div id="article-preview">
+						<iframe onload="onIframeLoadHandler();" data-showpdf="true" src="article_preview.php?id=109012" enable-annotation="" id="articleIframe" name="articleIframe" style="height: 1px;"></iframe>
+						<div class="P-Article-Preview-Pdf">
+					<iframe allowfullscreen webkitallowfullscreen src="/pdfviewer/109012/" width="100%" class="pdf-preview-holder">
+						This browser does not support PDFs. Please download the PDF to view it: <a href="https://checklist.pensoft.net//article/109012/download/pdf">Download PDF</a>
+					</iframe>
+				</div>
+						
+		
+			
+			<footer class="footer">
+			<div class="">
+				<div class="row top-xs between-xs f_content" id="footer-accordion">
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder">
+							<div class="about_foot footer-accordion-toggle">ABOUT PENSOFT</div>
+							<ul>
+								<li><a href="https://pensoft.net/about#Company-profile">Company Profile</a></li>
+								<li><a href="https://pensoft.net/about#Innovations-tools">Innovations &amp; Tools</a></li>
+								<li><a href="https://pensoft.net/about#Open-access-policy">Open Access &amp; APC Policies</a></li>
+								<li><a href="https://pensoft.net/terms">Terms of Use</a></li>
+								<li><a href="https://pensoft.net/editorial-policies">Editorial Policies</a></li>
+								<li><a href="https://pensoft.net/general-policies">General Policies</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder padding_right">
+							<div class="products_foot footer-accordion-toggle">PRODUCTS</a></div>
+							<ul>
+								<li><a href="https://pensoft.net/browse-journals">Journals</a></li>
+								<li><a href="https://ab.pensoft.net/">Advanced Books</a></li>
+								<li><a href="https://books.pensoft.net/">Conventional Books</a></li>
+								<li><a href="https://aca.pensoft.net/">Conference Abstracts</a></li>
+								<li><a href="https://ap.pensoft.net/">Conference Proceedings</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder padding_right">
+							<div class="products_foot footer-accordion-toggle">SERVICES</a></div>
+							<ul>
+								<li><a href="https://pensoft.net/services-authors">For Authors</a></li>
+								<li><a href="https://pensoft.net/services-journals">For Journals</a></li>
+								<li><a href="https://pensoft.net/services-books">For Books</a></li>
+								<li><a href="https://pensoft.net/services-conferences">For Conferences</a></li>
+								<li><a href="https://pensoft.net/for-organisations">For Organisations</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6 footer_menu_projects">
+						<div class="footer_menuholder">
+							<div class="other_foot footer-accordion-toggle">PROJECTS</div>
+							<ul>
+								<li><a href="https://pensoft.net/projects">Research Projects</a></li>
+								<li><a href="https://pensoft.net/services-projects">Services</a></li>
+								<li><a href="https://pensoft.net/partners">Partners</a></li>
+								<li class="hide"><a href="https://pensoft.net/media">Brochure</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder">
+							<div class="other_foot footer-accordion-toggle">ARPHA</div>
+							<ul>
+								<li><a href="https://arphahub.com/about/platform">ARPHA Publishing Platform</a></li>
+								<li><a href="https://arphahub.com/manual">ARPHA Manual</a></li>
+								<li><a href="https://arphahub.com/about/pricing_plans">ARPHA Pricing</a></li>
+								<li><a href="https://pensoft.net/web-services">Web Services</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md col-sm col-xs-6">
+						<div class="footer_menuholder">
+							<div class="contact_foot footer-accordion-toggle">GET IN TOUCH</div>
+							<ul>
+								<li><a href="https://pensoft.net/contacts">Contacts</a></li>
+								<li><a href="javascript:void(0);" onclick="redirectAndOpenModal('publish', 'https://pensoft.net/'); return false;">Publishing Inquiry</a></li>
+								<li><a href="javascript:void(0);" onclick="redirectAndOpenModal('migrate', 'https://pensoft.net/'); return false;">Migrate Your Journal</a></li>
+								<li><a href="javascript:void(0);" onclick="redirectAndOpenModal('new', 'https://pensoft.net/'); return false;">Open a New Journal</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="foot">
+				<div class="">
+					<ul class="row foot_content">
+						<li class="col-md first-md col-sm-4 col-xs-12">
+							<div class="row middle-xs-xs nowrap" style="align-items: center">
+								Follow PENSOFT
+								<a class="facebook" title="Facebook" target="_blank" href="https://www.facebook.com/Pensoft/"></a>
+								<a class="twitter" title="Twitter" target="_blank" href="https://twitter.com/Pensoft"></a>
+								<a class="linkedin" title="LinkedIn" target="_blank" href="https://www.linkedin.com/company/pensoft-publishers/"></a>
+								<a class="youtube" title="Youtube" target="_blank" href="https://www.youtube.com/user/PensoftPublishers/videos"></a>
+								<a class="instagram" title="Instagram" target="_blank" href="https://www.instagram.com/pensoft/"></a>
+								<a class="weibo" title="Weibo" target="_blank" href="https://weibo.com/u/7921316800"></a>
+							</div>
+						</li>
+						<li class="col-md-3 first-md col-sm col-xs-12">
+							<a href="https://blog.pensoft.net/">Blog & News</a>
+							<a href="https://blog.pensoft.net/#email-subscribers-form-2" class="textbox_button">Subscribe</a>
+						</li>
+						<li class="col-md-2 first-md col-sm-2 col-xs-6 center-md start-xs first-xs media_center"><a href="https://pensoft.net/media">Media Center</a></li>
+						<li class="col-md-3 col-sm col-xs-12 end-md center-xs">&copy; Pensoft Publishers 2026</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	
+	
+	
+						<script type="text/javascript">
+							function onIframeLoadHandler() {
+                            	//load hypothesis when iframe is ready see: https://h.readthedocs.io/projects/client/en/latest/publishers/
+			jQuery.getScript("https://hypothes.is/embed.js");
+			window.hypothesisConfig = function () {
+				return {
+					"showHighlights": false,
+												"openSidebar": false,
+												"theme": "clean"
+											};
+										};
+							}
+							$(document).ready(function(){
+								showInfoBar(2);
+							});
+							clickOutSideOfInfoBar();
+							SetArticleOnLoadEvents(0);
+						</script>
+						<div class="P-Baloon" id="ArticleBaloon"></div>
+						
+		<!-- Tooltip Component -->
+		<div id="disscoTooltip" class="tooltipDOI">
+			<!-- Digital Extended Specimen -->
+			<div class="tooltipRow grow">
+				<div class="widthLeft">
+					<img src="/i/tagLogo.png" alt="Tag Logo" class="tagLogo" />
+				</div>
+				<div class="widthRight">
+					<div>
+						<p id="tooltipScientificName"> </p>
+	
+						<p class="verbatimName">(Verbatim name)</p>
+					</div>
+					<div class="preservedStatusDiv grow">
+						<p id="tooltipStatus" class="preservedStatus textOverflow"> </p>
+					</div>
+				</div>
+			</div>
+	
+			<!-- ID -->
+			<div class="tooltipRow">
+				<span class="widthLeft">
+					<p class="IDTitle"> ID </p>
+				</span>
+				<span class="widthRight">
+					<p id="tooltipID" class="IDField"> </p>
+					<p id="tooltipGUID" class="catalogNumber"> (Catalog Number) </p>
+				</span>
+			</div>
+	
+			<!-- Organisation-->
+			<div class="tooltipRow">
+				<span class="widthLeft">
+					<img src="/i/building-columns-solid.svg" class="organisationIcon" alt="ORG" />
+				</span>
+				<span class="widthRight">
+					<p id="tooltipOrganisation" class="organisationTitle"> </p>
+				</span>
+			</div>
+	
+			<!-- DOI Logo -->
+			<div class="tooltipRow DOIRow">
+				<a href="https://doi.org/10.1093/biosci/biac060" rel="noreferer" target="_blank">
+                    <span class="digitalExtendedSpecienNote">DES</span>
+                </a>
+    
+                <a href="https://www.doi.org/the-identifier/what-is-a-doi/" rel="noreferer" target="_blank">
+                    <img src="/i/DOI_logo.png" alt="DOI Logo" class="DOILogo" />
+                </a>
+			</div>
+	
+			<!-- Error Message -->
+			<div id="errorMessage" class="warningMessage">
+				<p>Invalid DOI was provided, please try again</p>
+			</div>
+		</div>
+	
+					</div>
+				</div>
+				<div class="P-Article-Info-Bar" id="P-Article-Info-Bar">
+					<div class="P-Article-Info-header">
+						<!-- ul class="PostPubRevButton">
+						</ul -->
+						
+			<div class="P-Article-Share row middle-xs">
+				<div class="P-Article-Downloads-Holder col_no_padding col-xs-5 start-xs zindex1000">
+					
+			<div class="row middle-xs">
+				<div class="col-xs browse_button"><a target="_blank" title="XML" href="/article/109012/download/xml/">XML</a></div>
+				
+		<div class="col-xs browse_button"><a href="/article/109012/download/pdf/954806" title="PDF">PDF</a></div>
+	
+				<a class="cart col-xs" title="Order reprints: &euro; 3,00" onclick="javascript:addToCart(109012, 3, 1)">
+				<i style="font-size: 1.9em;color: #191931;" class="fa fa-cart-plus" aria-hidden="true"></i>
+			</a>
+			<div id="basket_popup_109012" style="display: none; margin-top: -20px;"></div>
+			<div class="basket_loading_popup" id="basket_loading_popup_109012" style="display: none; margin-top: 0px; margin-left: 130px;"><img src="./i/simple_loading.gif" width="45" /></div>
+			</div>
+	
+				</div>
+				<div class="P-Article-Share-Holder col_no_padding col-xs-7 end-xs">
+					<div class="P-Article-Hypothesis-Annotations">
+						<div title="Annotations" class="hypothesis-opener speech-bubble" data-behaviour="SpeechBubble HypothesisOpener" data-hypothesis-trigger="" data-behaviour-initialised="true"><span data-hypothesis-annotation-count="0">&nbsp;</span></div>&nbsp;
+					</div>
+					<div class="P-Article-Share-Row">
+						<a target="_blank" title="Share this article on Bluesky" href="https://bsky.app/intent/compose?text=The+first+documented+record+of+Acomys+dimidiatus+%28Cretzschmar%2C+1826%29%2C+Eastern+Spiny+Mouse+%28Rodentia%2C+Muridae%29+from+Lebanon++https%3A%2F%2Fchecklist.pensoft.net%2Farticles.php%3Fid%3D109012">
+							<div class="P-Article-Share-Row-Icon">
+								<span class="P-Article-Share-Row-Icon-B"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Bluesky
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="P-Article-Share-Row">
+						<a target="_blank" title="Share this article on Twitter" href="https://twitter.com/intent/tweet?text=The+first+documented+record+of+Acomys+dimidiatus+%28Cretzschmar%2C+1826%29%2C+Eastern+Spiny+Mouse+%28Rodentia%2C+Muridae%29+from+Lebanon+https%3A%2F%2Fdoi.org%2F10.15560%2F19.6.1061+via+%40cklistjournal">
+							<div class="P-Article-Share-Row-Icon">
+								<span class="P-Article-Share-Row-Icon-T"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Twitter
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="P-Article-Share-Row">
+						<a target="_blank" title="Share this article on Facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://checklist.pensoft.net/articles.php?id=109012','facebook-share-dialog', 'width=550,height=450'); return false;">
+							<div class="P-Article-Share-Row-Icon">
+								<span class="P-Article-Share-Row-Icon-F"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Facebook
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="P-Article-Share-Row">
+						<a target="_blank" title="Share this article on Telegram" href="https://t.me/share/url?url=https://checklist.pensoft.net/articles.php?id=109012&text=The+first+documented+record+of+Acomys+dimidiatus+%28Cretzschmar%2C+1826%29%2C+Eastern+Spiny+Mouse+%28Rodentia%2C+Muridae%29+from+Lebanon">
+							<div class="P-Article-Share-Row-Icon">
+								<span class="P-Article-Share-Row-Icon-TL"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Telegram
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="P-Article-Share-Row">
+						<div class="P-Article-Share-Row-Icon">
+							<a target="_blank" title="Share this article on Mendeley" href="#" onclick="javascript:window.open('https://www.mendeley.com/import/?url=https://checklist.pensoft.net/articles.php?id=109012', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=550,width=450');return false;">
+								<span class="P-Article-Share-Row-Icon-M"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Mendeley
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="P-Article-Share-Row">
+						<div class="P-Article-Share-Row-Icon">
+							<a title="Share this article on Reddit" href="https://www.reddit.com/submit?url=https://checklist.pensoft.net/articles.php?id=109012&title=The first documented record of Acomys dimidiatus (Cretzschmar, 1826), Eastern Spiny Mouse (Rodentia, Muridae) from Lebanon&sr=article" target="_blank" >
+								<span class="P-Article-Share-Row-Icon-R"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Reddit
+								</span>
+							</a>
+						</div>
+					</div>
+					<!-- div class="P-Article-Share-Row">
+						<div class="P-Article-Share-Row-Icon">
+							<a title="Share this article on Cite-U-Like" href="https://www.citeulike.org/posturl?bml=popup&url=doi:10.15560/19.6.1061" target="_blank" >
+								<span class="P-Article-Share-Row-Icon-C"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Cite-U-Like
+								</span>
+							</a>
+						</div>
+					</div -->
+					<div class="P-Article-Share-Row">
+						<div class="P-Article-Share-Row-Icon">
+							<a href="mailto:?Subject=Paper published in the Check List&amp;body=Hi%2C%0A%0AHere%20is%20an%20interesting%20paper%20published%20in%20Check%20List%3A%0A%0AAbi-Said%20M%2C%20El%20Haddad%20E%20%282023%29%20The%20first%20documented%20record%20of%20Acomys%20dimidiatus%20%28Cretzschmar%2C%201826%29%2C%20Eastern%20Spiny%20Mouse%20%28Rodentia%2C%20Muridae%29%20from%20Lebanon.%20Check%20List%2019%286%29%3A%201061-1064.%20https%3A%2F%2Fdoi.org%2F10.15560%2F19.6.1061">
+								<span class="P-Article-Share-Row-Icon-E"></span>
+								<span class="P-Article-Share-Row-Icon">
+									Notify a colleague
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+						<ul class="P-Info-Menu leftBar">
+							<li data-info-type="8"><span class="hyper unselectable">Article&nbsp;Info</span><span class="hidden-bold unselectable">Article&nbsp;Info</span></li><li data-info-type="9"><span class="hyper unselectable">Cite</span><span class="hidden-bold unselectable">Cite</span></li><li data-info-type="11"><span class="hyper unselectable">Metrics</span><span class="hidden-bold unselectable">Metrics</span></li><li data-info-type="13"><span class="hyper unselectable">Comment</span><span class="hidden-bold unselectable">Comment</span></li><li data-info-type="10"><span class="hyper unselectable">Related</span><span class="hidden-bold unselectable">Related</span></li>
+						</ul>
+						<ul class="P-Info-Menu bottomBar"><li data-info-type="18"><span class="hyper unselectable">Cited</span><span class="hidden-bold unselectable">Cited</span></li>
+			</ul>
+					</div>
+					<div class="P-Info-Content">
+						
+			<div class="P-Authors-Whole-List">
+				<div class="publons-badge publons-badge-medium" data-type="square" style="display:none; float: left; width: 40px; height: 40px; padding: 0px 10px 10px 0px;" data-doi=10.15560/19.6.1061></div>
+					<script src="https://publons.com/static/badges-v1.js" async></script>
+					<script>
+						$(document).ready(function(){
+							 setTimeout(function(){
+								if($.trim($(".publons-badge-inner").html()) == "") {
+									$(".publons-badge").remove();								
+								}
+								else {
+									$(".publons-badge").show();
+								}
+							}, 1000);
+						});
+					</script>
+		
+				
+				<div class="P-Journal-Meta">
+					Check List 19(6): 1061-1064
+				</div>
+				<div class="P-Doi-Meta">
+					<span class="P-Doi-Label">doi: </span>
+					10.15560/19.6.1061
+				</div>
+				<div class="P-Date-holder">
+					<span class="P-Date-Label">Received: </span>
+			<span class="P-Date">04 Jul 2023</span> | <span class="P-Date-Label">Approved: </span>
+			<span class="P-Date">11 Dec 2023</span> | <span class="P-Date-Label">Published: </span>
+			<span class="P-Date">20 Dec 2023</span>
+				</div>
+				
+				
+				
+				
+				
+			<div class="P-Part-Label">This article is part of:</div>
+			<div class="P-Collections-List">
+	
+				<div class="P-Collection-Row">
+					<a href="issue/4698/" target="_blank">Check List 19(6)</a>
+					
+				</div>
+	
+			</div>
+	
+				
+			<div class="P-Authors-Label">Authors</div>
+			<div class="P-Authors-List">
+	
+				<div class="AOF-Single-Author-Preview" data-author-id="2587">
+					<div class="AOF-Author-Pic"><img width="60" height="60" src="https://checklist.pensoft.net/i/author_icon.svg" border="0" alt="" /></div>
+					<div class="AOF-Author-Details">
+						<div class="orcid-link"><a title="ORCID ID" class="inline-orcid " href="https://orcid.org/0009-0007-0219-4768" target="_blank">&nbsp;&nbsp;&nbsp;</a></div>
+						<div class="scopus-link"></div>
+						<div class="researcher-id-link"></div>
+						<div class="researchgate-id-link"></div>
+						<div class="AOF-Author-Name">
+							<a class="AOF-Author-Email"  >Mounir R.  Abi-Said  </a>
+							<span class="AOF-Author-Corr"> - Corresponding author</span>
+						</div>
+						<div class="AOF-Author-Affiliation"><div>Lebanese University, Fanar, Lebanon</div><div>Animal Encounter, Aley, Lebanon</div></div>
+						<div class="AOF-Author-Site"><a target="_blank" href=""></a></div>
+						<div class="AOF-Author-more">Articles by this author in:&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="http://search.crossref.org/?q=Mounir R.+Abi-Said">CrossRef</a>
+							</span>&nbsp;|&nbsp;
+							
+			<span class="AOF-Author-more-link">
+				<a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Abi-Said%20Mounir R.[au]&dispmax=50">PubMed</a>
+			</span>&nbsp;|&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=%22author%3AMounir R.+Abi-Said&btnG=">Google Scholar</a>
+							</span>
+						</div>
+					</div>
+					<div class="P-Clear"></div>
+				</div>
+	
+				<div class="AOF-Single-Author-Preview" data-author-id="196999">
+					<div class="AOF-Author-Pic"><img width="60" height="60" src="https://checklist.pensoft.net//showimg/authors1_873090.jpg" border="0" alt="" /></div>
+					<div class="AOF-Author-Details">
+						<div class="orcid-link"><a title="ORCID ID" class="inline-orcid " href="https://orcid.org/0009-0000-2160-6093" target="_blank">&nbsp;&nbsp;&nbsp;</a></div>
+						<div class="scopus-link"></div>
+						<div class="researcher-id-link"></div>
+						<div class="researchgate-id-link"></div>
+						<div class="AOF-Author-Name">
+							<a class="AOF-Author-Email"  >Elie  El Haddad  </a>
+							<span class="AOF-Author-Corr"></span>
+						</div>
+						<div class="AOF-Author-Affiliation"><div>Society for the Protection of Nature in Lebanon, Beirut, Lebanon</div></div>
+						<div class="AOF-Author-Site"><a target="_blank" href="https://www.linkedin.com/in/elieel- haddad-1995lb/">https://www.linkedin.com/in/elieel- haddad-1995lb/</a></div>
+						<div class="AOF-Author-more">Articles by this author in:&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="http://search.crossref.org/?q=Elie+El Haddad">CrossRef</a>
+							</span>&nbsp;|&nbsp;
+							
+			<span class="AOF-Author-more-link">
+				<a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=El Haddad%20Elie[au]&dispmax=50">PubMed</a>
+			</span>&nbsp;|&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=%22author%3AElie+El Haddad&btnG=">Google Scholar</a>
+							</span>
+						</div>
+					</div>
+					<div class="P-Clear"></div>
+				</div>
+	
+			</div>
+	
+				
+			<div class="P-SE-Label">Academic editor</div>
+			<div class="P-Authors-List">
+				<div class="AOF-Single-Author-Preview AOF-Single-SE-Preview">
+					<div class="AOF-Author-Pic"><img width="60" height="60" src="https://checklist.pensoft.net//showimg/authors1_198698.jpg" border="0" alt="" /></div>
+					<div class="AOF-Author-Details">
+						<div class="AOF-Author-Name">
+							<a class="AOF-Author-Email"  >Abhijeet Sanjay Bayani  </a>
+						</div>
+						<div class="AOF-Author-Affiliation"><div>Indian Institute of Science (IISc), Bengaluru (= Bangalore), Karnataka, India</div><div>Indian Institute of Science Education and Research (IISER), Pune, Pune, India</div><div>University of Pune, Pune, India</div><div>The Maharaja Sayajirao University of Baroda, Vadodara, India</div></div>
+						<div class="AOF-Author-Site"><a target="_blank" href=""></a></div>
+						<div class="AOF-Author-more">Articles by the Editor in:&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="http://search.crossref.org/?q=Abhijeet+Bayani">CrossRef</a>
+							</span>&nbsp;|&nbsp;
+							
+			<span class="AOF-Author-more-link">
+				<a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Bayani%20Abhijeet[au]&dispmax=50">PubMed</a>
+			</span>&nbsp;|&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=%22author%3AAbhijeet+Bayani&btnG=">Google Scholar</a>
+							</span>
+						</div>
+					</div>
+					<div class="P-Clear"></div>
+				</div>
+			</div>
+	
+				
+			<div class="P-Authors-Label">Reviewers</div>
+			<div class="P-Authors-List">
+	
+				<div class="AOF-Single-Author-Preview AOF-Single-SE-Preview">
+					<div class="AOF-Author-Pic"><img width="60" height="60" src="https://checklist.pensoft.net/i/author_icon.svg" border="0" alt="" /></div>
+					<div class="AOF-Author-Details">
+						<div class="AOF-Author-Name">
+							<a class="AOF-Author-Email"  >Dhawal  Mehta  </a>
+						</div>
+						<div class="AOF-Author-Affiliation"><div>Gujarat University, Ahmedabad, India</div></div>
+						<div class="AOF-Author-Site"><a target="_blank" href=""></a></div>
+						<div class="AOF-Author-more">Articles by the Reviewer in:&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="http://search.crossref.org/?q=Dhawal+Mehta">CrossRef</a>
+							</span>&nbsp;|&nbsp;
+							
+			<span class="AOF-Author-more-link">
+				<a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Mehta%20Dhawal[au]&dispmax=50">PubMed</a>
+			</span>&nbsp;|&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=%22author%3ADhawal+Mehta&btnG=">Google Scholar</a>
+							</span>
+						</div>
+					</div>
+					<div class="P-Clear"></div>
+				</div>
+	
+				<div class="AOF-Single-Author-Preview AOF-Single-SE-Preview">
+					<div class="AOF-Author-Pic"><img width="60" height="60" src="https://checklist.pensoft.net//showimg/authors1_188751.jpg" border="0" alt="" /></div>
+					<div class="AOF-Author-Details">
+						<div class="AOF-Author-Name">
+							<a class="AOF-Author-Email"  >Nikhil  Modak  </a>
+						</div>
+						<div class="AOF-Author-Affiliation"><div>Wildlife Institute of India, Dehradun, India</div></div>
+						<div class="AOF-Author-Site"><a target="_blank" href=""></a></div>
+						<div class="AOF-Author-more">Articles by the Reviewer in:&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="http://search.crossref.org/?q=Nikhil+Modak">CrossRef</a>
+							</span>&nbsp;|&nbsp;
+							
+			<span class="AOF-Author-more-link">
+				<a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed?cmd=search&term=Modak%20Nikhil[au]&dispmax=50">PubMed</a>
+			</span>&nbsp;|&nbsp;
+							<span class="AOF-Author-more-link">
+								<a target="_blank" href="https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=%22author%3ANikhil+Modak&btnG=">Google Scholar</a>
+							</span>
+						</div>
+					</div>
+					<div class="P-Clear"></div>
+				</div>
+	
+			</div>
+	
+				<div class="author_contribution"><div class="P-Part-Label2">Author contributions</div><p>The authors&#39; contributions were as follows: Methodology, data collection, results and interpretation of results, draft and final version of the manuscript Mounir ABI-SAID; Fieldwork, manuscript review Elie EL HADDAD&nbsp;&nbsp;</p>
+<br/></div>
+				<div class="conflict_of_interest">
+					<div class="P-Part-Label2">Conflict of interest</div>
+					The authors have declared that no competing interests exist.
+				</div>
+				 
+				
+				
+			<div class="P-Authors-Label">Supporting agencies</div>
+			<div class="P-Supp-List">
+	
+				<div class="supp_agencies"> The Society for the Protection of Nature in Lebanon (SPNL)</div>
+	
+			</div>
+	
+				<div class="copyrights">
+					This is an open access article distributed under the terms of the <a border="0" target="_blank" href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution License (CC BY 4.0)</a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+				</div>
+			</div>
+	
+						<script>
+							gMenuActiveElementType = 8;
+							MarkActiveMenuElement();
+							RegisterInitialState("\n\t\t\t<div class=\"P-Authors-Whole-List\">\n\t\t\t\t<div class=\"publons-badge publons-badge-medium\" data-type=\"square\" style=\"display:none; float: left; width: 40px; height: 40px; padding: 0px 10px 10px 0px;\" data-doi=10.15560\/19.6.1061><\/div>\n\t\t\t\t\t<script src=\"https:\/\/publons.com\/static\/badges-v1.js\" async><\/script>\n\t\t\t\t\t<script>\n\t\t\t\t\t\t$(document).ready(function(){\n\t\t\t\t\t\t\t setTimeout(function(){\n\t\t\t\t\t\t\t\tif($.trim($(\".publons-badge-inner\").html()) == \"\") {\n\t\t\t\t\t\t\t\t\t$(\".publons-badge\").remove();\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\telse {\n\t\t\t\t\t\t\t\t\t$(\".publons-badge\").show();\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}, 1000);\n\t\t\t\t\t\t});\n\t\t\t\t\t<\/script>\n\t\t\n\t\t\t\t\n\t\t\t\t<div class=\"P-Journal-Meta\">\n\t\t\t\t\tCheck List 19(6): 1061-1064\n\t\t\t\t<\/div>\n\t\t\t\t<div class=\"P-Doi-Meta\">\n\t\t\t\t\t<span class=\"P-Doi-Label\">doi: <\/span>\n\t\t\t\t\t10.15560\/19.6.1061\n\t\t\t\t<\/div>\n\t\t\t\t<div class=\"P-Date-holder\">\n\t\t\t\t\t<span class=\"P-Date-Label\">Received: <\/span>\n\t\t\t<span class=\"P-Date\">04 Jul 2023<\/span> | <span class=\"P-Date-Label\">Approved: <\/span>\n\t\t\t<span class=\"P-Date\">11 Dec 2023<\/span> | <span class=\"P-Date-Label\">Published: <\/span>\n\t\t\t<span class=\"P-Date\">20 Dec 2023<\/span>\n\t\t\t\t<\/div>\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t<div class=\"P-Part-Label\">This article is part of:<\/div>\n\t\t\t<div class=\"P-Collections-List\">\n\t\n\t\t\t\t<div class=\"P-Collection-Row\">\n\t\t\t\t\t<a href=\"issue\/4698\/\" target=\"_blank\">Check List 19(6)<\/a>\n\t\t\t\t\t\n\t\t\t\t<\/div>\n\t\n\t\t\t<\/div>\n\t\n\t\t\t\t\n\t\t\t<div class=\"P-Authors-Label\">Authors<\/div>\n\t\t\t<div class=\"P-Authors-List\">\n\t\n\t\t\t\t<div class=\"AOF-Single-Author-Preview\" data-author-id=\"2587\">\n\t\t\t\t\t<div class=\"AOF-Author-Pic\"><img width=\"60\" height=\"60\" src=\"https:\/\/checklist.pensoft.net\/i\/author_icon.svg\" border=\"0\" alt=\"\" \/><\/div>\n\t\t\t\t\t<div class=\"AOF-Author-Details\">\n\t\t\t\t\t\t<div class=\"orcid-link\"><a title=\"ORCID ID\" class=\"inline-orcid \" href=\"https:\/\/orcid.org\/0009-0007-0219-4768\" target=\"_blank\">&nbsp;&nbsp;&nbsp;<\/a><\/div>\n\t\t\t\t\t\t<div class=\"scopus-link\"><\/div>\n\t\t\t\t\t\t<div class=\"researcher-id-link\"><\/div>\n\t\t\t\t\t\t<div class=\"researchgate-id-link\"><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Name\">\n\t\t\t\t\t\t\t<a class=\"AOF-Author-Email\"  >Mounir R.  Abi-Said  <\/a>\n\t\t\t\t\t\t\t<span class=\"AOF-Author-Corr\"> - Corresponding author<\/span>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Affiliation\"><div>Lebanese University, Fanar, Lebanon<\/div><div>Animal Encounter, Aley, Lebanon<\/div><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Site\"><a target=\"_blank\" href=\"\"><\/a><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-more\">Articles by this author in:&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"http:\/\/search.crossref.org\/?q=Mounir R.+Abi-Said\">CrossRef<\/a>\n\t\t\t\t\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t\n\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t<a target=\"_blank\" href=\"http:\/\/www.ncbi.nlm.nih.gov\/pubmed?cmd=search&term=Abi-Said%20Mounir R.[au]&dispmax=50\">PubMed<\/a>\n\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"https:\/\/scholar.google.com\/citations?hl=en&view_op=search_authors&mauthors=%22author%3AMounir R.+Abi-Said&btnG=\">Google Scholar<\/a>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div class=\"P-Clear\"><\/div>\n\t\t\t\t<\/div>\n\t\n\t\t\t\t<div class=\"AOF-Single-Author-Preview\" data-author-id=\"196999\">\n\t\t\t\t\t<div class=\"AOF-Author-Pic\"><img width=\"60\" height=\"60\" src=\"https:\/\/checklist.pensoft.net\/\/showimg\/authors1_873090.jpg\" border=\"0\" alt=\"\" \/><\/div>\n\t\t\t\t\t<div class=\"AOF-Author-Details\">\n\t\t\t\t\t\t<div class=\"orcid-link\"><a title=\"ORCID ID\" class=\"inline-orcid \" href=\"https:\/\/orcid.org\/0009-0000-2160-6093\" target=\"_blank\">&nbsp;&nbsp;&nbsp;<\/a><\/div>\n\t\t\t\t\t\t<div class=\"scopus-link\"><\/div>\n\t\t\t\t\t\t<div class=\"researcher-id-link\"><\/div>\n\t\t\t\t\t\t<div class=\"researchgate-id-link\"><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Name\">\n\t\t\t\t\t\t\t<a class=\"AOF-Author-Email\"  >Elie  El Haddad  <\/a>\n\t\t\t\t\t\t\t<span class=\"AOF-Author-Corr\"><\/span>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Affiliation\"><div>Society for the Protection of Nature in Lebanon, Beirut, Lebanon<\/div><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Site\"><a target=\"_blank\" href=\"https:\/\/www.linkedin.com\/in\/elieel- haddad-1995lb\/\">https:\/\/www.linkedin.com\/in\/elieel- haddad-1995lb\/<\/a><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-more\">Articles by this author in:&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"http:\/\/search.crossref.org\/?q=Elie+El Haddad\">CrossRef<\/a>\n\t\t\t\t\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t\n\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t<a target=\"_blank\" href=\"http:\/\/www.ncbi.nlm.nih.gov\/pubmed?cmd=search&term=El Haddad%20Elie[au]&dispmax=50\">PubMed<\/a>\n\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"https:\/\/scholar.google.com\/citations?hl=en&view_op=search_authors&mauthors=%22author%3AElie+El Haddad&btnG=\">Google Scholar<\/a>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div class=\"P-Clear\"><\/div>\n\t\t\t\t<\/div>\n\t\n\t\t\t<\/div>\n\t\n\t\t\t\t\n\t\t\t<div class=\"P-SE-Label\">Academic editor<\/div>\n\t\t\t<div class=\"P-Authors-List\">\n\t\t\t\t<div class=\"AOF-Single-Author-Preview AOF-Single-SE-Preview\">\n\t\t\t\t\t<div class=\"AOF-Author-Pic\"><img width=\"60\" height=\"60\" src=\"https:\/\/checklist.pensoft.net\/\/showimg\/authors1_198698.jpg\" border=\"0\" alt=\"\" \/><\/div>\n\t\t\t\t\t<div class=\"AOF-Author-Details\">\n\t\t\t\t\t\t<div class=\"AOF-Author-Name\">\n\t\t\t\t\t\t\t<a class=\"AOF-Author-Email\"  >Abhijeet Sanjay Bayani  <\/a>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Affiliation\"><div>Indian Institute of Science (IISc), Bengaluru (= Bangalore), Karnataka, India<\/div><div>Indian Institute of Science Education and Research (IISER), Pune, Pune, India<\/div><div>University of Pune, Pune, India<\/div><div>The Maharaja Sayajirao University of Baroda, Vadodara, India<\/div><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Site\"><a target=\"_blank\" href=\"\"><\/a><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-more\">Articles by the Editor in:&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"http:\/\/search.crossref.org\/?q=Abhijeet+Bayani\">CrossRef<\/a>\n\t\t\t\t\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t\n\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t<a target=\"_blank\" href=\"http:\/\/www.ncbi.nlm.nih.gov\/pubmed?cmd=search&term=Bayani%20Abhijeet[au]&dispmax=50\">PubMed<\/a>\n\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"https:\/\/scholar.google.com\/citations?hl=en&view_op=search_authors&mauthors=%22author%3AAbhijeet+Bayani&btnG=\">Google Scholar<\/a>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div class=\"P-Clear\"><\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\n\t\t\t\t\n\t\t\t<div class=\"P-Authors-Label\">Reviewers<\/div>\n\t\t\t<div class=\"P-Authors-List\">\n\t\n\t\t\t\t<div class=\"AOF-Single-Author-Preview AOF-Single-SE-Preview\">\n\t\t\t\t\t<div class=\"AOF-Author-Pic\"><img width=\"60\" height=\"60\" src=\"https:\/\/checklist.pensoft.net\/i\/author_icon.svg\" border=\"0\" alt=\"\" \/><\/div>\n\t\t\t\t\t<div class=\"AOF-Author-Details\">\n\t\t\t\t\t\t<div class=\"AOF-Author-Name\">\n\t\t\t\t\t\t\t<a class=\"AOF-Author-Email\"  >Dhawal  Mehta  <\/a>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Affiliation\"><div>Gujarat University, Ahmedabad, India<\/div><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Site\"><a target=\"_blank\" href=\"\"><\/a><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-more\">Articles by the Reviewer in:&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"http:\/\/search.crossref.org\/?q=Dhawal+Mehta\">CrossRef<\/a>\n\t\t\t\t\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t\n\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t<a target=\"_blank\" href=\"http:\/\/www.ncbi.nlm.nih.gov\/pubmed?cmd=search&term=Mehta%20Dhawal[au]&dispmax=50\">PubMed<\/a>\n\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"https:\/\/scholar.google.com\/citations?hl=en&view_op=search_authors&mauthors=%22author%3ADhawal+Mehta&btnG=\">Google Scholar<\/a>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div class=\"P-Clear\"><\/div>\n\t\t\t\t<\/div>\n\t\n\t\t\t\t<div class=\"AOF-Single-Author-Preview AOF-Single-SE-Preview\">\n\t\t\t\t\t<div class=\"AOF-Author-Pic\"><img width=\"60\" height=\"60\" src=\"https:\/\/checklist.pensoft.net\/\/showimg\/authors1_188751.jpg\" border=\"0\" alt=\"\" \/><\/div>\n\t\t\t\t\t<div class=\"AOF-Author-Details\">\n\t\t\t\t\t\t<div class=\"AOF-Author-Name\">\n\t\t\t\t\t\t\t<a class=\"AOF-Author-Email\"  >Nikhil  Modak  <\/a>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Affiliation\"><div>Wildlife Institute of India, Dehradun, India<\/div><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-Site\"><a target=\"_blank\" href=\"\"><\/a><\/div>\n\t\t\t\t\t\t<div class=\"AOF-Author-more\">Articles by the Reviewer in:&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"http:\/\/search.crossref.org\/?q=Nikhil+Modak\">CrossRef<\/a>\n\t\t\t\t\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t\n\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t<a target=\"_blank\" href=\"http:\/\/www.ncbi.nlm.nih.gov\/pubmed?cmd=search&term=Modak%20Nikhil[au]&dispmax=50\">PubMed<\/a>\n\t\t\t<\/span>&nbsp;|&nbsp;\n\t\t\t\t\t\t\t<span class=\"AOF-Author-more-link\">\n\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"https:\/\/scholar.google.com\/citations?hl=en&view_op=search_authors&mauthors=%22author%3ANikhil+Modak&btnG=\">Google Scholar<\/a>\n\t\t\t\t\t\t\t<\/span>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div class=\"P-Clear\"><\/div>\n\t\t\t\t<\/div>\n\t\n\t\t\t<\/div>\n\t\n\t\t\t\t<div class=\"author_contribution\"><div class=\"P-Part-Label2\">Author contributions<\/div><p>The authors&#39; contributions were as follows: Methodology, data collection, results and interpretation of results, draft and final version of the manuscript Mounir ABI-SAID; Fieldwork, manuscript review Elie EL HADDAD&nbsp;&nbsp;<\/p>\r\n<br\/><\/div>\n\t\t\t\t<div class=\"conflict_of_interest\">\n\t\t\t\t\t<div class=\"P-Part-Label2\">Conflict of interest<\/div>\n\t\t\t\t\tThe authors have declared that no competing interests exist.\n\t\t\t\t<\/div>\n\t\t\t\t \n\t\t\t\t\n\t\t\t\t\n\t\t\t<div class=\"P-Authors-Label\">Supporting agencies<\/div>\n\t\t\t<div class=\"P-Supp-List\">\n\t\n\t\t\t\t<div class=\"supp_agencies\"> The Society for the Protection of Nature in Lebanon (SPNL)<\/div>\n\t\n\t\t\t<\/div>\n\t\n\t\t\t\t<div class=\"copyrights\">\n\t\t\t\t\tThis is an open access article distributed under the terms of the <a border=\"0\" target=\"_blank\" href=\"http:\/\/creativecommons.org\/licenses\/by\/4.0\/\" rel=\"license\">Creative Commons Attribution License (CC BY 4.0)<\/a>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t", 8);
+						</script>
+					</div>
+					<div class="previewPageSubscribe">
+						<div class="subscribeForEmail">
+						<div class="title">Subscribe to email alerts for current Article's categories</div>
+							
+		<div class="formWrapper">
+		<form enctype="multipart/form-data" action="" method="post" name="subscribe_for_email" id="subscribe_for_email">
+			
+			<input type="hidden" name="form_name" value="subscribe_for_email"  />
+	
+			<input type="hidden" name="selfurl" value="subscribe_for_email"  />
+	
+			<input type="hidden" name="backurl" value="subscribe_for_email"  />
+	
+	
+		<div class="loginFormRegErrHolder"><b>
+			<span id="ajax_field_error_holder_email" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_journal_id" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_g-recaptcha-response" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_subscribe" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_form_name" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_backurl" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_selfurl" style="display:none" class="errstr">
+	
+			</span>
+	
+			<span id="ajax_field_error_holder_new" style="display:none" class="errstr">
+	
+			</span>
+	</b></div>
+		
+			<input type="hidden" name="journal_id" value="67"  />
+	 
+			<input type="hidden" name="g-recaptcha-response" value=""  id="g-recaptcha-response" />
+	
+		<div class="subscribeInput">
+			
+			<input type="text" name="email" value=""  placeholder="Email" />
+	
+		</div>
+		<div class="subscribeButton">
+			
+			<input type="submit" name="tAction" value="Sign up"  onClick="OpenCommonPopUpAction(&#039;get_recaptcha_popup_html&#039;, &#039;&#039;, 200);return false;" class="notranslate" />
+	
+		</div>
+	
+		</form>
+		</div>
+	
+						</div>
+					</div>
+					<div class="poweredBy" style="position:sticky;">Powered by <a target="_blank" href="http://arphahub.com" aria-label="global.powered_by_arpha"><span class="arphalogo"></span></a> </div>
+					<script type="text/javascript">InitArticleMenuEvents()</script>
+				</div>
+				<script type="text/javascript">
+					resizeContentHolders();
+					$( window ).resize(function() {
+						resizeContentHolders();
+					});
+				</script>
+				<div class="P-Clear"></div>
+			</div>
+			<div class="P-Article-References-For-Baloon">
+			</div>
+	
+			</div>
+			<div id="P-Post-Review-Form-Poll"></div>
+			
+		<div id="warningCookie" class="warningCookie">
+			<div class="row arownd-xs middle-xs">
+				<div class="col-xs center-xs pwt_additional_class">
+					<p>This website uses cookies in order to improve your web experience. <a href="/about#CookiesPolicy" target="_blank">Read our Cookies Policy</a></p>
+				</div>
+				<div class="col-xs-2">
+					<a id="removeWarningCookie">OK</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			if(document.cookie.indexOf("WarningCookie") ===-1){
+				$("#warningCookie").show();
+			} else {
+				$("#warningCookie").remove();
+			}
+
+			$("#removeWarningCookie").click(function () {
+				SetCookie('WarningCookie','OK', 365) /* expires in 365 days*/
+				$("#warningCookie").remove();
+			});
+		</script>
+
+		
+		<div id="P-General-Popup-Content" class="P-PopUp"></div>
+		<div class="popup-background" style="display:none"></div>
+		
+		
+		<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11654573; 
+var sc_invisible=1; 
+var sc_security="f002ab31"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11654573/0/f002ab31/0/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+		<!-- analytics start -->
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8YXQKFXPYK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8YXQKFXPYK');
+</script>
+		<!-- analytics end -->
+	
+</body>
+</html>
+	

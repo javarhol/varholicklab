@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Search — Varholick Lab</title>
+    <meta name="description" content="Search the full text of all papers in the Acomys Library.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FlexSearch Library -->
+    <script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.31/dist/flexsearch.bundle.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease-in-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        mark {
+            background-color: #fef08a; /* Tailwind yellow-200 */
+            color: #1f2937; /* Tailwind gray-800 */
+            font-weight: 500;
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-4 rounded-md p-2 hover:bg-gray-100 transition-colors group">
+                <img src="../images/repairlablogo.png" alt="Varholick Lab Logo" class="h-14 w-auto object-contain">
+                <div class="flex flex-col">
+                    <span class="text-2xl font-bold text-gray-900 uppercase tracking-wide leading-none group-hover:text-black">
+                        Varholick Lab
+                    </span>
+                    <span class="text-sm text-gray-500 italic font-light leading-tight mt-1">
+                        Decoding Repair. Restoring Function.
+                    </span>
+                </div>
+            </a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="../index.html#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">About</a></li>
+                <li><a href="../index.html#research" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Research</a></li>
+                <li><a href="../index.html#publications" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Publications</a></li>
+                <li><a href="index.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Acomys Library</a></li>
+                <li><a href="deep_search.html" class="nav-link text-blue-600 font-medium border-b-2 border-blue-600">Deep Search</a></li>
+                <li><a href="../index.html#team" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Team</a></li>
+                <li><a href="../index.html#news" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">News</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="../index.html#about" class="nav-link text-gray-700 hover:text-gray-900">About</a>
+            <a href="../index.html#research" class="nav-link text-gray-700 hover:text-gray-900">Research</a>
+            <a href="../index.html#publications" class="nav-link text-gray-700 hover:text-gray-900">Publications</a>
+            <a href="index.html" class="nav-link text-gray-700 hover:text-gray-900">Acomys Library</a>
+            <a href="deep_search.html" class="nav-link text-blue-600 font-medium">Deep Search</a>
+            <a href="../index.html#team" class="nav-link text-gray-700 hover:text-gray-900">Team</a>
+            <a href="../index.html#news" class="nav-link text-gray-700 hover:text-gray-900">News</a>
+        </div>
+    </header>
+
+    <main class="pt-32 flex-grow container mx-auto px-6 md:px-12 pb-16">
+        
+        <div class="mb-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Deep Search</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Search through the full text of hundreds of spiny mice papers instantly. Type a biological term, gene, or concept to find exact quotes and their source papers.
+            </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <!-- Search Bar -->
+            <div class="relative mb-8 shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <svg class="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+                <input type="text" id="search-input" class="block w-full pl-12 pr-4 py-4 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 text-lg transition-colors" placeholder="e.g. blastema, fibronectin, macrophages..." disabled>
+            </div>
+
+            <!-- Status Area -->
+            <div id="status-area" class="mb-6 flex flex-col items-center justify-center text-gray-500 h-24">
+                <div class="loader mb-2"></div>
+                <p id="loading-text">Downloading library index... (This may take a moment)</p>
+            </div>
+
+            <!-- Results -->
+            <div id="results-container" class="space-y-6">
+                <!-- Results injected here -->
+            </div>
+            
+            <div id="no-results" class="hidden text-center py-12 bg-white rounded-lg border border-gray-200">
+                <svg class="mx-auto h-12 w-12 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h3 class="text-lg font-medium text-gray-900">No matching paragraphs found</h3>
+                <p class="text-gray-500 mt-1">Try using different keywords or broader terms.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 md:px-12 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <h3 class="text-xl font-bold mb-2">Varholick Lab</h3>
+                <p class="text-gray-400 max-w-sm">
+                    Kennesaw State University<br>
+                    Department of Molecular and Cellular Biology<br>
+                    Decoding Repair. Restoring Function.
+                </p>
+            </div>
+            <div class="text-gray-400 text-sm">
+                <p>&copy; 2026 Varholick Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="search.js"></script>
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-mobile-menu');
+        const menuLinks = menu.querySelectorAll('a');
+
+        btn.addEventListener('click', () => {
+            menu.classList.remove('hidden');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.add('hidden');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

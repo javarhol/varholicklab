@@ -24,19 +24,22 @@ jobs:
         run: pip install requests
 
       - name: Run update script
-        run: python update_library.py
+        run: |
+          cd acomys_library
+          python update_library.py
 
       - name: Check for changes and commit
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add acomys_library.json
+          git add acomys_library/acomys_library.json
           git commit -m "Auto-update Acomys library" || echo "No changes to commit"
           git push
 
       - name: Check if there are new papers
         id: check_new
         run: |
+          cd acomys_library
           if grep -q "NO_NEW_PAPERS" new_papers_report.txt; then
             echo "has_new=false" >> $GITHUB_OUTPUT
           else

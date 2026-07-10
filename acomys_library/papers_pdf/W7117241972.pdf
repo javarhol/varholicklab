@@ -1,0 +1,2369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<link rel="icon" href="/local/templates/MediaSphera/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <title>Иглистые мыши (Acomys) — новая перспективная модель для изучения механизмов регенеративных процессов в сердце и разработки регенеративных технологий</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Дергилев К.В., Долгодворова А.А., Гольцева Ю.Д., Парфенова Е.В. Иглистые мыши (Acomys) — новая перспективная модель для изучения механизмов регенеративных процессов в сердце и разработки регенеративных технологий. Кардиологический вестник." />
+<meta name="citation_title" content="Spiny mice (Acomys): a novel and perspective model for research of heart regeneration and development of regenerative technologies" />
+<meta name="citation_doi" content="https://doi.org/10.17116/Cardiobulletin20252004110" />
+<meta name="citation_author" content="Dergilev K.V." />
+<meta name="citation_author" content="Dolgodvorova A.A." />
+<meta name="citation_author" content="Goltseva Yu.D." />
+<meta name="citation_author" content="Parfyonova Ye.V." />
+<meta name="citation_author_institution" content="Chazov National Medical Research Centre of Cardiology" />
+<meta name="citation_journal_title" content="Russian Cardiology Bulletin" />
+<meta name="citation_volume" content="20" />
+<meta name="citation_issue" content="4" />
+<meta name="citation_firstpage" content="10" />
+<meta name="citation_lastpage" content="17" />
+<meta name="citation_online_date" content="2025/12/25" />
+<meta name="citation_publication_date" content="2025/12/25" />
+<meta name="citation_language" content="ru" />
+<meta name="citation_keywords" content="regeneration; heart; spiny mice; Acomys; inflammation; macrophages; cardiomyocytes; proliferation; fibroblasts; extracellular matrix" />
+<meta name="citation_pdf_url" content="https://www.mediasphera.ru/issues/kardiologicheskij-vestnik/2025/4/downloads/ru/1207767642025041010" />
+<meta name="citation_fulltext_html_url" content="https://www.mediasphera.ru/issues/kardiologicheskij-vestnik/2025/4/1207767642025041010" />
+
+
+<link href="/bitrix/js/ui/design-tokens/dist/ui.design-tokens.css?173124764026358" type="text/css" rel="stylesheet"/>
+<link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.css?16638339642555" type="text/css" rel="stylesheet"/>
+<link href="/bitrix/js/main/popup/dist/main.popup.bundle.css?178212722725110" type="text/css" rel="stylesheet"/>
+<link href="/local/templates/MediaSphera/css/article-issues.css?1731245854623" type="text/css" rel="stylesheet"/>
+<link href="/local/templates/MediaSphera/components/bitrix/news.list/sliderArticle/style.css?1731245854577" type="text/css" rel="stylesheet"/>
+<link href="/local/templates/MediaSphera/css/bootstrap-grid.min.css?174307889730407" type="text/css" rel="stylesheet" data-template-style="true"/>
+<link href="/local/templates/MediaSphera/css/swiper.min.css?173124585419774" type="text/css" rel="stylesheet" data-template-style="true"/>
+<link href="/local/templates/MediaSphera/css/style.css?1777741150414520" type="text/css" rel="stylesheet" data-template-style="true"/>
+<link href="/local/templates/MediaSphera/css/owl.carousel.min.css?17312458543876" type="text/css" rel="stylesheet" data-template-style="true"/>
+<link href="/local/templates/MediaSphera/css/owl.theme.default.min.css?17312458541243" type="text/css" rel="stylesheet" data-template-style="true"/>
+<link href="/local/templates/MediaSphera/components/bitrix/sale.basket.basket.line/card/style.css?17312458544401" type="text/css" rel="stylesheet" data-template-style="true"/>
+<link href="/local/templates/MediaSphera/components/bitrix/system.auth.form/auth/style.css?1731245854443" type="text/css" rel="stylesheet" data-template-style="true"/>
+<link href="/local/templates/MediaSphera/template_styles.css?17327956191424" type="text/css" rel="stylesheet" data-template-style="true"/>
+<script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script>(window.BX||top.BX).message({"pull_server_enabled":"Y","pull_config_timestamp":1781620406,"shared_worker_allowed":"Y","pull_guest_mode":"N","pull_guest_user_id":0,"pull_worker_mtime":1751292221});(window.BX||top.BX).message({"PULL_OLD_REVISION":"Для продолжения корректной работы с сайтом необходимо перезагрузить страницу."});</script>
+<script>(window.BX||top.BX).message({"MAIN_BASELINE_BROWSER_OUTDATED":"Вы используете устаревшую версию браузера. Обновите его для безопасной и стабильной работы","MAIN_BASELINE_DETAILS":"Подробнее","MAIN_BASELINE_CLOSE":"Закрыть"});</script>
+
+<script type="extension/settings" data-extension="main.baseline">{"collectData":false,"helpUrl":"https:\/\/helpdesk.bitrix24.ru\/open\/code_27229654\/","helpCode":"redirect=detail\u0026code=27229654"}</script>
+<script src="/bitrix/js/main/baseline/dist/baseline.bundle.js?17821272276900"></script>
+
+<script>(window.BX||top.BX).message({"JS_CORE_LOADING":"Загрузка...","JS_CORE_NO_DATA":"- Нет данных -","JS_CORE_WINDOW_CLOSE":"Закрыть","JS_CORE_WINDOW_EXPAND":"Развернуть","JS_CORE_WINDOW_NARROW":"Свернуть в окно","JS_CORE_WINDOW_SAVE":"Сохранить","JS_CORE_WINDOW_CANCEL":"Отменить","JS_CORE_WINDOW_CONTINUE":"Продолжить","JS_CORE_H":"ч","JS_CORE_M":"м","JS_CORE_S":"с","JSADM_AI_HIDE_EXTRA":"Скрыть лишние","JSADM_AI_ALL_NOTIF":"Показать все","JSADM_AUTH_REQ":"Требуется авторизация!","JS_CORE_WINDOW_AUTH":"Войти","JS_CORE_IMAGE_FULL":"Полный размер"});</script>
+
+<script src="/bitrix/js/main/core/core.js?1782127227331957"></script>
+
+<script>BX.Runtime.registerExtension({"name":"main.core","namespace":"BX","loaded":true});</script>
+<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_ajax.js","\/bitrix\/js\/main\/core\/core_promise.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/loadext\/loadext.js","\/bitrix\/js\/main\/loadext\/extension.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/includes\/js\/includes.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/ui\/polyfill\/closest\/js\/closest.js","\/bitrix\/js\/main\/polyfill\/fill\/main.polyfill.fill.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/core\/core.js","\/bitrix\/js\/main\/polyfill\/intersectionobserver\/js\/intersectionobserver.js","\/bitrix\/js\/main\/lazyload\/dist\/lazyload.bundle.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/parambag\/dist\/parambag.bundle.js"]);
+</script>
+<script type="extension/settings" data-extension="ui.a11y">{"restoreLostFocus":false,"useFocusTrapInDialogs":false}</script>
+<script>BX.Runtime.registerExtension({"name":"ui.a11y","namespace":"BX.UI.Accessibility","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"ui.design-tokens","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"ui.fonts.opensans","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"main.popup","namespace":"BX.Main","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"popup","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"LANGUAGE_ID":"ru","FORMAT_DATE":"DD.MM.YYYY","FORMAT_DATETIME":"DD.MM.YYYY HH:MI:SS","COOKIE_PREFIX":"BITRIX_SM","SERVER_TZ_OFFSET":"10800","UTF_MODE":"Y","SITE_ID":"s1","SITE_DIR":"\/","USER_ID":"","SERVER_TIME":1783689740,"USER_TZ_OFFSET":0,"USER_TZ_AUTO":"Y","bitrix_sessid":"437dc105b0467a31a2f58a5388e98ed4"});</script>
+
+
+<script src="/bitrix/js/pull/protobuf/protobuf.js?1658215285274055"></script>
+<script src="/bitrix/js/pull/protobuf/model.js?165821528570928"></script>
+<script src="/bitrix/js/main/core/core_promise.js?17684829205221"></script>
+<script src="/bitrix/js/rest/client/rest.client.js?165838197717414"></script>
+<script src="/bitrix/js/pull/client/pull.client.js?175129222283861"></script>
+<script src="/bitrix/js/ui/a11y/dist/a11y.bundle.js?178212722660327"></script>
+<script src="/bitrix/js/main/popup/dist/main.popup.bundle.js?1782127227117068"></script>
+<script>
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+<script type="text/javascript">var delay=4999;</script>
+<script src="/player/playerjs.js"></script>
+<link rel="canonical" href="https://www.mediasphera.ru/issues/kardiologicheskij-vestnik/2025/4/1207767642025041010" />
+
+
+
+<script src="/local/templates/MediaSphera/js/jquery-3.3.1.min.js?173124585486927"></script>
+<script src="/local/templates/MediaSphera/js/owl.carousel.min.js?173124585444342"></script>
+<script src="/local/templates/MediaSphera/components/bitrix/sale.basket.basket.line/card/script.js?17312458545335"></script>
+<script src="/local/templates/MediaSphera/js/swiper-fix.js?17776471031072"></script>
+
+        
+            
+        
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<script type="text/javascript">
+		function openImageWindow(src) {
+			var image = new Image();
+			image.src = src;
+			var width = image.width;
+			var height = image.height;
+			window.open(src,"Image","width=" + width + ",height=" + height);
+		}
+	</script>
+
+<script type="text/javascript">
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({'user_id':'0'});
+	function PlayerjsEvents(event,id,info){
+		if(event=="play"){
+			window.dataLayer.push({'event_playerjs':'play'});
+		}
+		if(event=="pause"){
+			window.dataLayer.push({'event_playerjs':'pause'});
+		}
+		if(event=="mute"){
+			window.dataLayer.push({'event_playerjs':'mute'});
+		}
+		if(event=="fullscreen"){
+			window.dataLayer.push({'event_playerjs':'fullscreen'});
+		}
+	}
+</script>
+
+ <!--// подключаем обработчик доменных имен в URL -->
+</head>
+<body>
+        <div class="overflow__mess">
+            <div class="mess-main__info">
+                <div class="cont">
+                    <div class="close">
+                        <span></span>
+                    </div>
+                    <p>
+ <b>Сайт издательства «Медиа Сфера»</b> <br>
+	 содержит материалы, предназначенные исключительно для работников здравоохранения. Закрывая это сообщение, Вы подтверждаете, что являетесь дипломированным медицинским работником или студентом медицинского образовательного учреждения.
+</p>                </div>
+            </div>
+        </div>
+    <script>
+    $(document).ready(function() {
+      $('html, header').width($('html, header').width());
+      $('html').css('overflow', 'hidden');
+  //    $('.mess-main__info .cont .close').click(function(){
+        $('.mess-main__info').click(function(){
+        $('.overflow__mess').css('display', 'none');
+        $('html').removeAttr('style');
+      })
+    });
+</script>
+
+<div id="panel">
+    </div>
+
+<script>
+    $(document).ready(function () {
+        function get_name_browser(){
+        var ua = navigator.userAgent;
+        if (ua.search(/YaBrowser/) > 0) return 'Яндекс Браузер';
+        if (ua.search(/rv:11.0/) > 0) return 'Internet Explorer 11';
+        if (ua.search(/MSIE/) > 0) return 'Internet Explorer';
+        if (ua.search(/Edge/) > 0) return 'Edge';
+        if (ua.search(/Chrome/) > 0) return 'Google Chrome';
+        if (ua.search(/Firefox/) > 0) return 'Firefox';
+        if (ua.search(/Opera/) > 0) return 'Opera';
+        if (ua.search(/Safari/) > 0) return 'Safari';
+        return 'Не определен';
+        }
+        var browser = get_name_browser();
+        if (browser == 'Edge' || browser == 'Internet Explorer' ||  browser == 'Internet Explorer 11') {
+        alert('Для корректной работы сайта используйте браузеры: Google Chrome, Opera, Safari, Firefox');
+        } 
+
+    });
+</script>
+
+
+<header class="header">
+    <div class="container">
+        <div class="header-block">
+            <div class="header-block-menu" style="margin-right:2rem;"><span></span></div>
+            <a href="/">
+                <div class="header-block-logo">
+                    <div class="img" style="width:100%; height:auto;">
+                        <img src="/local/templates/MediaSphera/img/icon/logo_MSPH_new.svg" alt="">
+                    </div>
+                </div>
+                                            </a>
+            <div class="header-block-nav">
+                <div class="header-block-nav-search">
+                    <form id="search-form" action="/search/" method="GET" class="global-search">
+                        <div class="img">
+                            <button class="search-button search-button-icon" type="submit">
+                                <img src="/local/templates/MediaSphera/img/icon/search.svg" alt="">
+                            </button>
+                        </div>
+                        <input class="mdc-textfield__input search-input" type="text" name="q"
+                               placeholder="Поиск" value="">
+                        <div class="filter-container__inside filter-container__inside-select">
+                            <div class="filter-item filter-select" >
+                                <input class="mdc-textfield__input search-input" type="text" name="J"
+                                       value=""
+                                       aria-label="Search Google Design">
+                                <a class="filter-handler filter-selected" href="javascript:void(0);"
+                                   data-id="">Все&nbsp;журналы</a>
+                                <div class="filter-select-dd filter-dd filter-options">
+                                    <ul>
+                                        <li><a href="javascript:void(0);" data-id="0">Все&nbsp;журналы</a>
+                                        </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Non&nbsp;nocere. Новый терапевтический журнал">Non&nbsp;nocere. Новый терапевтический журнал</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Адаптивная медицинская иммунология и&nbsp;вопросы общественного здоровья">Адаптивная медицинская иммунология и&nbsp;вопросы общественного здоровья</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Анестезиология и&nbsp;реаниматология">Анестезиология и&nbsp;реаниматология</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Архив патологии">Архив патологии</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Вестник оториноларингологии">Вестник оториноларингологии</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Вестник офтальмологии">Вестник офтальмологии</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Вестник травматологии и&nbsp;ортопедии им&nbsp;Н.Н.&nbsp;Приорова">Вестник травматологии и&nbsp;ортопедии им&nbsp;Н.Н.&nbsp;Приорова</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Вопросы курортологии, физиотерапии и&nbsp;лечебной физической культуры">Вопросы курортологии, физиотерапии и&nbsp;лечебной физической культуры</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Вопросы нейрохирургии имени Н.Н.&nbsp;Бурденко">Вопросы нейрохирургии имени Н.Н.&nbsp;Бурденко</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Восстановительные биотехнологии, профилактическая, цифровая и&nbsp;предиктивная медицина">Восстановительные биотехнологии, профилактическая, цифровая и&nbsp;предиктивная медицина</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Доказательная гастроэнтерология">Доказательная гастроэнтерология</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Доказательная кардиология (электронная версия)">Доказательная кардиология (электронная версия)</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Журнал неврологии и&nbsp;психиатрии им.&nbsp;С.С.&nbsp;Корсакова">Журнал неврологии и&nbsp;психиатрии им.&nbsp;С.С.&nbsp;Корсакова</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Журнал неврологии и&nbsp;психиатрии им.&nbsp;С.С.&nbsp;Корсакова. Спецвыпуски">Журнал неврологии и&nbsp;психиатрии им.&nbsp;С.С.&nbsp;Корсакова. Спецвыпуски</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Кардиологический вестник">Кардиологический вестник</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Кардиология и&nbsp;сердечно-сосудистая хирургия">Кардиология и&nbsp;сердечно-сосудистая хирургия</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Клиническая дерматология и&nbsp;венерология">Клиническая дерматология и&nbsp;венерология</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Лабораторная служба">Лабораторная служба</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Медицинские технологии. Оценка и&nbsp;выбор">Медицинские технологии. Оценка и&nbsp;выбор</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Молекулярная генетика, микробиология и&nbsp;вирусология">Молекулярная генетика, микробиология и&nbsp;вирусология</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Онкология. Журнал им.&nbsp;П.А.&nbsp;Герцена">Онкология. Журнал им.&nbsp;П.А.&nbsp;Герцена</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Оперативная хирургия и&nbsp;клиническая анатомия (Пироговский научный журнал)">Оперативная хирургия и&nbsp;клиническая анатомия (Пироговский научный журнал)</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Пластическая хирургия и&nbsp;эстетическая медицина">Пластическая хирургия и&nbsp;эстетическая медицина</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Проблемы репродукции">Проблемы репродукции</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Проблемы эндокринологии">Проблемы эндокринологии</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Профилактическая медицина">Профилактическая медицина</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Респираторная медицина">Респираторная медицина</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Российская ринология">Российская ринология</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Российская стоматология">Российская стоматология</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Российский вестник акушера-гинеколога">Российский вестник акушера-гинеколога</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Российский журнал боли">Российский журнал боли</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Стоматология">Стоматология</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Судебно-медицинская экспертиза">Судебно-медицинская экспертиза</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Терапевтический архив">Терапевтический архив</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Флебология">Флебология</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Хирургия. Журнал им.&nbsp;Н.И.&nbsp;Пирогова">Хирургия. Журнал им.&nbsp;Н.И.&nbsp;Пирогова</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);" data-id="Эндоскопическая хирургия">Эндоскопическая хирургия</a>
+                                            </li>
+                                                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-container__inside filter-container__inside-select"  style="width: 16%;">
+                            <div class="filter-item filter-select">
+                                <input class="mdc-textfield__input search-input" type="text" name="Y"
+                                       value=""
+                                       aria-label="Search Google Design">
+                                <a class="filter-handler filter-selected" href="javascript:void(0);"
+                                   data-id="">Все&nbsp;года</a>
+                                <div class="filter-select-dd filter-dd filter-options">
+                                    <ul>
+                                        <li><a href="javascript:void(0);" data-id="0">Все&nbsp;года</a>
+                                        </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2026">2026</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2025">2025</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2024">2024</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2023">2023</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2022">2022</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2021">2021</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2020">2020</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2019">2019</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2018">2018</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2017">2017</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2016">2016</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2015">2015</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2014">2014</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2013">2013</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2012">2012</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2011">2011</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2010">2010</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2009">2009</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2008">2008</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2007">2007</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2006">2006</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2005">2005</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2004">2004</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2003">2003</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2002">2002</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2001">2001</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="2000">2000</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="1999">1999</a>
+                                            </li>
+                                                                                    <li><a href="javascript:void(0);"
+                                                   data-id="1998">1998</a>
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="header-block-nav-menu">
+                    <div class="main">
+                        <ul>
+                            <li><a href="/journals/">Журналы</a></li>
+                            <li><a href="/subscribe/">Подписка</a></li>
+                            <li><a href="/archive/">Архив</a></li>
+                            <li><a href="/product/knigi/">Книги</a></li>
+                                                                                </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="/about/">О&nbsp;нас </a></li>
+                            <li><a href="/ad/">Реклама</a></li>
+                            <li><a href="/dostavka/">Доставка&nbsp;/&nbsp;Оплата</a></li>
+                            <li><a href="/contact/">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="inter">
+                                                    <a href="javascript: void(0)" class="button-form-inter">
+                                <div class="inter-button">
+                                    <div class="text">Вход</div>
+									<div class="img">
+                                        <img src="/local/templates/MediaSphera/img/icon/locked.svg" alt="" class="lock">
+                                    </div>
+                                </div>
+                            </a>
+                                                <div class="inter-leng mobile">
+                            <form class="setLang">
+                                <div class="filter-container__inside filter-container__inside-select">
+                                    <div class="filter-item filter-select">
+                                        <input type="text" name="LANG"
+                                               value="RU">
+                                        <a class="filter-handler filter-selected" href="javascript:void(0);"
+                                           data-id="">RU</a>
+                                        <div class="filter-select-dd filter-dd filter-options">
+                                            <ul>
+                                                <li><a href="javascript:void(0);" data-id="EN">EN</a></li>
+
+                                                <li><a href="javascript:void(0);" data-id="RU">RU</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+																				
+                    <div class="footer-block-right">
+    <div class="list-info-mob">
+     <div class="tell">
+      <a href="tel:+74954824118"><span style="color: white">+7 (495) 482-4118</span></a><br>
+      <a href="tel:+74954824329"><span style="color: white">+7 (495) 482-4329</span></a><br>
+     </div>
+     <div class="tell" style="margin-bottom: -4px;">
+      <a href="tel:+88002501812"><span style="color: white">+8 800 250-18-12</span></a>
+      <ul>
+       <li>
+        (бесплатный номер по&nbsp;вопросам подписки)        <br>
+        пн-пт с&nbsp;10 до&nbsp;18       </li>
+						</ul>					
+     </div>
+     <ul>
+      <li>Издательство&nbsp;«Медиа&nbsp;Сфера»<br>а/я&nbsp;54, Москва, Россия, 127238</li>
+      <li><a style="color:white;" href="mailto:info@mediasphera.ru">info@mediasphera.ru</a></li>
+     </ul>
+	
+      <ul class="socnetlinks">
+       <li><a target="_blank" href="https://vk.com/mediaspheraru"><img src="/img/vk.svg" /><span>вКонтакте</span></a></li>       <li><a target="_blank" href="https://t.me/mediasphera"><img src="/img/tg.svg" /><span>Telegram</span></a></li>						</ul>
+<style type="text/css">
+.socnetlinks {width:100%; display:flex; margin-top:1rem;}
+.socnetlinks img{width:6rem; margin-right:2rem; height:auto; margin-bottom:-2rem;}
+.socnetlinks span{display:none; color:white;}
+@media(max-width:768px){
+.socnetlinks {margin-top:4rem; justify-content:stretch;}
+.socnetlinks li  {width:50%;}
+.socnetlinks li a {display:flex; width:100%; align-items:center;}
+.socnetlinks img{width:8rem; margin-bottom:0;}
+.socnetlinks span{display:block;}
+}
+</style>
+<style type="text/css">
+.list-info-mob .socnetlinks{margin-top:0!important;}
+</style>
+
+     <div class="logo">
+      <a href="/">
+       <div class="footer-block-middle-logo">
+        <div class="img">
+         <img src="/local/templates/MediaSphera/img/icon/logo.svg" alt="">
+        </div>
+        <div class="text">
+         <ul>
+          <li>Издательство</li>
+          <li>«Медиа&nbsp;Сфера»</li>
+         </ul>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="tell">
+						<ul>
+							<li><br>© 1998-2026</li>
+						</ul>
+					</div>
+    </div>
+                    </div>
+																				
+                </div>
+            </div>
+            <div class="header-block-basket">
+                <div class="tell"><a href="tel:+74954824329">+7 (495) 482-43-29</a></div>
+                <a href="#">
+                    <div class="search">
+                        <img src="/local/templates/MediaSphera/img/icon/search.svg" alt="" class="btn_search">
+                        <img src="/local/templates/MediaSphera/img/icon/close-search.svg" alt="" class="btn_close">
+                    </div>
+                </a>
+                <div class="bottom">
+                    <div class="inter-leng desktop">
+                        <form class="setLang">
+                            <div class="filter-container__inside filter-container__inside-select">
+                                <div class="filter-item filter-select">
+                                    <input type="text" name="LANG"
+                                           value="RU">
+                                    <a class="filter-handler filter-selected" href="javascript:void(0);"
+                                       data-id="">RU</a>
+                                    <div class="filter-select-dd filter-dd filter-options">
+                                        <ul>
+                                            <li><a href="javascript:void(0);" data-id="EN">EN</a></li>
+
+                                            <li><a href="javascript:void(0);" data-id="RU">RU</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="/card/" id="card-link">
+                        
+<div class="basket">
+ <div class="basket-img">
+  <img src="/local/templates/MediaSphera/img/icon/shopping-cart.svg" alt="">
+ </div>
+ <div class="basket-text">
+		
+ </div>
+</div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+<section class="search-gl">
+
+    <div class="search" action="/search/" method="GET">
+
+        <form id="search-form-mobile">
+            <div class="header-block-nav-search">
+
+                <input type="text" name="q" placeholder="Поиск" value="">
+                <button type="submit" class="img">
+                    <img src="/local/templates/MediaSphera/img/icon/search-grey.svg" alt="">
+                </button>
+                <div class="button">
+                    <div class="filter-container__inside filter-container__inside-select">
+                        <div class="filter-item filter-select">
+                            <input type="text" name="J" value="">
+                            <a class="filter-handler filter-selected" href="javascript:void(0);"
+                               data-id="">Все&nbsp;журналы</a>
+                            <div class="filter-select-dd filter-dd filter-options">
+                                <div class="title">
+                                    <div class="close"></div>
+                                    <div class="text">Журнал</div> 
+                                </div>
+                                <ul>
+                                    <li><a href="javascript:void(0);" data-id="">Все&nbsp;журналы</a></li>
+
+                                                                            <li><a href="javascript:void(0);" data-id="Non&nbsp;nocere. Новый терапевтический журнал">Non&nbsp;nocere. Новый терапевтический журнал</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Адаптивная медицинская иммунология и&nbsp;вопросы общественного здоровья">Адаптивная медицинская иммунология и&nbsp;вопросы общественного здоровья</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Анестезиология и&nbsp;реаниматология">Анестезиология и&nbsp;реаниматология</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Архив патологии">Архив патологии</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Вестник оториноларингологии">Вестник оториноларингологии</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Вестник офтальмологии">Вестник офтальмологии</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Вестник травматологии и&nbsp;ортопедии им&nbsp;Н.Н.&nbsp;Приорова">Вестник травматологии и&nbsp;ортопедии им&nbsp;Н.Н.&nbsp;Приорова</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Вопросы курортологии, физиотерапии и&nbsp;лечебной физической культуры">Вопросы курортологии, физиотерапии и&nbsp;лечебной физической культуры</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Вопросы нейрохирургии имени Н.Н.&nbsp;Бурденко">Вопросы нейрохирургии имени Н.Н.&nbsp;Бурденко</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Восстановительные биотехнологии, профилактическая, цифровая и&nbsp;предиктивная медицина">Восстановительные биотехнологии, профилактическая, цифровая и&nbsp;предиктивная медицина</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Доказательная гастроэнтерология">Доказательная гастроэнтерология</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Доказательная кардиология (электронная версия)">Доказательная кардиология (электронная версия)</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Журнал неврологии и&nbsp;психиатрии им.&nbsp;С.С.&nbsp;Корсакова">Журнал неврологии и&nbsp;психиатрии им.&nbsp;С.С.&nbsp;Корсакова</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Журнал неврологии и&nbsp;психиатрии им.&nbsp;С.С.&nbsp;Корсакова. Спецвыпуски">Журнал неврологии и&nbsp;психиатрии им.&nbsp;С.С.&nbsp;Корсакова. Спецвыпуски</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Кардиологический вестник">Кардиологический вестник</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Кардиология и&nbsp;сердечно-сосудистая хирургия">Кардиология и&nbsp;сердечно-сосудистая хирургия</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Клиническая дерматология и&nbsp;венерология">Клиническая дерматология и&nbsp;венерология</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Лабораторная служба">Лабораторная служба</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Медицинские технологии. Оценка и&nbsp;выбор">Медицинские технологии. Оценка и&nbsp;выбор</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Молекулярная генетика, микробиология и&nbsp;вирусология">Молекулярная генетика, микробиология и&nbsp;вирусология</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Онкология. Журнал им.&nbsp;П.А.&nbsp;Герцена">Онкология. Журнал им.&nbsp;П.А.&nbsp;Герцена</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Оперативная хирургия и&nbsp;клиническая анатомия (Пироговский научный журнал)">Оперативная хирургия и&nbsp;клиническая анатомия (Пироговский научный журнал)</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Пластическая хирургия и&nbsp;эстетическая медицина">Пластическая хирургия и&nbsp;эстетическая медицина</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Проблемы репродукции">Проблемы репродукции</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Проблемы эндокринологии">Проблемы эндокринологии</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Профилактическая медицина">Профилактическая медицина</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Респираторная медицина">Респираторная медицина</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Российская ринология">Российская ринология</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Российская стоматология">Российская стоматология</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Российский вестник акушера-гинеколога">Российский вестник акушера-гинеколога</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Российский журнал боли">Российский журнал боли</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Стоматология">Стоматология</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Судебно-медицинская экспертиза">Судебно-медицинская экспертиза</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Терапевтический архив">Терапевтический архив</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Флебология">Флебология</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Хирургия. Журнал им.&nbsp;Н.И.&nbsp;Пирогова">Хирургия. Журнал им.&nbsp;Н.И.&nbsp;Пирогова</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);" data-id="Эндоскопическая хирургия">Эндоскопическая хирургия</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-container__inside filter-container__inside-select">
+                        <div class="filter-item filter-select">
+                            <input type="text" name="Y"
+                                   value="">
+                            <a class="filter-handler filter-selected" href="javascript:void(0);"
+                               data-id="">Год</a>
+                            <div class="filter-select-dd filter-dd filter-options">
+                                <div class="title">
+                                    <div class="close"></div>
+                                    <div class="text">Год</div>
+                                </div>
+                                <ul>
+                                    <li><a href="javascript:void(0);" data-id="0">Все&nbsp;года</a></li>
+
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2026">2026</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2025">2025</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2024">2024</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2023">2023</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2022">2022</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2021">2021</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2020">2020</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2019">2019</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2018">2018</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2017">2017</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2016">2016</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2015">2015</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2014">2014</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2013">2013</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2012">2012</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2011">2011</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2010">2010</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2009">2009</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2008">2008</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2007">2007</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2006">2006</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2005">2005</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2004">2004</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2003">2003</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2002">2002</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2001">2001</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="2000">2000</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="1999">1999</a>
+                                        </li>
+                                                                            <li><a href="javascript:void(0);"
+                                               data-id="1998">1998</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clear" style="display: none">
+                        <div class="text">
+                            <p>Очистить поле</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="arhiv-search">
+        <div class="arhiv-block-bottom">
+            <div class="title">Результаты поиска: <span>0</span></div>
+            <div class="search-result-blocks">
+
+            </div>
+        </div>
+    </div>
+
+</section><!--File: /var/www/bitrix/data/www/mediasphera.ru/issues/detail.php-->
+<div style="font-size: 14px;">
+</div>
+<!-- === ГЛОБАЛЬНЫЕ ФУНКЦИИ КАПЧИ (должны быть ДО загрузки captcha.js) === -->
+<script>
+// === ГЛОБАЛЬНЫЕ ФУНКЦИИ — ОБЯЗАТЕЛЬНО ДО captcha.js ===
+window.onCaptchaSuccess = function(token) {
+    console.log('✅ CAPTCHA SUCCESS! Token:', token.substring(0, 20) + '...');
+    window.captchaToken = token;
+    
+    // 🔍 Ищем кнопку несколькими способами
+    const btn = document.querySelector('form.callBack button[type="submit"]') || 
+                document.querySelector('form.callBack button') ||
+                document.querySelector('.form-callback button') ||
+                document.querySelector('button[data-original-text]');
+    
+    console.log('🔍 Button in onCaptchaSuccess:', btn);
+    
+    if (btn) {
+        console.log('📝 Current button text:', btn.textContent);
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.style.cursor = 'pointer';
+        btn.textContent = 'Отправить сообщение';
+        btn.style.backgroundColor = '#4CAF50';
+        console.log('✅ Button text changed to "Отправить сообщение"');
+    } else {
+        console.error('❌ Button NOT found! Trying again in 100ms...');
+        // Пробуем ещё раз через 100мс (на случай если форма ещё рендерится)
+        setTimeout(function() {
+            const retryBtn = document.querySelector('form.callBack button') || 
+                            document.querySelector('button[data-original-text]');
+            if (retryBtn) {
+                retryBtn.disabled = false;
+                retryBtn.style.opacity = '1';
+                retryBtn.textContent = 'Отправить сообщение';
+                retryBtn.style.backgroundColor = '#4CAF50';
+                console.log('✅ Button found on retry!');
+            } else {
+                console.error('❌ Button still not found after retry!');
+                // Выводим все кнопки на странице для отладки
+                console.log('🔍 All buttons on page:', document.querySelectorAll('button'));
+            }
+        }, 100);
+    }
+};
+
+window.onCaptchaExpired = function() {
+    console.log('⏰ CAPTCHA EXPIRED');
+    window.captchaToken = null;
+    const btn = document.querySelector('form.callBack button') || 
+                document.querySelector('button[data-original-text]');
+    if (btn) {
+        btn.disabled = true;
+        btn.style.opacity = '0.6';
+        btn.style.cursor = 'not-allowed';
+        btn.textContent = 'Пройдите проверку';
+        btn.style.backgroundColor = '#ccc';
+    }
+};
+
+window.onCaptchaError = function(error) {
+    console.error('❌ CAPTCHA ERROR:', error);
+    window.captchaToken = null;
+    const btn = document.querySelector('form.callBack button') || 
+                document.querySelector('button[data-original-text]');
+    if (btn) {
+        btn.disabled = true;
+        btn.style.opacity = '0.6';
+        btn.style.cursor = 'not-allowed';
+        btn.textContent = 'Ошибка проверки';
+        btn.style.backgroundColor = '#ccc';
+    }
+};
+</script>
+
+
+<section class="articlePage-main" id="Article_345481" style="background: url(/local/templates/MediaSphera/img/articlePage/bg-main.webp);">
+ <div class="container">
+  <div class="articlePage-main-block" style="min-height:80rem;">
+   <div class="articlePage-main-block-author__list-fon"></div>
+   <div class="articlePage-main-block-author__list">
+    <div class="author__list-item-close"><span></span></div>     <div class="author__list-item">
+      <div class="author__list-item-name">
+       <p>Дергилев К.В.</p>
+      </div>
+      <div class="author__list-item-info">
+       <p>ФГБУ «Национальный медицинский исследовательский центр кардиологии им. акад. Е.И. Чазова» Минздрава России</p>
+      </div>
+      <div class="author__list-item-info" style="margin-top: 2rem;">
+      <ul>
+       <li>ORCID:
+        <span><a target="_blank" href="https://orcid.org/0000-0003-2712-4997">0000-0003-2712-4997</a></span>
+       </li>      </ul>
+      
+      </div>
+     </div>     <div class="author__list-item">
+      <div class="author__list-item-name">
+       <p>Долгодворова А.А.</p>
+      </div>
+      <div class="author__list-item-info">
+       <p>ФГБУ «Национальный медицинский исследовательский центр кардиологии им. акад. Е.И. Чазова» Минздрава России</p>
+      </div>
+      <div class="author__list-item-info" style="margin-top: 2rem;">
+      <ul>
+       <li>ORCID:
+        <span><a target="_blank" href="https://orcid.org/0000-0003-2460-088X">0000-0003-2460-088X</a></span>
+       </li>      </ul>
+      
+      </div>
+     </div>     <div class="author__list-item">
+      <div class="author__list-item-name">
+       <p>Гольцева Ю.Д.</p>
+      </div>
+      <div class="author__list-item-info">
+       <p>ФГБУ «Национальный медицинский исследовательский центр кардиологии им. акад. Е.И. Чазова» Минздрава России</p>
+      </div>
+      <div class="author__list-item-info" style="margin-top: 2rem;">
+      <ul>
+       <li>ORCID:
+        <span><a target="_blank" href="https://orcid.org/0000-0002-6367-3785">0000-0002-6367-3785</a></span>
+       </li>      </ul>
+      
+      </div>
+     </div>     <div class="author__list-item">
+      <div class="author__list-item-name">
+       <p>Парфенова Е.В.</p>
+      </div>
+      <div class="author__list-item-info">
+       <p>ФГБУ «Национальный медицинский исследовательский центр кардиологии им. акад. Е.И. Чазова» Минздрава России</p>
+      </div>
+      <div class="author__list-item-info" style="margin-top: 2rem;">
+      <ul>
+       <li>ORCID:
+        <span><a target="_blank" href="https://orcid.org/0000-0002-0969-5780">0000-0002-0969-5780</a></span>
+       </li>      </ul>
+      
+      </div>
+     </div>   </div>
+   
+   <div class="articlePage-main-block-info">
+    <img align="left" class="journal_cover" src="/upload/resize_cache/iblock/7bd/670_720_1/chzmgy9srqz3r1j3bf2pge24rr8f5bme.webp" alt="">
+   
+    <div class="name">     <p>Иглистые мыши (Acomys)&nbsp;— новая перспективная модель для&nbsp;изучения механизмов регенеративных процессов в&nbsp;сердце и&nbsp;разработки регенеративных технологий</p>
+    </div>
+
+    <div class="authors_top">
+     <div style="margin-bottom:1rem;">Авторы:</div><br />
+       
+     <p><nobr>Дергилев К.В.</nobr>, <nobr>Долгодворова А.А.</nobr>, <nobr>Гольцева Ю.Д.</nobr>, <nobr>Парфенова Е.В.</nobr></p>
+					
+     <div class="author-list">
+      <div class="text">
+       Подробнее об&nbsp;авторах      </div>
+     </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="magazine">
+     <p>Журнал:
+      <span>       <a href="/journal/kardiologicheskij-vestnik">
+        <span style="color:black;">
+         Кардиологический вестник.         </span>
+       </a>
+        2025;20(4): 10&#8209;17      </span>
+     </p>
+    </div>     <div class="number">
+      <p>DOI:<span>
+      <a href="https://doi.org/10.17116/Cardiobulletin20252004110" target="_blank">
+       10.17116/Cardiobulletin20252004110      </a>
+     </span></p>
+     </div>
+ 
+<script type="text/javascript">
+$(document).ready(function(){ 
+ var timesRead = parseInt( $("#timesRead").text() );
+ $("#dnldbtn").click(function() { //increment #timesRead
+  timesRead++;
+  $("#timesRead").html(timesRead);
+  $.get('/scripts/declineTimes.php?n='+timesRead, function(data){
+   $("#timesReadDecline").html(data);
+  });
+ });
+});
+</script>
+    <div class="download-info">
+     <div class="view">
+      <div class="view-text">
+       <p>
+       <p>Прочитано: <span id="timesRead">1017</span> <span id="timesReadDecline">раз</span></p> 
+       </p>
+      </div>
+      <div class="view-numb">
+       <span></span>
+      </div>
+     </div>
+     <div class="download">
+      <div class="download-text">
+       <p>
+       </p>
+      </div>
+      <div class="view-numb">
+       <span>
+       </span>
+      </div>
+     </div>
+    </div>
+    <div style="max-width: 65%; display:flex; justify-content: flex-start;">
+    </div>
+
+    <div class="button" id="dnldbtn">
+          
+       <div class="title-link" data-id="345481" data-value="87" data-code="LOADS">
+        <a href="/issues/kardiologicheskij-vestnik/2025/4/downloads/ru/1207767642025041010"  target="_blank">
+         <div class="link-button black">
+          <div class="text">Скачать PDF</div>
+          <div class="img"><img src="/local/templates/MediaSphera/img/icon/main-arrow-white.svg" alt="">
+          </div>
+         </div>
+        </a>
+       </div>
+    </div>
+    <div class="button">
+       <div class="title-link">
+        <a href="javascript: void(0)">
+         <div class="link-button white btn-CB-author">
+          <div class="text">Связаться с автором</div>
+          <div class="img"><img src="/local/templates/MediaSphera/img/icon/message.svg"
+                 alt=""></div>
+         </div>
+        </a>
+       </div>
+    <div class="title-link">
+     <a href="/issues/kardiologicheskij-vestnik/2025/4">
+      <div class="link-button white _btn-CB-author">
+       <div class="text">Оглавление</div>
+       <div class="img"><img src="/local/templates/MediaSphera/img/icon/main-contents.svg" alt=""></div>
+      </div>
+     </a>
+    </div>    </div>
+<style type="text/css">
+.rblock{ display:-moz-inline-stack; display:inline-block; *display:inline; float:right; } 
+.widget1{display:none;}
+@media(max-width:768px){
+.widget1{display:inherit;}
+.widget2{display:none;}
+}
+</style><br />
+<script type="module" src="//cdn.plu.mx/widget-popup.js"></script>
+<div class="rblock" style="margin-left:20px;">
+	
+ <div class="widget1">
+<a href="https://plu.mx/plum/a/?scopus_id=105026764078" data-popup="left" data-size="medium" class="plumx-plum-print-popup" data-site="plum" data-hide-when-empty="true"><span style="opacity:0;">SPINY MICE (ACOMYS): A NOVEL AND PERSPECTIVE MODEL FOR RESEARCH OF HEART REGENERATION AND DEVELOPMENT OF REGENERATIVE TECHNOLOGIES</span></a>
+ </div>
+	
+ <div class="widget2">
+<a href="https://plu.mx/plum/a/?scopus_id=105026764078" data-popup="right" data-size="medium" class="plumx-plum-print-popup" data-site="plum" data-hide-when-empty="true"><span style="opacity:0;">SPINY MICE (ACOMYS): A NOVEL AND PERSPECTIVE MODEL FOR RESEARCH OF HEART REGENERATION AND DEVELOPMENT OF REGENERATIVE TECHNOLOGIES</span></a>
+ </div>	
+</div>
+    <div class="quote">
+     <div class="title" id="click-to-hide" style="text-decoration: underline;">
+      <p>
+       Как&nbsp;цитировать:      </p>
+     </div>
+     <div class="text" id="hidden-element" style="margin-top: 2rem;">
+      <p>
+Дергилев К.В., Долгодворова А.А., Гольцева Ю.Д., Парфенова Е.В.       Иглистые мыши (Acomys)&nbsp;— новая перспективная модель для&nbsp;изучения механизмов регенеративных процессов в&nbsp;сердце и&nbsp;разработки регенеративных технологий.       <i>Кардиологический вестник. </i>
+2025;20(4):10&#8209;17.<br>Dergilev KV, Dolgodvorova AA, Goltseva YuD, Parfyonova YeV. Spiny mice (Acomys): a&nbsp;novel and&nbsp;perspective model for&nbsp;research of&nbsp;heart regeneration and&nbsp;development of&nbsp;regenerative technologies. <i>Russian Cardiology Bulletin. </i>2025;20(4):10&#8209;17. (In&nbsp;Russ.)        <br>
+								<a href="https://doi.org/10.17116/Cardiobulletin20252004110" target="_blank">
+         https://doi.org/10.17116/Cardiobulletin20252004110        </a>
+      </p>
+     </div>    </div>
+   </div>
+
+   <div class="articlePage-main-block-img">
+<div class="book-img">
+
+ <div class="swiper-container slider-main-top">
+  <div class="swiper-wrapper">   <div class="swiper-slide slider-main-top-slide">     <div style="width:100%; height:100%;  background:linear-gradient(45deg, #D2D2D2, #DDDDDD);">
+     <a style="position:absolute; z-index:99; width:100%; height:100%; margin-bottom:-100%;" target="_blank" href="https://1med.tv/events/ozhirenie-3-0/?tab=programm&utm_medium=1medtv&utm_campaign=banner-msf"><div>&nbsp;</div></a>			
+     <iframe class="videoframe" src="https://mediasphera.ru/player/playerjs.html?loop=1&autoplay=1&file=https://www.mediasphera.ru/upload/iblock/120/z69o9tni01jmyh3r189pslk4ztp2yp0z.mp4" width="100%" height="95%" frameborder="0" align="center" allowfullscreen="allowfullscreen"></iframe> 
+					<!--div id="player8036" style="width:100%; height:95%;"></div-->
+				</div>
+				
+   </div>   <div class="swiper-slide slider-main-top-slide"> 			
+			 <a target="_blank" href="https://www.mediasphera.ru/journal/kardiologicheskij-vestnik?expanded=true&tab=subscriptions&utm_source=mediasphera.ru&utm_medium=banner_article&utm_campaign=subs_spring_2025&utm_content=link"> 
+  			<img src="/upload/iblock/07f/cm9mag7xntplb2dctf57gwbutz7tngmt.webp" alt="Подписка 2026 Кардиологический вестник (Russian Cardiology Bulletin)">
+			 </a>				
+   </div>   <div class="swiper-slide slider-main-top-slide"> 			
+			 <a target="_blank" href="https://market.yandex.ru/business--media-sfera-izdatelstvo/110805982"> 
+  			<img src="/upload/iblock/1db/mt0syauc67gsv89do4f3dap2j0nnun5b.jpg" alt="МСФ на ЯМ">
+			 </a>				
+   </div>   <div class="swiper-slide slider-main-top-slide"> 			
+			 <a target="_blank" href="https://www.mediasphera.ru/editorial_education/ispolzovanie-infografiki-avtorami-nauchnykh-rabot"> 
+  			<img src="/upload/iblock/cdc/3vaqin6hugpik8n144q19uzn8f5o3jyj.jpg" alt="Использование инфографики авторами научных работ">
+			 </a>				
+   </div>  </div>
+  <div class="container" style="display:none">
+   <div class="slider-main-top-bottom">
+    <div class="swiper-container slider-main-thumbs">
+     <div class="swiper-wrapper">
+     </div>
+    </div>
+   </div>
+  </div>
+
+ </div>
+	
+<script type="text/javascript">
+  var player8036 = new Playerjs({id:"player8036", file:"https://www.mediasphera.ru/upload/iblock/120/z69o9tni01jmyh3r189pslk4ztp2yp0z.mp4", autoplay:1, loop:1});
+</script>
+	
+<!-- Add Arrows -->
+<div align="center">
+   <div class="slider-main-thumbs-arrows">
+    <div class="swiper-button-prev"><img src="/local/templates/MediaSphera/img/arrow-prev.svg" alt=""></div>
+    <div class="swiper-button-next"><img src="/local/templates/MediaSphera/img/arrow-next.svg" alt=""></div>
+   </div>
+   <div class="swiper-pagination" style=""></div>
+</div>																			
+<!-- /Add Arrows -->
+	
+    </div>    <div class="link-img">
+      <div style="width:49%; margin-bottom: 1rem;">
+       <a target="_blank" href="https://apps.rustore.ru/app/ru.mediasphera.app">
+        <img src="/local/templates/MediaSphera/img/index/read-mobile/RuStore_Badge.svg" alt="">
+       </a>
+      </div>
+      <div style="width:49%; margin-bottom: 1rem;">
+       <a target="_blank" href="https://store.nashstore.ru/store/6278e7a14891a52a35489e94">
+        <img src="/local/templates/MediaSphera/img/index/read-mobile/NashStore_Badge.svg" alt="">
+       </a>
+      </div>
+       <div style="width:49%; margin-bottom: 1rem;">        <a target="_blank" href="https://apps.apple.com/app/media-sphera-journals/id1612251533">
+         <img src="/local/templates/MediaSphera/img/index/read-mobile/App_Store_Badge_RU.svg" alt="">
+        </a>
+       </div>    </div>
+
+   </div>
+   <div class="link-img mobile">
+      <div style="width:49%; margin-bottom: 1rem;">
+       <a target="_blank" href="https://apps.rustore.ru/app/ru.mediasphera.app">
+        <img src="/local/templates/MediaSphera/img/index/read-mobile/RuStore_Badge.svg" alt="">
+       </a>
+      </div>
+      <div style="width:49%; margin-bottom: 1rem;">
+       <a target="_blank" href="https://store.nashstore.ru/store/6278e7a14891a52a35489e94">
+        <img src="/local/templates/MediaSphera/img/index/read-mobile/NashStore_Badge.svg" alt="">
+       </a>
+      </div>
+       <div style="width:49%; margin-bottom: 1rem;">        <a target="_blank" href="https://apps.apple.com/app/media-sphera-journals/id1612251533">
+         <img src="/local/templates/MediaSphera/img/index/read-mobile/App_Store_Badge_RU.svg" alt="">
+        </a>
+       </div>   </div>
+  </div>
+ </div>
+</section>
+
+
+
+<section class="articlePage-metadoc active">
+ <div class="articlePage-metadoc-top active"> 
+  <div class="container">
+   <div class="articlePage-metadoc-top-block-close"><span></span></div>
+   <div class="articlePage-metadoc-top-block">
+ 			<div class="title"> Закрыть метаданные </div>
+    <div class="img active">
+     <img src="/local/templates/MediaSphera/img/icon/main-arrow-white.svg" alt="">
+    </div>
+   </div>
+  </div> </div>
+ <!--RbyK--><div id="RecPosMarker" style="position:absolute;"></div>
+<div class="RecommendByKeywords">
+ <div class="RecsTitle">Рекомендуем статьи по данной теме:</div>
+ <div class="RecArticle">
+	 <a href="/issues/klinicheskaya-dermatologiya-i-venerologiya/2025/3/1199728492025031376"><b>Но&shy;вые воз&shy;мож&shy;нос&shy;ти про&shy;фес&shy;си&shy;ональ&shy;но&shy;го ухо&shy;да за ко&shy;жей пос&shy;ле ап&shy;па&shy;рат&shy;ных про&shy;це&shy;дур в эс&shy;те&shy;ти&shy;чес&shy;кой кос&shy;ме&shy;то&shy;ло&shy;гии.</b></a> 
+		<i>Кли&shy;ни&shy;чес&shy;кая дер&shy;ма&shy;то&shy;ло&shy;гия и ве&shy;не&shy;ро&shy;ло&shy;гия. <nobr>2025;(3):376-380</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/khirurgiya-zhurnal-im-n-i-pirogova/2025/8/1002312072025081045"><b>Оцен&shy;ка эф&shy;фек&shy;тив&shy;нос&shy;ти мес&shy;тно&shy;го ле&shy;че&shy;ния ве&shy;ноз&shy;ных тро&shy;фи&shy;чес&shy;ких язв у ге&shy;рон&shy;то&shy;ло&shy;ги&shy;чес&shy;ких па&shy;ци&shy;ен&shy;тов.</b></a> 
+		<i>Хи&shy;рур&shy;гия. Жур&shy;нал им. Н.И. Пи&shy;ро&shy;го&shy;ва. <nobr>2025;(8):45-54</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/profilakticheskaya-meditsina/2025/8/1230549482025081131"><b>Ле&shy;че&shy;ние са&shy;хар&shy;но&shy;го ди&shy;абе&shy;та 1 ти&shy;па.</b></a> 
+		<i>Про&shy;фи&shy;лак&shy;ти&shy;чес&shy;кая ме&shy;ди&shy;ци&shy;на. <nobr>2025;(8):131-137</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/vestnik-otorinolaringologii/2025/4/1004246682025041039"><b>Эк&shy;спе&shy;ри&shy;мен&shy;таль&shy;но-кли&shy;ни&shy;чес&shy;кая оцен&shy;ка бе&shy;зо&shy;пас&shy;нос&shy;ти и эф&shy;фек&shy;тив&shy;нос&shy;ти ком&shy;плексно&shy;го на&shy;заль&shy;но&shy;го спрея По&shy;ли&shy;дек&shy;са с фе&shy;ни&shy;лэф&shy;ри&shy;ном при ос&shy;тром ри&shy;но&shy;си&shy;ну&shy;си&shy;те.</b></a> 
+		<i>Вес&shy;тник ото&shy;ри&shy;но&shy;ла&shy;рин&shy;го&shy;ло&shy;гии. <nobr>2025;(4):39-46</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/vestnik-otorinolaringologii/2025/4/1004246682025041064"><b>Роль «Ин&shy;фла&shy;си&shy;ну&shy;сан&shy;са» в ле&shy;че&shy;нии ос&shy;тро&shy;го ри&shy;но&shy;си&shy;ну&shy;си&shy;та.</b></a> 
+		<i>Вес&shy;тник ото&shy;ри&shy;но&shy;ла&shy;рин&shy;го&shy;ло&shy;гии. <nobr>2025;(4):64-71</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/vestnik-oftalmologii/2025/4/10042465X2025041066"><b>При&shy;ме&shy;не&shy;ние озо&shy;но&shy;те&shy;ра&shy;пии в те&shy;ра&shy;пев&shy;ти&shy;чес&shy;ком ле&shy;че&shy;нии ос&shy;лож&shy;не&shy;ний при сквоз&shy;ной ке&shy;ра&shy;топ&shy;лас&shy;ти&shy;ке на фо&shy;не ро&shy;за&shy;цеа-ас&shy;со&shy;ци&shy;иро&shy;ван&shy;но&shy;го ке&shy;ра&shy;ти&shy;та.</b></a> 
+		<i>Вес&shy;тник оф&shy;таль&shy;мо&shy;ло&shy;гии. <nobr>2025;(4):66-72</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/klinicheskaya-dermatologiya-i-venerologiya/2025/4/1199728492025041403"><b>Пси&shy;хо&shy;дер&shy;ма&shy;то&shy;ло&shy;ги&shy;чес&shy;кие ас&shy;пек&shy;ты псо&shy;ри&shy;аза, сов&shy;ре&shy;мен&shy;ное сос&shy;то&shy;яние проб&shy;ле&shy;мы.</b></a> 
+		<i>Кли&shy;ни&shy;чес&shy;кая дер&shy;ма&shy;то&shy;ло&shy;гия и ве&shy;не&shy;ро&shy;ло&shy;гия. <nobr>2025;(4):403-411</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/voprosy-kurortologii-fizioterapii-i-lechebnoj-fizicheskoj-kultury/2025/4/1004287872025041014"><b>При&shy;ме&shy;не&shy;ние по&shy;ли&shy;фе&shy;но&shy;лов ви&shy;ног&shy;ра&shy;да в со&shy;че&shy;та&shy;нии с маг&shy;ни&shy;то&shy;те&shy;ра&shy;пи&shy;ей у па&shy;ци&shy;ен&shy;тов с брон&shy;хи&shy;аль&shy;ной ас&shy;тмой, пе&shy;ре&shy;нес&shy;ших но&shy;вую ко&shy;ро&shy;на&shy;ви&shy;рус&shy;ную ин&shy;фек&shy;цию.</b></a> 
+		<i>Воп&shy;ро&shy;сы ку&shy;рор&shy;то&shy;ло&shy;гии, фи&shy;зи&shy;оте&shy;ра&shy;пии и ле&shy;чеб&shy;ной фи&shy;зи&shy;чес&shy;кой куль&shy;ту&shy;ры. <nobr>2025;(4):14-19</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/rossijskaya-rinologiya/2025/3/1086954742025031191"><b>Ан&shy;ти&shy;ок&shy;си&shy;дан&shy;тная те&shy;ра&shy;пия для кор&shy;рек&shy;ции нит&shy;ро&shy;за&shy;тив&shy;но&shy;го стрес&shy;са при вос&shy;па&shy;ли&shy;тель&shy;ных за&shy;бо&shy;ле&shy;ва&shy;ни&shy;ях по&shy;лос&shy;ти но&shy;са.</b></a> 
+		<i>Рос&shy;сий&shy;ская ри&shy;но&shy;ло&shy;гия. <nobr>2025;(3):191-196</nobr></i>
+	</div>
+ <div class="RecArticle">
+	 <a href="/issues/arkhiv-patologii/2025/5/1000419552025051011"><b>Ха&shy;рак&shy;те&shy;рис&shy;ти&shy;ка им&shy;мун&shy;но&shy;го мик&shy;ро&shy;ок&shy;ру&shy;же&shy;ния ра&shy;ка эн&shy;до&shy;мет&shy;рия в за&shy;ви&shy;си&shy;мос&shy;ти от MMR-ста&shy;ту&shy;са опу&shy;хо&shy;ли.</b></a> 
+		<i>Ар&shy;хив па&shy;то&shy;ло&shy;гии. <nobr>2025;(5):11-19</nobr></i>
+	</div>
+ <div id="RecBottomMarker"></div>
+</div>
+<style type="text/css">
+.articlePage-navPage.active{ z-index:90; }
+.RecommendByKeywords{
+ display:-moz-inline-stack; display:inline-block; *display:inline; float:right; 
+	width:20%; 
+/*	border:rgb(77,77,77) 1px solid; */
+ background-color:#DDDDDD;
+	border-top-right-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	padding:1rem;
+	margin-top:2rem;
+ margin-left:2rem;
+ margin-bottom:-100%; 
+ margin-right:0; 
+	margin-top:5rem;
+	font-size:3em;
+ position:relative; z-index:8; 
+}
+.RecsTitle{
+ font-family: 'Circe Bold';
+ font-size: 2.4rem;
+ padding: 1rem 0 2.4rem 0;
+}
+.RecArticle{
+ padding: 0 0 2.4rem 0;
+}
+.RecArticle a{
+ text-decoration:underline; color:#000000;
+}
+.RecommendByKeywords.fixed{
+ position:fixed; top:0; right:0; z-index:6; margin-top:7rem;
+}
+/*
+@media(max-width:1600px){ .RecommendByKeywords.in_text{ margin-right:-37%; } }
+@media(max-width:1320px){ .RecommendByKeywords.in_text{ margin-right:-30%;	} }
+@media(max-width:1152px){ .RecommendByKeywords.in_text{ margin-right:-35%;	} }
+@media(max-width:1062px){ .RecommendByKeywords.in_text{ margin-right:-30%;	} }
+@media(max-width:1024px){ .RecommendByKeywords.in_text{ margin-right:-45%;	} }
+*/
+@media(max-width:890px){ .RecommendByKeywords.in_text{ width:18%;	} }
+@media(max-width:768px){
+ .RecommendByKeywords{
+  display:block;
+		float:none;
+		width:inherit;
+		margin:0 5rem;
+ } 
+ .RecommendByKeywords.in_text{ margin:0; width:100%;}
+ .RecsTitle{font-size: 3.6rem;}
+ .RecommendByKeywords.fixed{
+  position:inherit;
+ }
+}
+</style>
+<script type="text/javascript">
+$(window).scroll(function() {
+ var dtop=$('#RecPosMarker').offset().top;
+ var dend=$(".footer").first().offset().top;
+ if( $(window).scrollTop() >= dtop && window.screen.width>768 ) {
+	 if(  !( $('.RecommendByKeywords').first().hasClass('fixed') )  ) $('.RecommendByKeywords').first().addClass('fixed');
+		while ( $("#RecBottomMarker").offset().top > dend-10 ) { 
+		 var bott=parseInt( $('.RecommendByKeywords').first().css("top") );
+		 var offtop=(bott-10).toString()+'px';
+		 $('.RecommendByKeywords').first().css("top", offtop);
+		}
+		while ( $("#RecBottomMarker").offset().top < dend-40 ) { 
+		 var bott=parseInt( $('.RecommendByKeywords').first().css("top") );
+		 var offtop=(bott+10).toString()+'px';
+			if(  parseInt( $(".RecommendByKeywords").first().css("top") ) >=0  ) {
+			 $('.RecommendByKeywords').first().css("top", "0px");
+			 break;
+			}
+		 $('.RecommendByKeywords').first().css("top", offtop);
+		}
+ } else {
+  $('.RecommendByKeywords').removeClass('fixed');
+ }
+});
+</script>
+ <!--/RbyK-->
+	
+ <div class="container">
+      <div class="articlePage-metadoc-bottom  active">
+ 		<div class="articlePage-content-block" style="margin:0; padding:0;">
+			 <div class="text">
+     <div class="HeadActive">
+     Резюме / Abstract:
+     </div>
+				</div>
+			</div>
+   <div class="text"> 
+    <p>
+     <h3></h3><p>Процессы репаративной регенерации сердца, хорошо выраженные у&nbsp;низших позвоночных (рыб, тритонов), крайне слабо представлены в&nbsp;сердце млекопитающих. Это&nbsp;не&nbsp;позволяет ему&nbsp;восстанавливаться при&nbsp;обширных повреждениях и&nbsp;лежит в&nbsp;основе многих кардиологических заболеваний, вносящих существенный вклад в&nbsp;структуру смертности развитых стран (ишемическая болезнь сердца, инфаркт миокарда, сердечная недостаточность). Решение этой проблемы лежит в&nbsp;области раскрытия механизмов регенерации сложных органов и&nbsp;тканей, в&nbsp;том&nbsp;числе миокарда, и&nbsp;создания на&nbsp;этой основе новых технологий для&nbsp;стимуляции эндогенных регенеративных процессов. Обнаружение возможности полной регенерации кожи, хряща, скелетных мышц и&nbsp;почти полной с&nbsp;ограниченным фиброзом регенерации почек, спинного мозга и&nbsp;сердца у&nbsp;взрослых млекопитающих&nbsp;— иглистых мышей <i>Acomys</i>&nbsp;— открывает новые перспективы в&nbsp;изучении механизмов регенерации, в&nbsp;частности, регенерации миокарда. Этот обзор представляет краткий анализ результатов сравнительных исследований регенеративных процессов в&nbsp;коже, ушной раковине, скелетных мышцах, почках и&nbsp;спинном мозге у&nbsp;мышей <i>Acomys</i> и&nbsp;домовых мышей (<i>Mus&nbsp;musculus</i>). Более подробно освещены имеющиеся на&nbsp;сегодняшний день результаты исследований особенностей регенерации сердца у&nbsp;этих животных и&nbsp;предполагаемые механизмы, определяющие эти&nbsp;особенности. Представленные результаты позволяют заключить, что&nbsp;иглистые мыши <i>Acomys</i> являются, возможно, наиболее многообещающей моделью для&nbsp;раскрытия механизмов регенерации сложных органов и&nbsp;тканей, в&nbsp;частности, сердца, с&nbsp;перспективами практического применения этих открытий для&nbsp;эффективной стимуляции регенеративных процессов у&nbsp;человека.</p>    </p>
+   </div>    <div class="keywords">
+     <div class="title">
+      <p>Ключевые слова / Keywords:</p>
+     </div>
+     <div class="keywords-items">
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">регенерация</a>
+       </div>
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">сердце</a>
+       </div>
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">иглистые мыши Acomys</a>
+       </div>
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">воспаление</a>
+       </div>
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">макрофаги</a>
+       </div>
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">кардиомиоциты</a>
+       </div>
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">пролиферация</a>
+       </div>
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">фибробласты</a>
+       </div>
+       <div class="item">
+        <a href="javascript: void(0)" target="_blank">внеклеточный матрикс</a>
+       </div>
+     </div>
+    </div>
+       <div class="author">
+     <div class="title">
+      <p>Авторы / Authors:</p>
+     </div>
+     <div class="author-block">      <div class="author-item">
+       <div class="name">
+        <p>Дергилев К.В.</p>
+       </div>
+       <div class="info">
+        <p>ФГБУ «Национальный медицинский исследовательский центр кардиологии им. акад. Е.И. Чазова» Минздрава России</p>
+       </div>
+       <div class="list">
+      <ul>
+       <li>ORCID:
+        <span><a target="_blank" href="https://orcid.org/0000-0003-2712-4997">0000-0003-2712-4997</a></span>
+       </li>      </ul>
+      
+        </div>
+       </div>      <div class="author-item">
+       <div class="name">
+        <p>Долгодворова А.А.</p>
+       </div>
+       <div class="info">
+        <p>ФГБУ «Национальный медицинский исследовательский центр кардиологии им. акад. Е.И. Чазова» Минздрава России</p>
+       </div>
+       <div class="list">
+      <ul>
+       <li>ORCID:
+        <span><a target="_blank" href="https://orcid.org/0000-0003-2460-088X">0000-0003-2460-088X</a></span>
+       </li>      </ul>
+      
+        </div>
+       </div>      <div class="author-item">
+       <div class="name">
+        <p>Гольцева Ю.Д.</p>
+       </div>
+       <div class="info">
+        <p>ФГБУ «Национальный медицинский исследовательский центр кардиологии им. акад. Е.И. Чазова» Минздрава России</p>
+       </div>
+       <div class="list">
+      <ul>
+       <li>ORCID:
+        <span><a target="_blank" href="https://orcid.org/0000-0002-6367-3785">0000-0002-6367-3785</a></span>
+       </li>      </ul>
+      
+        </div>
+       </div>      <div class="author-item">
+       <div class="name">
+        <p>Парфенова Е.В.</p>
+       </div>
+       <div class="info">
+        <p>ФГБУ «Национальный медицинский исследовательский центр кардиологии им. акад. Е.И. Чазова» Минздрава России</p>
+       </div>
+       <div class="list">
+      <ul>
+       <li>ORCID:
+        <span><a target="_blank" href="https://orcid.org/0000-0002-0969-5780">0000-0002-0969-5780</a></span>
+       </li>      </ul>
+      
+        </div>
+       </div>     </div>
+    </div>
+    <div class="book-info">
+     <div class="book-info-receipt">
+      <div class="text">
+       <p>Дата поступления: </p>
+      </div>
+      <div class="date">
+       <p>17.10.2025</p>
+      </div>
+     </div>
+     <div class="book-info-print">
+      <div class="text">
+       <p>Дата принятия в&nbsp;печать:</p>
+      </div>
+      <div class="date">
+       <p>20.10.2025</p>
+      </div>
+     </div>
+   </div>
+
+   <div class="conflict">
+   </div>
+   
+   <div class="articlePage-metadoc-button mobile">
+    <div class="text">
+     <p>Закрыть метаданные</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+
+<section class="articlePage-navPage yellow" id="scrollTop">
+ <div class="container">
+  <div class="magazinePage-navPage-link">
+
+   <div class="swiper-container nav_ArticlePage">
+    <div class="nav_ArticlePage-button-next">
+     <img src="/local/templates/MediaSphera/img/icon/main-arrow-grey.svg" alt="">
+    </div>
+    <div class="swiper-wrapper">
+    </div>
+    <div class="nav_ArticlePage-button-prev">
+     <img src="/local/templates/MediaSphera/img/icon/main-arrow-grey.svg" alt="">
+    </div>
+   </div>
+   
+  </div>
+ </div>
+</section>
+
+ <!--RbyK--> <!--/RbyK-->
+
+
+<section class="articlePage-content">
+ <div class="container">
+  <div style="width: 66%; margin-left: auto; margin-right: auto;" class="articlePage-content-block">
+
+   <div class="">
+    <div class="text">
+<h2 class="Head" lang="ru-RU">Введение</h2> <p class="Body" lang="ru-RU">Процессы репаративной регенерации сердца, хорошо выраженные у низших позвоночных (рыб, тритонов, саламандр), крайне слабо представлены в сердце млекопитающих. Это не позволяет ему восстанавливаться при обширных повреждениях и лежит в основе многих кардиологических заболеваний, вносящих существенный вклад в структуру смертности развитых стран. В течение 100 лет в биологии и медицине господствовала парадигма, основанная на представлении о том, что сердце является постмитотическим органом, не способным к регенерации, в котором кардиомиоциты, погибшие в результате повреждения или заболевания, замещаются неспособной к сокращениям фиброзной тканью, а компенсаторные процессы реализуются исключительно за счет гипертрофии сохраненных кардиомиоцитов. </p> <p class="Body" lang="ru-RU">Исследования последних двух десятилетий показали, что сердце взрослых млекопитающих, включая человека, имеет регенеративный потенциал, хотя и крайне ограниченный [1]. Кардиомиоциты в сердце человека обновляются в течение жизни, но с очень низкой скоростью, которая составляет 1—2% в год у двадцатилетних и 0,5% в год в возрасте 70 лет. Однако существование даже такого ограниченного потенциала к регенерации открывает возможности для воздействий на него в плане увеличения. </p> <p class="Body" lang="ru-RU">Современная медицина не имеет в своем арсенале средств, позволяющих восстановить утраченный в результате патологических процессов миокард и предотвратить развитие замещающего фиброза, что неизбежно приводит к формированию сердечной недостаточности, которая остается на протяжении более полувека одной из ведущих причин смертности в мире [2—5], представляя собой важную медицинскую, социальную и экономическую проблему. Решение этой проблемы лежит в области раскрытия механизмов регенерации сложных органов и тканей, в том числе миокарда, и создания на этой основе новых технологий для стимуляции эндогенных регенеративных процессов. Одним из перспективных подходов к изучению механизмов регенерации является исследование таковой у животных, сохраняющих нативную способность к полной или почти полной регенерации на протяжении всей жизни, что делает возможной идентификацию молекулярных мишеней для фармакологической стимуляции регенеративных процессов. В отношении сердца такие исследования были первоначально сосредоточены на изучении его регенерации у низших животных, в основном у хвостатых амфибий (саламандра <em>Notophthalmus viridescens</em>) и их неотенических личинок (аксолотль <em>Ambystoma mexicanum</em>), а также у некоторых видов костистых рыб (<em>Danio rerio</em>) [6-11], которые способны полностью восстанавливать отсеченную верхушку сердца за счет активации пролиферации кардиомиоцитов и интенсивной реваскуляризации регенерирующего участка. Наиболее хорошо охарактеризованной природной моделью полной регенерации сердца является полосатая рыбка (<em>D. Rerio</em>), демонстрирующая способность к исчерпывающему заживлению миокарда после различных повреждений, включающих отсечение верхушки желудочка, криодеструкцию и ишемическое повреждение. Однако значительные различия в структуре и функционировании сердца у рыб, земноводных и человека затрудняют трансляцию знаний о механизмах регенерации в применимые для клиники биотехнологии. Среди млекопитающих объектом изучения регенерации сердца являлись новорожденные мыши, у которых в течение первой недели постнатального онтогенеза сохраняется способность к полной (безрубцовой) регенерации миокарда после ишемического, ампутационного и травматического повреждения [12]. Следует отметить, что по истечении недельного неонатального периода сердце мышей утрачивает регенеративный потенциал, и повреждения сердца разрешаются развитием фиброза, как и у практически всех взрослых млекопитающих. Поэтому обнаружение относительно недавно феномена полной или почти полной регенерации зоны повреждения кожи, хрящевых структур, поврежденных почек, спинного мозга, скелетных мышц и сердца у взрослых млекопитающих — грызунов рода <em>Acomys,</em> так называемых иглистых мышей, позволило открыть новые перспективы в изучении механизмов регенерации, в частности, регенерации миокарда [13, 14]. </p> <h3 class="Head_B" lang="ru-RU">Регенеративный потенциал иглистых мышей <em>Acomys</em></h3> <p class="Body" lang="ru-RU">Иглистые мыши (<em>Acomys</em>), обитающие в Африке и на Ближнем Востоке, относительно недавно были замечены как животные, обладающие набором уникальных свойств, позволяющих им выживать после получения тяжелых травм, наносимых хищниками. Прежде всего эти животные могут терять до 60% кожного покрова, вероятно, не страдая от значительного болевого синдрома, инфицирования и выраженного кровотечения, а также восстанавливать его полностью, сохраняя полную структуру кожи и подкожной клетчатки, включая волосяные фолликулы, сальные железы, жировую клетчатку и сосуды [15—17]. Вероятно, иглистые мыши менее подвержены стрессу и болевому синдрому, сопровождающему повреждение кожных покровов, чем остальные млекопитающие. Дальнейшие исследования этих животных показали наличие у них сохраняющейся на протяжении всей жизни способности к полной (безрубцовой) или почти полной (т.е. сопровождаемой минимальным фиброзом) регенерации таких органов, как почки, сердце, спинной мозг, скелетные мышцы [13, 14], что практически не встречается у других млекопитающих. В отличие от иглистых мышей у других млекопитающих, включая домовых мышей (<em>M. musculus</em>), возможность безрубцовой регенерации тканей сохраняется только в пре- и коротком постнатальном периоде жизни [18—21]. </p> <p class="Body" lang="ru-RU">У млекопитающих и человека после окончания развития сохраняется высокая способность к регенерации дистальной фаланги пальцев [22]. Это позволяет полагать, что потенциал к регенерации присутствует в геноме млекопитающих, включая и человека, но запуск регенеративной программы почти полностью блокируется вскоре после рождения. Исследование механизмов, посредством которых мыши <em>Acomys</em> избежали постнатального блокирования регенеративных программ, может позволить идентифицировать и сам механизм блокирования и разработать подходы к его локальной отмене у млекопитающих, лишенных способности к эффективной регенерации. </p> <p class="Body" lang="ru-RU">Кумулятивный анализ баз данных научной литературы, основанный на предиктивном поиске ключевых понятий, выявляет, что именно регенерация является наиболее новым и активно развивающимся направлением исследований, связанных с <em>Acomys</em>. Эти исследования направлены на изучение особенностей процессов воспаления, иммунного ответа, профиля иммунных клеток, состава и строения внеклеточного матрикса, пролиферации клеток и неонатальных характеристик мышей <em>Acomys</em> [23—28]. В этой области работает несколько научных групп, каждая из которых изучает регенерацию определенного органа или ткани. </p> <p class="Body" lang="ru-RU">Наиболее значительная часть работ по исследованию регенеративных процессов у иглистых мышей посвящена изучению механизмов полной регенерации кожи и ушной раковины [23, 24, 26, 28]. Установлено, что состав внеклеточного матрикса (ВКМ) кожи мышей <em>Acomys</em> значительно отличается от такового у «лабораторных» мышей рода <em>Mus</em> (C57BL/6J; CD1) прежде всего инвертированным соотношением коллагенов I и III типов с преобладанием коллагена III, с существенно меньшей плотностью и более пористой структурой укладки коллагеновых волокон, значительно сниженным сопротивлением волокон к разрыву [23]. </p> <p class="Body" lang="ru-RU">После повреждении кожи у мышей <em>Acomys</em> профиль экспрессии белков ВКМ непосредственно в месте повреждения близок к таковому в фетальных ранах и характеризуется значительно более высокой экспрессией коллагенов III и V типов в сравнении с контрольными мышами (<em>Mus</em>), для которых типичным является повышение экспрессии коллагена XII. Для кожи иглистых мышей в посттравматический период характерен более высокий уровень экспрессии ферментов, участвующих в перестройке межклеточного матрикса, таких как матриксные металлопротеиназы, чем у <em>M. musculus</em> [24]. Как и для других животных, способных к полной регенерации органов и тканей, таких как аксолотли, рыбки <em>D. rerio</em>, новорожденные мыши, для эффективной регенерации у иглистых мышей необходимы макрофаги: деплеция макрофагов блокирует регенерацию и заживление ушной раковины после экспериментального повреждения [25]. </p> <p class="Body" lang="ru-RU">Следует отметить, что локальная реакция иммунной системы на повреждение кожи у <em>Acomys</em> изменена. Так, уровень провоспалительных цитокинов (Il6, Cxcl3, Ccl12, Ccl7, Il1b), содержание провоспалительных макрофагов (М1) и нейтрофилов у них снижены в сравнении с контрольными мышами (<em>Mus</em>), но преобладают противовоспалительные макрофаги (М2) [24]. Отличается и реакция кожных фибробластов на изменение плотности матрикса. Так, фибробласты новорожденных мышей <em>Acomys</em> не повышают экспрессию альфа-актина при культивировании на матриксе с увеличенной плотностью в отличие от фибробластов контрольных мышей [26]. Недавно полученные данные позволили предположить, что полная регенерация кожи и ушной раковины у иглистых мышей может быть связана с особенностями функционирования Hippo-Yap сигнального пути в фибробластах кожи, обеспечивающими более длительную ядерную локализацию Yap, которая способствует быстрой дедифференцировке миофибробластов. Это предотвращает развитие патологического фиброза, благоприятствуя транзиторной профиброзной реакции, необходимой для эффективного репаративного процесса. Ингибирование Hippo-Yap сигнального пути вертепорфином приводит у <em>Acomys</em> к развитию фиброза [27]. Недавние мультиомиксные исследования и анализ единичных клеток (ATAC-seq) показали значительную степень пластичности подтипов фибробластов кожи. Генетические механизмы, ответственные за пластичность кожных фибробластов, могут обеспечить субстрат для эволюционной селекции или амплификации именно тех подтипов кожных фибробластов, которые опосредуют регенерацию кожи у мышей <em>Acomys</em> [23, 24, 29—32]. </p> <p class="Body" lang="ru-RU">При исследовании регенерации ушной раковины у <em>Acomys</em> отмечено более значительное, чем у <em>M. musculus</em> увеличение продукции активных форм кислорода в первые 5 дней после повреждения [25], что также характерно для регенерации сердца у полосатой рыбки [33]. </p> <p class="Body" lang="ru-RU">Значительно меньшая плотность ВКМ и измененное соотношение коллагенов характерно для скелетных мышц со значительным преобладанием у мышей <em>Acomys</em> коллагена VI типа [34]. Поскольку миграция и пролиферация клеток в значительной степени регулируется плотностью ВКМ, вышеуказанная особенность может быть одним из ключевых факторов, определяющих особенности регенеративных процессов у <em>Acomys</em>. Так, после повреждения скелетных мышц CaTX-содержащими, мембран-пермеабилизирующие компонентами яда кобры иглистые мыши быстрее восстанавливали мышцы с ускоренной индукцией эмбрионального миозина и высоким уровнем дистрофина по сравнению с контрольными мышами. У <em>Acomys</em> отмечен более низкий уровень маркеров воспаления (NF-kB), фиброза (TGFβ1, коллагенов I, III, и XII типов) и более высокий уровень противовоспалительного хемокина Cxcl12. При одинаковом увеличении у <em>Acomys</em> и <em>M. musculus</em> уровня противовоспалительных М2-макрофагов у иглистых мышей практически не определялись провоспалительные М1-макрофаги уже на 4 день после введения кардиотоксина [34], что указывает на менее выраженный воспалительный ответ и преобладание у иглистых мышей прорегенеративных противовоспалительных макрофагов уже в первые дни после повреждения скелетных мышц. Важно отметить, что полная регенерация скелетных мышц сохранялась у мышей <em>Acomys</em> даже после повторных многократных повреждений кардиотоксином, тогда как у обычных домовых мышей после многократных повреждений регенеративные процессы угасали и отмечалось замещение скелетных мышц жировой тканью [34]. </p> <p class="Body" lang="ru-RU">Особый интерес вызывают исследования регенерации таких сложных органов, как почки, спинной мозг и сердце. Хорошо известно, что прогрессирующий фиброз почек, как исход многих заболеваний почек, составляет основу развития почечной недостаточности. Исследования развития фиброза при моделировании острого повреждения почек в двух моделях — односторонней обструкции мочеточника и ишемии-реперфузии, показали, что у иглистых мышей практически не развивается интерстициальный фиброз почек, в отличие от домовых мышей, а наблюдается практически полноценная регенерации ткани почки в зоне повреждения и восстановление ее функции уже через 2 недели после повреждения [35]. Транскриптомный анализ, выполненный на 2-й день эксперимента, выявил, что у иглистых мышей регенеративный ответ инициировался практически сразу же после повреждения. Анализ, выполненный на 5-й день после повреждения, выявил экспрессию генов, вовлеченных в нефрогенез, совпадающую с экспансией кадгерин-6<sup>+</sup>-клеток тубулярного эпителия, чего не наблюдалось у контрольных мышей [35]. </p> <p class="Body" lang="ru-RU">Ослабленный воспалительный ответ и отсутствие заместительного фиброза характеризует и заживление травмы спинного мозга у иглистых мышей. Так, реакция иглистых мышей на травму спинного мозга характеризовалась меньшей продукцией провоспалительных цитокинов, более выраженным увеличением экспрессии нейрогенных генов, подавленной TGFβ1-зависимой сигнализацией, тотальным отсутствием глиального рубцевания и более быстрым и полным восстановлением нарушенных функций мочевого пузыря [37]. В нескольких работах показано, что иглистые мыши в отличие от других млекопитающих способны регенерировать спинной мозг при полном пересечении, при этом тубулин-позитивные аксоны у них оказывались почти полностью миелинизированы. Ремиелинизация способствовала восстановлению проведения возбуждения в нервных волокнах уже к 8-й посттравматической неделе, чего не наблюдалось у домовых мышей рода Mus, у которых формировался выраженный глиальный рубец [37]. РНК-секвенирование выявило, что в ответ на повреждение спинного мозга мыши <em>Acomys</em> демонстрируют уникальный паттерн экспрессии генов в фибробластах и астроцитах, а состав межклеточного матрикса в месте повреждения значительно отличается от контрольных мышей [38]. Так, в месте повреждения у иглистых мышей обнаружено значительное увеличение экспрессии ферментов биосинтеза кератансульфатпротеогликана (<em>KSPG</em>) и снижение экспрессии ферментов биосинтеза гепарансульфатпротеогликанов (<em>HSPG</em>), что приводило к повышению содержания тех компонентов ВКМ, которые обеспечивают рост и поддержание новых отростков нейронов, а содержание компонентов ВКМ, которые препятствуют росту аксонов, наоборот, было снижено. Таким образом, экспрессия β-1,3-N-ацетилгалактозаминилтрансферазы-7 (<em>β3gnt7</em>) — ключевого энзима, необходимого для синтеза кератансульфатпротеогликанов — соединений, участвующих в транспорте и хранении нейротрансмиттеров, в росте аксонов и нейропластичности была значительно увеличена. Экспрессия гена этого энзима в клетках линии CHO приводила к тому, что сокультивированные нейроны демонстрировали очень активный рост нейритов [37]. Эти результаты имеют перспективы трансляции в клинику для разработки метода генной терапии спинальной травмы на основе гена <em>β3gnt7</em>. </p> <p class="Body" lang="ru-RU">Вышеописанные результаты свидетельствуют в пользу перспективности изучения механизмов регенеративных процессов у иглистых мышей как способа идентификации мишеней, инструментов локального управления процессами регенерации у человека. </p> <h3 class="Head_B" lang="ru-RU">Регенеративные процессы в сердце у иглистых мышей <em>Acomys</em></h3> <p class="Body" lang="ru-RU">За последние 5 лет в мировой научной литературе опубликовано всего четыре пионерские работы [39-42], в которых продемонстрирована уникальная способность мышей <em>Acomys</em> к регенерации сердечной ткани после ишемического повреждения. Рассмотрим кратко результаты этих работ. </p> <p class="Body" lang="ru-RU">Сопоставление анатомии и функции сердца у мышей <em>Acomys</em> и домовых мышей <em>Mus</em> (С57BL6, CFW и В6) выявило повышенную среднюю массу сердца и тела у иглистых мышей. Однако нормализованные массы сердца у <em>Acomys</em> и <em>Mus</em> одинаковы [39]. <em>Acomys</em> имели немного более высокую частоту сердечных сокращений (ЧСС) [40, 41]. Однако данные о ЧСС покоя у иглистых мышей противоречивы. </p> <p class="Body" lang="ru-RU">Имеются сведения о том, что ЧСС может быть как выше, так и ниже, чем у M.musculus. При реконструкции строения коронарного русла [39, 40] не было обнаружено статистически значимых различий в структуре древа коронарных артерий у интактных животных. Исследование функции сердца с помощью эхокардиографии (ЭхоКГ) и магнитно-резонансной томографии (МРТ) показало, что <em>Acomys</em> имели более высокую фракцию выброса (ФВ): 68,4 против 55% [39] (ЭхоКГ) и 76 против 62% (МРТ) [40]. При этом достоверная разница во фракционном укорочении (ФУ), по данным одних групп ученых [39, 40], отсутствовала, в то время как, по данным другой группы [41], была значительной у интактных животных. Противоречивые данные также касаются и толщины передней стенки левого желудочка (ПСЛЖ). Так, в работе [40] ПСЛЖ была немного выше у <em>Acomys</em>, что не подтверждалось данными других двух работ [39, 41]. Таким образом, единственной подтвержденной функциональной особенностью сердца здоровых, интактных <em>Acomys,</em> является повышенная, по сравнению с <em>M. musculus</em>, ФВ. </p> <p class="Body" lang="ru-RU">Хорошо известно, что после моделирования инфаркта миокарда (ИМ) у мышей путем перевязки передней нисходящей коронарной артерии развивается обширный некроз, который сопровождается развитием замещающего фиброзного рубца, и приводит к потере способности желудочков к адекватной сократительной активности. В постинфарктном периоде развивается выраженное ремоделирование левого желудочка, снижение насосной функции сердца и сердечная недостаточность. Летальность у обычных мышей при таких операциях достигает 30%, а иногда и 50%. </p> <p class="Body" lang="ru-RU">Несмотря на то что у мышей <em>Acomys</em> также, как и у контрольных мышей, развивается некроз, в отличие от контрольных мышей для них характерна высокая резистентность к ишемическому повреждению, выраженная цитопротекция, способность поразительно эффективно восстанавливать сердечную деятельность, крайне низкая летальность или ее полное отсутствие [39]. При оценке динамики ФВ, начиная со 2-го дня после моделирования ИМ, обнаружено, что к 14-му дню ФВ частично восстановилась и составила 48% (исходный уровень — 68,4%), оставаясь стабильной при дальнейшем наблюдении. У мышей рода <em>Mus</em> ФВ уменьшалась с течением времени, достигая 20% на 50-й день при исходном уровне 58% [39]. </p> <p class="Body" lang="ru-RU">В другом исследовании [40] у домовых мышей на 14-й день падение ФВ достигло 15%, а на 13-й неделе ФВ составила 32% против 64% исходных, в то время как у <em>Acomys</em> при достижении 4-й недели плато к 13-й неделе зарегистрировано лишь небольшое недостоверное различие с группой ложнооперированных животных. Стабильное восстановление ФВ у <em>Acomys</em> после ИМ по сравнению с постепенным ее снижением у <em>Mus</em> выявлено несколькими независимыми группами ученых [39, 41]. Также были установлены различия в толщине ПСЛЖ: уменьшение на 37% у <em>Mus</em> и отсутствие достоверного истончения у <em>Acomys</em> [41]. Более того, у <em>Acomys</em> практически не наблюдалось серьезного постинфарктного ремоделирования сердца, что было характерно для <em>Mus</em> [39—41]. Размер постинфарктного рубца на 50-й день был значительно меньше у мышей <em>Acomys</em> [39]. </p> <p class="Body" lang="ru-RU">Вышеописанные наблюдения подтверждают высокий регенеративный потенциал сердца мышей <em>Acomys</em>. Несмотря на то что этот феномен обнаружен несколькими научными группами, механизмы, участвующие в регенерации сердца <em>Acomys</em> после моделирования ИМ, остаются малопонятными. </p> <p class="Body" lang="ru-RU">Регенерация и/или репарация сердца включает множество клеточных и молекулярных механизмов, и вполне возможно, что <em>Acomys</em> демонстрирует целый комплекс адаптивных особенностей, которые формируют частичный регенеративный ответ вместо рубцевания. Имеющиеся сегодня данные позволяют предполагать, что вышеуказанная способность к регенерации сердечной мышцы и устойчивость к развитию патологического постинфарктного ремоделирования, ведущего к сердечной недостаточности, обусловлены несколькими причинами, которые включают быструю естественную реваскуляризацию и восстановление микроциркуляторного русла, увеличенную пролиферативную активность клеток миокарда как кардиомиоцитов, так и эндотелиальных клеток, манифестацию специфического фенотипа желудочковых кардиомиоцитов, который можно охарактеризовать как смещенный к неонатальному, особую организацию (структуру) соединительнотканного ВКМ, особую реакцию иммунной системы на повреждение, смещенную в сторону преобладания противовоспалительных иммунных реакций и транзиторный характер профиброзной активации [14]. </p> <p class="Body" lang="ru-RU">В ряде функциональных экспериментов показано, что кардиомиоциты мышей <em>Acomys</em> экспрессируют ионные каналы (CaV1.3, CaV3.1), характерные для неонатальных клеток, которые являются преимущественно мононуклеарными. Для них характерен неонатальный тип внутриклеточной кальциевой динамики и ответов на β-адренергическую стимуляцию [39, 41]. мРНК секвенирование показало, что миокард <em>Acomys</em> экспрессирует целый ряд генов, характерных для фетальной ткани. Процессы репаративного ангиогенеза также более выражены у мышей <em>Acomys</em>: плотность капилляров в периинфарктной зоне и в зоне формирующегося рубца у них значительно выше, что коррелирует с большим количеством пролиферирующих эндотелиальных клеток [39, 41]. </p> <p class="Body" lang="ru-RU">ВКМ постинфарктного рубца у <em>Acomys</em> значительно отличается от матрикса <em>Mus</em>. Он менее плотный и волокна более волнистые и состоит из более толстых коллагеновых волокон, чем ВКМ мышей <em>Mus</em> [41]. Помимо этого, ВКМ <em>Acomys</em> имеет совершенно другую архитектуру, напоминающую плетеную корзину [41], что при регенерации кожи ассоциируется с лучшим регенеративным ответом [43]. Для процесса репарации сердца распределение, состав, количество и структура коллагена определяют лучшую сократительную способность, поскольку чрезмерная выработка коллагена и отсутствие его последующей деградации металлопротеазами вызывает необратимые изменения в жесткости ткани сердца и его сократительной способности. Иглистая мышь демонстрирует поразительное сохранение сократительной способности сердца в постинфарктный период, что может быть связано с особенностями состава и механических свойств ВКМ. </p> <p class="Body" lang="ru-RU">Электрофизиология специфического миокарда <em>Acomys</em> практически не исследована. В единственной пока работе, выполненной в ФГБУ «НМИЦК имени академика Е.И. Чазова» Минздрава России [42] для изучения электрофизиологических свойств, а также механизмов парасимпатического контроля работы пейсмекера сердца иглистых мышей <em>Acomys</em> регистрировали ЭКГ у животных <em>in vivo</em>, оценивали и картировали биоэлектрическую активность в суправентрикулярном миокарде с помощью микроэлектродной техники, метода регистрации потенциалзависимой флюоресценции. Было установлено, что потенциалы действия пейсмекерного типа обнаруживаются в значительной части правого предсердия мышей <em>Acomys</em>, а начальная активация охватывает около 41% площади предсердия. Холинергическая стимуляция у <em>Acomys</em> приводит к крайне выраженному подавлению автоматии и изменению паттерна активации пейсмекерного миокарда. Холинергическое торможение автоматии у <em>Acomys</em> обусловлено неклассическими IKAch-независимыми механизмами. Таким образом, кардиорегенеративный потенциал иглистых мышей манифестирует также в особенностях функционирования и регуляции ритмоводителя сердца. </p> <h2 class="Head" lang="ru-RU">Заключение</h2> <p class="Body" lang="ru-RU">Обобщая имеющиеся на сегодняшний день результаты изучения особенностей регенеративных процессов у иглистых мышей <em>Acomys,</em> необходимо отметить, что эти мыши представляют собой уникальную, относительно недавно появившуюся модель для изучения механизмов регенерации тканей и органов у взрослых млекопитающих. </p> <p class="Body" lang="ru-RU">Восстановление поврежденных при заболеваниях органов без развития или с минимальным развитием заместительного фиброза с восстановлением их функции является главной целью регенеративной медицины, для чего необходима расшифровка клеточных и молекулярно-генетических механизмов, определяющих эффективный регенеративный процесс. </p> <p class="Body" lang="ru-RU">Несколько особенностей иглистых мышей <em>Acomys</em> делают их<strong><em></em></strong> исключительно надежной моделью для изучения регенерации сложных тканей и органов у взрослых млекопитающих. Другие известные модели регенерации у млекопитающих ограничены какой-то одной тканью или органом, как например, регенерация ногтевой фаланги у мышей, крыс и приматов [44-46], рогов у оленей [47, 48], ушной раковины у Новозеландских кроликов [49]. По сравнению с этими моделями <em>Acomys</em> представляют широкий спектр регенерирующих тканей и органов <strong>(рисунок)</strong> и являются животными, которых относительно просто и недорого содержать в условиях вивария по сравнению с приматами и оленями, и даже кроликами. </p> <p class="Table_Name" lang="ru-RU"><strong><img  onclick="openImageWindow(this.src);"  src="/issues/current/Kardiovestnik_2025_04/Kardiovestnik_2025_04-web-resources/image/dergilev.jpg" alt=""></strong> </p> <p class="Table_Name" lang="ru-RU"><strong>Регенеративный потенциал иглистых мышей <em>Acomys</em></strong>. </p> <p class="Body" lang="ru-RU">С технической стороны, исследованиям на мышах <em>Acomys</em> способствует и то, что в открытом доступе для транскриптомного анализа имеются несколько аннотированных геномов [50, 51]. Все более широкий спектр специфических антител появляется для идентификации у <em>Acomys</em> специфических белков и клеточных типов. Все это создает методическую основу для проведения клеточных и генетических исследований с целью раскрытия механизмов, ответственных за их регенеративные свойства и идентификации новых мишеней для фармакологической регуляции регенеративных процессов. По сравнению с другими позвоночными, обладающими высокими регенеративными свойствами (полосатая рыбка, аксолотль, саламандра), мыши <em>Acomys</em> могут быть отнесены к «промежуточным регенераторам» (<em>от англ.</em> intermediate regenerator), представляя собой промежуточный регенеративный фенотип между человеком и низшими позвоночными, обладающими способностью к полной эпиморфной регенерации. Поскольку <em>Acomys</em> представляют альтернативные низшим позвоночным формы неполной регенерации (с ограниченным фиброзом) таких органов, как сердце, почки, спинной мозг, но при этом обладающие способностью эффективно восстанавливать функции этих органов, раскрытие механизмов такой регенерации, возможно, будет иметь большие перспективы трансляции в клинические технологии, чем механизмы полной безфиброзной регенерации у полосатой рыбки или аксолотля, которые являются пойкилотермными животными, ведущими водный образ жизни. К тому же формирование заместительного фиброза — это эволюционно выработанная реакция и блокировать ее полностью, в частности, в таком работающем органе, как сердце небезопасно, что делает особенно перспективным изучение механизмов транзиторной профиброзной трансформации, присущей мышам <em>Acomys</em>. </p> <p class="Body" lang="ru-RU">Помимо этого, мыши <em>Acomys</em> как модель регенерации обладают рядом биологических особенностей, которые делают их особенно ценными для исследования механизмов регенеративных процессов с перспективами трансляции. Прежде всего у этих мышей развивается типичный диабет 2-го типа на высококалорийной диете [52, 53]. При старении и ожирении процессы ранозаживления у них замедляются, однако регенеративный потенциал сохраняется [14]. Более того, в отличие от других мышей <em>Acomys</em> способны менструировать, как приматы или слоны [54, 55]. Они имеют сходное с человеком строение коркового слоя надпочечников, состоящих из трех зон, а не из двух, как у других мышей [56]. </p> <p class="Body" lang="ru-RU">Сегодня иглистые мыши <em>Acomys</em> являются, возможно, наиболее многообещающей моделью для раскрытия механизмов регенерации сложных органов и тканей, в частности, сердца, с перспективами практического применения этих открытий для эффективной стимуляции регенеративных процессов у человека. Углубленное исследование молекулярных и клеточных механизмов, обеспечивающих сохранение у мышей <em>Acomys</em> способности к регенерации тканей и органов во взрослом состоянии, может способствовать расшифровке механизмов, препятствующих регенерации у взрослых млекопитающих, включая человека, что, в свою очередь, поможет разработке биотехнологий, позволяющих локально и временно отключать эти механизмы и/или включать регенеративные механизмы для создания прорегенеративного микроокружения. </p> <p class="Body" lang="ru-RU"><strong>Финансирование.</strong> Работа поддержана грантом РНФ №24-15-00308. </p> <p class="Body" lang="ru-RU"><strong>This work was supported by the Russian Science Foundation (grant No</strong>. 24-15-00308). </p> <p class="Body" lang="ru-RU"><strong>Авторы заявляют об отсутствии конфликта интересов.</strong> </p>    </div>
+   </div>
+  </div>
+
+  <div class="block-baner__advertising">
+  </div>
+
+ </div></section>
+ 
+
+<section class="articlePage-content">
+ <div class="container">
+  <div  style="width: 66%; margin-left: auto; margin-right: auto; margin-top:0;" class="articlePage-content-block">
+   <div class="bibliography reprint">
+    <div class="title">
+     <p>Литература / References:</p>
+    </div>
+    <ol><li style="margin-top: 20px;"> Kajstura J, Gurusamy N, Ogórek B, et&nbsp;al.&nbsp;Myocyte Turnover in&nbsp;the&nbsp;Aging Human Heart. <em>Circulation Research</em>. 2010;107(11):1374-1386. <a target="_blank" href=" https://doi.org/10.1161/CIRCRESAHA.110.231498 "> https://doi.org/10.1161/CIRCRESAHA.110.231498</a></li><li style="margin-top: 20px;"> Cowie MR, Mosterd A, Wood DA, et&nbsp;al.&nbsp;The&nbsp;epidemiology of&nbsp;heart failure. <em>European Heart Journal</em>. 1997;18(2):208-225.&nbsp;<a target="_blank" href=" https://doi.org/10.1093/oxfordjournals.eurheartj.a015223 "> https://doi.org/10.1093/oxfordjournals.eurheartj.a015223</a></li><li style="margin-top: 20px;"> Lopez AD, Mathers CD, Ezzati M, Jamison DT, Murray CJ, eds.&nbsp;<em>Global Burden of&nbsp;Disease and&nbsp;Risk Factors</em>. The&nbsp;International Bank for&nbsp;Reconstruction and&nbsp;Development / The&nbsp;World Bank; 2006. Accessed October 13, 2025/ <a target="_blank" href=" www.ncbi.nlm.nih.gov/books/NBK11812/ "> www.ncbi.nlm.nih.gov/books/NBK11812/</a></li><li style="margin-top: 20px;"> Беленков Ю.Н., Мареев В.Ю.&nbsp;Лечение сердечной недостаточности в&nbsp;XXI&nbsp;веке: достижения, вопросы и&nbsp;уроки доказательной медицины. <em>Кардиология</em>. 2008;48(2):6-16.&nbsp;<a target="_blank" href="  "> </a></li><li style="margin-top: 20px;"> Roger VL, Go&nbsp;AS, et&nbsp;al.&nbsp;Heart Disease and&nbsp;Stroke Statistics—2012&nbsp;Update: A&nbsp;Report From the&nbsp;American Heart Association. <em>Circulation</em>. 2012;125(1). <a target="_blank" href=" https://doi.org/10.1161/CIR.0b013e31823ac046 "> https://doi.org/10.1161/CIR.0b013e31823ac046</a></li><li style="margin-top: 20px;"> Flink IL.&nbsp;Cell cycle reentry of&nbsp;ventricular and&nbsp;atrial cardiomyocytes and&nbsp;cells within the&nbsp;epicardium following amputation of&nbsp;the&nbsp;ventricular apex in&nbsp;the&nbsp;axolotl, Amblystoma mexicanum: confocal microscopic immunofluorescent image analysis of&nbsp;bromodeoxyuridine-labeled nuclei. <em>Anat Embryol (Berl)</em>. 2002;205(3):235-244.&nbsp;<a target="_blank" href=" https://doi.org/10.1007/s00429-002-0249-6 "> https://doi.org/10.1007/s00429-002-0249-6</a></li><li style="margin-top: 20px;"> Poss KD, Wilson LG, Keating MT.&nbsp;Heart regeneration in&nbsp;zebrafish. <em>Science</em>. 2002;298(5601):2188-2190. <a target="_blank" href=" https://doi.org/10.1126/science.1077857 "> https://doi.org/10.1126/science.1077857</a></li><li style="margin-top: 20px;"> Chablais F, Jazwinska A.&nbsp;The&nbsp;regenerative capacity of&nbsp;the&nbsp;zebrafish heart is&nbsp;dependent on&nbsp;TGFβ signaling. <em>Development</em>. 2012;139(11):1921-1930. <a target="_blank" href=" https://doi.org/10.1242/dev.078543 "> https://doi.org/10.1242/dev.078543</a></li><li style="margin-top: 20px;"> Lien CL, Harrison MR, Tuan TL, Starnes VA.&nbsp;Heart repair and&nbsp;regeneration: recent insights from zebrafish studies. <em>Wound Repair Regen</em>. 2012;20(5): 638-646.&nbsp;<a target="_blank" href=" https://doi.org/10.1111/j.1524-475X.2012.00814.x "> https://doi.org/10.1111/j.1524-475X.2012.00814.x</a></li><li style="margin-top: 20px;"> McCusker C, Monaghan J, Whited J.&nbsp;Salamander models for&nbsp;elucidating mechanisms of&nbsp;developmental biology, evolution, and&nbsp;regeneration: Part one.&nbsp;<em>Dev&nbsp;Dyn</em>. 2021;250(6). <a target="_blank" href="  "> </a></li><li style="margin-top: 20px;"> Godwin JW, Debuque R, Salimova E, Rosenthal NA.&nbsp;Heart regeneration in&nbsp;the&nbsp;salamander relies on&nbsp;macrophage-mediated control of&nbsp;fibroblast activation and&nbsp;the&nbsp;extracellular landscape. <em>NPJ&nbsp;Regen Med</em>. 2017;2:22.&nbsp;<a target="_blank" href=" https://doi.org/10.1038/s41536-017-0027-y "> https://doi.org/10.1038/s41536-017-0027-y</a></li><li style="margin-top: 20px;"> Porrello ER, Mahmoud AI, Simpson E, et&nbsp;al.&nbsp;Transient regenerative potential of&nbsp;the&nbsp;neonatal mouse heart. <em>Science</em>. 2011;331(6020):1078-1080. <a target="_blank" href=" https://doi.org/10.1126/science.1200708 "> https://doi.org/10.1126/science.1200708</a></li><li style="margin-top: 20px;"> Okamura DM, Nguyen ED, Beier DR, Majesky MW.&nbsp;Wound healing and&nbsp;regeneration in&nbsp;spiny mice (Acomys cahirinus). In: <em>Current Topics in&nbsp;Developmental Biology</em>. Vol&nbsp;148.&nbsp;Elsevier; 2022:139-164.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/bs.ctdb.2022.03.001 "> https://doi.org/10.1016/bs.ctdb.2022.03.001</a></li><li style="margin-top: 20px;"> Allen RS, Seifert AW.&nbsp;Spiny mice (Acomys) have evolved cellular features to&nbsp;support regenerative healing. <em>Ann&nbsp;N&nbsp;Y&nbsp;Acad Sci</em>. 2025;1544(1):5-26.&nbsp;<a target="_blank" href=" https://doi.org/10.1111/nyas.15281 "> https://doi.org/10.1111/nyas.15281</a></li><li style="margin-top: 20px;"> Maden M, Brant JO.&nbsp;Insights into the&nbsp;regeneration of&nbsp;skin from Acomys, the&nbsp;spiny mouse. <em>Exp&nbsp;Dermatol</em>. 2019;28(4):436-441.&nbsp;<a target="_blank" href=" https://doi.org/10.1111/exd.13847 "> https://doi.org/10.1111/exd.13847</a></li><li style="margin-top: 20px;"> Harn HI, Wang SP, Lai&nbsp;YC, et&nbsp;al.&nbsp;Symmetry breaking of&nbsp;tissue mechanics in&nbsp;wound induced hair follicle regeneration of&nbsp;laboratory and&nbsp;spiny mice. <em>Nat&nbsp;Commun</em>. 2021;12(1):2595. Published 2021&nbsp;May&nbsp;10.&nbsp;<a target="_blank" href=" https://doi.org/10.1038/s41467-021-22822-9 "> https://doi.org/10.1038/s41467-021-22822-9</a></li><li style="margin-top: 20px;"> Brewer R, Murphy J, Bird G.&nbsp;Atypical interoception as&nbsp;a&nbsp;common risk factor for&nbsp;psychopathology: A&nbsp;review. <em>Neurosci Biobehav Rev</em>. 2021;130:470-508.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.neubiorev.2021.07.036 "> https://doi.org/10.1016/j.neubiorev.2021.07.036</a></li><li style="margin-top: 20px;"> Longaker MT, Whitby DJ, Adzick NS, et&nbsp;al.&nbsp;Studies in&nbsp;fetal wound healing, VI.&nbsp;Second and&nbsp;early third trimester fetal wounds demonstrate rapid collagen deposition without scar formation. <em>J&nbsp;Pediatr Surg</em>. 1990;25(1):63-69.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/s0022-3468(05)80165-4 "> https://doi.org/10.1016/s0022-3468(05)80165-4</a></li><li style="margin-top: 20px;"> Lorenz HP, Adzick NS.&nbsp;Scarless skin wound repair in&nbsp;the&nbsp;fetus. <em>West J&nbsp;Med</em>. 1993;159(3):350-355.&nbsp;<a target="_blank" href="  "> </a></li><li style="margin-top: 20px;"> Cass SP, Furman JM, Ankerstjerne K, Balaban C, Yetiser S, Aydogan B.&nbsp;Migraine-related vestibulopathy. <em>Ann&nbsp;Otol Rhinol Laryngol</em>. 1997;106(3):182-189.&nbsp;<a target="_blank" href=" https://doi.org/10.1177/000348949710600302 "> https://doi.org/10.1177/000348949710600302</a></li><li style="margin-top: 20px;"> Colwell CS, Michel S, Itri J, et&nbsp;al.&nbsp;Disrupted circadian rhythms in&nbsp;VIP- and&nbsp;PHI-deficient mice. <em>Am&nbsp;J&nbsp;Physiol Regul Integr Comp Physiol</em>. 2003; 285(5):R939-R949. <a target="_blank" href=" https://doi.org/10.1152/ajpregu.00200.2003 "> https://doi.org/10.1152/ajpregu.00200.2003</a></li><li style="margin-top: 20px;"> Allen C, Büttner S, Aragon AD, et&nbsp;al.&nbsp;Isolation of&nbsp;quiescent and&nbsp;nonquiescent cells from yeast stationary-phase cultures. <em>The&nbsp;Journal of&nbsp;Cell Biology</em>. 2006;174(1):89-100.&nbsp;<a target="_blank" href=" https://doi.org/10.1083/jcb.200604072 "> https://doi.org/10.1083/jcb.200604072</a></li><li style="margin-top: 20px;"> Seifert AW, Kiama SG, Seifert MG, Goheen JR, Palmer TM, Maden M.&nbsp;Skin shedding and&nbsp;tissue regeneration in&nbsp;African spiny mice (Acomys). <em>Nature</em>. 2012;489(7417):561-565.&nbsp;<a target="_blank" href=" https://doi.org/10.1038/nature11499 "> https://doi.org/10.1038/nature11499</a></li><li style="margin-top: 20px;"> Brant JO, Lopez MC, Baker HV, Barbazuk WB, Maden M.&nbsp;A&nbsp;Comparative Analysis of&nbsp;Gene Expression Profiles during Skin Regeneration in&nbsp;Mus&nbsp;and&nbsp;Acomys. <em>PLoS One</em>. 2015;10(11):e0142931. Published 2015&nbsp;Nov&nbsp;25.&nbsp;<a target="_blank" href=" https://doi.org/10.1371/journal.pone.0142931 "> https://doi.org/10.1371/journal.pone.0142931</a></li><li style="margin-top: 20px;"> Simkin J, Gawriluk TR, Gensel JC, Seifert AW.&nbsp;Macrophages are&nbsp;necessary for&nbsp;epimorphic regeneration in&nbsp;African spiny mice. <em>Elife</em>. 2017;6:e24623. Published 2017&nbsp;May&nbsp;16.&nbsp;<a target="_blank" href=" https://doi.org/10.7554/eLife.24623 "> https://doi.org/10.7554/eLife.24623</a></li><li style="margin-top: 20px;"> Stewart DC, Serrano PN, Rubiano A, et&nbsp;al.&nbsp;Unique behavior of&nbsp;dermal cells from regenerative mammal, the&nbsp;African Spiny Mouse, in&nbsp;response to&nbsp;substrate stiffness. <em>J&nbsp;Biomech</em>. 2018;81:149-154.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.jbiomech.2018.10.005 "> https://doi.org/10.1016/j.jbiomech.2018.10.005</a></li><li style="margin-top: 20px;"> Brewer CM, Nelson BR, Wakenight P, et&nbsp;al.&nbsp;Adaptations in&nbsp;Hippo-Yap&nbsp;signaling and&nbsp;myofibroblast fate underlie scar-free ear&nbsp;appendage wound healing in&nbsp;spiny mice. <em>Dev&nbsp;Cell</em>. 2021;56(19):2722-2740.e6.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.devcel.2021.09.008 "> https://doi.org/10.1016/j.devcel.2021.09.008</a></li><li style="margin-top: 20px;">  Matias Santos D, Rita AM, Casanellas I, et&nbsp;al.&nbsp;Ear&nbsp;wound regeneration in&nbsp;the&nbsp;African spiny mouse Acomys cahirinus. <em>Regeneration (Oxf)</em>. 2016; 3(1):52-61.&nbsp;Published 2016&nbsp;Mar&nbsp;9.&nbsp;<a target="_blank" href=" https://doi.org/10.1002/reg2.50 "> https://doi.org/10.1002/reg2.50</a></li><li style="margin-top: 20px;"> Plikus MV, Wang X, Sinha S, et&nbsp;al.&nbsp;Fibroblasts: Origins, definitions, and&nbsp;functions in&nbsp;health and&nbsp;disease. <em>Cell</em>. 2021;184(15):3852-3872. <a target="_blank" href=" https://doi.org/10.1016/j.cell.2021.06.024 "> https://doi.org/10.1016/j.cell.2021.06.024</a></li><li style="margin-top: 20px;"> Thompson SM, Phan QM, Winuthayanon S, Driskell IM, Driskell RR.&nbsp;Parallel Single-Cell Multiomics Analysis of&nbsp;Neonatal Skin Reveals the&nbsp;Transitional Fibroblast States that Restrict Differentiation into Distinct Fates. <em>J&nbsp;Invest Dermatol</em>. 2022;142(7):1812-1823.e3.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.jid.2021.11.032 "> https://doi.org/10.1016/j.jid.2021.11.032</a></li><li style="margin-top: 20px;"> Abbasi S, Sinha S, Labit E, et&nbsp;al.&nbsp;Distinct Regulatory Programs Control the&nbsp;Latent Regenerative Potential of&nbsp;Dermal Fibroblasts during Wound Healing. <em>Cell Stem Cell</em>. 2020;27(3):396-412.e6.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.stem.2020.07.008 "> https://doi.org/10.1016/j.stem.2020.07.008</a></li><li style="margin-top: 20px;"> Foster DS, Januszyk M, Yost KE, et&nbsp;al.&nbsp;Integrated spatial multiomics reveals fibroblast fate during tissue repair. <em>Proc Natl Acad Sci&nbsp;U&nbsp;S&nbsp;A</em>. 2021; 118(41):e2110025118. <a target="_blank" href=" https://doi.org/10.1073/pnas.2110025118 "> https://doi.org/10.1073/pnas.2110025118</a></li><li style="margin-top: 20px;">  Han&nbsp;P, Zhou XH, Chang N, Xiao CL, Yan&nbsp;S, Ren&nbsp;H, Yang XZ, Zhang ML, Wu&nbsp;Q, Tang B, Diao JP, Zhu&nbsp;X, Zhang C, Li&nbsp;CY, Cheng H, Xiong JW.&nbsp;Hydrogen peroxide primes heart regeneration with a&nbsp;derepression mechanism. <em>Cell Res</em>. 2014&nbsp;Sep; 24(9):1091-107.&nbsp;<a target="_blank" href=" https://doi.org/10.1038/cr.2014.108 "> https://doi.org/10.1038/cr.2014.108</a></li><li style="margin-top: 20px;"> Maden M, Brant JO, Rubiano A, et&nbsp;al.&nbsp;Perfect chronic skeletal muscle regeneration in&nbsp;adult spiny mice, Acomys cahirinus. <em>Sci&nbsp;Rep</em>. 2018;8(1):8920. Published 2018&nbsp;Jun&nbsp;11.&nbsp;<a target="_blank" href=" https://doi.org/10.1038/s41598-018-27178-7 "> https://doi.org/10.1038/s41598-018-27178-7</a></li><li style="margin-top: 20px;"> Okamura DM, Brewer CM, Wakenight P, et&nbsp;al.&nbsp;Spiny mice activate unique transcriptional programs after severe kidney injury regenerating organ function without fibrosis. <em>iScience</em>. 2021;24(11):103269. Published 2021&nbsp;Nov&nbsp;3.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.isci.2021.103269 "> https://doi.org/10.1016/j.isci.2021.103269</a></li><li style="margin-top: 20px;"> Streeter KA, Sunshine MD, Brant JO, Sandoval AGW, Maden M, Fuller DD.&nbsp;Molecular and&nbsp;histologic outcomes following spinal cord injury in&nbsp;spiny mice, Acomys cahirinus. <em>J&nbsp;Comp Neurol</em>. 2020;528(9):1535-1547. <a target="_blank" href=" https://doi.org/10.1002/cne.24836 "> https://doi.org/10.1002/cne.24836</a></li><li style="margin-top: 20px;"> Nogueira-Rodrigues J, Leite SC, Pinto-Costa R, et&nbsp;al.&nbsp;Rewired glycosylation activity promotes scarless regeneration and&nbsp;functional recovery in&nbsp;spiny mice after complete spinal cord transection. <em>Developmental Cell</em>. 2022;57(4):440-450.e7.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.devcel.2021.12.008 "> https://doi.org/10.1016/j.devcel.2021.12.008</a></li><li style="margin-top: 20px;"> Streeter KA, Sunshine MD, Brant JO, Sandoval AGW, Maden M, Fuller DD.&nbsp;Molecular and&nbsp;histologic outcomes following spinal cord injury in&nbsp;spiny mice, Acomys cahirinus. <em>J&nbsp;Comp Neurol.</em> 2020&nbsp;Jun&nbsp;15;528(9):1535-1547. <a target="_blank" href=" https://doi.org/10.1002/cne.24836 "> https://doi.org/10.1002/cne.24836</a></li><li style="margin-top: 20px;"> Peng H, Shindo K, Donahue RR, et&nbsp;al.&nbsp;Adult spiny mice (Acomys) exhibit endogenous cardiac recovery in&nbsp;response to&nbsp;myocardial infarction. <em>NPJ&nbsp;Regen Med</em>. 2021;6(1):74.&nbsp;Published 2021&nbsp;Nov&nbsp;17.&nbsp;<a target="_blank" href=" https://doi.org/10.1038/s41536-021-00186-4 "> https://doi.org/10.1038/s41536-021-00186-4</a></li><li style="margin-top: 20px;">  Qi&nbsp;Y, Dasa O, Maden M, et&nbsp;al.&nbsp;Functional heart recovery in&nbsp;an&nbsp;adult mammal, the&nbsp;spiny mouse. <em>Int&nbsp;J&nbsp;Cardiol</em>. 2021;338:196-203.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.ijcard.2021.06.015 "> https://doi.org/10.1016/j.ijcard.2021.06.015</a></li><li style="margin-top: 20px;"> Koopmans T, van&nbsp;Beijnum H, Roovers EF, et&nbsp;al.&nbsp;Ischemic tolerance and&nbsp;cardiac repair in&nbsp;the&nbsp;spiny mouse (Acomys). <em>NPJ&nbsp;Regen Med</em>. 2021;6(1):78.&nbsp;Published 2021&nbsp;Nov&nbsp;17.&nbsp;<a target="_blank" href=" https://doi.org/10.1038/s41536-021-00188-2 "> https://doi.org/10.1038/s41536-021-00188-2</a></li><li style="margin-top: 20px;"> Kuzmin VS, Egorov YV, Karhov AM, Boldyreva MA, Parfyonova EV.&nbsp;Regenerative potential of&nbsp;spiny mice (Acomys cahirinus) manifests in&nbsp;pacemaker myocardium expansion and&nbsp;in&nbsp;predominance of&nbsp;noncanonical, IK,ACH-independent pathway of&nbsp;the&nbsp;cholinergic regulation of&nbsp;the&nbsp;cardiac pacemaking. <em>Doklady Rossijskoj akademii nauk. Nauki o&nbsp;žizni.</em> 2025;520(1):151-158.&nbsp;<a target="_blank" href=" https://doi.org/10.1134/S0012496624600623 "> https://doi.org/10.1134/S0012496624600623</a></li><li style="margin-top: 20px;"> Berthod F, Germain L, Li&nbsp;H, Xu&nbsp;W, Damour O, Auger FA.&nbsp;Collagen fibril network and&nbsp;elastic system remodeling in&nbsp;a&nbsp;reconstructed skin transplanted on&nbsp;nude mice. <em>Matrix Biol</em>. 2001&nbsp;Nov;20(7):463-73.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/s0945-053x(01)00162-7 "> https://doi.org/10.1016/s0945-053x(01)00162-7</a></li><li style="margin-top: 20px;"> Borgens RB.&nbsp;(1982). Mice regrow the&nbsp;tips of&nbsp;their foretoes. Science,217, 747-750.&nbsp;<a target="_blank" href=" https://doi.org/10.1126/science.7100922 "> https://doi.org/10.1126/science.7100922</a></li><li style="margin-top: 20px;"> Fernando WA, Leininger E, Simkin J, Li, N&nbsp;i, Malcom, CA, Sathyamoorthi S, Han&nbsp;M,&amp;Muneoka K.&nbsp;(2011). Wound healing and&nbsp;blastema formation in&nbsp;regenerating digit tips of&nbsp;adult mice. <em>Develop-mental Biology</em>, 350, 301-310.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.ydbio.2010.11.035 "> https://doi.org/10.1016/j.ydbio.2010.11.035</a></li><li style="margin-top: 20px;"> Singer M, Weckesser EC, Geraudie J, Maier CE&nbsp;&amp; Singer J.(1987). Open finger tip&nbsp;healing and&nbsp;replacement after distal amputation in&nbsp;rhesus monkey with comparison to&nbsp;limb regeneration in&nbsp;lower vertebrates. <em>Anatomy and&nbsp;Embryology</em>, 177, 29—36.&nbsp;<a target="_blank" href=" https://doi.org/10.1007/BF00325287 "> https://doi.org/10.1007/BF00325287</a></li><li style="margin-top: 20px;"> Sinha S, Sparks HD, Labit E, Robbins, HN., Gowing, K., Jaffer, A., Kutluberk E, Arora R, Raredon MSB, Cao&nbsp;L, Swanson S, Jiang P, Hee&nbsp;O, Pope H, Workentine M, Todkar K, Sharma N, Bharadia S, Chockalingam K, ... Biernaskie J.&nbsp;(2022). Fibroblast inflammatory priming determines regenerative versus fibrotic skin repair in&nbsp;rein-deer. <em>Cell</em>,185,4717-4736.e25.e4725. <a target="_blank" href=" https://doi.org/10.1016/j.cell.2022.11.004 "> https://doi.org/10.1016/j.cell.2022.11.004</a></li><li style="margin-top: 20px;"> Billingham RE, Mangold R, &amp; Silvers WK.&nbsp;(1959). The&nbsp;neogenesis of&nbsp;skin in&nbsp;the&nbsp;antlers of&nbsp;deer. Annals of&nbsp;the&nbsp;New&nbsp;York Academy of&nbsp;Sciences, 83, 491-498.&nbsp;<a target="_blank" href=" https://doi.org/10.1111/j.1749-6632.1960.tb40922.x "> https://doi.org/10.1111/j.1749-6632.1960.tb40922.x</a></li><li style="margin-top: 20px;"> Gawriluk TR, Simkin J, Thompson KL, Biswas SK, Clare-Salzler Z, Kimani JM, Kiama SG, Smith JJ, Ezenwa VO&nbsp;&amp; Seifert AW.&nbsp;(2016). Comparative analysis of&nbsp;ear-hole closure identifies epimorphic regeneration as&nbsp;a&nbsp;discrete trait in&nbsp;mammals. <em>Nature Communications</em>, 7, 11164. <a target="_blank" href=" https://doi.org/10.1038/ncomms11164 "> https://doi.org/10.1038/ncomms11164</a></li><li style="margin-top: 20px;"> Nguyen ED, Fard VN, Kim&nbsp;BY, Collins S, Galey M, Nelson BR,Wakenight P, Gable SM, Mckenna A, Bammler TK, Macdonald J, Okamura DM, Shendure J, Beier DR, Ramirez JM, Majesky MW, Millen KJ, Tollis M&nbsp;&amp; Miller DE.&nbsp;(2023). Genome Report: Chromosome-scale genome assembly of&nbsp;the&nbsp;African spiny mouse (Acomys cahirinus). <em>G3&nbsp;Genes|Genomes|Genetics</em>, 13, jkad177. <a target="_blank" href=" https://doi.org/10.1093/g3journal/jkad177 "> https://doi.org/10.1093/g3journal/jkad177</a></li><li style="margin-top: 20px;"> Wang Y, Qiao Z, Mao&nbsp;L, Li&nbsp;F, Liang X, An&nbsp;X, Zhang S, Liu&nbsp;X, Kuang Z, Wan&nbsp;N, Nevo E&nbsp;&amp; Li&nbsp;K.&nbsp;(2022). Sympatric speciation of&nbsp;the&nbsp;spiny mouse from Evolution Canyon in&nbsp;Israel substantiated genomically and&nbsp;methylomically. <em>Proceedings of&nbsp;the&nbsp;National Academy of&nbsp;Sciences</em>, 119, e2121822119. <a target="_blank" href=" https://doi.org/10.1073/pnas.2121822119 "> https://doi.org/10.1073/pnas.2121822119</a></li><li style="margin-top: 20px;"> Gonet AE, Stauffacher W, Pictet R&nbsp;&amp; Renold AE.&nbsp;(1966). Obesity and&nbsp;diabetes mellitus with striking gcongenital hyperplasia of&nbsp;the&nbsp;islets of&nbsp;Langerhans in&nbsp;spiny mice (Acomys cahirinus): I.&nbsp;Histological findings and&nbsp;preliminary metabolic observations. <em>Diabetologia</em>, 1, 162-171.&nbsp;<a target="_blank" href=" https://doi.org/10.1007/BF01257907 "> https://doi.org/10.1007/BF01257907</a></li><li style="margin-top: 20px;"> Shafrir E.&nbsp;(2000). Overnutrition in&nbsp;spiny mice (Acomys cahirinus): Beta-cell expansion leading to&nbsp;rupture and&nbsp;overt diabetes on&nbsp;fatrich diet and&nbsp;protective energy-wasting elevation in&nbsp;thyroid hormone on&nbsp;sucrose-rich diet. <em>Diabetes Metabolism Research and&nbsp;Reviews</em>,16, 94-105.&nbsp;<a target="_blank" href=" https://doi.org/10.1002/(sici)1520-7560(200003/04)16:2&lt;94::aid-dmrr82&gt;3.0.co;2-u "> https://doi.org/10.1002/(sici)1520-7560(200003/04)16:2&lt;94::aid-dmrr82&gt;3.0.co;2-u</a></li><li style="margin-top: 20px;"> Bellofiore N, Ellery SJ, Mamrot J, Walker, DW, Temple-Smith P, &amp; Dickinson,H.&nbsp;(2017). First evidence of&nbsp;a&nbsp;menstruating rodent:The&nbsp;spiny mouse (Acomys cahirinus). <em>American Journal of&nbsp;Obstetrics and&nbsp;Gynecology</em>, 216, 40.e1-40&nbsp;e11.&nbsp;<a target="_blank" href=" https://doi.org/10.1016/j.ajog.2016.07.041 "> https://doi.org/10.1016/j.ajog.2016.07.041</a></li><li style="margin-top: 20px;"> Bellofiore N, Rana S, Dickinson H, Temple-Smith P, &amp; Evans J.&nbsp;(2018). Characterization of&nbsp;human-like menstruation in&nbsp;the&nbsp;spiny mouse: Comparative studies with the&nbsp;human and&nbsp;induced mouse model. <em>Human Reproduction</em>, 33, 1715-1726. <a target="_blank" href=" https://doi.org/10.1093/humrep/dey247 "> https://doi.org/10.1093/humrep/dey247</a></li><li style="margin-top: 20px;"> Bilyalova A, Bilyalov A, Kozlova O, Filatov N, Filimoshina D, Gazizova G, Deviatiiarov R, Titova A, Bydanov A, Mukhamedshina Y, et&nbsp;al.&nbsp;Morphological and&nbsp;Transcriptomic Analyses of&nbsp;the&nbsp;Adrenal Gland in&nbsp;Acomys cahirinus: A&nbsp;Novel Model for&nbsp;Murine Adrenal Physiology. <em>Cells</em>. 2025; 14(18):1431. <a target="_blank" href=" https://doi.org/10.3390/cells14181431 "> https://doi.org/10.3390/cells14181431</a></li></ol>     </div>
+  </div>
+ </div>
+</section>
+<style type="text/css">
+div.bibliography.reprint .title{
+ font-family: 'lato Bold';
+ font-size: 4.5rem;
+}
+div.bibliography.reprint{
+ font-family: 'lato Regular';
+  font-size: 1.8rem;
+}
+@media(max-width:48em){
+ div.bibliography.reprint .title{
+  font-size: 5.5rem;
+ }
+ div.bibliography.reprint{
+  font-size: 3rem;
+ }
+}
+</style>
+
+	
+
+
+<div class="form-bg form-bg-footer">
+ <div class="form form-callback-author">
+  <div class="close" style="margin-bottom:0;"><span></span></div>
+    <form class="callBack">
+   <input type="hidden" name="TYPE" value="Связаться " readonly>
+   <input type="hidden" name="AUTHORS_MAIL" value="yeparfyon@mail.ru"
+       readonly>
+   <input type="hidden" name="ARTICLE"
+       value="Иглистые мыши (Acomys) — новая перспективная модель для изучения механизмов регенеративных процессов в сердце и разработки регенеративных технологий Кардиологический вестник.2025;20   (4):
+   10-17"
+       readonly>
+   <div class="title">
+    <div class="title-inter active">Связаться с автором</div>
+   </div>
+   <div class="info">Email</div>
+   <input type="email" name="EMAIL" value="" required>
+   <div class="info"> Сообщение</div>
+   <textarea required name="TEXT"></textarea>
+			
+<div id="agree">                
+   <div style="display: flex; align-items: flex-start; gap:1%;"><input class="agreechk" type="checkbox" id="agree1" name="agree1" value="1"><div>
+   <label for="agree1">Соглашаюсь на  </label> <a target="_blank" href="/politika-personal/"> обработку персональных данных в соответствии со статьей 9 Федерального закона «О персональных данных» от 27 июля 2006 года № 152-ФЗ».</a></div></div>
+   <div style="display: flex; align-items: flex-start; gap:1%;"><input class="agreechk" type="checkbox" id="agree2" name="agree2" value="1"><div>
+   <label for="agree2">Соглашаюсь c  </label> <a target="_blank" href="/privacy_policy/">политикой конфиденциальности.</a></div></div><br />
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+ $("#CaptcYa").hide();
+	$("#subm").hide();
+	$(".agreechk").click(function(){
+		if( $("#agree1").prop("checked") && $("#agree2").prop("checked") ){
+   $("#CaptcYa").show("slow");
+  	$("#subm").show();
+		}
+		else{
+   $("#CaptcYa").hide();
+  	$("#subm").hide();
+		}
+	});
+});
+</script>
+
+                <!-- Контейнер капчи с корректными атрибутами -->
+                <div id="CaptcYa" style="height: 100px; margin: 15px 0;" 
+                    class="smart-captcha"
+                    data-sitekey="ysc1_H6uvqo7ZdR8IXiHMe7HeV5F9ObwNpBvM9G0Kfsri679b00f0"
+                    data-callback="onCaptchaSuccess"
+                    data-expired-callback="onCaptchaExpired"
+                    data-error-callback="onCaptchaError">
+                </div>			
+			<button id="subm" type="submit" data-original-text="Отправить" style="opacity: 1; cursor: pointer; background-color: rgb(76, 175, 80);">Отправить</button>
+   <b>Издательство "Медиа Сфера" не оказывает услуги по лечению, не дает рекомендации по обращению в медицинские учреждения и к конкретным специалистам, по назначению лекарственных средств и БАДов.</b>
+  </form>
+ </div>
+</div>
+<div id="banner_slider_mobile">
+ <div class="articlePage-main-block-img">
+ </div>
+</div>
+
+<!-- ✅ Скрипт капчи БЕЗ пробелов в URL -->
+<script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+
+<!-- ✅ Исправленный обработчик формы -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form.callBack');
+    const btn = form?.querySelector('button[type="submit"]');
+    
+    console.log('🔍 Form found:', !!form);
+    console.log('🔍 Button found:', !!btn);
+    
+    if (btn) {
+        // Сохраняем исходный текст кнопки
+        btn.dataset.originalText = btn.textContent.trim();
+        console.log('📝 Original button text:', btn.dataset.originalText);
+        
+        // 🔒 Блокируем кнопку при загрузке
+        btn.disabled = true;
+        btn.style.opacity = '0.6';
+        btn.style.cursor = 'not-allowed';
+        btn.style.backgroundColor = '#ccc';
+        btn.textContent = 'Пройдите проверку';
+        
+        console.log('🔒 Кнопка заблокирована при загрузке');
+    }
+    // Обработчик отправки формы
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            
+            // Проверка токена капчи
+            if (!window.captchaToken) {
+                alert('Пожалуйста, пройдите капчу');
+                return;
+            }
+            
+            console.log('✅ Form submitting with token:', window.captchaToken.substring(0, 20) + '...');
+            
+            // Визуальная обратная связь при отправке
+            const originalBtnText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Отправка...';
+            btn.style.opacity = '0.8';
+            
+            const formData = new FormData(form);
+            
+            // Отправка на сервер
+            fetch('/ajax/form/callBack.php', {
+                method: 'POST',
+                body: formData,
+                headers: { 'X-Requested-With': 'XMLHttpRequest' }
+            })
+            .then(async response => {
+                const text = await response.text();
+                console.log('📦 Raw server response:', text);
+                
+                try {
+                    return JSON.parse(text);
+                } catch (parseError) {
+                    console.warn('⚠️ Ответ не валидный JSON');
+                    if (response.ok) {
+                        return { STATUS: true, MESSAGE: 'Сообщение отправлено' };
+                    }
+                    throw parseError;
+                }
+            })
+            .then(data => {
+                console.log('✅ Result:', data);
+                if (data && data.STATUS) {
+                    alert(data.MESSAGE || 'Спасибо, мы свяжемся с вами!');
+                    form.reset();
+                    
+                    // Сброс капчи и кнопки
+                    window.captchaToken = null;
+                    if (window.Ya?.smartCaptcha) {
+                        window.Ya.smartCaptcha.reset();
+                    }
+                    btn.disabled = true;
+                    btn.style.opacity = '0.6';
+                    btn.textContent = 'Пройдите проверку';
+                    btn.style.backgroundColor = '#ccc';
+                } else {
+                    alert(data?.MESSAGE || 'Ошибка при отправке формы');
+                    btn.disabled = false;
+                    btn.style.opacity = '1';
+                    btn.textContent = 'Отправить сообщение';
+                }
+            })
+            .catch(err => {
+                console.error('🔥 Fetch error:', err);
+                if (err.message === 'Failed to fetch') {
+                    alert('Ошибка соединения с сервером');
+                }
+                btn.disabled = false;
+                btn.style.opacity = '1';
+                btn.textContent = 'Отправить сообщение';
+            });
+        }, true);
+    }
+});
+</script>
+
+<script type="text/javascript">
+ $("#banner_slider_mobile .articlePage-main-block-img").first().append( $(".articlePage-main-block-img").first().clone().html() );
+ $("#banner_slider_mobile .articlePage-main-block-img .link-img").remove();
+</script>
+<style>
+body {
+ margin:0;
+}
+.image {
+ margin:30px;
+ cursor:zoom-in;
+}
+
+figure {
+ margin:30px;
+ cursor:zoom-in;
+}
+
+.popup {
+ position: absolute;
+ height:100%;
+ width:100%;
+ top:0;
+ left:0;
+ display:none;
+ text-align:center;
+}
+
+.popup_bg {
+ background:rgba(0,0,0,0.3);
+ position:fixed;
+ z-index:1;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ width: auto;
+  height: auto;
+}
+
+
+.popup_img {
+ position: fixed;
+ z-index:2;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ max-height: 90%;
+}
+
+.popup_img {
+  pointer-events: none;
+}
+div.form-bg.form-bg-footer.active div.form.form-callback-author form.callBack button{
+ margin-bottom:3rem;
+}
+@media(max-width:768px){div.form-bg.form-bg-footer.active div.form.form-callback-author form.callBack div.title div.title-inter.active{margin-right:0; font-size:5.5rem;}}
+
+#banner_slider_mobile{display:none;} @media(max-width:48em){#banner_slider_mobile{display:block;}}
+#banner_slider_mobile .articlePage-main-block-img{}
+#banner_slider_mobile .articlePage-main-block-img .book-img{
+ display:block; 
+	width:100vw;
+	height:130vw;
+}
+#banner_slider_mobile .articlePage-main-block-img .book-img .swiper-slide img{
+ width:100vw;
+	height:130vw;
+	object-fit:contain;
+}
+#banner_slider_mobile .articlePage-main-block-img .book-img div.swiper-pagination{
+ width:100vw;
+}
+.HeadActive{
+ font-family: 'lato Bold';
+ font-size: 4.5rem;
+ margin-top: 3rem;
+ margin-bottom: 2rem;
+ text-align: left;
+ line-height: 1;
+}
+</style>
+
+<script type="text/javascript">
+// var div = document.querySelector('figure img');
+var elements = document.querySelectorAll('figure img');
+window.onload = () => {
+ // div.className = 'image';
+ for (let element of elements) {
+  element.className = 'image';
+ };
+  //console.log(div)
+  // ждем клик
+ $(".image").click(function(){ // Событие клика на маленькое изображение
+  var img = $(this); // Получаем изображение, на которое кликнули
+  console.log(img); 
+  var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+  $("body").append("<div class='popup'>"+ //Добавляем в тело документа разметку всплывающего окна
+       "<div class='popup_bg'></div>"+ // Блок, который будет служить фоном затемненным
+       "<img src='"+src+"' class='popup_img' />"+ // Само увеличенное фото
+       "</div>");
+  $(".popup").fadeIn(200); // Медленно выводим изображение
+  $(".popup_bg").click(function(){ // Событие клика на затемненный фон
+   $(".popup").fadeOut(200); // Медленно убираем всплывающее окн 
+   setTimeout(function() { // Выставляем таймер
+     $(".popup").remove(); // Удаляем разметку всплывающего окна
+   }, 200);
+  });
+ });
+};
+
+/*$(document).ready(function(){ 
+ setTimeout(function(){
+  $("#banner_slider_mobile .articlePage-main-block-img").first().append( $(".articlePage-main-block-img").first().clone().html() );
+	 $("#banner_slider_mobile .articlePage-main-block-img .link-img").remove();
+	}, 5000);
+});
+*/
+</script>
+
+
+<iframe loading="lazy" src="https://devn.mediasphera.ru/issues/kardiologicheskij-vestnik/2025/4/1207767642025041010?pass=303c86c604efc15d0ef3c8b8c4dc4cb0" style="position:absolute;border:0;opacity:0;width:1px;height:1px;pointer-events:none;overflow:hidden;" aria-hidden="true" tabindex="-1"></iframe><footer class="footer">
+ <div class="container">
+  <div class="footer-block">
+   <div class="footer-block-left">
+    <div class="list-nav">
+     <ul>
+      <li><a href="/journals/">Журналы</a></li>
+      <li><a href="/subscribe/">Подписка</a></li>
+      <li><a href="/archive/">Архив</a></li>
+      <li><a href="/product/knigi/">Книги</a></li>
+      <li><a href="/ad/">Реклама</a></li>
+      <li><a href="/dostavka/">Доставка&nbsp;/&nbsp;Оплата</a></li>
+      <li><a href="/about/">О&nbsp;нас </a></li>
+      <li><a href="/contact/">Контакты</a></li>
+      <li><a href="/privacy_policy/">Политика конфиденциальности</a></li>
+      <li><a href="/politika-personal/">Политика обработки персональных данных</a></li>
+      <li><a href="/editorial_education/">Обучение для редакций</a></li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer-block-middle">
+    <a href="/">
+     <div class="footer-block-middle-logo">
+      <div class="img">
+       <img src="/local/templates/MediaSphera/img/icon/logo_MSPH_new.svg" alt="">
+      </div>
+           </div>
+    </a>
+	
+      <ul class="socnetlinks">
+       <li><a target="_blank" href="https://vk.com/mediaspheraru"><img src="/img/vk.svg" /><span>вКонтакте</span></a></li>       <li><a target="_blank" href="https://t.me/mediasphera"><img src="/img/tg.svg" /><span>Telegram</span></a></li>						</ul>
+<style type="text/css">
+ .footer-block-middle .socnetlinks{justify-content:center; margin:10rem 0;}
+@media(max-width:768px){
+ .footer-block-middle .socnetlinks{display:none;}
+}
+</style>
+					
+         <a href="javascript: void(0)" class="button-form-reg">
+      <div class="link-reg">
+       
+      <div class="img">
+        <img src="/local/templates/MediaSphera/img/icon/locked.svg" alt="">
+       </div>
+       <div class="text">Регистрация</div>
+      </div>
+     </a>
+       </div>
+   <div class="footer-block-right">
+				
+    <div class="list-info">
+     <ul>
+      <li>Телефон</li>
+      <li class="list-info-tell"><a href="tel:+74954824118">+7 (495) 482-4118</a></li>
+      <li class="list-info-tell"><a href="tel:+74954824329">+7 (495) 482-4329</a></li>
+      <li class="list-info-tell"><a href="tel:+88002501812">+8 800 250-18-12</a><br>
+																								
+      <span class="list-info">
+      (бесплатный номер <br>по&nbsp;вопросам подписки)      </span><br>
+																								
+      <span class="list-info">
+      пн-пт с&nbsp;10&nbsp;до&nbsp;18      </span>
+     </li>
+     </ul>
+     <ul>
+      <li>Почтовый адрес</li>
+      <li>Издательство&nbsp;«Медиа&nbsp;Сфера»,</li>
+      <li>а/я&nbsp;54, Москва, Россия, 127238</li>
+     </ul>
+     <ul>
+      <li>Электронная почта</li>
+      <li><a style="color:white;" href="mailto:info@mediasphera.ru">info@mediasphera.ru</a></li>
+     </ul>
+     <ul>
+      <li>© 1998-2026</li>
+     </ul>
+    </div>
+    <div class="list-info-mob">
+     <div class="tell">
+      <a href="tel:+74954824118"><span style="color: white">+7 (495) 482-4118</span></a><br>
+      <a href="tel:+74954824329"><span style="color: white">+7 (495) 482-4329</span></a><br>
+     </div>
+     <div class="tell" style="margin-bottom: -4px;">
+      <a href="tel:+88002501812"><span style="color: white">+8 800 250-18-12</span></a>
+      <ul>
+       <li>
+        (бесплатный номер по&nbsp;вопросам подписки)        <br>
+        пн-пт с&nbsp;10 до&nbsp;18       </li>
+						</ul>					
+     </div>
+     <ul>
+      <li>Издательство&nbsp;«Медиа&nbsp;Сфера»<br>а/я&nbsp;54, Москва, Россия, 127238</li>
+      <li><a style="color:white;" href="mailto:info@mediasphera.ru">info@mediasphera.ru</a></li>
+     </ul>
+	
+      <ul class="socnetlinks">
+       <li><a target="_blank" href="https://vk.com/mediaspheraru"><img src="/img/vk.svg" /><span>вКонтакте</span></a></li>       <li><a target="_blank" href="https://t.me/mediasphera"><img src="/img/tg.svg" /><span>Telegram</span></a></li>						</ul>
+<style type="text/css">
+.list-info-mob .socnetlinks{margin-top:0!important;}
+</style>
+
+     <div class="logo">
+      <a href="/">
+       <div class="footer-block-middle-logo">
+        <div class="img">
+         <img src="/local/templates/MediaSphera/img/icon/logo.svg" alt="">
+        </div>
+        <div class="text">
+         <ul>
+          <li>Издательство</li>
+          <li>«Медиа&nbsp;Сфера»</li>
+         </ul>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="tell">
+						<ul>
+							<li><br>© 1998-2026</li>
+						</ul>
+					</div>
+    </div>
+				
+   </div>
+  </div>
+ </div>
+</footer>
+
+<div class="mail-popup confirm-popup">
+ <div class="mail-popup-cont">
+  <div class="close"><span></span></div>
+  <div class="text">
+   <div class="title">
+    <p>Подтверждение e-mail</p>
+   </div>
+   <p>На&nbsp;<a href="javascript:void(0)">test@yandex.ru</a> отправлено письмо со&nbsp;ссылкой для&nbsp;подтверждения e-mail. Перейдите по&nbsp;ссылке из&nbsp;письма, чтобы завершить регистрацию на&nbsp;сайте.</p>
+  </div>
+ </div>
+</div>
+
+<div class="mail-popup uni-popup">
+ <div class="mail-popup-cont">
+  <div class="close"><span></span></div>
+  <div class="text">
+   <div class="title">
+    <p>Подтверждение e-mail</p>
+   </div>
+  </div>
+ </div>
+</div>
+
+
+
+<div class="form-bg form-bg-footer">
+ <div class="form form-callback">
+  <div class="close"><span></span></div>
+  <form class="callBack">
+   <input type="hidden" name="TYPE" value="Обратная связь" readonly>
+   <div class="title">
+    <div class="title-inter active">Обратная связь</div>
+   </div>
+   <div>Если у вас возникли вопросы, жалобы или предложения, — воспользуйтесь формой обратной связи.</div>
+   <div class="info">Email</div>
+   <input type="email" name="EMAIL" value="" required>
+   <div class="info"> Сообщение</div>
+   <textarea required name="TEXT"></textarea>
+   <button>Отправить</button>
+   <b>Издательство "Медиа Сфера" не оказывает услуги по лечению, не дает рекомендации по обращению в медицинские учреждения и к конкретным специалистам, по назначению лекарственных средств и БАДов.</b>
+												
+  </form>
+ </div>
+ <div class="form form-article">
+  <div class="close"><span></span></div>
+   <form id="callBack" action="">
+    <div class="note"></div>
+    <div class="title">Подать заявку</div>
+    <div class="text"><p>Вы можете стать автором одного из наших журналов, отправьте заявку и мы рассмотрим ее в течении дня. </p></div>
+    <div class="info">Имя</div>
+    <input type="text" name="NAME" required>
+    <div class="info">Телефон</div>
+    <input pattern="+[0-9]" type="text" name="PHONE" required>
+    <div class="info">E-mail</div>
+    <input type="text" name="EMAIL">
+    <div class="info">Сообщение</div>
+    <textarea name="TEXT" id="" cols="30" rows="1"></textarea>
+    <button>Отправить</button>
+   </form>
+  </div>
+
+    <div class="form form-main">
+        <div class="close"><span></span></div>
+        <div class="form-inter">
+            <form id="logIn" action="">
+                <div class="title">
+                    <div class="title-inter active">Вход</div>
+								
+                    <div class="title-reg button-form-reg">Регистрация</div>
+								
+                </div>
+                <div class="note"></div>
+                <div class="info">E-mail</div>
+                <input type="text" name="EMAIL" required>
+                <div class="info">Пароль</div>
+                <input type="password" minlength="6" name="PASSWORD" required>
+                <div class="form-help">
+                    <div class="form-help-link button-form-forgot"><a href="#">Забыли пароль?</a></div>
+                </div>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+								
+        <div class="form-reg">
+            <form class="signIn" name="my_form" method="post" action="#">
+                <input type="hidden" name="TYPE" value="5">
+                <div class="title">
+                    <div class="title-inter button-form-inter">Вход</div>
+                    <div class="title-reg active">Регистрация</div>
+                </div>
+                <div class="note"></div>
+                <div class="info">E-mail</div>
+                <input type="email" required name="EMAIL">
+                <div class="info">Пароль</div>
+                <div class="info info-error"></div>
+                <input type="password" class="password" required minlength="8" name="PASSWORD">
+                <div class="info">Повторите пароль</div>
+                <input type="password" class="confirm_password" required minlength="8" name="CONFIRM_PASSWORD">
+             <!--   <div class="g-recaptcha" data-sitekey="6LcleKUZAAAAAMlPksuCaCMqkc001BHqBBGHhwAH"></div> -->
+                <div class="g-recaptcha" data-sitekey="6LfDe-UZAAAAALkIMftaJST2p1dOYfkDzXigC2lT"></div>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+        <div class="text">
+            <p>Войдите на сайт, используя вашу учетную запись в одном из сервисов</p>
+        </div>
+						
+						
+
+        <!-- ниже скрывается подпись приглашение для регистарции для юридицеских лиц -->
+        <div class="link form-reg-ur-button" style="display:none;">
+            <a href="javascript: void(0)">Регистрация {для юридических лицe}for legal entities</a>
+        </div>
+    </div>
+
+    <div class="form form-forgot">
+        <div class="close"><span></span></div>
+        <form id="forgot" action="">
+            <div class="note"></div>
+            <div class="title">
+                <div class="title-inter active">Восстановление пароля</div>
+            </div>
+            <div class="info">E-mail</div>
+            <input type="email" name="EMAIL">
+            <button>Отправить</button>
+        </form>
+        <div class="form-help">
+            <div class="form-help-link button-form-inter"><a href="#">Войти</a></div>
+            <div class="form-help-link button-form-reg"><a href="#">Зарегистрироваться</a></div>
+        </div>
+    </div>
+
+    <div class="form form-reg-ur">
+        <div class="close"><span></span></div>
+        <form class="signIn" name="my_form" method="post" action="#">
+            <input type="hidden" name="TYPE" value="6">
+            <div class="title">
+                <div class="title-reg active">Регистрация</div>
+            </div>
+            <div class="note"></div>
+            <div class="name-block">
+                <div class="name-block-item">
+                    <div class="info">Фамилия</div>
+                    <input type="text" value="" name="LAST_NAME" required>
+                </div>
+                <div class="name-block-item">
+                    <div class="info">Имя</div>
+                    <input type="text" value="" name="NAME" required>
+                </div>
+                <div class="name-block-item">
+                    <div class="info">Отчество</div>
+                    <input type="text" value="" name="SECOND_NAME">
+                </div>
+            </div>
+            <div class="info">E-mail</div>
+            <input type="email" value="" name="EMAIL" required>
+            <div class="info">Телефон</div>
+            <input type="number" value="" name="PERSONAL_PHONE" required>
+            <div class="info info-title">Адрес</div>
+            <div class="adress">
+                <div class="adress-item">
+                    <div class="info">Страна</div>
+                    <div class="filter-container__inside filter-container__inside-select" id="country">
+                        <div class="filter-item filter-select">
+                            <input type="text" name="UF_COUNTRY"
+                                   value="Россия">
+                            <a class="filter-handler filter-selected" href="javascript:void(0);"
+                               data-id="Россия">Россия</a>
+                            <div class="filter-select-dd filter-dd filter-options">
+                                <ul>
+                                    <li><a href="javascript:void(0);" data-id="Россия">Россия</a></li>
+                                    <li><a href="javascript:void(0);" data-id="Белорусь">Белорусь</a></li>
+                                    <li><a href="javascript:void(0);" data-id="Украина">Украина</a></li>
+                                    <li><a href="javascript:void(0);" data-id="Польша">Польша</a></li>
+                                    <li><a href="javascript:void(0);" data-id="Литва">Литва</a></li>
+                                    <li><a href="javascript:void(0);" data-id="Другая страна">Другая страна</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adress-item">
+                    <div class="info">Индекс</div>
+                    <input type="text" value="" name="PERSONAL_ZIP">
+                </div>
+                <div class="adress-item">
+                    <div class="info">Город</div>
+                    <input type="text" value="" name="PERSONAL_CITY">
+                </div>
+            </div>
+            <div class="info">Край</div>
+            <input type="text" value="" name="PERSONAL_STATE">
+            <div class="info">Улица</div>
+            <input type="text" value="" name="PERSONAL_STREET">
+            <div class="info">Дом</div>
+            <input type="text" value="" name="UF_PERSONAL_HOME">
+            <div class="info">Квартира</div>
+            <input type="text" value="" name="UF_PERSONAL_APARTMEN">
+            <div class="info">Название юридического лица</div>
+            <input type="text" value="" name="UF_NAME_YR">
+            <div class="work">
+                <div class="work-item">
+                    <div class="info">ИНН</div>
+                    <input type="tel" minlength="12" maxlength="12" pattern="+[0-9]" class="example_1" required name="UF_INN">
+                </div>
+                <div class="work-item">
+                    <div class="info">КПП</div>
+                    <input type="tel" minlength="9" maxlength="9" pattern="+[0-9]" class="example_2" required name="UF_KPP">
+                </div>
+            </div>
+            <div class="info info-title">Пароль</div>
+            <div class="info info-error"></div>
+            <div class="pass">
+                <div class="pass-item">
+                    <div class="info">Пароль</div>
+                    <input type="password" class="password" required minlength="8" name="PASSWORD" autocomplete="off">
+                </div>
+                <div class="pass-item">
+                    <div class="info">Повторите пароль</div>
+                    <input type="password" class="confirm_password" required minlength="8" name="CONFIRM_PASSWORD"
+                           autocomplete="off">
+                </div>
+            </div>
+             <!--   <div class="g-recaptcha" data-sitekey="6LcleKUZAAAAAMlPksuCaCMqkc001BHqBBGHhwAH"></div> -->
+             <div class="g-recaptcha" data-sitekey="6LfDe-UZAAAAALkIMftaJST2p1dOYfkDzXigC2lT"></div>
+            <div class="form-reg-button">
+                <button type="submit">Сохранить</button>
+                <button type="reset" onclick="" class="cansel">Отмена</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+<style>
+    .form-forgot {
+        display: none;
+    }
+
+    .form-forgot.active {
+        display: block;
+    }
+</style>
+
+<script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form.callBack');
+    const btn = form?.querySelector('button');
+    
+    if (btn) {
+        // Сохраняем текст кнопки
+        btn.dataset.originalText = btn.textContent.trim();
+        
+        // Блокируем кнопку сразу при загрузке
+        btn.disabled = true;
+        btn.style.opacity = '0.6';
+        btn.style.cursor = 'not-allowed';
+        btn.style.backgroundColor = '#ccc';
+        btn.textContent = 'Пройдите проверку';
+        
+        console.log('🔒 Кнопка заблокирована при загрузке');
+    }
+    
+    // Обработчик отправки формы
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!window.captchaToken) {
+                alert('Пожалуйста, пройдите капчу');
+                return;
+            }
+            
+            // Отправка на сервер
+            const formData = new FormData(form);
+            fetch(window.location.href, {
+                method: 'POST',
+                body: formData,
+                headers: { 'X-Requested-With': 'XMLHttpRequest' }
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.STATUS) {
+                    alert(data.MESSAGE);
+                    form.reset();
+                    window.captchaToken = null;
+                    if (window.Ya?.smartCaptcha) {
+                        window.Ya.smartCaptcha.reset();
+                    }
+                    btn.disabled = true;
+                    btn.style.opacity = '0.6';
+                    btn.textContent = 'Пройдите проверку';
+                    btn.style.backgroundColor = '#ccc';
+                } else {
+                    alert(data.MESSAGE || 'Ошибка');
+                    btn.disabled = false;
+                    btn.style.opacity = '1';
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                //alert('Ошибка соединения');
+                btn.disabled = false;
+                btn.style.opacity = '1';
+            });
+        });
+    }
+});
+</script>
+
+
+<!-- Styles -->
+<script src="/local/templates/MediaSphera/js/swiper.min.js?v=1743078955"></script>
+<script src="/local/templates/MediaSphera/js/main.js?v=1731245854"></script>
+<script src="/local/templates/MediaSphera/js/dev.js?v=1782747785"></script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(75607522, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        userParams: {
+         UserID:0        }
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/75607522" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<script type="text/javascript">
+        $.get('/ajax/sess_user_success.php', function(data) {
+                    //alert('success='+data);
+        }); 
+
+        $.get('/ajax/sess_user_sso.php', function(sdata) {
+            //alert('USER='+sdata);
+            console.log(sdata);
+            if (((sdata == 1) || (sdata == 2)) && (window.location.hostname != 'test.mediasphera.ru')) {
+                //alert('SSO=>GET1');
+                let client_id_sso = 'df066abcea7b17782165deaca64488fc6b7627886bd9858dabb55c3bf622a42d';
+                console.log(client_id_sso);
+               //window.location.href = "https://1medtvs.ru/auth/sso/authorize?client_id=df066abcea7b17782165deaca64488fc6b7627886bd9858dabb55c3bf622a42d";
+            }
+        }); 
+            
+</script>
+<div id="cknt">
+    <p>Мы используем файлы cооkies для улучшения работы сайта. Оставаясь на нашем сайте, вы соглашаетесь с условиями
+        использования файлов cооkies. Чтобы ознакомиться с нашими Положениями о конфиденциальности и об использовании
+        файлов cookie, <a href="/cookie_policy">нажмите здесь</a>.</p>
+    <button class="button ckccpt btn btn-primary btn-sm">Я соглашаюсь</button></div>
+<style type="text/css">
+#cknt{
+    display: none;
+    position: fixed;
+				z-index:100;
+    bottom: 15px;
+    left: 50%;
+    max-width: 90%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+				font-size:1.5rem;
+}
+
+#cknt button{
+ margin-left:2rem;
+	text-align:center;
+	min-width:20rem;
+}
+
+#cknt p{
+    margin: 0;
+    text-align: left;
+    color: black;
+}
+
+.ckccpt{
+    width:20%;
+}
+@media (min-width: 768px){
+    #cknt.show{
+        display: flex;
+    }
+}
+
+@media (max-width: 767px){
+ #cknt.show{
+  display: block;
+  text-align: left;
+  width:90%;
+ }
+ #cknt p{
+		font-size:2rem;
+ }
+	#cknt button{ 
+	 float:right; 
+		min-width:30rem;
+	}
+}
+</style>
+<script type="text/javascript">
+function setCookie(name, value, days) {
+ let expires = "";
+ if (days) {
+  let date = new Date();
+  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+  expires = "; expires=" + date.toUTCString();
+ }
+ document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) {
+ let matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+ return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+
+function checkCookies() {
+ let cookieNote = document.getElementById('cknt');
+ let cookieBtnAccept = cookieNote.querySelector('.ckccpt');
+ if (!getCookie('cookies_policy')) {
+  cookieNote.classList.add('show');
+ }
+ cookieBtnAccept.addEventListener('click', function () {
+  setCookie('cookies_policy', 'true', 365);
+  cookieNote.classList.remove('show');
+ });
+}
+
+ checkCookies();
+</script></body>
+</html>

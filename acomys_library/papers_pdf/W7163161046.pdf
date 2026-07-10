@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML">
+  <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book#" >
+    <!--[if IE]><![endif]-->
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<link rel="dns-prefetch" href="//d33xdlntwy0kbs.cloudfront.net" />
+<link rel="dns-prefetch" href="//www.google.com" />
+<link rel="dns-prefetch" href="//scholar.google.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="https://www.biorxiv.org/sites/default/files/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google-site-verification" content="lH38pX61A6XH6RNu01u4WWWT9UnF9WhcST6isHEJv-I" />
+<link rel="alternate" type="application/pdf" title="Full Text (PDF)" href="/content/10.64898/2026.06.01.729224v1.full.pdf" />
+<link rel="alternate" type="text/plain" title="Full Text (Plain)" href="/content/10.64898/2026.06.01.729224v1.full.txt" />
+<meta name="citation_funding_source" content="citation_funder_id=https://ror.org/00yjd3n13;citation_grant_number=ME12454;citation_grant_number=PZ00P3_193349;citation_grant_number=PZ00P3_201995;citation_grant_number=310030-212219;citation_grant_number=310030_204466;" />
+<meta name="citation_funding_source" content="citation_grant_number=RGP0037/2022;" />
+<meta name="citation_funding_source" content="citation_funder_id=https://ror.org/04wfr2810;citation_grant_number=ALTF 349-2020;" />
+<meta name="citation_funding_source" content="citation_grant_number=10_2023;" />
+<meta name="citation_funding_source" content="citation_grant_number=23_28;" />
+<meta name="citation_funding_source" content="citation_grant_number=2024/12;" />
+<meta name="type" content="article" />
+<meta name="category" content="article" />
+<meta name="HW.identifier" content="/biorxiv/early/2026/06/02/2026.06.01.729224.atom" />
+<meta name="HW.pisa" content="biorxiv;2026.06.01.729224v1" />
+<meta name="DC.Format" content="text/html" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Title" content="Prenatal assembly of functional cortical circuits" />
+<meta name="DC.Identifier" content="10.64898/2026.06.01.729224" />
+<meta name="DC.Date" content="2026-06-02" />
+<meta name="DC.Publisher" content="Cold Spring Harbor Laboratory" />
+<meta name="DC.Rights" content="© 2026, Posted by openRxiv. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+<meta name="DC.AccessRights" content="restricted" />
+<meta name="DC.Description" content="The extent to which early brain maturation requires interactions with the outside world is a central question in neurobiology. Because much of cortical maturation occurs after birth in Mus , it has often been viewed as dependent on postnatal experience. However, studies addressing this issue have largely relied on postnatal sensory deprivation paradigms, which perturb normal development and cannot determine to what extent postnatal experience per se drives maturation. To address this question, here we compare two related rodents with markedly different gestation lengths: the precocial Acomys dimidiatus (39-day gestation) and the altricial Mus musculus (19-day gestation). By generating a novel Acomys reference genome and using histology, cellular birth dating, electrophysiology, single-nucleus transcriptomics, and quantitative behavior, we show that Acomys preserves the canonical sequence and timing of cortical development, while shifting major milestones of neuronal, circuit and behavioral maturation into prenatal life. At birth, Acomys cortex already shows advanced cytoarchitecture, neuronal physiology, thalamocortical barrels, transcriptional states, and sensorimotor behavior, with postnatal molecular programs in Mus unfolding prenatally in Acomys . Thus, birth is not a prerequisite for early cortical maturation. Instead, evolutionarily conserved developmental programs unfold across birth, with birth occurring at different stages of these programs, reflecting a species-specific balance between neonatal competence and prolonged postnatal plasticity.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+Swiss National Science Foundation, https://ror.org/00yjd3n13, ME12454, PZ00P3_193349, PZ00P3_201995, 310030-212219, 310030_204466
+
+HFSP, RGP0037/2022
+
+European Molecular Biology Organization, https://ror.org/04wfr2810, ALTF 349-2020
+
+Fondation Ernst et Lucie Schmidheiny, 10_2023
+
+Fonds Général de l’Université de Genève, 23_28
+
+Emile Plantamour Fund, 2024/12" />
+<meta name="DC.Contributor" content="Ilaria Morassut" />
+<meta name="DC.Contributor" content="Alessandra Panzeri" />
+<meta name="DC.Contributor" content="Sabine Fièvre" />
+<meta name="DC.Contributor" content="Julien Prados" />
+<meta name="DC.Contributor" content="Samir Vaid" />
+<meta name="DC.Contributor" content="Florent Montange" />
+<meta name="DC.Contributor" content="Adrien Debry" />
+<meta name="DC.Contributor" content="Jiafeng Zhou" />
+<meta name="DC.Contributor" content="Riccardo Bocchi" />
+<meta name="DC.Contributor" content="Esther Klingler" />
+<meta name="DC.Contributor" content="Camilla Bellone" />
+<meta name="DC.Contributor" content="Athanasia C. Tzika" />
+<meta name="DC.Contributor" content="Denis Jabaudon" />
+<meta name="DC.Contributor" content="Sergi Roig-Puiggros" />
+<meta name="article:published_time" content="2026-06-02" />
+<meta name="article:section" content="New Results" />
+<meta name="citation_title" content="Prenatal assembly of functional cortical circuits" />
+<meta name="citation_abstract" lang="en" content="&lt;h3&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;The extent to which early brain maturation requires interactions with the outside world is a central question in neurobiology. Because much of cortical maturation occurs after birth in &lt;i&gt;Mus&lt;/i&gt;, it has often been viewed as dependent on postnatal experience. However, studies addressing this issue have largely relied on postnatal sensory deprivation paradigms, which perturb normal development and cannot determine to what extent postnatal experience &lt;i&gt;per se&lt;/i&gt; drives maturation. To address this question, here we compare two related rodents with markedly different gestation lengths: the precocial &lt;i&gt;Acomys dimidiatus&lt;/i&gt; (39-day gestation) and the altricial &lt;i&gt;Mus musculus&lt;/i&gt; (19-day gestation). By generating a novel &lt;i&gt;Acomys&lt;/i&gt; reference genome and using histology, cellular birth dating, electrophysiology, single-nucleus transcriptomics, and quantitative behavior, we show that &lt;i&gt;Acomys&lt;/i&gt; preserves the canonical sequence and timing of cortical development, while shifting major milestones of neuronal, circuit and behavioral maturation into prenatal life. At birth, &lt;i&gt;Acomys&lt;/i&gt; cortex already shows advanced cytoarchitecture, neuronal physiology, thalamocortical barrels, transcriptional states, and sensorimotor behavior, with postnatal molecular programs in &lt;i&gt;Mus&lt;/i&gt; unfolding prenatally in &lt;i&gt;Acomys&lt;/i&gt;. Thus, birth is not a prerequisite for early cortical maturation. Instead, evolutionarily conserved developmental programs unfold across birth, with birth occurring at different stages of these programs, reflecting a species-specific balance between neonatal competence and prolonged postnatal plasticity.&lt;/p&gt;" />
+<meta name="citation_journal_title" content="bioRxiv" />
+<meta name="citation_publisher" content="Cold Spring Harbor Laboratory" />
+<meta name="citation_publication_date" content="2026/01/01" />
+<meta name="citation_mjid" content="biorxiv;2026.06.01.729224v1" />
+<meta name="citation_id" content="2026.06.01.729224v1" />
+<meta name="citation_public_url" content="https://www.biorxiv.org/content/10.64898/2026.06.01.729224v1" />
+<meta name="citation_abstract_html_url" content="https://www.biorxiv.org/content/10.64898/2026.06.01.729224v1.abstract" />
+<meta name="citation_full_html_url" content="https://www.biorxiv.org/content/10.64898/2026.06.01.729224v1.full" />
+<meta name="citation_pdf_url" content="https://www.biorxiv.org/content/biorxiv/early/2026/06/02/2026.06.01.729224.full.pdf" />
+<meta name="citation_issn" content="2692-8205" />
+<meta name="citation_doi" content="10.64898/2026.06.01.729224" />
+<meta name="citation_num_pages" content="30" />
+<meta name="citation_article_type" content="Article" />
+<meta name="citation_section" content="New Results" />
+<meta name="citation_firstpage" content="2026.06.01.729224" />
+<meta name="citation_author" content="Ilaria Morassut" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0001-9735-9308" />
+<meta name="citation_author" content="Alessandra Panzeri" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_orcid" content="http://orcid.org/0009-0002-4560-6121" />
+<meta name="citation_author" content="Sabine Fièvre" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_institution" content="Department of Genetics &amp; Evolution, University of Geneva" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0001-6690-2283" />
+<meta name="citation_author" content="Julien Prados" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-8546-241X" />
+<meta name="citation_author" content="Samir Vaid" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_institution" content="Department of Neurology, Faculty of Medicine and University Hospital Carl Gustav Carus, TUD Dresden University of Technology" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-2013-9726" />
+<meta name="citation_author" content="Florent Montange" />
+<meta name="citation_author_institution" content="Laboratory of Artificial and Natural Evolution, Department of Genetics &amp; Evolution, University of Geneva" />
+<meta name="citation_author" content="Adrien Debry" />
+<meta name="citation_author_institution" content="Laboratory of Artificial and Natural Evolution, Department of Genetics &amp; Evolution, University of Geneva" />
+<meta name="citation_author" content="Jiafeng Zhou" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_orcid" content="http://orcid.org/0009-0005-5056-3762" />
+<meta name="citation_author" content="Riccardo Bocchi" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-4105-6807" />
+<meta name="citation_author" content="Esther Klingler" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_institution" content="VIB-KU Leuven Center for Brain &amp; Disease Research, KU Leuven Department of Neuroscience" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-6577-1362" />
+<meta name="citation_author" content="Camilla Bellone" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-6774-6275" />
+<meta name="citation_author" content="Athanasia C. Tzika" />
+<meta name="citation_author_institution" content="Laboratory of Artificial and Natural Evolution, Department of Genetics &amp; Evolution, University of Geneva" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0002-0831-5221" />
+<meta name="citation_author" content="Denis Jabaudon" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_institution" content="Institute Imagine, Université Paris Cité" />
+<meta name="citation_author_institution" content="Department of Clinical Neurosciences, Geneva University Hospital" />
+<meta name="citation_author_email" content="denis.jabaudon{at}unige.ch" />
+<meta name="citation_author_email" content="sergi.roigpuiggros{at}unige.ch" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0003-2438-4769" />
+<meta name="citation_author" content="Sergi Roig-Puiggros" />
+<meta name="citation_author_institution" content="Department of Fundamental Neurosciences, University of Geneva" />
+<meta name="citation_author_email" content="denis.jabaudon{at}unige.ch" />
+<meta name="citation_author_email" content="sergi.roigpuiggros{at}unige.ch" />
+<meta name="citation_author_orcid" content="http://orcid.org/0000-0001-5909-218X" />
+<meta name="citation_reference" content="Gómez-Robles, A., Nicolaou, C., Smaers, J. B. &amp; Sherwood, C. C. The evolution of human altriciality and brain development in comparative context. Nat Ecol Evol 8, 133–146 (2024)." />
+<meta name="citation_reference" content="Frangeul, L. et al. A cross-modal genetic framework for the development and plasticity of sensory pathways. Nature 538, 96–98 (2016)." />
+<meta name="citation_reference" content="Guillamón-Vivancos, T., Aníbal-Martínez, M., Puche-Aroca, L., Martini, F. J. &amp; López-Bendito, G. Sensory modality-specific wiring of thalamocortical circuits. Nat. Rev. Neurosci. 26, 623–641 (2025)." />
+<meta name="citation_reference" content="Martini, F. J., Guillamón-Vivancos, T., Moreno-Juan, V., Valdeolmillos, M. &amp; López-Bendito, G. Spontaneous activity in developing thalamic and cortical sensory networks. Neuron 109, 2519–2534 (2021)." />
+<meta name="citation_reference" content="Katz, L. C. &amp; Shatz, C. J. Synaptic Activity and the Construction of Cortical Circuits. Science 274, 1133–1138 (1996)." />
+<meta name="citation_reference" content="Hensch, T. K. Critical period plasticity in local cortical circuits. Nat Rev Neurosci 6, 877–888 (2005)." />
+<meta name="citation_reference" content="Fox, K. A critical period for experience-dependent synaptic plasticity in rat barrel cortex. J. Neurosci. 12, 1826–1838 (1992)." />
+<meta name="citation_reference" content="Schlaggar, B. L., Fox, K. &amp; O’Leary, D. M. Postsynaptic control of plasticity in developing somatosensory cortex. Nature 364, 623–626 (1993)." />
+<meta name="citation_reference" content="Van der Loos, H. &amp; Woolsey, T. A. Somatosensory Cortex: Structural Alterations following Early Injury to Sense Organs. Science 179, 395–398 (1973)." />
+<meta name="citation_reference" content="Workman, A. D., Charvet, C. J., Clancy, B., Darlington, R. B. &amp; Finlay, B. L. Modeling Transformations of Neurodevelopmental Sequences across Mammalian Species. J. Neurosci. 33, 7368–7383 (2013)." />
+<meta name="citation_reference" content="Kalusa, M., Heinrich, M. D., Sauerland, C., Morawski, M. &amp; Fietz, S. A. Developmental Differences in Neocortex Neurogenesis and Maturation Between the Altricial Dwarf Rabbit and Precocial Guinea Pig. Front. Neuroanat. 15, (2021)." />
+<meta name="citation_reference" content="Kumar, S. et al. TimeTree 5: An Expanded Resource for Species Divergence Times. Molecular Biology and Evolution 39, msac174 (2022)." />
+<meta name="citation_reference" content="Aníbal-Martínez, M. et al. A prenatal window for enhancing spatial resolution of cortical barrel maps. Nat Commun 16, 1955 (2025)." />
+<meta name="citation_reference" content="Grant, R. A. &amp; Goss, V. G. A. What can whiskers tell us about mammalian evolution, behaviour, and ecology? Mammal Review 52, 148–163 (2022)." />
+<meta name="citation_reference" content="Maklad, A., Conway, M., Hodges, C. &amp; Hansen, L. A. Development of Innervation to Maxillary Whiskers in Mice. The Anatomical Record 293, 1553–1567 (2010)." />
+<meta name="citation_reference" content="Yang, J.-W. et al. Development of the whisker-to-barrel cortex system. Current Opinion in Neurobiology 53, 29–34 (2018)." />
+<meta name="citation_reference" content="Cheung, J., Maire, P., Kim, J., Sy, J. &amp; Hires, S. A. The Sensorimotor Basis of Whisker-Guided Anteroposterior Object Localization in Head-Fixed Mice. Current Biology 29, 3029–3040.e4 (2019)." />
+<meta name="citation_reference" content="Arakawa, H. &amp; Erzurumlu, R. S. Role of whiskers in sensorimotor development of C57BL/6 mice. Behavioural Brain Research 287, 146–155 (2015)." />
+<meta name="citation_reference" content="Merkulyeva, N. Comparative review of the brain development in Acomys cahirinus. Neuroscience &amp; Biobehavioral Reviews 167, 105939 (2024)." />
+<meta name="citation_reference" content="Montandon, S. A., Tzika, A. C., Martins, A. F., Chopard, B. &amp; Milinkovitch, M. C. Two waves of anisotropic growth generate enlarged follicles in the spiny mouse. EvoDevo 5, 33 (2014)." />
+<meta name="citation_reference" content="Brunjes, P. C., Korol, D. L. &amp; Stern, K. G. Prenatal neurogenesis in the telencephalon of the precocial mouse Acomys cahirinus. Neuroscience Letters 107, 114–119 (1989)." />
+<meta name="citation_reference" content="Baumann, N. et al. Regional differences in progenitor metabolism shape brain growth during development. Cell 188, 3567–3582.e20 (2025)." />
+<meta name="citation_reference" content="Leone, D. P., Srinivasan, K., Chen, B., Alcamo, E. &amp; McConnell, S. K. The determination of projection neuron identity in the developing cerebral cortex. Current Opinion in Neurobiology 18, 28–35 (2008)." />
+<meta name="citation_reference" content="Kast, R. J. &amp; Levitt, P. Precision in the development of neocortical architecture: From progenitors to cortical networks. Progress in Neurobiology 175, 77–95 (2019)." />
+<meta name="citation_reference" content="Arlotta, P. et al. Neuronal Subtype-Specific Genes that Control Corticospinal Motor Neuron Development In Vivo. Neuron 45, 207–221 (2005)." />
+<meta name="citation_reference" content="Leid, M. et al. CTIP1 and CTIP2 are differentially expressed during mouse embryogenesis. Gene Expression Patterns 4, 733–739 (2004)." />
+<meta name="citation_reference" content="Weiss, L. A. &amp; Nieto, M. The crux of Cux genes in neuronal function and plasticity. Brain Research 1705, 32–42 (2019)." />
+<meta name="citation_reference" content="Nieto, M. et al. Expression of Cux-1 and Cux-2 in the subventricular zone and upper layers II–IV of the cerebral cortex. Journal of Comparative Neurology 479, 168–180 (2004)." />
+<meta name="citation_reference" content="Pollerberg, G. E., Thelen, K., Theiss, M. O. &amp; Hochlehnert, B. C. The role of cell adhesion molecules for navigating axons: Density matters. Mechanisms of Development 130, 359–372 (2013)." />
+<meta name="citation_reference" content="Wiencken-Barger, A. E., Mavity-Hudson, J., Bartsch, U., Schachner, M. &amp; Casagrande, V. A. The Role of L1 in Axon Pathfinding and Fasciculation. Cereb Cortex 14, 121–131 (2004)." />
+<meta name="citation_reference" content="Ozarkar, S. S. et al. Regional analysis of myelin basic protein across postnatal brain development of C57BL/6J mice. Front. Neuroanat. 19, (2025)." />
+<meta name="citation_reference" content="Zhang, Z. et al. The Appropriate Marker for Astrocytes: Comparing the Distribution and Expression of Three Astrocytic Markers in Different Mouse Cerebral Regions. BioMed Research International 2019, 9605265 (2019)." />
+<meta name="citation_reference" content="Clavreul, S., Dumas, L. &amp; Loulier, K. Astrocyte development in the cerebral cortex: Complexity of their origin, genesis, and maturation. Front. Neurosci. 16, (2022)." />
+<meta name="citation_reference" content="Bushong, E. A., Martone, M. E. &amp; Ellisman, M. H. Maturation of astrocyte morphology and the establishment of astrocyte domains during postnatal hippocampal development. International Journal of Developmental Neuroscience 22, 73–86 (2004)." />
+<meta name="citation_reference" content="Hayashi, M. K., Sato, K. &amp; Sekino, Y. Neurons Induce Tiled Astrocytes with Branches That Avoid Each Other. International Journal of Molecular Sciences 23, 4161 (2022)." />
+<meta name="citation_reference" content="Bocchi, R. et al. Perturbed Wnt signaling leads to neuronal migration delay, altered interhemispheric connections and impaired social behavior. Nat Commun 8, 1158 (2017)." />
+<meta name="citation_reference" content="Larsen, D. D. &amp; Callaway, E. M. Development of layer-specific axonal arborizations in mouse primary somatosensory cortex. Journal of Comparative Neurology 494, 398–414 (2006)." />
+<meta name="citation_reference" content="Moyer, C. E. &amp; Zuo, Y. Cortical dendritic spine development and plasticity: insights from in vivo imaging. Current Opinion in Neurobiology 53, 76–82 (2018)." />
+<meta name="citation_reference" content="Baumann, N. et al. Cell-extrinsic controls over neocortical neuron fate and diversity. Sci. Adv. 11, eadw0218 (2025)." />
+<meta name="citation_reference" content="Langlieb, J. et al. The molecular cytoarchitecture of the adult mouse brain. Nature 624, 333–342 (2023)." />
+<meta name="citation_reference" content="RRID | Resource Report (RRID: SCR_024672). https://rrid.site/data/record/nlx_144509-1/SCR_024672/resolver?q=MapMyCells&amp;l=MapMyCells&amp;i=rrid:scr_024672." />
+<meta name="citation_reference" content="Hrovatin, K. et al. Integrating single-cell RNA-seq datasets with substantial batch effects. BMC Genomics 26, 974 (2025)." />
+<meta name="citation_reference" content="Nakagawa, N. &amp; Iwasato, T. Activity-dependent dendrite patterning in the postnatal barrel cortex. Front. Neural Circuits 18, (2024)." />
+<meta name="citation_reference" content="Fox, W. M. Reflex-ontogeny and behavioural development of the mouse. Animal Behaviour 13, 234–IN5 (1965)." />
+<meta name="citation_reference" content="Weinreb, C. et al. Keypoint-MoSeq: parsing behavior by linking point tracking to pose dynamics. Nat Methods 21, 1329–1339 (2024)." />
+<meta name="citation_reference" content="Lui, J. H., Hansen, D. V. &amp; Kriegstein, A. R. Development and Evolution of the Human Neocortex. Cell 146, 18–36 (2011)." />
+<meta name="citation_reference" content="Benito-Kwiecinski, S. et al. An early cell shape transition drives evolutionary expansion of the human forebrain. Cell 184, 2084–2102.e19 (2021)." />
+<meta name="citation_reference" content="Sousa, A. M. M., Meyer, K. A., Santpere, G., Gulden, F. O. &amp; Sestan, N. Evolution of the Human Nervous System Function, Structure, and Development. Cell 170, 226–247 (2017)." />
+<meta name="citation_reference" content="Herculano-Houzel, S., Mota, B. &amp; Lent, R. Cellular scaling rules for rodent brains. Proceedings of the National Academy of Sciences 103, 12138–12143 (2006)." />
+<meta name="citation_reference" content="Lupan, B. M. &amp; Silver, D. L. Evolution: Does More Time Buy More Neurons? Current Biology 30, R1316– R1318 (2020)." />
+<meta name="citation_reference" content="Kitazawa, T. &amp; Rijli, F. M. Barrelette map formation in the prenatal mouse brainstem. Current Opinion in Neurobiology 53, 210–219 (2018)." />
+<meta name="citation_reference" content="Lee, L.-J., Lo, F.-S. &amp; Erzurumlu, R. S. NMDA Receptor-Dependent Regulation of Axonal and Dendritic Branching. J. Neurosci. 25, 2304–2311 (2005)." />
+<meta name="citation_reference" content="Johnson, S. &amp; Marlow, N. Preterm Birth and Childhood Psychiatric Disorders. Pediatr Res 69, 11–18 (2011)." />
+<meta name="citation_reference" content="Rogers, C. E., Lean, R. E., Wheelock, M. D. &amp; Smyser, C. D. Aberrant structural and functional connectivity and neurodevelopmental impairment in preterm children. J Neurodevelop Disord 10, 38 (2018)." />
+<meta name="citation_reference" content="Zhou, J. et al. Dual lineage origins contribute to neocortical astrocyte diversity. Nat Commun 16, 6992 (2025)." />
+<meta name="citation_reference" content="Zeisel, A. et al. Molecular Architecture of the Mouse Nervous System. Cell 174, 999–1014.e22 (2018)." />
+<meta name="citation_reference" content="Ratz, M. et al. Clonal relations in the mouse brain revealed by single-cell and spatial transcriptomics. Nat Neurosci 25, 285–294 (2022)." />
+<meta name="citation_reference" content="Di Bella, D. J. et al. Molecular logic of cellular diversification in the mouse cerebral cortex. Nature 595, 554– 559 (2021)." />
+<meta name="citation_reference" content="Mathis, A. et al. DeepLabCut: markerless pose estimation of user-defined body parts with deep learning. Nature Neuroscience 21, 1281–1289 (2018)." />
+<meta name="citation_reference" content="Ye, S. et al. SuperAnimal pretrained pose estimation models for behavioral analysis. Nat Commun 15, 5165 (2024)." />
+<meta name="twitter:title" content="Prenatal assembly of functional cortical circuits" />
+<meta name="twitter:site" content="{at}biorxivpreprint" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png" />
+<meta name="twitter:description" content="The extent to which early brain maturation requires interactions with the outside world is a central question in neurobiology. Because much of cortical maturation occurs after birth in Mus , it has often been viewed as dependent on postnatal experience. However, studies addressing this issue have largely relied on postnatal sensory deprivation paradigms, which perturb normal development and cannot determine to what extent postnatal experience per se drives maturation. To address this question, here we compare two related rodents with markedly different gestation lengths: the precocial Acomys dimidiatus (39-day gestation) and the altricial Mus musculus (19-day gestation). By generating a novel Acomys reference genome and using histology, cellular birth dating, electrophysiology, single-nucleus transcriptomics, and quantitative behavior, we show that Acomys preserves the canonical sequence and timing of cortical development, while shifting major milestones of neuronal, circuit and behavioral maturation into prenatal life. At birth, Acomys cortex already shows advanced cytoarchitecture, neuronal physiology, thalamocortical barrels, transcriptional states, and sensorimotor behavior, with postnatal molecular programs in Mus unfolding prenatally in Acomys . Thus, birth is not a prerequisite for early cortical maturation. Instead, evolutionarily conserved developmental programs unfold across birth, with birth occurring at different stages of these programs, reflecting a species-specific balance between neonatal competence and prolonged postnatal plasticity.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+Swiss National Science Foundation, https://ror.org/00yjd3n13, ME12454, PZ00P3_193349, PZ00P3_201995, 310030-212219, 310030_204466
+
+HFSP, RGP0037/2022
+
+European Molecular Biology Organization, https://ror.org/04wfr2810, ALTF 349-2020
+
+Fondation Ernst et Lucie Schmidheiny, 10_2023
+
+Fonds Général de l’Université de Genève, 23_28
+
+Emile Plantamour Fund, 2024/12" />
+<meta name="og-title" property="og:title" content="Prenatal assembly of functional cortical circuits" />
+<meta name="og-url" property="og:url" content="https://www.biorxiv.org/content/10.64898/2026.06.01.729224v1" />
+<meta name="og-site-name" property="og:site_name" content="bioRxiv" />
+<meta name="og-description" property="og:description" content="The extent to which early brain maturation requires interactions with the outside world is a central question in neurobiology. Because much of cortical maturation occurs after birth in Mus , it has often been viewed as dependent on postnatal experience. However, studies addressing this issue have largely relied on postnatal sensory deprivation paradigms, which perturb normal development and cannot determine to what extent postnatal experience per se drives maturation. To address this question, here we compare two related rodents with markedly different gestation lengths: the precocial Acomys dimidiatus (39-day gestation) and the altricial Mus musculus (19-day gestation). By generating a novel Acomys reference genome and using histology, cellular birth dating, electrophysiology, single-nucleus transcriptomics, and quantitative behavior, we show that Acomys preserves the canonical sequence and timing of cortical development, while shifting major milestones of neuronal, circuit and behavioral maturation into prenatal life. At birth, Acomys cortex already shows advanced cytoarchitecture, neuronal physiology, thalamocortical barrels, transcriptional states, and sensorimotor behavior, with postnatal molecular programs in Mus unfolding prenatally in Acomys . Thus, birth is not a prerequisite for early cortical maturation. Instead, evolutionarily conserved developmental programs unfold across birth, with birth occurring at different stages of these programs, reflecting a species-specific balance between neonatal competence and prolonged postnatal plasticity.
+
+### Competing Interest Statement
+
+The authors have declared no competing interest.
+
+Swiss National Science Foundation, https://ror.org/00yjd3n13, ME12454, PZ00P3_193349, PZ00P3_201995, 310030-212219, 310030_204466
+
+HFSP, RGP0037/2022
+
+European Molecular Biology Organization, https://ror.org/04wfr2810, ALTF 349-2020
+
+Fondation Ernst et Lucie Schmidheiny, 10_2023
+
+Fonds Général de l’Université de Genève, 23_28
+
+Emile Plantamour Fund, 2024/12" />
+<meta name="og-type" property="og:type" content="article" />
+<meta name="og-image" property="og:image" content="https://www.biorxiv.org/sites/default/files/images/biorxiv_logo_homepage7-5-small.png" />
+<meta name="citation_date" content="2026-06-02" />
+<meta name="citation_submitter_name" content="Sergi Roig-Puiggros" />
+<meta name="citation_submitter_email" content="sergi.roigpuiggros{at}unige.ch" />
+<meta name="citation_submitter_id" content="490507" />
+<meta name="citation_submitter_institution" content="Department of Fundamental Neurosciences, University of Geneva, Switzerland" />
+<meta name="citation_submitter_orcid" content="0000-0001-5909-218X" />
+<link rel="alternate" type="application/vnd.ms-powerpoint" title="Powerpoint" href="/content/10.64898/2026.06.01.729224v1.ppt" />
+<meta name="description" content="bioRxiv - the preprint server for biology, operated by openRxiv, a nonprofit organization dedicated to advancing scientific communication" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://www.biorxiv.org/content/10.64898/2026.06.01.729224v1" />
+<link rel="shortlink" href="https://www.biorxiv.org/node/5515174" />
+    <title>Prenatal assembly of functional cortical circuits | bioRxiv</title>  
+    <link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__7SC0i-kTgUlQGKuqbmyS18Sez8FDO-aG9FSHkGrLGl8__EBUojqg5W_1M2-aUl2Y1w9JxEEauoJ0pj29wOb-7Vz4__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__UufzdoKtMhzTNiAJfsa_0bYn78zz-bBHwNEqMQ0UIXk__1-Opexvnkee5dlO1d6qLW5_7DT6gOdNGKRcC-FxT6QU__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+<style type="text/css" media="all">
+/* <![CDATA[ */
+.panels-flexible-new .panels-flexible-region{padding:0}.panels-flexible-new .panels-flexible-region-inside{padding-right:.5em;padding-left:.5em}.panels-flexible-new .panels-flexible-region-inside-first{padding-left:0}.panels-flexible-new .panels-flexible-region-inside-last{padding-right:0}.panels-flexible-new .panels-flexible-column{padding:0}.panels-flexible-new .panels-flexible-column-inside{padding-right:.5em;padding-left:.5em}.panels-flexible-new .panels-flexible-column-inside-first{padding-left:0}.panels-flexible-new .panels-flexible-column-inside-last{padding-right:0}.panels-flexible-new .panels-flexible-row{padding:0 0 .5em;margin:0}.panels-flexible-new .panels-flexible-row-last{padding-bottom:0}.panels-flexible-column-new-main{float:left;width:99.0000%}.panels-flexible-new-inside{padding-right:0}.panels-flexible-new{width:auto}.panels-flexible-region-new-center{float:left;width:99.0000%}.panels-flexible-row-new-main-row-inside{padding-right:0}
+/* ]]> */
+</style>
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__PWuQ_RYRTJ4BLEKsbWQeHysPg0gOQ3571ruQa_rXvAo__YSSQV2ikPcFdZzQTgMJYRqFNRVKLBho-5sYN56e5oms__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+<style type="text/css" media="all">
+/* <![CDATA[ */
+#sliding-popup.sliding-popup-bottom,#sliding-popup.sliding-popup-bottom .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:gray}#sliding-popup.sliding-popup-bottom.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#fff !important}.eu-cookie-withdraw-tab{border-color:#fff}.eu-cookie-compliance-more-button{color:#fff !important}
+/* ]]> */
+</style>
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__ElJr3PIJEvw3qLXc1cnYiLj2G4KgDPSXFOfm6Phf8hw__JdWGm15cDWjsK6KrFlQVXQix9YgNeYysf22XZHj-Y-c__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__Wnlyen9qEpwh_Qaf9okEu4QdVGM0BDothxeqA6Nbvo8__V5ELGUNlvrQNy0DawYpgoJkHNarLIFjzheVeu7ifICQ__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__p6Z5vbVaTr1nwLrvkMDSlFZuvVOJw5krxDdCo9qAv4w__igagZiGB2PktJMjUpZ2u3tnc56saoUGIrD5N0KSRmI4__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__XH6bpcI0f2dImc-p674DLCZtWBGb-QwxJK1YexVGtno__vUceGprdo5nIhV6DH93X7fI3r8RcTJbChbas9TQXeW4__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__2WBMox6sOrN42ss5lCnH7WWVRdFdJCxtTKnQJYRwTE4__yqNvNYLvMpjy3ffuJrjjm9uW2i-Me1c23KLYuWHaqio__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+<!--<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.biorxiv.org/sites/default/files/advagg_css/css__rHKcUhoK2wOWDqwn-dRIIHUFMk8WiOzLf5dyTK1UhtY__E0Tx0ykGwSvbSa_sKCrkD0RCA6q_OJfnjP8zcxUKd_I__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://d33xdlntwy0kbs.cloudfront.net/cshl_custom.css" media="all" />
+    <script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__BKYqkKToQ7EjirB7eIdMEH5521EU3da9IpoOs8Ex2XI__aSjVoX8giBmLhN2EbCgIGQJNu89Mh5aVu1LvI_gkJ7Y__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__Ifi4g_CCwfOHJqYVZny8rzkGWlh5IvjUqOj2FkOnagw__YTpP_jta_sbohucYs3miJIF0wmDhqfF-Hq_RccocYsg__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en&amp;render=explicit&amp;onload=drupalRecaptchaOnload"></script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__GprzlhkUYgQWK5kPdmqTZ__-6RV2TDXloi849KAdN9E__Xf33mfqZqeeXqmwODvN9K5IVoQP5-RFtolqDZdixfa0__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.js"></script>
+<script type="text/javascript" async="async" src="https://scholar.google.com/scholar_js/casa.js"></script>
+<script type="text/javascript" async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RZD586MC3Q"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/*!
+ * yepnope1.5.4
+ * (c) WTFPL, GPLv2
+ */
+(function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}})(this,document);
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+yepnope({
+  test: Modernizr.matchmedia,
+  nope: '/sites/all/libraries/media-match/media.match.min.js'
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _prum=[['id', '612e3d94173350001100005d'], ['mark', 'firstbyte',
+      (new Date()).getTime()]]; (function() {
+      var s=document.getElementsByTagName('script')[0],
+      p=document.createElement('script');
+      p.async='async'; p.src='//rum-static.pingdom.net/prum.min.js';s.parentNode.insertBefore(p,s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(typeof window.MathJax === "undefined") window.MathJax = { menuSettings: { zoom: "Click" } };
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "G-RZD586MC3Q", {"groups":"default","anonymize_ip":true});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"jcore_1","theme_token":"uL6YB_fMddPjIYy6wIzzgLIw_CYGi5zVBUjcjMZJdtc"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"highwire":{"nid":"5515174","apath":"\/biorxiv\/early\/2026\/06\/02\/2026.06.01.729224.atom","pisa":"biorxiv;2026.06.01.729224v1","ac":{"\/biorxiv\/early\/2026\/06\/02\/2026.06.01.729224.atom":{"access":{"full":true},"pisa_id":"","apath":"\/biorxiv\/early\/2026\/06\/02\/2026.06.01.729224.atom","jcode":"biorxiv"},"biorxiv;2026.06.01.729224v1":{"access":{"full":true},"pisa_id":"biorxiv;2026.06.01.729224v1","apath":"","jcode":"biorxiv"}},"processed":["highwire_math"],"markup":[{"requested":"abstract","variant":"abstract","view":"abstract","pisa":"biorxiv;2026.06.01.729224v1"}],"modal_window_width":"560","share_modal_width":"560","share_modal_title":"Share this Article"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"instances":"{\u0022highwire_abstract_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:20,\u0022height\u0022:20,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-abstract-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-abstract-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022right center\u0022,\u0022my\u0022:\u0022left center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022shift\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter click \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_author_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-author-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-author-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022top center\u0022,\u0022my\u0022:\u0022bottom center\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}},\u0022highwire_reflinks_tooltip\u0022:{\u0022content\u0022:{\u0022text\u0022:\u0022\u0022},\u0022style\u0022:{\u0022tip\u0022:{\u0022width\u0022:15,\u0022height\u0022:15,\u0022border\u0022:1,\u0022mimic\u0022:\u0022top center\u0022,\u0022offset\u0022:0,\u0022corner\u0022:true},\u0022classes\u0022:\u0022qtip-custom hw-tooltip hw-ref-link-tooltip qtip-shadow qtip-rounded\u0022,\u0022classes_custom\u0022:\u0022hw-tooltip hw-ref-link-tooltip\u0022},\u0022position\u0022:{\u0022at\u0022:\u0022bottom left\u0022,\u0022my\u0022:\u0022top left\u0022,\u0022viewport\u0022:true,\u0022adjust\u0022:{\u0022method\u0022:\u0022flip\u0022}},\u0022show\u0022:{\u0022event\u0022:\u0022mouseenter \u0022,\u0022solo\u0022:true},\u0022hide\u0022:{\u0022event\u0022:\u0022mouseleave \u0022,\u0022fixed\u0022:1,\u0022delay\u0022:\u0022100\u0022}}}","qtipDebug":"{\u0022leaveElement\u0022:0}","panel_ajax_tab":{"path":"sites\/all\/modules\/contrib\/panels_ajax_tab"},"panels_ajax_pane":{"new-28877068-b9cb-4641-830b-b6b4638c98bb":"{\u0022encrypted\u0022:\u0022{\\\u0022encrypted\\\u0022:\\\u0022ycXCNaCbMwAO7vk656GpmGkYmBWe2vE2BzkSge2UIZaL8LCXw7IWGafUhKur1PeajwR8PyKVvdXSc\\\\\\\/ON6dBxHEViUT3ABdVhrgcXne3AjIUFJRhzn7EI7RuyITpAF6A+g6d5oRDwOgiMIuZOhVsiP1R9yuMNl+j7LCOi45WGzHDxZRVe2tOcvr7S\\\\\\\/DxPkADaCDHzz6p6xAYvyYcLrpZsEtu0UYb8\\\\\\\/bzQrQTLRq5TnBSP928zyHuI+A\\\\\\\/u+bw6BoQoRR153jY5IPX6\\\\\\\/Iuzv\\\\\\\/e96dT9ErrVNHBnXxSLs3u1a88lawwinFzT1tyKVtIa5NmrgMU6jmJtwPWBxIkIKPaS8mJWdxsDzu8R0upvfpjKu8\\\\\\\/zRzSlz9FKhztUIeIRzcuOTitRga4RyhOo93Ig94VSCKeqbzZLONviayyx+8F9HLVNuGs1Y6xQkRqkxZR8e7Sq1vkBmmB2O0M3QjvuFDn5IU5polhSpuv1DlOj\\\\\\\/kjx2OPBGJI4LQGZDwNalHOo8JJIium0O0WR6ho69EcSQBn0k9w4zXPrOoB7Vcdj8YzYOP37bYOXDRtVI\\\\\\\/GdoVLDiUeOPhNea7c8vTQFlj3Uj6eee6JZVu+6jypu7H2yNBd2t1xUwse7JohZTXx\\\\\\\/7Pli0811KYaqKNjaYDHRfFNPTyQ9e4N9lWPFvvvK\\\\\\\/1pNrT+LWqd5S\\\\\\\/HV8XyJN0q4\\\\\\\/Zv0OjypptOA3fG9c\\\\\\\/MNGB2ehXoFdgM1ZviNKCRVegYjef28CQ4+m\\\\\\\/Fp7hAYi6Etje1UXbMJiDFcIrVdYLPsd9YiP01B93GCnqynFo2PnZDf7YhvJcIrN0OQk05XCq8pNqD6breyIuw5GHFTPaqMvKxII0OF2nXAWXvLeNq1PcvLp5hL67HabpsmjZe3odRxMdb10fwX9TCIBPS9QiDW5CaRXzFe3nrK1BXy9NDJMOdr8uPkPXPSh0EjH1ZbvjG\\\\\\\/exmy2GXLoGnLwg3rQuLsWCzVnq33w9LyuuHU07q+tHBwOpMeFMcsstq+sHnDNLqmokg+CZA\\\\\\\/UwbZPNNDp1Qriiz2RV8o9I2p70zO21CyDtJGSvzI+j\\\\\\\/SIOFbzHGjsJZClraocRhzo\\\\\\\/NUCKYkII3IMa8+UxgvBfgQQh8s3A7eHtwqmGydqmRwPXmeqJBHnhSTTdW6EzlAIEBE44s+ShzU7AsVzXA53g72Vx\\\\\\\/T0i4C2OMDLoVihhkrDS0Cd+ZMunpLF77odLmzOi4AfAxHjsanaiQZIb96tvAf2Dk3\\\\\\\/wP444\\\\\\\/qaGpzvyFyiXi9xaVU5wGww0jZbz++bkS1EE7s5eRPxWIA9W0q22lFnHN35Qd216ecrMBMzUWqg3WYGzIpT\\\\\\\/RKgyITxn\\\\\\\/7\\\u0022,\\\u0022iv\\\u0022:\\\u0022ZDlxx57\\\\\\\/SqDqLu3PVbezIw==\\\u0022,\\\u0022salt\\\u0022:\\\u0022f9d8845712f72c9fee5db7d9ff111eab\\\u0022}\u0022,\u0022hmac\u0022:\u00224cda3ac2111a44e9d7fdaabfdc3ad399f048c7cbf01b0e1fde1aafee827a0872\u0022}"},"urlIsAjaxTrusted":{"\/content\/10.64898\/2026.06.01.729224v1":true},"ws_fl":{"width":100,"height":21},"ws_gpo":{"size":"","annotation":"","lang":"","callback":"","width":300},"color":{"logo":"https:\/\/www.biorxiv.org\/sites\/default\/files\/biorxiv_article_logo.jpg"},"highwire_list_expand":{"is_collapsed":"1"},"highwireResponsive":{"enquire_enabled":1,"breakpoints_configured":1,"breakpoints":{"zero":"all and (min-width: 0px)","xsmall":"all and (min-width: 380px)","narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":1,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EWe use cookies on this site to enhance your user experience. By clicking any link on this page you are giving your consent for us to set cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 role=\u0022dialog\u0022 aria-labelledby=\u0022Continue\u0022\n        class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                  \u003Cbutton type=\u0022button\u0022 role=\u0022dialog\u0022 aria-labelledby=\u0022Find out more\u0022\n        class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 role=\u0022dialog\u0022 aria-labelledby=\u0022Continue\u0022\n        class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EContinue\u003C\/button\u003E\n                  \u003Cbutton type=\u0022button\u0022 role=\u0022dialog\u0022 aria-labelledby=\u0022Find out more\u0022\n        class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EFind out more\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/help\/cookie-policy","popup_link_new_window":1,"popup_position":null,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"365","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003E\u0026lt;h2\u0026gt;We use cookies on this site to enhance your user experience\u0026lt;\/h2\u0026gt;\u0026lt;p\u0026gt;You have given your consent for us to set cookies.\u0026lt;\/p\u0026gt;\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"googleanalytics":{"account":["G-RZD586MC3Q"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"jnl_biorxiv_styles":{"defaultJCode":"biorxiv"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 768px) and (min-device-width: 768px), (max-device-width: 800px) and (min-width: 768px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  </head>
+  <body class="html not-front not-logged-in page-node page-node- page-node-5515174 node-type-highwire-article context-content hw-default-jcode-biorxiv hw-article-type-article hw-article-category-new-results">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M677548" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;j.type='text/javascript';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M677548');</script>
+<!-- End Google Tag Manager -->
+    <div id="skip-link">
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    </div>
+        <div class="page clearfix page-box-shadows footer-borders panels-page panels-layout-jcore_2col" id="page">
+      <header id="section-header" class="section section-header">
+    
+  <div id="zone-branding" class="zone zone-branding clearfix print-display-block container-30">
+    <div class="grid-15 prefix-1 region region-branding print-display-block" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" class="" data-icon-position="" data-hide-link-title="0"><img alt="bioRxiv" src="https://www.biorxiv.org/sites/default/files/biorxiv_article_logo.jpg" /></a>      </div>
+                </div>
+          </div>
+</div><div class="grid-11 suffix-1 region region-branding-second print-hidden" id="region-branding-second">
+  <div class="region-inner region-branding-second-inner">
+    <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <nav class="menubar-nav"><ul class="menu" role="menu"><li class="first leaf" role="menuitem"><a href="/" title="" class="" data-icon-position="" data-hide-link-title="0">Home</a></li>
+<li class="leaf" role="menuitem"><a href="/about-biorxiv" class="" data-icon-position="" data-hide-link-title="0">About</a></li>
+<li class="leaf" role="menuitem"><a href="/submit-a-manuscript" class="" data-icon-position="" data-hide-link-title="0">Submit</a></li>
+<li class="last leaf" role="menuitem"><a href="/alertsrss" title="" class="" data-icon-position="" data-hide-link-title="0">ALERTS / RSS</a></li>
+</ul></nav>    </div>
+  </div>
+</div><div class="block block-panels-mini block-biorxiv-search-box block-panels-mini-biorxiv-search-box even block-without-title" id="block-panels-mini-biorxiv-search-box">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_search_box">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-seach-quicksearch" >
+  
+      
+  
+  <div class="pane-content">
+    <form class="highwire-quicksearch button-style-mini button-style-mini" action="/content/10.64898/2026.06.01.729224v1" method="post" id="highwire-search-quicksearch-form-0" accept-charset="UTF-8"><div><div class="form-item form-item-label-invisible form-type-textfield form-item-keywords">
+  <label class="element-invisible" for="search_rightsidebar_keywords_1261056303">Search for this keyword </label>
+ <input placeholder="Search" type="text" id="search_rightsidebar_keywords_1261056303" name="keywords" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<div class="button-wrapper button-mini"><span class="icon-search"></span><input data-icon-only="1" data-font-icon="icon-search" data-icon-position="after" type="submit" id="search_rightsidebar_submit_696596888" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-bMPo6WWNOmq-QVKROolxhjCW-h029AB65Bh-rNZgO1o" />
+<input type="hidden" name="form_id" value="highwire_search_quicksearch_form_0" />
+</div></form>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-2 advanced-search-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/search">Advanced Search</a>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+  
+  <div id="zone-header" class="zone zone-header clearfix container-30">
+  	      </div>
+</header>    
+      <section id="section-content" class="section section-content">
+    
+  <div id="zone-content" class="zone zone-content clearfix container-30">    
+        
+    <div class="grid-28 suffix-1 prefix-1 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="panel-display panels-960-layout jcore-2col-layout" >
+	  
+  <div class="panel-row-wrapper clearfix">
+		
+		<div class="main-content-wrapper grid-17 suffix-1 alpha">
+			<div class="panel-panel panel-region-content">
+			  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article node5515174" data-node-nid="5515174" id="node-5515174--21453849112" data-pisa="biorxiv;2026.06.01.729224v1" data-pisa-master="biorxiv;2026.06.01.729224" data-apath="/biorxiv/early/2026/06/02/2026.06.01.729224.atom" data-hw-author-tooltip-instance="highwire_author_tooltip"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-top clearfix has-author-tooltip" >
+
+      <span class="biorxiv-article-type">
+        New Results    </span>
+  
+        <h1 class="highwire-cite-title" id="page-title">Prenatal assembly of functional cortical circuits</h1>  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first hw-author-orcid-logo-wrapper" data-delta="0"><a href="http://orcid.org/0000-0001-9735-9308" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Ilaria</span> <span class="nlm-surname">Morassut</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="1"><a href="http://orcid.org/0009-0002-4560-6121" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Alessandra</span> <span class="nlm-surname">Panzeri</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="2"><a href="http://orcid.org/0000-0001-6690-2283" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Sabine</span> <span class="nlm-surname">Fièvre</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="3"><a href="http://orcid.org/0000-0002-8546-241X" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Julien</span> <span class="nlm-surname">Prados</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="4"><a href="http://orcid.org/0000-0002-2013-9726" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Samir</span> <span class="nlm-surname">Vaid</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Florent</span> <span class="nlm-surname">Montange</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Adrien</span> <span class="nlm-surname">Debry</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="7"><a href="http://orcid.org/0009-0005-5056-3762" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Jiafeng</span> <span class="nlm-surname">Zhou</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="8"><a href="http://orcid.org/0000-0002-4105-6807" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Riccardo</span> <span class="nlm-surname">Bocchi</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="9"><a href="http://orcid.org/0000-0002-6577-1362" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Esther</span> <span class="nlm-surname">Klingler</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="10"><a href="http://orcid.org/0000-0002-6774-6275" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Camilla</span> <span class="nlm-surname">Bellone</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="11"><a href="http://orcid.org/0000-0002-0831-5221" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Athanasia C.</span> <span class="nlm-surname">Tzika</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="12"><a href="http://orcid.org/0000-0003-2438-4769" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Denis</span> <span class="nlm-surname">Jabaudon</span></span>, <span class="highwire-citation-author hw-author-orcid-logo-wrapper" data-delta="13"><a href="http://orcid.org/0000-0001-5909-218X" target="_blank" class="hw-author-orcid-logo link-icon-only link-icon"><span class="hw-icon-orcid hw-icon-color-orcid"></span> <span class="title element-invisible">View ORCID Profile</span></a><span class="nlm-given-names">Sergi</span> <span class="nlm-surname">Roig-Puiggros</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="label">doi:</span> https://doi.org/10.64898/2026.06.01.729224 </span></div>
+  
+  
+  </div>
+<div id="hw-article-author-popups-node-5515174--21453849112" style="display: none;"><div class="author-tooltip-0"><div class="author-tooltip-name">Ilaria Morassut </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Ilaria%2BMorassut%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Morassut%20I&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AIlaria%2BMorassut%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0001-9735-9308" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Ilaria Morassut</a></li></ul></div><div class="author-tooltip-1"><div class="author-tooltip-name">Alessandra Panzeri </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Alessandra%2BPanzeri%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Panzeri%20A&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AAlessandra%2BPanzeri%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0009-0002-4560-6121" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Alessandra Panzeri</a></li></ul></div><div class="author-tooltip-2"><div class="author-tooltip-name">Sabine Fièvre </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div><div class='author-affiliation'><span class='nlm-sup'>2</span><span class='nlm-institution'>Department of Genetics & Evolution, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Sabine%2BFi%C3%A8vre%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Fi%C3%A8vre%20S&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ASabine%2BFi%25C3%25A8vre%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0001-6690-2283" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Sabine Fièvre</a></li></ul></div><div class="author-tooltip-3"><div class="author-tooltip-name">Julien Prados </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Julien%2BPrados%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Prados%20J&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AJulien%2BPrados%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-8546-241X" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Julien Prados</a></li></ul></div><div class="author-tooltip-4"><div class="author-tooltip-name">Samir Vaid </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div><div class='author-affiliation'><span class='nlm-sup'>3</span><span class='nlm-institution'>Department of Neurology, Faculty of Medicine and University Hospital Carl Gustav Carus, TUD Dresden University of Technology</span>, Fetscherstraße 74, 01307, Dresden, <span class='nlm-country'>Germany</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Samir%2BVaid%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Vaid%20S&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ASamir%2BVaid%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-2013-9726" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Samir Vaid</a></li></ul></div><div class="author-tooltip-5"><div class="author-tooltip-name">Florent Montange </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>4</span><span class='nlm-institution'>Laboratory of Artificial and Natural Evolution, Department of Genetics & Evolution, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Florent%2BMontange%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Montange%20F&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AFlorent%2BMontange%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-6"><div class="author-tooltip-name">Adrien Debry </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>4</span><span class='nlm-institution'>Laboratory of Artificial and Natural Evolution, Department of Genetics & Evolution, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Adrien%2BDebry%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Debry%20A&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link last"><a href="/search/author1%3AAdrien%2BDebry%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li></ul></div><div class="author-tooltip-7"><div class="author-tooltip-name">Jiafeng Zhou </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Jiafeng%2BZhou%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Zhou%20J&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AJiafeng%2BZhou%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0009-0005-5056-3762" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Jiafeng Zhou</a></li></ul></div><div class="author-tooltip-8"><div class="author-tooltip-name">Riccardo Bocchi </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Riccardo%2BBocchi%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Bocchi%20R&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ARiccardo%2BBocchi%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-4105-6807" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Riccardo Bocchi</a></li></ul></div><div class="author-tooltip-9"><div class="author-tooltip-name">Esther Klingler </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div><div class='author-affiliation'><span class='nlm-sup'>5</span><span class='nlm-institution'>VIB-KU Leuven Center for Brain & Disease Research, KU Leuven Department of Neuroscience</span>, 3000 Leuven, <span class='nlm-country'>Belgium</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Esther%2BKlingler%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Klingler%20E&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AEsther%2BKlingler%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-6577-1362" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Esther Klingler</a></li></ul></div><div class="author-tooltip-10"><div class="author-tooltip-name">Camilla Bellone </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Camilla%2BBellone%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Bellone%20C&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ACamilla%2BBellone%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-6774-6275" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Camilla Bellone</a></li></ul></div><div class="author-tooltip-11"><div class="author-tooltip-name">Athanasia C. Tzika </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>4</span><span class='nlm-institution'>Laboratory of Artificial and Natural Evolution, Department of Genetics & Evolution, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Athanasia%2BC.%2BTzika%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Tzika%20AC&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3AAthanasia%2BC.%2BTzika%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link last"><a href="http://orcid.org/0000-0002-0831-5221" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Athanasia C. Tzika</a></li></ul></div><div class="author-tooltip-12"><div class="author-tooltip-name">Denis Jabaudon </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div><div class='author-affiliation'><span class='nlm-sup'>6</span><span class='nlm-institution'>Institute Imagine, Université Paris Cité</span>, 75015 Paris, <span class='nlm-country'>France</span></div><div class='author-affiliation'><span class='nlm-sup'>7</span><span class='nlm-institution'>Department of Clinical Neurosciences, Geneva University Hospital</span>, 1211 Geneva, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Denis%2BJabaudon%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Jabaudon%20D&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ADenis%2BJabaudon%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link"><a href="http://orcid.org/0000-0003-2438-4769" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Denis Jabaudon</a></li><li class="author-corresp-email-link last"><span>For correspondence: 
+<a href="/cdn-cgi/l/email-protection#ed898883849ec3878c8f8c98898283968c99909883848a88c38e85" class="" data-icon-position="" data-hide-link-title="0">denis.jabaudon{at}unige.ch</a>
+<a href="/cdn-cgi/l/email-protection#afdccaddc8c681ddc0c6c8dfdac6c8c8ddc0dcd4cedbd2dac1c6c8ca81ccc7" class="" data-icon-position="" data-hide-link-title="0">sergi.roigpuiggros{at}unige.ch</a></span></li></ul></div><div class="author-tooltip-13"><div class="author-tooltip-name">Sergi Roig-Puiggros </div><div class="author-tooltip-affiliation"><span class="author-tooltip-text"><div class='author-affiliation'><span class='nlm-sup'>1</span><span class='nlm-institution'>Department of Fundamental Neurosciences, University of Geneva</span>, <span class='nlm-country'>Switzerland</span></div></span></div><ul class="author-tooltip-find-more"><li class="author-tooltip-gs-link first"><a href="/lookup/google-scholar?link_type=googlescholar&amp;gs_type=author&amp;author%5B0%5D=Sergi%2BRoig-Puiggros%2B" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on Google Scholar</a></li><li class="author-tooltip-pubmed-link"><a href="/lookup/external-ref?access_num=Roig-Puiggros%20S&amp;link_type=AUTHORSEARCH" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">Find this author on PubMed</a></li><li class="author-site-search-link"><a href="/search/author1%3ASergi%2BRoig-Puiggros%2B" rel="nofollow" class="" data-icon-position="" data-hide-link-title="0">Search for this author on this site</a></li><li class="author-orcid-link"><a href="http://orcid.org/0000-0001-5909-218X" target="_blank" title="Open in new tab" class="" data-icon-position="" data-hide-link-title="0">ORCID record for Sergi Roig-Puiggros</a></li><li class="author-corresp-email-link last"><span>For correspondence: 
+<a href="/cdn-cgi/l/email-protection#d3b7b6bdbaa0fdb9b2b1b2a6b7bcbda8b2a7aea6bdbab4b6fdb0bb" class="" data-icon-position="" data-hide-link-title="0">denis.jabaudon{at}unige.ch</a>
+<a href="/cdn-cgi/l/email-protection#1a697f687d73346875737d6a6f737d7d687569617b6e676f74737d7f347972" class="" data-icon-position="" data-hide-link-title="0">sergi.roigpuiggros{at}unige.ch</a></span></li></ul></div></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs pane-panels-ajax-tab-tabs" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="item-list"><ul class="tabs inline panels-ajax-tab"><li class="first"><a href="/content/10.64898/2026.06.01.729224v1" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_art" data-target-id="highwire_article_tabs" data-entity-context="node:5515174" data-trigger="" data-url-enabled="1">Abstract</a><a href="/panels_ajax_tab/biorxiv_tab_art/node:5515174/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.64898/2026.06.01.729224v1.full-text" class="panels-ajax-tab-tab" data-panel-name="article_tab_full_text" data-target-id="highwire_article_tabs" data-entity-context="node:5515174" data-trigger="full-text" data-url-enabled="1">Full Text</a><a href="/panels_ajax_tab/article_tab_full_text/node:5515174/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.64898/2026.06.01.729224v1.article-info" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_info" data-target-id="highwire_article_tabs" data-entity-context="node:5515174" data-trigger="article-info" data-url-enabled="1">Info/History</a><a href="/panels_ajax_tab/biorxiv_tab_info/node:5515174/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.64898/2026.06.01.729224v1.article-metrics" class="panels-ajax-tab-tab" data-panel-name="article_tab_metrics" data-target-id="highwire_article_tabs" data-entity-context="node:5515174" data-trigger="article-metrics" data-url-enabled="1">Metrics</a><a href="/panels_ajax_tab/article_tab_metrics/node:5515174/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li><a href="/content/10.64898/2026.06.01.729224v1.supplementary-material" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_data" data-target-id="highwire_article_tabs" data-entity-context="node:5515174" data-trigger="supplementary-material" data-url-enabled="1">Supplementary material</a><a href="/panels_ajax_tab/biorxiv_tab_data/node:5515174/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li><li class="last"><a href="/content/10.64898/2026.06.01.729224v1.full.pdf+html" class="panels-ajax-tab-tab" data-panel-name="biorxiv_tab_pdf" data-target-id="highwire_article_tabs" data-entity-context="node:5515174" data-trigger="full.pdf+html" data-url-enabled="1"><i class="icon-file-alt"></i> Preview PDF</a><a href="/panels_ajax_tab/biorxiv_tab_pdf/node:5515174/1" rel="nofollow" style="display:none" class="js-crawler-link"></a></li></ul></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-panel-tabs-container" >
+  
+      
+  
+  <div class="pane-content">
+    <div data-panels-ajax-tab-preloaded="biorxiv_tab_art" id="panels-ajax-tab-container-highwire_article_tabs" class="panels-ajax-tab-container"><div class="panels-ajax-tab-loading" style ="display:none"><img class="loading" src="https://www.biorxiv.org/sites/all/modules/contrib/panels_ajax_tab/images/loading.gif" alt="Loading" title="Loading" /></div><div class="panels-ajax-tab-wrap-biorxiv_tab_art"><div class="panel-display panel-1col clearfix" >
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-markup" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-markup"><div xmlns="http://www.w3.org/1999/xhtml" data-highwire-cite-ref-tooltip-instance="highwire_reflinks_tooltip" class="content-block-markup" xmlns:xhtml="http://www.w3.org/1999/xhtml"><div class="article abstract-view "><span class="highwire-journal-article-marker-start"></span><div class="section abstract" id="abstract-1"><h2 class="">Abstract</h2><p id="p-3">The extent to which early brain maturation requires interactions with the outside world is a central question in neurobiology. Because much of cortical maturation occurs after birth in <em>Mus</em>, it has often been viewed as dependent on postnatal experience. However, studies addressing this issue have largely relied on postnatal sensory deprivation paradigms, which perturb normal development and cannot determine to what extent postnatal experience <em>per se</em> drives maturation. To address this question, here we compare two related rodents with markedly different gestation lengths: the precocial <em>Acomys dimidiatus</em> (39-day gestation) and the altricial <em>Mus musculus</em> (19-day gestation). By generating a novel <em>Acomys</em> reference genome and using histology, cellular birth dating, electrophysiology, single-nucleus transcriptomics, and quantitative behavior, we show that <em>Acomys</em> preserves the canonical sequence and timing of cortical development, while shifting major milestones of neuronal, circuit and behavioral maturation into prenatal life. At birth, <em>Acomys</em> cortex already shows advanced cytoarchitecture, neuronal physiology, thalamocortical barrels, transcriptional states, and sensorimotor behavior, with postnatal molecular programs in <em>Mus</em> unfolding prenatally in <em>Acomys</em>. Thus, birth is not a prerequisite for early cortical maturation. Instead, evolutionarily conserved developmental programs unfold across birth, with birth occurring at different stages of these programs, reflecting a species-specific balance between neonatal competence and prolonged postnatal plasticity.</p></div><h3>Competing Interest Statement</h3><p id="p-4">The authors have declared no competing interest.</p><div class="funding-group"><h2>Funder Information Declared</h2><div class="award-group" id="award-group-1"><span class="funding-source">Swiss National Science Foundation, <span class="institution-wrap"><span class="institution-id">https://ror.org/00yjd3n13</span></span></span><span class="award-id" id="award-id-1">, ME12454</span><span class="award-id" id="award-id-2">, PZ00P3_193349</span><span class="award-id" id="award-id-3">, PZ00P3_201995</span><span class="award-id" id="award-id-4">, 310030-212219</span><span class="award-id" id="award-id-5">, 310030_204466</span></div><div class="award-group" id="award-group-2"><span class="funding-source">HFSP</span><span class="award-id" id="award-id-6">, RGP0037/2022</span></div><div class="award-group" id="award-group-3"><span class="funding-source">European Molecular Biology Organization, <span class="institution-wrap"><span class="institution-id">https://ror.org/04wfr2810</span></span></span><span class="award-id" id="award-id-7">, ALTF 349-2020</span></div><div class="award-group" id="award-group-4"><span class="funding-source">Fondation Ernst et Lucie Schmidheiny</span><span class="award-id" id="award-id-8">, 10_2023</span></div><div class="award-group" id="award-group-5"><span class="funding-source">Fonds Général de l’Université de Genève</span><span class="award-id" id="award-id-9">, 23_28</span></div><div class="award-group" id="award-group-6"><span class="funding-source">Emile Plantamour Fund</span><span class="award-id" id="award-id-10">, 2024/12</span></div></div><span class="highwire-journal-article-marker-end"></span></div><span class="related-urls"></span></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-copyright" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="field field-name-field-highwire-copyright field-type-text field-label-inline clearfix"><div class="field-label">Copyright&nbsp;</div><div class="field-items"><div class="field-item even">The copyright holder for this preprint is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity.<span class="license-type"> It is made available under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" class="" data-icon-position="" data-hide-link-title="0">CC-BY-NC-ND 4.0 International license</a>.</span></div></div></div>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-back-to-top" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="#page" class="back-to-top" data-icon-position="" data-hide-link-title="0"><span class="icon-chevron-up"></span> Back to top</a>  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+		
+		<div class="sidebar-right-wrapper grid-10 omega">
+			<div class="panel-panel panel-region-sidebar-right">
+			  <div class="inside"><div class="panel-pane pane-highwire-node-pager" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="pager highwire-pager pager-mini clearfix highwire-node-pager highwire-article-pager"><span class="pager-prev"><a href="/content/10.64898/2026.05.30.729015v1" title="Stimulus-response correlation analysis dissociates spatiotemporal cortical networks supporting speech production" rel="prev" class="pager-link-prev link-icon"><span class="icon-circle-arrow-left"></span> <span class="title">Previous</span></a></span><span class="pager-next"><a href="/content/10.64898/2026.05.28.728555v2" title="Critical illness expands a transcriptionally distinct hypometabolic CD8+ T effector program associated with respiratory failure and mortality" rel="next" class="pager-link-next link-icon-right link-icon"><span class="title">Next</span> <span class="icon-circle-arrow-right"></span></a></span></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1" >
+  
+      
+  
+  <div class="pane-content">
+    Posted&nbsp;June 02, 2026.  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-art-tools" >
+  
+      
+  
+  <div class="pane-content">
+    <div id="mini-panel-biorxiv_art_tools" class="highwire-2col-stacked panel-display">
+	  
+  <div class="panel-row-wrapper clearfix">
+		<div class="content-left-wrapper content-column">
+          <div class="panel-panel panel-region-content-left">
+            <div class="inside"><div class="panel-pane pane-highwire-variant-link" >
+  
+      
+  
+  <div class="pane-content">
+    <a href="/content/10.64898/2026.06.01.729224v1.full.pdf" target="_self" class="article-dl-pdf-link link-icon"><span class="icon-external-link-sign"></span> <span class="title">Download PDF</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-biorxiv-supplementary-fragment" >
+  
+      
+  
+  <div class="pane-content">
+    <p><a href="/content/10.64898/2026.06.01.729224v1.supplementary-material"><i class="icon-file"></i>Supplementary Material </a></p>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+        
+        <div class="content-right-wrapper content-column">
+          <div class="panel-panel panel-region-content-right">
+            <div class="inside"><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-art-email" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger" title="Email this Article" data-icon-position="" data-hide-link-title="0"><i class = 'icon-envelope'></i> Email</a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_art_email">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-block pane-forward-form pane-forward" >
+  
+      
+  
+  <div class="pane-content">
+    <form action="/content/10.64898/2026.06.01.729224v1" method="post" id="forward-form" accept-charset="UTF-8"><div><div id="edit-instructions" class="form-item form-item-label-before form-type-item">
+ <p>Thank you for your interest in spreading the word about bioRxiv.</p><p>NOTE: Your email address is requested solely to identify you as the sender of this article.</p>
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-email">
+  <label for="edit-email">Your Email <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-email" name="email" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textfield form-item-name">
+  <label for="edit-name">Your Name <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="58" maxlength="256" class="form-text required" />
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-recipients">
+  <label for="edit-recipients">Send To <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-recipients" name="recipients" cols="50" rows="5" class="form-textarea required"></textarea></div>
+<div class="description">Enter multiple addresses on separate lines or separate them with commas.</div>
+</div>
+<div id="edit-page" class="form-item form-item-label-before form-type-item">
+  <label for="edit-page">You are going to email the following </label>
+ <a href="/content/10.64898/2026.06.01.729224v1" class="active" data-icon-position="" data-hide-link-title="0">Prenatal assembly of functional cortical circuits</a>
+</div>
+<div id="edit-subject" class="form-item form-item-label-before form-type-item">
+  <label for="edit-subject">Message Subject </label>
+ (Your Name) has forwarded a page to you from bioRxiv
+</div>
+<div id="edit-body" class="form-item form-item-label-before form-type-item">
+  <label for="edit-body">Message Body </label>
+ (Your Name) thought you would like to see this page from the bioRxiv website.
+</div>
+<div class="form-item form-item-label-before form-type-textarea form-item-message">
+  <label for="edit-message--2">Your Personal Message </label>
+ <div class="form-textarea-wrapper resizable"><textarea id="edit-message--2" name="message" cols="50" rows="10" class="form-textarea"></textarea></div>
+</div>
+<input type="hidden" name="path" value="node/5515174" />
+<input type="hidden" name="path_cid" value="" />
+<input type="hidden" name="forward_footer" value=" " />
+<input type="hidden" name="form_build_id" value="form-haFVCUH511xG-zn3YQNADGUkV0Gwvl-5aJf9UXGbUKM" />
+<input type="hidden" name="form_id" value="forward_form" />
+<fieldset class="captcha form-wrapper"><legend><span class="fieldset-legend">CAPTCHA</span></legend><div class="fieldset-wrapper"><div class="fieldset-description">This question is for testing whether or not you are a human visitor and to prevent automated spam submissions.</div><input type="hidden" name="captcha_sid" value="1170513961" />
+<input type="hidden" name="captcha_token" value="71eef3193551cfa905cb9160a874262a" />
+<input type="hidden" name="captcha_response" value="Google no captcha" />
+<div class="g-recaptcha" data-sitekey="6Lee5DUtAAAAAJoGlg8lbjlp4F4ASvO-EpADvZTN" data-theme="light" data-type="image"></div></div></fieldset>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Send Message" class="form-submit" /></div></div></form>  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-share-link highwire_clipboard_link_ajax"  id="shareit">
+  
+      
+  
+  <div class="pane-content">
+    <a href="/" class="link-icon"><span class="icon-share-alt"></span> <span class="title">Share</span></a>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-share highwire_clipboard_form_ajax_shareit" >
+  
+      
+  
+  <div class="pane-content">
+    
+<div class="panel-display omega-12-onecol" id="mini-panel-biorxiv_share">
+
+		  <div class="panel-panel grid-12 panel-region-preface">
+		  <div class="inside"><div class="panel-pane pane-highwire-article-citation" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-article-citation highwire-citation-type-highwire-article node5515174--3" data-node-nid="5515174" id="node-5515174--4407530628" data-pisa="biorxiv;2026.06.01.729224v1" data-pisa-master="biorxiv;2026.06.01.729224" data-seqnum="5515174" data-apath="/biorxiv/early/2026/06/02/2026.06.01.729224.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">Prenatal assembly of functional cortical circuits</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Ilaria</span> <span class="nlm-surname">Morassut</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Alessandra</span> <span class="nlm-surname">Panzeri</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Sabine</span> <span class="nlm-surname">Fièvre</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Julien</span> <span class="nlm-surname">Prados</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Samir</span> <span class="nlm-surname">Vaid</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Florent</span> <span class="nlm-surname">Montange</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Adrien</span> <span class="nlm-surname">Debry</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Jiafeng</span> <span class="nlm-surname">Zhou</span></span>, <span class="highwire-citation-author" data-delta="8"><span class="nlm-given-names">Riccardo</span> <span class="nlm-surname">Bocchi</span></span>, <span class="highwire-citation-author" data-delta="9"><span class="nlm-given-names">Esther</span> <span class="nlm-surname">Klingler</span></span>, <span class="highwire-citation-author" data-delta="10"><span class="nlm-given-names">Camilla</span> <span class="nlm-surname">Bellone</span></span>, <span class="highwire-citation-author" data-delta="11"><span class="nlm-given-names">Athanasia C.</span> <span class="nlm-surname">Tzika</span></span>, <span class="highwire-citation-author" data-delta="12"><span class="nlm-given-names">Denis</span> <span class="nlm-surname">Jabaudon</span></span>, <span class="highwire-citation-author" data-delta="13"><span class="nlm-given-names">Sergi</span> <span class="nlm-surname">Roig-Puiggros</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">bioRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">2026.06.01.729224; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.64898/2026.06.01.729224 </span></div>
+  
+  
+  </div>
+</div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+  <div class="panel-panel grid-12 panel-region-content">
+  	<div class="inside"><div class="panel-pane pane-highwire-article-clipboard-copy" >
+  
+      
+  
+  <div class="pane-content">
+    <div class = "clipboard-copy">
+  <span class="label-url">
+    <label for="dynamic">Share This Article:</label>
+  </span>
+  <span class="input-text-url">
+    <input type="text" id="dynamic" value="https://www.biorxiv.org/content/10.64898/2026.06.01.729224v1" size="50"/>
+  </span>
+  <span class="copy-button button">
+    <button id="copy-dynamic" class="clipboardjs-button" data-clipboard-target="#dynamic" data-clipboard-alert-style="tooltip" data-clipboard-alert-text="Copied!">Copy</button>
+  </span>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+	
+		  <div class="panel-panel grid-12 panel-region-postscript">
+	    <div class="inside"><div class="panel-pane pane-service-links text-center" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><a href="http://twitter.com/share?url=https%3A//www.biorxiv.org/content/10.64898/2026.06.01.729224v1&amp;text=Prenatal%20assembly%20of%20functional%20cortical%20circuits" id="twitter" title="Share this on Twitter" class="service-links-twitter" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/twitter.png" alt="Twitter logo" /></a> <a href="http://www.facebook.com/sharer.php?u=https%3A//www.biorxiv.org/content/10.64898/2026.06.01.729224v1&amp;t=Prenatal%20assembly%20of%20functional%20cortical%20circuits" id="facebook" title="Share on Facebook" class="service-links-facebook" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/fb-blue.png" alt="Facebook logo" /></a> <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.biorxiv.org/content/10.64898/2026.06.01.729224v1&amp;title=Prenatal%20assembly%20of%20functional%20cortical%20circuits&amp;summary=&amp;source=bioRxiv" id="linkedin" title="Publish this post to LinkedIn" class="service-links-linkedin" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/linkedin-32px.png" alt="LinkedIn logo" /></a> <a href="http://www.mendeley.com/import/?url=https%3A//www.biorxiv.org/content/10.64898/2026.06.01.729224v1&amp;title=Prenatal%20assembly%20of%20functional%20cortical%20circuits" id="mendeley" title="Share on Mendeley" class="service-links-mendeley" rel="nofollow" data-icon-position="" data-hide-link-title="0"><img src="https://www.biorxiv.org/sites/all/modules/highwire/highwire/images/mendeley.png" alt="Mendeley logo" /></a></div>  </div>
+
+  
+  </div>
+</div>
+	  </div>
+	
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-minipanel-dialog-link pane-biorxiv-cite-tool" >
+  
+      
+  
+  <div class="pane-content">
+    <div class='minipanel-dialog-wrapper'><div class='minipanel-dialog-link-link'><a href="/" oncontextmenu="javascript: return false;" class="minipanel-dialog-link-trigger link-icon" title="Citation Tools"><span class="icon-globe"></span> <span class="title">Citation Tools</span></a></div><div class='minipanel-dialog-link-mini' style='display:none'><div class="panel-display panel-1col clearfix" id="mini-panel-biorxiv_cite_tool">
+  <div class="panel-panel panel-col">
+    <div><div class="panel-pane pane-highwire-citation-export" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="highwire-citation-export">  
+  <div class="highwire-citation-info">
+      <div class="highwire-article-citation highwire-citation-type-highwire-article cite-tool-node5515174--5" data-node-nid="5515174" id="citation-node-5515174--6856296510" data-pisa="biorxiv;2026.06.01.729224v1" data-pisa-master="biorxiv;2026.06.01.729224" data-seqnum="5515174" data-apath="/biorxiv/early/2026/06/02/2026.06.01.729224.atom"><div  class="highwire-cite highwire-cite-highwire-article highwire-citation-biorxiv-article-pap-list clearfix" >
+
+      <div class="highwire-cite-title" >
+      <div class="highwire-cite-title">Prenatal assembly of functional cortical circuits</div>    </div>
+  
+      <div  class="highwire-cite-authors" ><span  class="highwire-citation-authors"><span class="highwire-citation-author first" data-delta="0"><span class="nlm-given-names">Ilaria</span> <span class="nlm-surname">Morassut</span></span>, <span class="highwire-citation-author" data-delta="1"><span class="nlm-given-names">Alessandra</span> <span class="nlm-surname">Panzeri</span></span>, <span class="highwire-citation-author" data-delta="2"><span class="nlm-given-names">Sabine</span> <span class="nlm-surname">Fièvre</span></span>, <span class="highwire-citation-author" data-delta="3"><span class="nlm-given-names">Julien</span> <span class="nlm-surname">Prados</span></span>, <span class="highwire-citation-author" data-delta="4"><span class="nlm-given-names">Samir</span> <span class="nlm-surname">Vaid</span></span>, <span class="highwire-citation-author" data-delta="5"><span class="nlm-given-names">Florent</span> <span class="nlm-surname">Montange</span></span>, <span class="highwire-citation-author" data-delta="6"><span class="nlm-given-names">Adrien</span> <span class="nlm-surname">Debry</span></span>, <span class="highwire-citation-author" data-delta="7"><span class="nlm-given-names">Jiafeng</span> <span class="nlm-surname">Zhou</span></span>, <span class="highwire-citation-author" data-delta="8"><span class="nlm-given-names">Riccardo</span> <span class="nlm-surname">Bocchi</span></span>, <span class="highwire-citation-author" data-delta="9"><span class="nlm-given-names">Esther</span> <span class="nlm-surname">Klingler</span></span>, <span class="highwire-citation-author" data-delta="10"><span class="nlm-given-names">Camilla</span> <span class="nlm-surname">Bellone</span></span>, <span class="highwire-citation-author" data-delta="11"><span class="nlm-given-names">Athanasia C.</span> <span class="nlm-surname">Tzika</span></span>, <span class="highwire-citation-author" data-delta="12"><span class="nlm-given-names">Denis</span> <span class="nlm-surname">Jabaudon</span></span>, <span class="highwire-citation-author" data-delta="13"><span class="nlm-given-names">Sergi</span> <span class="nlm-surname">Roig-Puiggros</span></span></span></div>
+  
+      <div  class="highwire-cite-metadata" ><span  class="highwire-cite-metadata-journal highwire-cite-metadata">bioRxiv </span><span  class="highwire-cite-metadata-pages highwire-cite-metadata">2026.06.01.729224; </span><span  class="highwire-cite-metadata-doi highwire-cite-metadata"><span class="doi_label">doi:</span> https://doi.org/10.64898/2026.06.01.729224 </span></div>
+  
+  
+  </div>
+</div>  </div>
+  <div class="highwire-citation-formats">
+  	      <h2>Citation Manager Formats</h2>
+        <div class="highwire-citation-formats-links">
+      <span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.spage&amp;rft.epage&amp;rft.atitle=Prenatal%20assembly%20of%20functional%20cortical%20circuits&amp;rft.volume&amp;rft.issue&amp;rft.date=2026-01-01%2000%3A00%3A00&amp;rft.stitle&amp;rft.jtitle=bioRxiv&amp;rft.au=Morassut%2C+Ilaria&amp;rft.au=Panzeri%2C+Alessandra&amp;rft.au=Fi%C3%A8vre%2C+Sabine&amp;rft.au=Prados%2C+Julien&amp;rft.au=Vaid%2C+Samir&amp;rft.au=Montange%2C+Florent&amp;rft.au=Debry%2C+Adrien&amp;rft.au=Zhou%2C+Jiafeng&amp;rft.au=Bocchi%2C+Riccardo&amp;rft.au=Klingler%2C+Esther&amp;rft.au=Bellone%2C+Camilla&amp;rft.au=Tzika%2C+Athanasia+C.&amp;rft.au=Jabaudon%2C+Denis&amp;rft.au=Roig-Puiggros%2C+Sergi"></span><ul class="hw-citation-links inline button button-alt button-grid clearfix"><li class="bibtext first"><a href="/highwire/citation/5515174/bibtext" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">BibTeX</a></li><li class="bookends"><a href="/highwire/citation/5515174/bookends" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Bookends</a></li><li class="easybib"><a href="/highwire/citation/5515174/easybib" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EasyBib</a></li><li class="endnote-tagged"><a href="/highwire/citation/5515174/endnote-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote (tagged)</a></li><li class="endnote-8-xml"><a href="/highwire/citation/5515174/endnote-8-xml" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">EndNote 8 (xml)</a></li><li class="medlars"><a href="/highwire/citation/5515174/medlars" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Medlars</a></li><li class="mendeley"><a href="/highwire/citation/5515174/mendeley" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Mendeley</a></li><li class="papers"><a href="/highwire/citation/5515174/papers" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Papers</a></li><li class="refworks-tagged"><a href="/highwire/citation/5515174/refworks-tagged" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RefWorks Tagged</a></li><li class="reference-manager"><a href="/highwire/citation/5515174/reference-manager" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Ref Manager</a></li><li class="ris"><a href="/highwire/citation/5515174/ris" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">RIS</a></li><li class="zotero last"><a href="/highwire/citation/5515174/zotero" class="hw-download-citation-link" data-icon-position="" data-hide-link-title="0">Zotero</a></li></ul>    </div>
+  </div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+</div></div>  </div>
+
+  
+  </div>
+</div>
+          </div>
+        </div>
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-service-links" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="service-links"><div class="item-list"><ul><li class="first"><a href="http://twitter.com/share?url=https%3A//www.biorxiv.org/content/10.64898/2026.06.01.729224v1&amp;count=horizontal&amp;via=&amp;text=Prenatal%20assembly%20of%20functional%20cortical%20circuits&amp;counturl=https%3A//www.biorxiv.org/content/10.64898/2026.06.01.729224v1" class="twitter-share-button service-links-twitter-widget" id="twitter_widget" title="Tweet This" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Tweet Widget</span></a></li><li><a href="http://www.facebook.com/plugins/like.php?href=https%3A//www.biorxiv.org/content/10.64898/2026.06.01.729224v1&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" id="facebook_like" title="I Like it" class="service-links-facebook-like" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Facebook Like</span></a></li><li class="last"><a href="https://www.biorxiv.org/content/10.64898/2026.06.01.729224v1" id="google_plus_one" title="Plus it" class="service-links-google-plus-one" rel="nofollow" data-icon-position="" data-hide-link-title="0"><span class="element-invisible">Google Plus One</span></a></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-article-collections" >
+  
+        <h2 class="pane-title">Subject Area</h2>
+    
+  
+  <div class="pane-content">
+    <div class="highwire-list-wrapper highwire-article-collections"><div class="highwire-list"><ul class="highwire-article-collection-term-list"><li class="first last odd"><span class="highwire-article-collection-term"><a href="/collection/neuroscience" class="highlight" data-icon-position="" data-hide-link-title="0">Neuroscience<i class="icon-caret-right"></i>
+</a></span></li></ul></div></div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-panels-mini pane-biorxiv-subject-collections block-style-col2" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="panel-flexible panels-flexible-new clearfix" id="mini-panel-biorxiv_subject_collections">
+<div class="panel-flexible-inside panels-flexible-new-inside">
+<div class="panels-flexible-region panels-flexible-region-new-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-new-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-table-title" id="biorxiv-subject-areas-table-title">
+  
+      
+  <div class="snippet-content">
+    <b>Subject Areas</b>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-snippet" >
+  
+      
+  
+  <div class="pane-content">
+    <div class="snippet biorxiv-subject-areas-view-papers" id="biorxiv-subject-areas-view-papers">
+  
+      
+  <div class="snippet-content">
+    <a href="/content/early/recent"><strong>All Articles</strong></a>  </div>
+
+</div>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-highwire-subject-collections" >
+  
+      
+  
+  <div class="pane-content">
+    <ul id="collection" class="collection highwire-list-expand"><li class="outer collection depth-2  child first"><div class = "data-wrapper"><a href="/collection/animal-behavior-and-cognition" class="" data-icon-position="" data-hide-link-title="0">Animal Behavior and Cognition</a> <span class = "article-count">(7779)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/biochemistry" class="" data-icon-position="" data-hide-link-title="0">Biochemistry</a> <span class = "article-count">(18152)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/bioengineering" class="" data-icon-position="" data-hide-link-title="0">Bioengineering</a> <span class = "article-count">(14330)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/bioinformatics" class="" data-icon-position="" data-hide-link-title="0">Bioinformatics</a> <span class = "article-count">(42978)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/biophysics" class="" data-icon-position="" data-hide-link-title="0">Biophysics</a> <span class = "article-count">(21909)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/cancer-biology" class="" data-icon-position="" data-hide-link-title="0">Cancer Biology</a> <span class = "article-count">(19040)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/cell-biology" class="" data-icon-position="" data-hide-link-title="0">Cell Biology</a> <span class = "article-count">(26080)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/clinical-trials" class="" data-icon-position="" data-hide-link-title="0">Clinical Trials</a> <span class = "article-count">(138)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/developmental-biology" class="" data-icon-position="" data-hide-link-title="0">Developmental Biology</a> <span class = "article-count">(13615)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/ecology" class="" data-icon-position="" data-hide-link-title="0">Ecology</a> <span class = "article-count">(20334)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/epidemiology" class="" data-icon-position="" data-hide-link-title="0">Epidemiology</a> <span class = "article-count">(2067)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/evolutionary-biology" class="" data-icon-position="" data-hide-link-title="0">Evolutionary Biology</a> <span class = "article-count">(24798)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/genetics" class="" data-icon-position="" data-hide-link-title="0">Genetics</a> <span class = "article-count">(15819)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/genomics" class="" data-icon-position="" data-hide-link-title="0">Genomics</a> <span class = "article-count">(22919)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/immunology" class="" data-icon-position="" data-hide-link-title="0">Immunology</a> <span class = "article-count">(18153)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/microbiology" class="" data-icon-position="" data-hide-link-title="0">Microbiology</a> <span class = "article-count">(41228)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/molecular-biology" class="" data-icon-position="" data-hide-link-title="0">Molecular Biology</a> <span class = "article-count">(17487)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/neuroscience" class="" data-icon-position="" data-hide-link-title="0">Neuroscience</a> <span class = "article-count">(90558)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/paleontology" class="" data-icon-position="" data-hide-link-title="0">Paleontology</a> <span class = "article-count">(679)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pathology" class="" data-icon-position="" data-hide-link-title="0">Pathology</a> <span class = "article-count">(2898)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/pharmacology-and-toxicology" class="" data-icon-position="" data-hide-link-title="0">Pharmacology and Toxicology</a> <span class = "article-count">(4934)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/physiology" class="" data-icon-position="" data-hide-link-title="0">Physiology</a> <span class = "article-count">(7855)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/plant-biology" class="" data-icon-position="" data-hide-link-title="0">Plant Biology</a> <span class = "article-count">(15452)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/scientific-communication-and-education" class="" data-icon-position="" data-hide-link-title="0">Scientific Communication and Education</a> <span class = "article-count">(2063)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/synthetic-biology" class="" data-icon-position="" data-hide-link-title="0">Synthetic Biology</a> <span class = "article-count">(4412)</span></div></li>
+<li class="outer collection depth-2  child"><div class = "data-wrapper"><a href="/collection/systems-biology" class="" data-icon-position="" data-hide-link-title="0">Systems Biology</a> <span class = "article-count">(9982)</span></div></li>
+<li class="outer collection depth-2  child last"><div class = "data-wrapper"><a href="/collection/zoology" class="" data-icon-position="" data-hide-link-title="0">Zoology</a> <span class = "article-count">(2311)</span></div></li>
+</ul>  </div>
+
+  
+  </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+  
+  </div>
+</div>
+			</div>
+		</div>
+	
+	</div> <!-- /.panel-row-wrapper -->	
+	
+	</div>
+
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</section>    
+  
+  </div>    <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__Vh5BcRYb6VtLoN3uam6O4DIKltYUVMjVDWtakoysPq0__Wed8jsPTirEozek7dWSCS8970Cp7a9xKKgFk6FPuSVM__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.js"></script>
+<script type="text/javascript" src="//d33xdlntwy0kbs.cloudfront.net/cshl_custom.js"></script>
+<script type="text/javascript" src="https://www.biorxiv.org/sites/default/files/advagg_js/js__BmqjBnkz3MgYCAoc25s1lDRMEjLhC3mEPVonUFIHi08__Unwv5-ZIuHBfFwytsjEx1niBVJ7n1T4lPws7VrkHXM4__06WaAYn2K4xsDA2rD7MBayDwsrHraDphjtoTeW6is-o.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function euCookieComplianceLoadScripts() {}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var eu_cookie_compliance_cookie_name = "";
+//--><!]]>
+</script>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a18fdf427e8de53b',t:'MTc4MzY4OTY5Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

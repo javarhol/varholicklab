@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xml:lang="en">
+	<head>
+        <style>
+            :root {
+                --font-inter: 'Inter', 'Roboto', sans-serif, Symbol;
+                --font-monospace: monospace;
+                --font-roboto: 'Roboto', sans-serif, Symbol;
+                --font-sans-serif: sans-serif;
+            }
+
+            html, body, div, span,
+            h1, h2, h3, h4, h5, h6, p, ol, ul, li,
+            table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+	        html {font-size: 14px;line-height: 1.5;}
+            body {font-size: 14px;line-height: 1.5;font-family: var(--font-Roboto);}
+            ol, ul {list-style: none;}
+            blockquote, q {quotes: none;}
+            blockquote:before, blockquote:after,
+            q:before, q:after {content: '';content: none;}
+            img {max-width: 100%;}
+            table {border-collapse: collapse;border-spacing: 0;}
+            b {font-weight: bold;}
+            a {color: #2c71d6;text-decoration: none;}
+            p {margin: 10px 0 10px 0;}
+            .no-select {-o-user-select: none;-moz-user-select: none;-khtml-user-select: none;-webkit-user-select: none;user-select: none;}
+            * {box-sizing: border-box;}
+            @keyframes blink {0% {opacity: .1;}20% {opacity: 1;}100% {opacity: .1;}}
+            .main-preloader{position:fixed;display: flex;top:0;bottom:0;left:0;right:0;align-items: center;justify-content: center;z-index:200000000;text-align:center;background:#F2F3F6;}
+            .main-preloader.dark{background:#363636;}
+            .main-preloader.hidden {display: none;}
+            .main-preloader .mp-logo{height:100px;width:100px;}
+
+        </style>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title >De novo transcriptome assembly workflow
+        </title>
+        
+        <meta content="De novo transcriptome assembly workflow. This protocol describes the production of a reference-quali. Read full protocol, steps, and materials on protocols.io" name="description" >
+        <link href="https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" rel="canonical" >
+        <link href="https://www.protocols.io/de/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" hreflang="de" rel="alternate" >
+        <link href="https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" hreflang="x-default" rel="alternate" >
+        <link href="https://www.protocols.io/es/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" hreflang="es" rel="alternate" >
+        <link href="https://www.protocols.io/fr/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" hreflang="fr" rel="alternate" >
+        <link href="https://www.protocols.io/ja/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" hreflang="ja" rel="alternate" >
+        <link href="https://www.protocols.io/zh/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" hreflang="zh" rel="alternate" >
+        <meta content="De novo transcriptome assembly workflow" property="og:title" >
+        <meta content="De novo transcriptome assembly workflow. This protocol describes the production of a reference-quali. Read full protocol, steps, and materials on protocols.io" property="og:description" >
+        <meta content="https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" property="og:url" >
+        <meta content="https://files.protocols.io/external/inzef86-2BAE2EFA687311F08F960A58A9FEAC02.png" property="og:image" >
+        <meta content="2017-03-06T10:20:56Z" property="article:published_time" >
+        <meta content="Jared Mamrot" property="article:author" >
+        <meta content="summary_large_image" name="twitter:card" >
+        <meta content="@protocolsIO" name="twitter:site" >
+        <meta content="De novo transcriptome assembly workflow" name="twitter:title" >
+        <meta content="De novo transcriptome assembly workflow. This protocol describes the production of a reference-quali. Read full protocol, steps, and materials on protocols.io" name="twitter:description" >
+        <meta content="https://files.protocols.io/external/inzef86-2BAE2EFA687311F08F960A58A9FEAC02.png" name="twitter:image" >
+        <meta content="https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1" name="twitter:url" >
+        <meta content="De novo transcriptome assembly workflow" name="citation_title" >
+        <meta content="2017/03/06" name="citation_publication_date" >
+        <meta content="https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-ghebt3e.pdf" name="citation_pdf_url" >
+        <meta content="Jared Mamrot" name="citation_author" >
+        <meta content=" Roxane Legaie" name="citation_author" >
+        <meta content=" Stacey J Ellery" name="citation_author" >
+        <meta content=" Trevor Wilson" name="citation_author" >
+        <meta content=" Torsten Seemann" name="citation_author" >
+        <meta content=" David Gardner" name="citation_author" >
+        <meta content=" David W Walker" name="citation_author" >
+        <meta content=" Peter Temple-Smith" name="citation_author" >
+        <meta content=" Anthony T Papenfuss" name="citation_author" >
+        <meta content=" Hayley Dickinson" name="citation_author" >
+        <script type="application/ld+json" >{"@context":"https://schema.org","@id":"https://www.protocols.io/#org","@type":"Organization","logo":{"@type":"ImageObject","height":"1550","url":"https://www.protocols.io/img/protocols-og.jpg","width":"1920"},"name":"protocols.io","url":"https://www.protocols.io/"}
+        </script>
+        
+        <script type="application/ld+json" >{"@context":"https://schema.org","@id":"https://www.protocols.io/#website","@type":"WebSite","name":"protocols.io","publisher":{"@id":"https://www.protocols.io/#org"},"url":"https://www.protocols.io/"}
+        </script>
+        
+        <script type="application/ld+json" >{"@context":"https://schema.org","@id":"https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1#webpage","@type":"WebPage","about":{"@id":"https://www.protocols.io/#org"},"description":"De novo transcriptome assembly workflow. This protocol describes the production of a reference-quali. Read full protocol, steps, and materials on protocols.io","isPartOf":{"@id":"https://www.protocols.io/#website"},"name":"De novo transcriptome assembly workflow","url":"https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-6qpvr872lmkn/v1"}
+        </script>
+        
+        <script type="application/ld+json" >{"@context":"https://schema.org","@id":"https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-ghebt3e#article","@type":"Article","author":{"@type":"Person","affiliation":"GMDx Genomics","name":"Jared Mamrot"},"dateModified":"2017-03-06T10:20:56Z","datePublished":"2017-03-06T10:20:56Z","description":"De novo transcriptome assembly workflow. This protocol describes the production of a reference-quali. Read full protocol, steps, and materials on protocols.io","headline":"De novo transcriptome assembly workflow","image":{"@type":"ImageObject","url":"https://files.protocols.io/external/inzef86-2BAE2EFA687311F08F960A58A9FEAC02.png"},"mainEntityOfPage":{"@id":"https://www.protocols.io/view/de-novo-transcriptome-assembly-workflow-ghebt3e#webpage"},"publisher":{"@id":"https://www.protocols.io/#org"}}
+        </script>
+        
+		<meta property="og:site_name" content="protocols.io">
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="theme-color" content="#363636"/>
+		<meta name="twitter:card" content="summary_large_image" />
+        <meta name="google-site-verification" content="inw0Hd3GtxfzwflFCZ-eKK3FzlZ0p_-AeI1zXlJYvKk" />
+        <meta name="google-site-verification" content="wXzR9qxxyMaS0We2rMer8wXSolN-NQvo6lMzS97uT1M" />
+        <link rel="manifest" href="/manifest.json">
+		<link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		
+		<script type="text/javascript" nonce="419C71F34F8B5254D068C43A37BC74A2">
+            var WebappBundlePath  = "https:\/\/files.protocols.io\/webapp\/bundles\/production-d68d43a\/";
+			var AMPLITUDE_API_KEY="c250ed1d862cb9c01587e1f779a32c9";var FFMPEG_HOST="https://ffmpeg.protocols.io";var FILES_CDN_URL="https://files.protocols.io";var FILES_S3_BUCKET="protocols-io-files";var FILES_S3_PREFIX="external";var GA_MEASUREMENT_ID="G-33ZGV5CT0B";var GOOGLE_CLIENT_ID="182746271041-rdtjk0b1h9706r0fgpq1o2h55lgbo8un.apps.googleusercontent.com";var HAS_SSR= false ;var HOST_ROLE= 1 ;var HOST_ROLES={"HOST_DEV":2,"HOST_LOCAL":3,"HOST_PROD":1};var IMAGE_BASE_PATH="https://files.protocols.io/webapp/images/q2ckeg/";var NATS_SERVER="wss://ws.protocols.io";var ORCID_CLIENT_ID="APP-7405TP4958GFSZXV";var ORCID_URL="https://orcid.org/oauth/authorize";var RECAPTCHA_SITE_ID="6LeMF6YUAAAAAOYzOqfc9Ml3PdTgIzO1oDdIwCYc";var SITE_URL="https://www.protocols.io";var SPRINGERNATURE_CLIENT_ID="protocolsio";var SPRINGERNATURE_REDIRECT="https://www.protocols.io/api/v1/auth/springernature/authcallback";var SPRINGERNATURE_URL="https://idp.springernature.com";var STRIPE_PUB_KEY="pk_live_51PfMxdRshFFmaQRVGeDsSX7NFFLMkMuqr17SxP6JcJuieglmQYHPgM7cz0XdO91IEVP9k4E4MC7PZB2ATyuuaOy800ivYpRURi";var UIPE="+mUrAr+DaxSijp7yChr2aQ==";var VPC_ALLOW_REGENTS_LINKING= false ;var VPC_DISABLED_INVITE_COLLEAGUES= false ;var VPC_DISABLED_PUBLISHING= false ;var VPC_DISABLED_SIGN_UP= false ;var VPC_DISABLED_WORKSPACE_CREATION= false ;var VPC_EXTERNAL_STORAGES= null ;var VPC_FORWARDED_VIEW_URL_PREFIX="";var VPC_MAIN_CLOUD_URL="https://www.protocols.io";var VPC_REQUIRE_SIGN_IN= false ;var VPC_USE_MAIN_GLOBAL_SEARCH= false ;var WEBAPP_VERSION="production-d68d43a";var YJS_WEBSOCKET_URL="wss://www.protocols.io";var __stripeGlobal= null ;var cookie_session_guid="1ADA1DA77C6311F181B80A58A9FEAC02";var gosessid="1ADA1C0E7C6311F181B80A58A9FEAC02";var is_premium= false ;var loadedAmplitude= false ;var loadedGA= false ;var logged_in= false ;var session_guid="";var show_loader= true ;var user_theme="default";
+
+            var is_grecaptcha_loaded = false;
+		</script>
+        <script type="text/javascript" nonce="419C71F34F8B5254D068C43A37BC74A2">
+            if (!Element.prototype.matches) Element.prototype.matches = Element.prototype.msMatchesSelector;
+            if (!Element.prototype.closest) Element.prototype.closest = function (selector) {var el = this; while (el) {if (el.matches(selector)) return el; el = el.parentElement;}};
+        </script>
+		
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie_light.min.js" defer integrity="sha512-4W1eGmttnzbtRtVLtqU0CNOXs9YHfLB/tS0ZZJlCIQi8VW9voyFX5oBhhC9vhBjYy3xrgyXpSFt/WohPahspkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://files.protocols.io/webapp/bundles/production-d68d43a/webapp.preloader.js" class="app_preloader" defer type="text/javascript"></script>
+	    	<script src="https://files.protocols.io/webapp/bundles/production-d68d43a/webapp.app.js" class="main_bundle" defer type="text/javascript"></script>
+        <link rel="preload" href="https://files.protocols.io/webapp/fonts/Inter-VariableFont_opsz%2Cwght.woff2" as="font" type="font/woff2" crossorigin>
+	</head>
+	<body style="margin: 0;">
+		<div id="lightboxes"></div>
+        <div id="toasts" class="toasts"></div>
+        <div id="modal-root"></div>
+	    <main id="main"></main>
+        <div id="complex-tooltip-container"></div>
+            <div id="app_preloader" class="main-preloader hidden">
+                <div class="mp-logo"></div>
+            </div>
+	</body>
+</html>
