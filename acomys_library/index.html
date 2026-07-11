@@ -9,38 +9,19 @@
     <meta property="og:description" content="A comprehensive library of spiny mice literature.">
     <meta property="og:image" content="images/mus_uninjuredpad.png">
     <meta name="twitter:card" content="summary_large_image">
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS CDN + shared KSU theme -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/tailwind-config.js?v=r4"></script>
     <!-- FlexSearch Library -->
     <script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.31/dist/flexsearch.bundle.js"></script>
     <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css?v=r4">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #333;
-        }
-        .nav-link {
-            position: relative;
-            padding-bottom: 4px;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: currentColor;
-            transition: width 0.3s ease-in-out;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
         /* Loader */
         .loader {
             border: 4px solid #f3f3f3;
-            border-top: 4px solid #3498db;
+            border-top: 4px solid var(--ksu-gold);
             border-radius: 50%;
             width: 30px;
             height: 30px;
@@ -52,48 +33,42 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 flex flex-col min-h-screen">
+<body class="bg-ksu-cream flex flex-col min-h-screen">
 
-    <!-- Header/Navigation Bar -->
-    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+    <!-- Header / Navigation -->
+    <header class="bg-white/95 backdrop-blur border-b border-ksu-grey/60 py-4 px-6 md:px-12 fixed w-full z-50">
         <nav class="container mx-auto flex justify-between items-center">
-            <a href="../index.html" class="flex items-center gap-4 rounded-md p-2 hover:bg-gray-100 transition-colors group">
-                <img src="../images/repairlablogo.png" alt="Varholick Lab Logo" class="h-14 w-auto object-contain">
-                <div class="flex flex-col">
-                    <span class="text-2xl font-bold text-gray-900 uppercase tracking-wide leading-none group-hover:text-black">
-                        Varholick Lab
-                    </span>
-                    <span class="text-sm text-gray-500 italic font-light leading-tight mt-1">
-                        Decoding Repair. Restoring Function.
-                    </span>
-                </div>
+            <a href="../index.html" class="flex items-center gap-3 group">
+                <img src="../images/repairlablogo.png" alt="Varholick Lab logo" class="brand-logo h-12 w-auto object-contain">
+                <span class="flex flex-col leading-none">
+                    <span class="text-xl font-extrabold text-ksu-black uppercase tracking-wide">Varholick Lab</span>
+                    <span class="text-xs text-gray-500 italic font-light mt-1">Decoding Repair. Restoring Function.</span>
+                </span>
             </a>
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="../index.html#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">About</a></li>
-                <li><a href="../index.html#research" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Research</a></li>
-                <li><a href="../index.html#publications" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Publications</a></li>
-                <li><a href="index.html" class="nav-link text-blue-600 font-medium border-b-2 border-blue-600">Acomys Library</a></li>
-
-                <li><a href="../index.html#team" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Team</a></li>
-                <li><a href="../index.html#news" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">News</a></li>
-                <li><a href="../index.html#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Contact</a></li>
+            <ul class="hidden md:flex items-center space-x-7 text-sm">
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../research.html" class="nav-link">Research</a></li>
+                <li><a href="../publications.html" class="nav-link">Publications</a></li>
+                <li><a href="index.html" class="nav-link is-active">Acomys Library</a></li>
+                <li><a href="../team.html" class="nav-link">Team</a></li>
+                <li><a href="../news.html" class="nav-link">News</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <button id="mobile-menu-button" class="md:hidden text-ksu-black focus:outline-none" aria-label="Open menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </nav>
         <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
-            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 hover:text-gray-900 focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-ksu-black focus:outline-none" aria-label="Close menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
-            <a href="../index.html#about" class="nav-link text-gray-700 hover:text-gray-900">About</a>
-            <a href="../index.html#research" class="nav-link text-gray-700 hover:text-gray-900">Research</a>
-            <a href="../index.html#publications" class="nav-link text-gray-700 hover:text-gray-900">Publications</a>
-            <a href="index.html" class="nav-link text-blue-600 font-medium">Acomys Library</a>
-
-            <a href="../index.html#team" class="nav-link text-gray-700 hover:text-gray-900">Team</a>
-            <a href="../index.html#news" class="nav-link text-gray-700 hover:text-gray-900">News</a>
-            <a href="../index.html#contact" class="nav-link text-gray-700 hover:text-gray-900">Contact</a>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../research.html" class="nav-link">Research</a>
+            <a href="../publications.html" class="nav-link">Publications</a>
+            <a href="index.html" class="nav-link is-active">Acomys Library</a>
+            <a href="../team.html" class="nav-link">Team</a>
+            <a href="../news.html" class="nav-link">News</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
         </div>
     </header>
 
@@ -111,12 +86,12 @@
         <!-- Controls -->
         <div class="flex flex-col gap-4 mb-8 max-w-4xl mx-auto">
             <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-                <input type="text" id="searchInput" placeholder="Search by title, author, or keyword..." class="w-full md:w-1/2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <select id="topicFilter" class="w-full md:w-1/4 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-opacity duration-300">
+                <input type="text" id="searchInput" placeholder="Search by title, author, or keyword..." class="w-full md:w-1/2 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-ksu-gold">
+                <select id="topicFilter" class="w-full md:w-1/4 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-ksu-gold transition-opacity duration-300">
                     <option value="">All Topics</option>
                     <!-- Dynamically populated -->
                 </select>
-                <select id="sortOrder" class="w-full md:w-1/4 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-opacity duration-300">
+                <select id="sortOrder" class="w-full md:w-1/4 px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-ksu-gold transition-opacity duration-300">
                     <option value="year-desc">Newest First</option>
                     <option value="year-asc">Oldest First</option>
                 </select>
@@ -127,7 +102,7 @@
                 <span class="text-sm font-medium text-gray-700" id="searchModeLabelMetadata">Metadata Search</span>
                 <label class="relative inline-flex items-center cursor-pointer">
                     <input type="checkbox" id="deepSearchToggle" class="sr-only peer">
-                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-ksu-gold rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-ksu-black"></div>
                 </label>
                 <span class="text-sm font-medium text-gray-500" id="searchModeLabelDeep">Deep Text Search</span>
             </div>
@@ -146,16 +121,20 @@
 
         <!-- Load More -->
         <div class="text-center mt-8">
-            <button id="loadMoreBtn" class="hidden bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors shadow-md">
+            <button id="loadMoreBtn" class="hidden bg-ksu-black hover:bg-black text-white font-semibold py-2 px-6 rounded-lg transition-colors shadow-md">
                 Load More
             </button>
         </div>
 
     </main>
 
-    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12 mt-auto">
-        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
-            <p class="mb-4 md:mb-0">&copy; 2026 Varholick Lab. All rights reserved.</p>
+    <footer class="bg-ksu-black text-gray-400 border-t border-white/10 py-8 px-6 md:px-12 mt-auto">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; 2026 Varholick Lab · Kennesaw State University</p>
+            <div class="flex gap-6">
+                <a href="https://scholar.google.com/citations?user=JustinVarholick" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a href="https://orcid.org/0000-0003-2822-9045" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">ORCID</a>
+            </div>
         </div>
     </footer>
 
@@ -358,7 +337,7 @@
                 const titleLink = document.createElement('a');
                 titleLink.href = `https://openalex.org/${paperId.replace('OA_', 'W')}`;
                 titleLink.target = '_blank';
-                titleLink.className = 'text-lg font-bold text-blue-700 hover:text-blue-900 transition-colors leading-snug block';
+                titleLink.className = 'text-lg font-bold text-ksu-black hover:text-ksu-gold transition-colors leading-snug block';
                 titleLink.textContent = paper.title;
                 
                 const meta = document.createElement('p');
@@ -374,7 +353,7 @@
                 
                 paper.chunks.forEach(text => {
                     const p = document.createElement('p');
-                    p.className = 'text-gray-800 text-base leading-relaxed pl-4 border-l-4 border-blue-200 bg-gray-50/50 py-2 pr-2 rounded-r-md';
+                    p.className = 'text-gray-800 text-base leading-relaxed pl-4 border-l-4 border-ksu-gold bg-gray-50/50 py-2 pr-2 rounded-r-md';
                     p.innerHTML = highlightTerms(text, query);
                     chunksContainer.appendChild(p);
                 });
@@ -414,31 +393,31 @@
                 const card = document.createElement('div');
                 card.className = "bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden";
                 
-                const titleStr = p.is_abstract_only ? `${p.title} <span class="text-blue-600" title="Preprint or Conference Abstract">*</span>` : p.title;
+                const titleStr = p.is_abstract_only ? `${p.title} <span class="text-ksu-gold font-bold" title="Preprint or Conference Abstract">*</span>` : p.title;
                 const journalStr = p.journal ? `<span class="italic font-medium text-gray-700">${p.journal}</span>` : '';
                 const yearStr = p.year ? `(${p.year})` : '';
                 
                 let topicsHtml = '';
                 if (p.topics && p.topics.length > 0) {
                     topicsHtml = `<div class="mt-2 flex flex-wrap gap-2">` + 
-                        p.topics.map(t => `<button onclick="event.stopPropagation(); setTopicFilter('${t.replace(/'/g, "\\'")}')" class="bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full border border-blue-200 transition-colors cursor-pointer">${t}</button>`).join('') + 
+                        p.topics.map(t => `<button onclick="event.stopPropagation(); setTopicFilter('${t.replace(/'/g, "\\'")}')" class="bg-ksu-gold/20 hover:bg-ksu-gold/40 text-ksu-black text-xs px-2 py-1 rounded-full border border-ksu-gold/40 transition-colors cursor-pointer">${t}</button>`).join('') +
                         `</div>`;
                 }
 
                 let linksHtml = '';
                 if (p.links) {
-                    if (p.links.doi) linksHtml += `<a href="${p.links.doi.startsWith('http') ? p.links.doi : 'https://doi.org/'+p.links.doi}" class="text-blue-600 hover:underline text-sm mr-4" target="_blank">DOI</a>`;
-                    if (p.links.pdf) linksHtml += `<a href="${p.links.pdf}" class="text-blue-600 hover:underline text-sm mr-4" target="_blank">PDF</a>`;
-                    if (!p.links.doi && !p.links.pdf && p.links.landing_page) linksHtml += `<a href="${p.links.landing_page}" class="text-blue-600 hover:underline text-sm mr-4" target="_blank">Publisher Site</a>`;
+                    if (p.links.doi) linksHtml += `<a href="${p.links.doi.startsWith('http') ? p.links.doi : 'https://doi.org/'+p.links.doi}" class="text-ksu-black hover:text-ksu-gold underline text-sm mr-4" target="_blank">DOI</a>`;
+                    if (p.links.pdf) linksHtml += `<a href="${p.links.pdf}" class="text-ksu-black hover:text-ksu-gold underline text-sm mr-4" target="_blank">PDF</a>`;
+                    if (!p.links.doi && !p.links.pdf && p.links.landing_page) linksHtml += `<a href="${p.links.landing_page}" class="text-ksu-black hover:text-ksu-gold underline text-sm mr-4" target="_blank">Publisher Site</a>`;
                 }
                 if (!linksHtml && p.id && (p.id.startsWith('https://openalex.org/') || p.id.startsWith('W'))) {
                     const openAlexUrl = p.id.startsWith('http') ? p.id : `https://openalex.org/${p.id}`;
-                    linksHtml += `<a href="${openAlexUrl}" class="text-blue-600 hover:underline text-sm mr-4" target="_blank">OpenAlex Profile</a>`;
+                    linksHtml += `<a href="${openAlexUrl}" class="text-ksu-black hover:text-ksu-gold underline text-sm mr-4" target="_blank">OpenAlex Profile</a>`;
                 }
 
                 card.innerHTML = `
                     <div class="p-6 cursor-pointer" onclick="toggleDetails('${p.id}')">
-                        <h2 class="text-xl font-bold text-gray-900 mb-1 leading-tight group-hover:text-blue-600">${titleStr}</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-1 leading-tight group-hover:text-ksu-gold">${titleStr}</h2>
                         <p class="text-sm text-gray-600 mb-1">${p.authors}</p>
                         <p class="text-sm text-gray-500">${journalStr} ${yearStr}</p>
                         ${topicsHtml}
@@ -446,9 +425,9 @@
                         <!-- Details Section (Hidden by default) -->
                         <div id="details-${p.id}" class="hidden mt-6 pt-4 border-t border-gray-100">
                             ${p.blurb ? `
-                                <div class="bg-blue-50 p-4 rounded-md mb-4 border border-blue-100">
-                                    <h4 class="text-sm font-bold text-blue-900 mb-1">Dr. Varholick's Note</h4>
-                                    <p class="text-sm text-blue-800">${p.blurb}</p>
+                                <div class="bg-ksu-cream p-4 rounded-md mb-4 border-l-4 border-ksu-gold">
+                                    <h4 class="text-sm font-bold text-ksu-black mb-1">Dr. Varholick's Note</h4>
+                                    <p class="text-sm text-gray-700">${p.blurb}</p>
                                 </div>
                             ` : ''}
                             
@@ -460,7 +439,7 @@
                             <div class="flex items-center justify-between mt-4">
                                 <div>${linksHtml}</div>
                                 ${p.related_articles && p.related_articles.length > 0 ? `
-                                    <button onclick="event.stopPropagation(); toggleRelated('${p.id}')" class="text-sm text-gray-600 hover:text-blue-600 flex items-center gap-1 font-medium">
+                                    <button onclick="event.stopPropagation(); toggleRelated('${p.id}')" class="text-sm text-gray-600 hover:text-ksu-gold flex items-center gap-1 font-medium">
                                         Related Articles
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                     </button>
@@ -546,8 +525,8 @@
                 detailsEl.classList.remove('hidden');
                 detailsEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 // Briefly flash the background to highlight
-                detailsEl.parentElement.classList.add('bg-blue-50');
-                setTimeout(() => detailsEl.parentElement.classList.remove('bg-blue-50'), 2000);
+                detailsEl.parentElement.classList.add('bg-ksu-gold/20');
+                setTimeout(() => detailsEl.parentElement.classList.remove('bg-ksu-gold/20'), 2000);
             }
         };
 

@@ -9,200 +9,139 @@
     <meta property="og:description" content="Latest news from the Varholick Lab: grants, publications, and team updates.">
     <meta property="og:image" content="images/mus_uninjuredpad.png">
     <meta name="twitter:card" content="summary_large_image">
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #333;
-        }
-        .nav-link {
-            position: relative;
-            padding-bottom: 4px;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: currentColor;
-            transition: width 0.3s ease-in-out;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        section[id] {
-            scroll-margin-top: 4rem;
-        }
-    </style>
+    <script src="assets/tailwind-config.js?v=r4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css?v=r4">
 </head>
-<body class="bg-gray-50">
-    <!-- Header/Navigation Bar -->
-    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+<body>
+    <a href="#news-full" class="skip-link">Skip to main content</a>
+
+    <!-- Header / Navigation -->
+    <header class="bg-white/95 backdrop-blur border-b border-ksu-grey/60 py-4 px-6 md:px-12 fixed w-full z-50">
         <nav class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-4 rounded-md p-2 hover:bg-gray-100 transition-colors group">
-                <!-- Placeholder for Lab Logo -->
-                <img src="images/repairlablogo.png" alt="Varholick Lab Logo" class="h-14 w-auto object-contain">
-                <div class="flex flex-col">
-                    <span class="text-2xl font-bold text-gray-900 uppercase tracking-wide leading-none group-hover:text-black">
-                        Varholick Lab
-                    </span>
-
-                    <span class="text-sm text-gray-500 italic font-light leading-tight mt-1">
-                        Decoding Repair. Restoring Function.
-                     </span>
-                </div>
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="images/repairlablogo.png" alt="Varholick Lab logo" class="brand-logo h-12 w-auto object-contain">
+                <span class="flex flex-col leading-none">
+                    <span class="text-xl font-extrabold text-ksu-black uppercase tracking-wide">Varholick Lab</span>
+                    <span class="text-xs text-gray-500 italic font-light mt-1">Decoding Repair. Restoring Function.</span>
+                </span>
             </a>
-            <ul class="hidden md:flex space-x-8">
-                <li><a href="index.html#about" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">About</a></li>
-                <li><a href="index.html#research" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Research</a></li>
-                <li><a href="index.html#publications" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Publications</a></li>
-                <li><a href="acomys_library/index.html" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Acomys Library</a></li>
-
-                <li><a href="index.html#team" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Team</a></li>
-                <li><a href="index.html#news" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">News</a></li>
-                <li><a href="index.html#contact" class="nav-link text-gray-700 hover:text-gray-900 font-medium transition-colors">Contact</a></li>
+            <ul class="hidden md:flex items-center space-x-7 text-sm">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="acomys_library/index.html" class="nav-link">Acomys Library</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="news.html" class="nav-link is-active">News</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <button id="mobile-menu-button" class="md:hidden text-ksu-black focus:outline-none" aria-label="Open menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </nav>
-        <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
-            <button id="close-mobile-menu" class="absolute top-6 right-6 text-gray-700 hover:text-gray-900 focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-ksu-black focus:outline-none" aria-label="Close menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
-            <a href="index.html#about" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-            <a href="index.html#research" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Research</a>
-            <a href="index.html#publications" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Publications</a>
-            <a href="acomys_library/index.html" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Acomys Library</a>
-
-            <a href="index.html#team" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Team</a>
-            <a href="index.html#news" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">News</a>
-            <a href="index.html#contact" class="nav-link text-gray-700 hover:text-gray-900" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="publications.html" class="nav-link">Publications</a>
+            <a href="acomys_library/index.html" class="nav-link">Acomys Library</a>
+            <a href="team.html" class="nav-link">Team</a>
+            <a href="news.html" class="nav-link is-active">News</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
         </div>
     </header>
 
-    <main class="pt-20 flex flex-col min-h-screen">
-        <!-- News/Updates Section -->
-        <section id="news-full" class="py-16 md:py-24 bg-white">
+    <main id="news-full">
+        <!-- Page intro — dark band -->
+        <section class="section-dark pt-28 md:pt-36 pb-16 md:pb-20">
             <div class="container mx-auto px-6 md:px-12">
-                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Latest News & Updates</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="max-w-2xl reveal">
+                    <span class="eyebrow">News</span>
+                    <h1 class="text-4xl md:text-6xl font-bold mt-4 leading-tight">News &amp; updates</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-white">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 reveal">
                     <!-- NEWS_ITEMS_START -->
                     <!-- News Item: High School Researcher Selected for Regeneron ISEF -->
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out relative">
-                        <span class="absolute top-3 right-3 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full">Latest</span>
-                        <p class="text-sm text-gray-500 mb-2">February 2026</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">High School Researcher Selected for Regeneron ISEF 2026</h3>
-                        <p class="text-gray-700 text-sm mb-4">
+                    <article class="border-t-2 border-ksu-gold pt-5">
+                        <span class="inline-block bg-ksu-gold text-ksu-black text-[0.65rem] font-bold uppercase tracking-wider px-2 py-0.5 rounded mb-2">Latest</span>
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">February 2026</p>
+                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">High School Researcher Selected for Regeneron ISEF 2026</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
                             Rachel (Jaehyeon) Lee, a high school student from Walton High School in Marietta, GA, who worked in our lab over winter break, has been selected to present her research on planarian regeneration at Regeneron ISEF 2026 in Phoenix, Arizona. Congratulations, Rachel!
                         </p>
-                    </div>
-                    
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out relative">
-                        <span class="absolute top-3 right-3 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full">Latest</span>
-                        <p class="text-sm text-gray-500 mb-2">May 2026</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Birla Carbon Scholar Selected for Summer Research</h3>
-                        <p class="text-gray-700 text-sm mb-4">
-                            Sienna Bennett was selected as a Birla Carbon Scholar to work over the summer in the Varholick Lab on tissue regeneration research. <a href="https://campus.kennesaw.edu/colleges-departments/csm/research/birla-carbon-scholars.php" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">Learn more</a>.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out relative">
-                        <p class="text-sm text-gray-500 mb-2">May 2026</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Third Grand Award at Regeneron International Science Fair</h3>
-                        <p class="text-gray-700 text-sm mb-4">
-                            Jaehyeon (Rachel) Lee was awarded the Third Grand Award at the Regeneron International Science Fair for her outstanding research on planarian regeneration. <a href="https://eastcobbnews.com/walton-student-wins-award-at-pre-college-stem-competition/" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">Read the article</a>.
-                        </p>
-                    </div>
-</div>
+                    </article>
                     <!-- News Item: Recruiting MS Student for Fall 2026 -->
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out ">
-                        <p class="text-sm text-gray-500 mb-2">January 2026</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Recruiting MS Student for Fall 2026</h3>
-                        <p class="text-gray-700 text-sm mb-4">
-                            The lab has open positions for research projects on tissue regeneration, behavioral neuroscience, and physiology in highly regenerative rodents, salamanders, and planarians. Students will have opportunities to incorporate laboratory, bioinformatic, and possibly field methods and work collaboratively with other lab members. <a href="pdfs/Varholick_Lab_Ad_Fall2026.pdf" class="text-blue-600 hover:text-blue-800 font-medium" target="_blank" rel="noopener noreferrer">Learn More</a>
+                    <article class="border-t-2 border-ksu-gold pt-5">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">January 2026</p>
+                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Recruiting MS Student for Fall 2026</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            The lab has open positions for research projects on tissue regeneration, behavioral neuroscience, and physiology in highly regenerative rodents, salamanders, and planarians. Students will have opportunities to incorporate laboratory, bioinformatic, and possibly field methods and work collaboratively with other lab members. <a href="pdfs/Varholick_Lab_Ad_Fall2026.pdf" class="link-gold" target="_blank" rel="noopener noreferrer">Learn More</a>
                         </p>
-                    </div>
+                    </article>
                     <!-- News Item: Lab Awarded internal grants; PrePI and Mentor Prot -->
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out ">
-                        <p class="text-sm text-gray-500 mb-2">December 2025</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Lab Awarded internal grants; PrePI and Mentor Protege</h3>
-                        <p class="text-gray-700 text-sm mb-4">
+                    <article class="border-t-2 border-ksu-gold pt-5">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">December 2025</p>
+                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Lab Awarded internal grants; PrePI and Mentor Protege</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
                             The Varholick Lab was awarded two internal grants. A $19k grant for "Unravelling synaptic resilience: neurobiological mechanisms of enhanced learning and memory in <i>Acomys cahirinus</i>." In collaboration with Dr. Vishnu Suppiramanian and Dr. Erica Holliday. The other is a $3.5k award to study "Exploring neuroanatomy and sensory innervation in polymorphic two-lined salamanders" with Dr. Todd Pierson and students Kellyn Gilligan and Ito Osayi.
                         </p>
-                    </div>
+                    </article>
                     <!-- News Item: Welcome our First Year Scholars -->
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out ">
-                        <p class="text-sm text-gray-500 mb-2">October 2025</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Welcome our First Year Scholars</h3>
-                        <p class="text-gray-700 text-sm mb-4">
+                    <article class="border-t-2 border-ksu-gold pt-5">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">October 2025</p>
+                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Welcome our First Year Scholars</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
                             Stefania and Sienna have been awarded a First-Year Scholar scholarship to work on a project titled, "Uncovering What Regenerates When Skin Nerves Are Injured in Highly Regenerative Animals". Sponsored by the Office of Undergraduate Research.
                         </p>
-                    </div>
+                    </article>
                     <!-- News Item: The Varholick Lab officially opens at Kennesaw Sta -->
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out ">
-                        <p class="text-sm text-gray-500 mb-2">August 2025</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">The Varholick Lab officially opens at Kennesaw State University</h3>
-                        <p class="text-gray-700 text-sm mb-4">
+                    <article class="border-t-2 border-ksu-gold pt-5">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">August 2025</p>
+                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">The Varholick Lab officially opens at Kennesaw State University</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
                             Stop by SC 360 and say hello. Hopefully we'll start antibody staining soon, and have animals next semester.
                         </p>
-                    </div>
+                    </article>
                     <!-- News Item: Whisker research presented at ISRB 2025 -->
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out ">
-                        <p class="text-sm text-gray-500 mb-2">August 2025</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Whisker research presented at ISRB 2025</h3>
-                        <p class="text-gray-700 text-sm mb-4">
+                    <article class="border-t-2 border-ksu-gold pt-5">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">August 2025</p>
+                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Whisker research presented at ISRB 2025</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
                             Prof. Malcolm Maden from the University of Florida presented our research on cutaneous nerve and whisker follicle regeneration at ISRB 2025.
                         </p>
-                    </div>
+                    </article>
                     <!-- News Item: New Publication in npj Regenerative Medicine -->
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out ">
-                        <p class="text-sm text-gray-500 mb-2">June 2025</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">New Publication in npj Regenerative Medicine</h3>
-                        <p class="text-gray-700 text-sm mb-4">
+                    <article class="border-t-2 border-ksu-gold pt-5">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">June 2025</p>
+                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">New Publication in npj Regenerative Medicine</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
                             Here, Dr. Varholick and his team at the University of Florida, showed that Spiny Mice can regenerate their whisker follicles after they are removed from the face alongside regeneration of the muscles and cutaneous nerves with sheathing and all.
                         </p>
-                    </div>
+                    </article>
                     <!-- NEWS_ITEMS_END -->
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12">
-        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
-            <p class="mb-4 md:mb-0">&copy; 2026 Varholick Lab. All rights reserved.</p>
+    <footer class="bg-ksu-black text-gray-400 border-t border-white/10 py-8 px-6 md:px-12">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; 2026 Varholick Lab · Kennesaw State University</p>
+            <div class="flex gap-6">
+                <a href="https://scholar.google.com/citations?user=JustinVarholick" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                <a href="https://orcid.org/0000-0003-2822-9045" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">ORCID</a>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const closeMobileMenu = document.getElementById('close-mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.remove('hidden');
-        });
-
-        closeMobileMenu.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-        });
-
-        // Close mobile menu when a link is clicked
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-    </script>
+    <script src="assets/site.js?v=r4"></script>
 </body>
 </html>
