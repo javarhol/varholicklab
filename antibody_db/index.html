@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antibody Database — Varholick Lab</title>
+    <meta name="description" content="Community-validated antibodies confirmed to cross-react with spiny mouse (Acomys) proteins, curated from the Acomys literature.">
+    <meta property="og:title" content="Antibody Database — Varholick Lab">
+    <meta property="og:description" content="Antibodies validated to cross-react with spiny mouse (Acomys) proteins.">
+    <meta property="og:image" content="../images/mus_uninjuredpad.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Tailwind CSS CDN + shared KSU theme -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/tailwind-config.js?v=r7"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles.css?v=r7">
+    <style>
+        /* --- Antibody DB components (KSU palette) --- */
+        .ab-card {
+            background: #fff;
+            border: 1px solid rgba(197, 198, 200, 0.6);
+            border-radius: 0.75rem;
+            padding: 1.25rem;
+        }
+        .ab-banner {
+            display: flex; flex-wrap: wrap; gap: 1rem;
+            align-items: center; justify-content: space-between;
+            border-radius: 0.75rem; padding: 1rem 1.25rem;
+        }
+        .ab-banner-gold { background: rgba(253, 187, 48, 0.14); border: 1px solid rgba(253, 187, 48, 0.5); }
+        .ab-banner-dark { background: var(--ksu-black); color: #fff; }
+        .ab-filter-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+        @media (min-width: 768px) { .ab-filter-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+        .ab-input, .ab-select {
+            width: 100%; padding: 0.55rem 0.75rem;
+            border: 1px solid #d1d5db; border-radius: 0.5rem;
+            background: #fff; color: var(--ksu-black); font-size: 0.9rem;
+        }
+        .ab-input:focus, .ab-select:focus { outline: none; box-shadow: 0 0 0 2px var(--ksu-gold); }
+        .ab-result-count { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; color: #4b5563; font-size: 0.9rem; }
+        .ab-table-wrap { overflow-x: auto; border: 1px solid rgba(197, 198, 200, 0.55); border-radius: 0.75rem; }
+        table#ab-table, #ab-sources-list table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+        #ab-table th, #ab-sources-list th {
+            text-align: left; padding: 0.6rem 0.7rem; background: var(--ksu-cream);
+            border-bottom: 2px solid rgba(197, 198, 200, 0.7); position: sticky; top: 0;
+            font-family: 'Space Grotesk', sans-serif; font-weight: 600; white-space: nowrap;
+        }
+        #ab-table td, #ab-sources-list td { padding: 0.55rem 0.7rem; border-bottom: 1px solid rgba(197, 198, 200, 0.4); vertical-align: top; }
+        #ab-table tbody tr:hover { background: rgba(253, 187, 48, 0.06); }
+        .ab-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.75rem; }
+        .ab-muted { color: #6b7280; }
+        .ab-notes { max-width: 220px; font-size: 0.78rem; color: #4b5563; }
+        .ab-ref { font-size: 0.78rem; }
+        .ab-link { color: #a67c00; text-decoration: underline; text-underline-offset: 2px; }
+        .ab-link:hover { color: var(--ksu-black); }
+        .ab-rrid { font-family: ui-monospace, monospace; font-size: 0.72rem; }
+        .ab-cat-badge {
+            display: inline-block; padding: 0.1rem 0.5rem; border-radius: 999px;
+            background: rgba(11, 19, 21, 0.06); color: var(--ksu-black);
+            font-size: 0.72rem; font-weight: 500; white-space: nowrap;
+        }
+        .works-yes { color: #15803d; font-weight: 600; white-space: nowrap; }
+        .works-no  { color: #b91c1c; font-weight: 600; white-space: nowrap; }
+        .works-part { color: #b45309; font-weight: 600; white-space: nowrap; }
+        .ab-empty { text-align: center; padding: 3rem 1rem; color: #6b7280; font-size: 1.1rem; }
+        .ab-empty p { margin-top: 0.5rem; }
+        .btn-sm { padding: 0.35rem 0.9rem; font-size: 0.8rem; }
+        .btn-outline { background: #fff; border: 1px solid var(--ksu-black); color: var(--ksu-black); border-radius: 0.5rem; font-weight: 600; }
+        .btn-outline:hover { background: var(--ksu-black); color: #fff; }
+        details.ab-collapse > summary { cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-weight: 600; list-style: none; }
+        details.ab-collapse > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-ksu-cream flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white/95 backdrop-blur border-b border-ksu-grey/60 py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-3 group">
+                <img src="../images/repairlablogo.png" alt="Varholick Lab logo" class="brand-logo h-12 w-auto object-contain">
+                <span class="flex flex-col leading-none">
+                    <span class="text-xl font-extrabold text-ksu-black uppercase tracking-wide">Varholick Lab</span>
+                    <span class="text-xs text-gray-500 italic font-light mt-1">Decoding Repair. Restoring Function.</span>
+                </span>
+            </a>
+            <ul class="hidden md:flex items-center space-x-7 text-sm">
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../research.html" class="nav-link">Research</a></li>
+                <li><a href="../publications.html" class="nav-link">Publications</a></li>
+                <li><a href="../team.html" class="nav-link">Team</a></li>
+                <li><a href="../news.html" class="nav-link">News</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-trigger is-active" aria-haspopup="true">Spiny Mouse Resources <span class="caret">▾</span></button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="../acomys_library/index.html" class="nav-link">Acomys Library</a></li>
+                        <li><a href="index.html" class="nav-link is-active">Antibody Database</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden text-ksu-black focus:outline-none" aria-label="Open menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
+            <button id="close-mobile-menu" class="absolute top-6 right-6 text-ksu-black focus:outline-none" aria-label="Close menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <a href="../index.html#about" class="nav-link">About</a>
+            <a href="../research.html" class="nav-link">Research</a>
+            <a href="../publications.html" class="nav-link">Publications</a>
+            <a href="../team.html" class="nav-link">Team</a>
+            <a href="../news.html" class="nav-link">News</a>
+            <a href="../index.html#contact" class="nav-link">Contact</a>
+            <details class="mobile-dropdown" open>
+                <summary class="nav-link is-active">Spiny Mouse Resources <span class="caret">▾</span></summary>
+                <div class="mobile-submenu">
+                    <a href="../acomys_library/index.html" class="nav-link">Acomys Library</a>
+                    <a href="index.html" class="nav-link is-active">Antibody Database</a>
+                </div>
+            </details>
+        </div>
+    </header>
+
+    <main class="pt-32 flex-grow container mx-auto px-6 md:px-12 pb-16">
+
+        <div class="mb-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Antibody &amp; Reagent Database</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Antibodies confirmed to cross-react with spiny mouse (<em class="italic">Acomys</em>) proteins &mdash;
+                curated from the peer-reviewed <em>Acomys</em> literature and community submissions.
+                Search by target, vendor, catalog number, application, or tissue.
+            </p>
+        </div>
+
+        <!-- Download banner -->
+        <div class="ab-banner ab-banner-gold mb-4">
+            <div class="text-sm text-gray-800">
+                <strong>Download the full dataset</strong> &mdash; <span id="ab-count-total">…</span> antibody entries with target,
+                vendor, catalog number, application, tissue, validation result, and source publication.
+            </div>
+            <button class="btn btn-primary btn-sm" onclick="AntibodyDB.downloadFull()">Download TSV</button>
+        </div>
+
+        <!-- Submit banner -->
+        <div class="ab-banner ab-banner-dark mb-6">
+            <div>
+                <h3 class="font-display font-bold text-lg">Contribute a validated antibody</h3>
+                <p class="text-sm text-gray-300">Tested an antibody in <em>Acomys</em> tissue? Share your result &mdash; positive or negative &mdash; to help the community.</p>
+            </div>
+            <a href="https://spinymice.com/submit-antibody.html" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Submit a validated antibody →</a>
+        </div>
+
+        <!-- Filters -->
+        <div class="ab-card mb-6">
+            <input type="text" id="ab-search" class="ab-input mb-3" placeholder="Search target, clone, catalog #, company…" autocomplete="off">
+            <div class="ab-filter-grid">
+                <select id="ab-cat" class="ab-select"><option value="">All categories</option></select>
+                <select id="ab-works" class="ab-select">
+                    <option value="">All results</option>
+                    <option value="works">Works ✓</option>
+                    <option value="fails">Does not work ✗</option>
+                </select>
+                <select id="ab-app" class="ab-select"><option value="">All applications</option></select>
+                <select id="ab-tissue" class="ab-select"><option value="">All tissues</option></select>
+            </div>
+        </div>
+
+        <div id="ab-results"><div class="ab-empty">Loading antibody database…</div></div>
+
+        <!-- Sources -->
+        <div id="ab-sources" class="ab-card mt-8" style="display:none;">
+            <details class="ab-collapse">
+                <summary>Source Publications (<span id="ab-sources-count">0</span>) ▾</summary>
+                <div id="ab-sources-list" class="mt-4"></div>
+            </details>
+        </div>
+
+    </main>
+
+    <footer class="bg-ksu-black text-gray-400 border-t border-white/10 py-8 px-6 md:px-12 mt-auto">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; 2026 Varholick Lab · Kennesaw State University</p>
+            <div class="flex gap-6">
+                <a href="../acomys_library/index.html" class="hover:text-ksu-gold transition-colors">Acomys Library</a>
+                <a href="https://orcid.org/0000-0003-2822-9045" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">ORCID</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle (matches Acomys Library page pattern)
+        var mobileMenuButton = document.getElementById('mobile-menu-button');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var closeMobileMenu = document.getElementById('close-mobile-menu');
+        mobileMenuButton.addEventListener('click', function () { mobileMenu.classList.remove('hidden'); });
+        closeMobileMenu.addEventListener('click', function () { mobileMenu.classList.add('hidden'); });
+        mobileMenu.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () { mobileMenu.classList.add('hidden'); });
+        });
+    </script>
+    <script src="antibody.js"></script>
+</body>
+</html>
