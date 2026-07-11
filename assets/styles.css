@@ -250,6 +250,123 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
+/* --- Desktop nav dropdown (hover / focus, JS-free) --- */
+.nav-dropdown {
+    position: relative;
+}
+.nav-dropdown-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0;
+    /* Symmetric padding so the flex button's text is vertically centered like the
+       inline <a> siblings (bottom-only padding pins text to the top → sits high).
+       The 4px bottom still matches .nav-link's underline offset. */
+    padding: 4px 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    /* Inherit family/size/line-height but NOT weight — let .nav-link keep 500 so
+       the trigger matches the sibling <a> links (font shorthand would reset it to 400). */
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+}
+.nav-dropdown-trigger .caret {
+    font-size: 0.7em;
+    transition: transform 0.2s ease;
+}
+.nav-dropdown:hover .nav-dropdown-trigger .caret,
+.nav-dropdown:focus-within .nav-dropdown-trigger .caret {
+    transform: rotate(180deg);
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    margin-top: 0.6rem;
+    min-width: 12.5rem;
+    list-style: none;
+    background: #ffffff;
+    border: 1px solid rgba(197, 198, 200, 0.6);
+    border-radius: 0.5rem;
+    box-shadow: 0 12px 30px rgba(11, 19, 21, 0.14);
+    padding: 0.4rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    z-index: 60;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.nav-dropdown-menu li {
+    display: block;
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 0.55rem 1.1rem;
+    white-space: nowrap;
+    font-weight: 500;
+    color: var(--ksu-black);
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+.nav-dropdown-menu a::after { content: none; }
+/* Panel links live on a white surface — keep them dark even when the header is
+   transparent over the hero (otherwise the transparent-header .nav-link rule
+   turns them white-on-white and they disappear). */
+.site-header[data-transparent-header] .nav-dropdown-menu a,
+.site-header.is-solid .nav-dropdown-menu a,
+.nav-dropdown-menu a {
+    color: var(--ksu-black);
+}
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a.is-active {
+    background-color: var(--ksu-cream);
+    color: var(--ksu-black);
+}
+.nav-dropdown-menu a.is-active {
+    font-weight: 600;
+    box-shadow: inset 3px 0 0 var(--ksu-gold);
+}
+
+/* --- Mobile nav dropdown (native <details>, JS-free) --- */
+.mobile-dropdown > summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.mobile-dropdown > summary::-webkit-details-marker {
+    display: none;
+}
+.mobile-dropdown > summary .caret {
+    font-size: 0.7em;
+    transition: transform 0.2s ease;
+}
+.mobile-dropdown[open] > summary .caret {
+    transform: rotate(180deg);
+}
+.mobile-submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+.mobile-submenu a {
+    font-size: 0.95em;
+    opacity: 0.9;
+}
+
 /* --- Buttons --- */
 .btn {
     display: inline-block;

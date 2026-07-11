@@ -10,9 +10,9 @@
     <meta property="og:image" content="images/mus_uninjuredpad.png">
     <meta name="twitter:card" content="summary_large_image">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/tailwind-config.js?v=r4"></script>
+    <script src="assets/tailwind-config.js?v=r7"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css?v=r4">
+    <link rel="stylesheet" href="assets/styles.css?v=r7">
 </head>
 <body>
     <a href="#team-full" class="skip-link">Skip to main content</a>
@@ -31,10 +31,16 @@
                 <li><a href="index.html#about" class="nav-link">About</a></li>
                 <li><a href="research.html" class="nav-link">Research</a></li>
                 <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="acomys_library/index.html" class="nav-link">Acomys Library</a></li>
                 <li><a href="team.html" class="nav-link is-active">Team</a></li>
                 <li><a href="news.html" class="nav-link">News</a></li>
                 <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-trigger" aria-haspopup="true">Spiny Mouse Resources <span class="caret">▾</span></button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="acomys_library/index.html" class="nav-link">Acomys Library</a></li>
+                        <li><a href="antibody_db/index.html" class="nav-link">Antibody Database</a></li>
+                    </ul>
+                </li>
             </ul>
             <button id="mobile-menu-button" class="md:hidden text-ksu-black focus:outline-none" aria-label="Open menu">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
@@ -47,10 +53,16 @@
             <a href="index.html#about" class="nav-link">About</a>
             <a href="research.html" class="nav-link">Research</a>
             <a href="publications.html" class="nav-link">Publications</a>
-            <a href="acomys_library/index.html" class="nav-link">Acomys Library</a>
             <a href="team.html" class="nav-link is-active">Team</a>
             <a href="news.html" class="nav-link">News</a>
             <a href="index.html#contact" class="nav-link">Contact</a>
+            <details class="mobile-dropdown">
+                <summary class="nav-link">Spiny Mouse Resources <span class="caret">▾</span></summary>
+                <div class="mobile-submenu">
+                    <a href="acomys_library/index.html" class="nav-link">Acomys Library</a>
+                    <a href="antibody_db/index.html" class="nav-link">Antibody Database</a>
+                </div>
+            </details>
         </div>
     </header>
 
@@ -200,6 +212,6 @@
         </div>
     </footer>
 
-    <script src="assets/site.js?v=r4"></script>
+    <script src="assets/site.js?v=r7"></script>
 </body>
 </html>

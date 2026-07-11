@@ -49,12 +49,19 @@ jobs:
           python download_pdfs.py
           python parse_pdfs.py
 
+      - name: Refresh antibody candidate report
+        run: |
+          # Scan the (updated) library full text for papers with un-mined antibodies.
+          # Only regenerates the candidate report for a later curated extraction pass;
+          # does NOT auto-write antibody entries.
+          python antibody_db/find_antibody_candidates.py
+
       - name: Check for changes and commit
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add acomys_library/acomys_library.json acomys_library/search_index.json
-          git commit -m "Auto-update Acomys library and deep search index" || echo "No changes to commit"
+          git add acomys_library/acomys_library.json acomys_library/search_index.json antibody_db/antibody_candidates.json
+          git commit -m "Auto-update Acomys library, deep search index, and antibody candidates" || echo "No changes to commit"
           git push
 
       - name: Send Email Notification
