@@ -36,31 +36,31 @@ def load_news():
 
 
 def make_card(item, is_latest=False):
-    """Return an HTML card string for one news item."""
-    extra_class = "relative" if is_latest else ""
+    """Return an HTML card string for one news item (minimalist KSU style)."""
     badge = ""
     if is_latest:
         badge = (
-            '\n                        <span class="absolute top-3 right-3 bg-blue-600 '
-            'text-white text-xs font-bold px-2 py-1 rounded-full">Latest</span>'
+            '\n                        <span class="inline-block bg-ksu-gold text-ksu-black '
+            'text-[0.65rem] font-bold uppercase tracking-wider px-2 py-0.5 rounded mb-2">'
+            'Latest</span>'
         )
 
     link_html = ""
     if item.get("link"):
         text = item.get("link_text", "Learn More")
         link_html = (
-            f' <a href="{item["link"]}" class="text-blue-600 hover:text-blue-800 '
-            f'font-medium" target="_blank" rel="noopener noreferrer">{text}</a>'
+            f' <a href="{item["link"]}" class="link-gold" '
+            f'target="_blank" rel="noopener noreferrer">{text}</a>'
         )
 
     return f"""                    <!-- News Item: {item["title"][:50]} -->
-                    <div class="bg-gray-50 rounded-lg shadow-md p-6 transform hover:scale-105 transition duration-300 ease-in-out {extra_class}">{badge}
-                        <p class="text-sm text-gray-500 mb-2">{item["date"]}</p>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">{item["title"]}</h3>
-                        <p class="text-gray-700 text-sm mb-4">
+                    <article class="border-t-2 border-ksu-gold pt-5">{badge}
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">{item["date"]}</p>
+                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">{item["title"]}</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">
                             {item["body"]}{link_html}
                         </p>
-                    </div>"""
+                    </article>"""
 
 
 def rebuild(html_path, cards_html):

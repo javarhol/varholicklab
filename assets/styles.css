@@ -1,0 +1,332 @@
+/* ==========================================================================
+   Varholick Lab — shared design system
+   Minimalist, whitespace-forward, Kennesaw State palette (black / gold / white).
+   Loaded on every page alongside the Tailwind CDN.
+   ========================================================================== */
+
+:root {
+    --ksu-black: #0B1315;
+    --ksu-gold: #FDBB30;
+    --ksu-grey: #C5C6C8;
+    --ksu-cream: #FAF9F6;
+    --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--ksu-black);
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.0625rem;   /* ~17px base for a more editorial feel */
+    line-height: 1.7;
+}
+
+/* Accessible skip link (visually hidden until focused) */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: var(--ksu-black);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+}
+.skip-link:focus {
+    left: 0.5rem;
+    top: 0.5rem;
+}
+
+/* --- Headings: display grotesque, large, tightly tracked --- */
+h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+}
+.font-display {
+    font-family: var(--font-display);
+}
+
+/* ==========================================================================
+   Scroll-reveal motion (Sears-style fade / slide-up on enter)
+   ========================================================================== */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
+
+/* Parallax hero — image holds while content scrolls over it */
+.hero-parallax {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media (max-width: 768px) {
+    /* iOS/Android don't handle fixed backgrounds well */
+    .hero-parallax {
+        background-attachment: scroll;
+    }
+}
+
+/* Section vertical rhythm — generous whitespace */
+.section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+    .section {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+}
+
+/* A short gold rule used under section labels / eyebrows */
+.eyebrow {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ksu-black);
+}
+.eyebrow::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin-top: 0.6rem;
+    background: var(--ksu-gold);
+}
+
+/* Constrain body copy for readability */
+.prose-width {
+    max-width: 65ch;
+}
+
+/* Numbered section badge — gold circle with dark numeral (pops on any band) */
+.num-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background-color: var(--ksu-gold);
+    color: var(--ksu-black);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1;
+}
+
+/* Dark full-bleed band helpers */
+.section-dark {
+    background-color: var(--ksu-black);
+    color: #ffffff;
+}
+.section-dark h1,
+.section-dark h2,
+.section-dark h3 {
+    color: #ffffff;
+}
+.section-dark .eyebrow {
+    color: #ffffff;
+}
+.section-dark .prose-width,
+.section-dark p {
+    color: rgba(255, 255, 255, 0.82);
+}
+/* Let dark bands carry dense content (subsections, lists, links) legibly */
+.section-dark h4,
+.section-dark h5 {
+    color: #ffffff;
+}
+.section-dark .text-ksu-black {
+    color: #ffffff;
+}
+.section-dark .text-gray-700,
+.section-dark .text-gray-600,
+.section-dark .text-gray-500 {
+    color: rgba(255, 255, 255, 0.72);
+}
+.section-dark li {
+    color: rgba(255, 255, 255, 0.82);
+}
+.section-dark .link-gold {
+    color: #ffffff;
+}
+.section-dark .border-ksu-grey,
+.section-dark .border-t {
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* --- Transparent header over the hero, solid on scroll (homepage) --- */
+.site-header {
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.site-header[data-transparent-header] {
+    background-color: transparent;
+    border-color: transparent;
+}
+.site-header[data-transparent-header] .nav-link,
+.site-header[data-transparent-header] .brand-title {
+    color: #ffffff;
+}
+.site-header[data-transparent-header] .brand-subtitle {
+    color: rgba(255, 255, 255, 0.75);
+}
+.site-header[data-transparent-header] .menu-icon {
+    color: #ffffff;
+}
+.brand-logo {
+    /* Force a monochrome black silhouette of the logo on light headers */
+    filter: brightness(0);
+    transition: filter 0.3s ease;
+}
+.site-header[data-transparent-header] .brand-logo {
+    /* White over the dark hero */
+    filter: brightness(0) invert(1);
+}
+/* Solid state (also the default look once scrolled) */
+.site-header.is-solid {
+    background-color: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(197, 198, 200, 0.6);
+}
+.site-header.is-solid .nav-link,
+.site-header.is-solid .brand-title,
+.site-header.is-solid .menu-icon {
+    color: var(--ksu-black);
+}
+.site-header.is-solid .brand-subtitle {
+    color: #6b7280;
+}
+
+/* --- Navigation link with animated gold underline --- */
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    color: var(--ksu-black);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--ksu-gold);
+    transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::after,
+.nav-link.is-active::after {
+    width: 100%;
+}
+.nav-link.is-active {
+    font-weight: 600;
+}
+/* White nav links (e.g. homepage's dark mobile-menu overlay) */
+.nav-link.text-white {
+    color: #ffffff;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    text-align: center;
+}
+.btn:hover {
+    transform: translateY(-1px);
+}
+.btn-primary {
+    background-color: var(--ksu-black);
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #000;
+}
+.btn-gold {
+    background-color: var(--ksu-gold);
+    color: var(--ksu-black);
+}
+.btn-gold:hover {
+    background-color: #f0ad1c;
+}
+.btn-outline {
+    border: 2px solid currentColor;
+}
+.btn-outline-light {
+    border: 2px solid #fff;
+    color: #fff;
+}
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: var(--ksu-black);
+}
+
+/* Inline text link */
+.link-gold {
+    color: var(--ksu-black);
+    font-weight: 600;
+    border-bottom: 2px solid var(--ksu-gold);
+    transition: color 0.2s ease;
+}
+.link-gold:hover {
+    color: #000;
+}
+
+/* --- Alternating text / image content rows (Sears-style editorial layout) --- */
+.content-row {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .content-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+    /* Reverse every other row: image left, text right */
+    .content-row.reverse .content-row__media {
+        order: 2;
+    }
+    .content-row.reverse .content-row__text {
+        order: 1;
+    }
+}
+.content-row__media img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+/* --- Simple hairline divider --- */
+.hairline {
+    border: 0;
+    border-top: 1px solid var(--ksu-grey);
+}
