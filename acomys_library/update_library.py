@@ -21,7 +21,7 @@ def reconstruct_abstract(inverted_index):
     word_positions.sort(key=lambda x: x[0])
     return " ".join([word for pos, word in word_positions])
 
-def passes_filters(title, abstract, journal, doi):
+def passes_filters(title, abstract, journal, doi, work=None):
     title_lower = title.lower()
     abstract_lower = abstract.lower()
     journal_lower = journal.lower()
@@ -54,6 +54,12 @@ def passes_filters(title, abstract, journal, doi):
     if not title_match:
         acomys_count = abstract_lower.count('acomys') + abstract_lower.count('spiny m')
         if acomys_count < 2:
+            return False
+            
+        # 7. Metadata Anomaly Guard
+        # If the title has nothing to do with biology, it's likely an OpenAlex metadata mixup.
+        red_flags = ['terror ', 'northern ireland', 'pembelajaran', 'pemasaran', 'political', 'sociology']
+        if any(rf in title_lower for rf in red_flags):
             return False
 
     return True
@@ -124,13 +130,7 @@ def main():
                 
                 # Check for DOI duplicate
                 if doi and doi in existing_by_doi:
-                    # Double check if the title is vaguely similar to prevent bad DOI merges
-                    existing_title = normalize_string(existing_by_doi[doi].get('title', ''))
-                    norm_t = normalize_string(title)
-                    if existing_title and norm_t:
-                        ratio = difflib.SequenceMatcher(None, existing_title, norm_t).ratio()
-                        if ratio > 0.5:
-                            continue # True duplicate
+                    continue
                 
                 # Check for fuzzy title duplicate
                 norm_t = normalize_string(title)
@@ -153,7 +153,7 @@ def main():
                 if not pdf and work.get('open_access', {}).get('oa_url'):
                     pdf = work.get('open_access', {}).get('oa_url')
 
-                if not passes_filters(title, abstract, journal, doi):
+                if not passes_filters(title, abstract, journal, doi, work):
                     continue
 
                 # Authors
@@ -215,10 +215,15 @@ def main():
         json.dump(existing_papers, f, indent=2, ensure_ascii=False)
         
     # Write report for email
-    if new_papers:
+    # Only report on papers published in the last 2 years so we don't spam the user with old papers
+    import datetime
+    current_year = datetime.datetime.now().year
+    recent_new_papers = [p for p in new_papers if p.get('year') and p.get('year') >= current_year - 1]
+    
+    if recent_new_papers:
         with open('new_papers_report.txt', 'w', encoding='utf-8') as f:
-            f.write(f"The Acomys Library has been automatically updated. Here are the {len(new_papers)} new papers:\n\n")
-            for p in new_papers:
+            f.write(f"The Acomys Library has been automatically updated. Here are the {len(recent_new_papers)} recently published papers out of {len(new_papers)} total new additions:\n\n")
+            for p in recent_new_papers:
                 f.write(f"### {p['title']}\n")
                 f.write(f"**Authors:** {p['authors']}\n")
                 f.write(f"**Journal:** {p['journal']} ({p['year']})\n")
