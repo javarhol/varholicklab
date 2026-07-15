@@ -21,7 +21,7 @@ news.json format — each item can have:
 
 import json, re, sys, os
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NEWS_JSON  = os.path.join(SCRIPT_DIR, "news.json")
 INDEX_HTML = os.path.join(SCRIPT_DIR, "index.html")
 NEWS_HTML  = os.path.join(SCRIPT_DIR, "news.html")

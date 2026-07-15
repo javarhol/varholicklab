@@ -28,7 +28,7 @@ the pieces fit together.
 ## Regenerating SEO assets
 
 ```bash
-python generate_seo.py
+python scripts/generate_seo.py
 ```
 
 Run from the repo root. It rewrites the sitemap, the crawlable listings, the
@@ -90,7 +90,7 @@ if pages are missed, review Scholar's inclusion guidelines:
 
 ```bash
 # 1. Regenerate and confirm the sitemap is well-formed
-python generate_seo.py
+python scripts/generate_seo.py
 python -c "import xml.dom.minidom; xml.dom.minidom.parse('sitemap.xml'); print('OK')"
 
 # 2. Confirm the databases expose content without JavaScript

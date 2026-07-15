@@ -28,7 +28,7 @@ import html
 import datetime
 
 SITE = "https://varholicklab.org"
-ROOT = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = datetime.date.today().isoformat()
 
 AB_JSON = os.path.join(ROOT, "antibody_db", "data", "antibodies.json")

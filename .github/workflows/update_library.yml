@@ -60,7 +60,7 @@ jobs:
         run: |
           # Rebuild sitemap, crawlable database listings, per-target pages, and
           # Dataset/publication JSON-LD from the (possibly updated) data files.
-          python generate_seo.py
+          python scripts/generate_seo.py
 
       - name: Check for changes and commit
         run: |
