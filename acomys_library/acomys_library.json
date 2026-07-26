@@ -205,7 +205,7 @@
     "related_articles": [
       "W7136736644",
       "W7131315118",
-      "W4414795252"
+      "W7168186347"
     ],
     "norm_title": "prenatal assembly of functional cortical circuits"
   },
@@ -823,6 +823,49 @@
       "W7136736644",
       "W7131315118",
       "W7128493142"
+    ]
+  },
+  {
+    "id": "W7170132866",
+    "title": "<i>Protospirura muricola</i> Gedoelst, 1916 (Spiruridae) in eastern spiny mice ( <i>Acomys dimidiatus</i> ): more than a decade of stability in frequency distributions of worm burdens, and evidence for both frequent low-dose and clumped transmission",
+    "authors": "Jerzy M. Behnke, Joseph A. Jackson, Anna Bajer, Jolanta Behnke‐Borowczyk, Eman M. E. Mohallal, Francis Gilbert",
+    "year": 2026,
+    "journal": "Parasitology",
+    "topics": [],
+    "abstract": "An abstract is not available for this content so a preview has been provided. As you have access to this content, a full PDF is available via the ‘Save PDF’ action button.",
+    "blurb": "",
+    "links": {
+      "doi": "https://doi.org/10.1017/s0031182026102492",
+      "pdf": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DCE766466DA7253ECC5E953D370A2F75/S0031182026102492a.pdf/div-class-title-em-class-italic-protospirura-muricola-em-gedoelst-1916-spiruridae-in-eastern-spiny-mice-em-class-italic-acomys-dimidiatus-em-more-than-a-decade-of-stability-in-frequency-distributions-of-worm-burdens-and-evidence-for-both-frequent-low-dose-and-clumped-transmission-div.pdf",
+      "landing_page": "https://doi.org/10.1017/s0031182026102492"
+    },
+    "is_abstract_only": false,
+    "related_articles": []
+  },
+  {
+    "id": "W7170041377",
+    "title": "Does transection severity determine the way of spinal cord repair in the spiny mouse?",
+    "authors": "Aleksandr Veshchitskii, Aleksandr Veshchitskii, Polina Shkorbatova, Oleg Gorskii, Anton Beljajev, Olja Mijanović, M. E. Velizhanina, Eduard Sharapenkov, Aleksandr A. Rubel, Natalia Merkulyeva",
+    "year": 2026,
+    "journal": "bioRxiv (Cold Spring Harbor Laboratory)",
+    "topics": [
+      "Tissue: Nervous System",
+      "General Regeneration & Wound Healing",
+      "Tissue: Musculoskeletal",
+      "Cell & Molecular Biology"
+    ],
+    "abstract": "SUMMARY The mechanisms of the spinal cord regeneration after complete spinal cord transection were investigated in spiny mice. In some animals, the appearance of quadrupedal overground stepping together with rewiring of the direct propriospinal projections between the cervical and lumbar enlargements was revealed. In others, no stepping recovery was detected, whereas numerous cells labeled by the neuronal proteins NeuN and βIII-tubulin were observed within the injury region. We suggest that depending on trauma severity, different repair mechanisms are elicited: only connectome restoration or both connectome restoration and the activation of neurogenesis. To confirm the high neurogenic potential of spiny mice, a primary culture of bone marrow was established. Unlike in other mammals, bone marrow pluripotent cells in the culture differentiated into neuronal cells without any chemical stimulation. These findings provide strong evidence for the high differentiation potential of spiny mouse stem cells toward neural lineages. GRAPHICAL ABSTRACT HIGHLIGHTS Two regenerative mechanisms are proposed in spiny mice, depending on the severity the spinal cord transection Regular transection evoked the emergence of the direct propriospinal projections Severe transection evoked the neurogenesis within the primary injured region Primary culture of bone marrow cells from spiny mice exhibits neurogenic differentiation without chemical induction",
+    "blurb": "",
+    "links": {
+      "doi": "https://doi.org/10.64898/2026.07.17.739224",
+      "pdf": "https://www.biorxiv.org/content/biorxiv/early/2026/07/22/2026.07.17.739224.full.pdf",
+      "landing_page": "https://doi.org/10.64898/2026.07.17.739224"
+    },
+    "is_abstract_only": false,
+    "related_articles": [
+      "W7136736644",
+      "W7128493142",
+      "W7166047442"
     ]
   },
   {
@@ -4527,8 +4570,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4414082640"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "opioid withdrawal behavior in spiny mice a novel preclinical model of neonatal opioid withdrawal syndrome nows"
   },
@@ -7074,8 +7117,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "0199 characterizing sleep circadian rhythms and eye closure in acomys cahirinus cairo spiny mouse"
   },
@@ -11422,8 +11465,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4414082640"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "a new member or an intruder how do sinai spiny mouse acomys dimidiatus families respond to a male newcomer"
   },
@@ -11529,8 +11572,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "social and life history correlates of litter size in captive colonies of precocial spiny mice acomys"
   },
@@ -11873,8 +11916,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "the responses of oneday old acomys cahirinus pups to naturally occurring chemical stimuli"
   },
@@ -14589,8 +14632,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "temporal patterning of spontaneous motor activity in altricial and precocial rodent fetuses and preterm human infants a comparative study of bout organization and interlimb movement synchrony"
   },
@@ -14799,8 +14842,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4414082640"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "abstracts international society for developmental psychobiology 33rd annual meeting"
   },
@@ -16526,8 +16569,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "stability of preference for odors after short‐term exposure in young spiny mice"
   },
@@ -16905,8 +16948,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4414082640"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "maternal discrimination and the development of sex differences in exploratory behaviour in infant spiny mice iacomys cahirinusi"
   },
@@ -17712,8 +17755,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4414082640"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "maternalfetal communication of circadian phase in a precocious rodent the spiny mouse"
   },
@@ -17736,8 +17779,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "effects of odor familiarity on the development of systematic exploration in the spiny mouse iacomys cahirinusi"
   },
@@ -18310,8 +18353,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "the role of familiarity in the development of social preferences in spiny mice"
   },
@@ -18607,8 +18650,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "littermate influences on behavioral development in iacomys cahirinusi and imus musculusi"
   },
@@ -18886,8 +18929,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4404457467"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "a comparison of norway rats and spiny mice on measures of activity and exploration"
   },
@@ -19211,8 +19254,8 @@
     "is_abstract_only": false,
     "related_articles": [
       "W7163161046",
-      "W7117686486",
-      "W4414082640"
+      "W7168186347",
+      "W7117686486"
     ],
     "norm_title": "maternal behavior and the milk ejection reflex in a precocial murid acomys cahirinus"
   },
