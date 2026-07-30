@@ -14,6 +14,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.REPO_PAT }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -66,11 +69,24 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add acomys_library/acomys_library.json acomys_library/search_index.json antibody_db/antibody_candidates.json
-          # SEO outputs regenerated above
-          git add sitemap.xml acomys_library/index.html antibody_db/index.html publications.html
-          git add -A antibody_db/targets
-          git commit -m "Auto-update Acomys library, deep search index, antibody candidates, and SEO assets" || echo "No changes to commit"
+          
+          # Commit Acomys Library updates
+          cd acomys_library
+          git add acomys_library.json search_index.json index.html || true
+          git commit -m "Auto-update library and SEO" || echo "No changes in acomys_library"
+          git push || echo "No push needed"
+          cd ..
+          
+          # Commit Antibody DB updates
+          cd antibody_db
+          git add antibody_candidates.json index.html targets/ || true
+          git commit -m "Auto-update candidates and SEO" || echo "No changes in antibody_db"
+          git push || echo "No push needed"
+          cd ..
+          
+          # Commit Main Repo updates (SEO files and submodule pointers)
+          git add sitemap.xml publications.html acomys_library antibody_db
+          git commit -m "Auto-update SEO assets and submodule pointers" || echo "No changes to commit"
           git push
 
       - name: Send Email Notification

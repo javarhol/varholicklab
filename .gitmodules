@@ -1,0 +1,6 @@
+[submodule "acomys_library"]
+	path = acomys_library
+	url = git@github.com:javarhol/acomys_literature_library.git
+[submodule "antibody_db"]
+	path = antibody_db
+	url = git@github.com:javarhol/acomys_antibody_database.git
