@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 0 * * 0' # Every Sunday at midnight
   workflow_dispatch: # Allow manual trigger
+    inputs:
+      force_email:
+        description: 'Send the notification email even when no new papers were found (tests delivery)'
+        type: boolean
+        default: false
 
 jobs:
   update-library:
@@ -58,6 +63,8 @@ jobs:
           cd acomys_library
           if grep -q "NO_NEW_PAPERS" new_papers_report.txt; then
             echo "has_new=false" >> $GITHUB_OUTPUT
+            # Only ever sent by a manual run with force_email, to verify delivery.
+            echo "email_body=No new papers found this week. This is a manually triggered delivery test." >> $GITHUB_ENV
           else
             echo "has_new=true" >> $GITHUB_OUTPUT
             # Prepare email body
@@ -131,7 +138,7 @@ jobs:
           git push origin main
 
       - name: Send Email Notification
-        if: steps.check_new.outputs.has_new == 'true'
+        if: steps.check_new.outputs.has_new == 'true' || inputs.force_email
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
