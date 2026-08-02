@@ -120,8 +120,11 @@ jobs:
           # Runs last so the pointers it records are already on the remotes.
           #
           # REPO_PAT is scoped to the two database repos only, so it cannot push
-          # here. The checkout step persisted it as the credential for this repo,
-          # so override it with GITHUB_TOKEN (granted contents: write above).
+          # here; this repo needs GITHUB_TOKEN (granted contents: write above).
+          # The checkout step persisted REPO_PAT as an http.extraheader, and that
+          # Authorization header overrides any credentials in the remote URL, so
+          # it has to be unset before the URL token below takes effect.
+          git config --local --unset-all http.https://github.com/.extraheader || true
           git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/javarhol/varholicklab.git"
           git add sitemap.xml publications.html acomys_library antibody_db
           git commit -m "Auto-update SEO assets and submodule pointers" || echo "No changes to commit"
