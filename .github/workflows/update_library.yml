@@ -70,21 +70,37 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
+          # Submodules are checked out at a detached HEAD, so they must be put
+          # back on a branch before anything can be pushed. Pushes are NOT
+          # error-suppressed: a silent failure here would leave the parent repo
+          # pointing at a submodule commit that exists only on the runner.
+
           # Commit Acomys Library updates
           cd acomys_library
+          git remote set-url origin "https://x-access-token:${{ secrets.REPO_PAT }}@github.com/javarhol/acomys_literature_library.git"
+          git checkout -B main
           git add acomys_library.json search_index.json index.html || true
-          git commit -m "Auto-update library and SEO" || echo "No changes in acomys_library"
-          git push || echo "No push needed"
+          if git commit -m "Auto-update library and SEO"; then
+            git push origin main
+          else
+            echo "No changes in acomys_library"
+          fi
           cd ..
-          
+
           # Commit Antibody DB updates
           cd antibody_db
+          git remote set-url origin "https://x-access-token:${{ secrets.REPO_PAT }}@github.com/javarhol/acomys_antibody_database.git"
+          git checkout -B main
           git add antibody_candidates.json index.html targets/ || true
-          git commit -m "Auto-update candidates and SEO" || echo "No changes in antibody_db"
-          git push || echo "No push needed"
+          if git commit -m "Auto-update candidates and SEO"; then
+            git push origin main
+          else
+            echo "No changes in antibody_db"
+          fi
           cd ..
-          
-          # Commit Main Repo updates (SEO files and submodule pointers)
+
+          # Commit Main Repo updates (SEO files and submodule pointers).
+          # Runs last so the pointers it records are already on the remotes.
           git add sitemap.xml publications.html acomys_library antibody_db
           git commit -m "Auto-update SEO assets and submodule pointers" || echo "No changes to commit"
           git push
