@@ -18,6 +18,27 @@ jobs:
           submodules: true
           token: ${{ secrets.REPO_PAT }}
 
+      - name: Sync submodules to their latest main
+        env:
+          PAT: ${{ secrets.REPO_PAT }}
+        run: |
+          # actions/checkout leaves each submodule detached at the commit the
+          # parent recorded, which can lag the database's own main -- e.g. when a
+          # run pushes the databases but fails before updating the pointers.
+          # Starting from each database's latest main means the scripts operate on
+          # current data and the push at the end fast-forwards instead of being
+          # rejected. This also re-points the submodules at authenticated https
+          # remotes, since .gitmodules uses ssh URLs that the runner cannot use.
+          sync() {
+            cd "$1"
+            git remote set-url origin "https://x-access-token:$PAT@github.com/javarhol/$2.git"
+            git fetch --quiet origin main
+            git checkout -B main origin/main
+            cd ..
+          }
+          sync acomys_library acomys_literature_library
+          sync antibody_db acomys_antibody_database
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -70,15 +91,13 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Submodules are checked out at a detached HEAD, so they must be put
-          # back on a branch before anything can be pushed. Pushes are NOT
-          # error-suppressed: a silent failure here would leave the parent repo
-          # pointing at a submodule commit that exists only on the runner.
+          # The sync step above already put each submodule on main with an
+          # authenticated remote. Pushes are NOT error-suppressed: a silent
+          # failure here would leave the parent repo pointing at a submodule
+          # commit that exists only on the runner.
 
           # Commit Acomys Library updates
           cd acomys_library
-          git remote set-url origin "https://x-access-token:${{ secrets.REPO_PAT }}@github.com/javarhol/acomys_literature_library.git"
-          git checkout -B main
           git add acomys_library.json search_index.json index.html || true
           if git commit -m "Auto-update library and SEO"; then
             git push origin main
@@ -89,8 +108,6 @@ jobs:
 
           # Commit Antibody DB updates
           cd antibody_db
-          git remote set-url origin "https://x-access-token:${{ secrets.REPO_PAT }}@github.com/javarhol/acomys_antibody_database.git"
-          git checkout -B main
           git add antibody_candidates.json index.html targets/ || true
           if git commit -m "Auto-update candidates and SEO"; then
             git push origin main
