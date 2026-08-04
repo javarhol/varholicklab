@@ -1,0 +1,10 @@
+# GitHub Pages publishes the entire repository tree. acomys_library/papers_pdf is
+# ~1.9 GB of cached source PDFs that exist only as input to parse_pdfs.py for the
+# deep-search index -- nothing on the site links to them. Publishing them pushed
+# the site to ~1.95 GB, well past the 1 GB Pages limit, and builds began failing.
+# Excluding them keeps the files in the repo for the weekly workflow while taking
+# them out of the published output.
+exclude:
+  - acomys_library/papers_pdf
+  - acomys_library/__pycache__
+  - scripts
