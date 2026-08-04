@@ -93,6 +93,19 @@ jobs:
           # Dataset/publication JSON-LD from the (possibly updated) data files.
           python scripts/generate_seo.py
 
+      - name: Send Email Notification
+        if: steps.check_new.outputs.has_new == 'true' || inputs.force_email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: "j.a.varholick@gmail.com"
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Acomys Library Weekly Update"
+          to: "jvarhol2@kennesaw.edu"
+          from: "Acomys Bot <j.a.varholick@gmail.com>"
+          body: ${{ env.email_body }}
+
       - name: Check for changes and commit
         run: |
           git config --global user.name "github-actions[bot]"
@@ -137,15 +150,19 @@ jobs:
           git commit -m "Auto-update SEO assets and submodule pointers" || echo "No changes to commit"
           git push origin main
 
-      - name: Send Email Notification
-        if: steps.check_new.outputs.has_new == 'true' || inputs.force_email
+      - name: Alert on failure
+        # The Aug 2 breakage went unnoticed because a failed run is silent unless
+        # you check the Actions tab. Notify so a broken week is visible.
+        if: failure()
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 465
           username: "j.a.varholick@gmail.com"
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "Acomys Library Weekly Update"
+          subject: "Acomys Library Update FAILED"
           to: "jvarhol2@kennesaw.edu"
           from: "Acomys Bot <j.a.varholick@gmail.com>"
-          body: ${{ env.email_body }}
+          body: |
+            The weekly Acomys Library update failed.
+            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
