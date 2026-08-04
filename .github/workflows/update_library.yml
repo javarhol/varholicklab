@@ -118,7 +118,9 @@ jobs:
 
           # Commit Acomys Library updates
           cd acomys_library
-          git add acomys_library.json search_index.json index.html || true
+          # abstract_cache.json must be committed too, or every run re-requests
+          # the same DOIs from Crossref/PubMed.
+          git add acomys_library.json search_index.json index.html abstract_cache.json || true
           if git commit -m "Auto-update library and SEO"; then
             git push origin main
           else
