@@ -30,6 +30,34 @@
         });
     });
 
+    // --- Re-apply the URL hash once images have loaded ---
+    // Thumbnails and figures have no intrinsic dimensions, so they finish loading
+    // after the browser's initial jump and push the target below the viewport.
+    // Landing on e.g. publications.html#pub-whisker-2025 otherwise stops short.
+    if (window.location.hash.length > 1) {
+        // Chrome restores the previous scroll position after load, which would undo
+        // the correction below. Opt out for hash landings only.
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+        window.addEventListener('load', function () {
+            var target;
+            try {
+                target = document.querySelector(window.location.hash);
+            } catch (err) {
+                return; // hash isn't a valid selector
+            }
+            if (!target) return;
+            // Reveal it outright — waiting on the IntersectionObserver can leave the
+            // element you linked to sitting at opacity 0 until the visitor scrolls.
+            target.classList.add('is-visible');
+            requestAnimationFrame(function () {
+                // 'instant' overrides the page's smooth scroll-behavior — a long
+                // animated glide on arrival reads as a bug, not a transition.
+                target.scrollIntoView({ behavior: 'instant', block: 'start' });
+            });
+        });
+    }
+
     // --- Scroll-reveal (fade / slide-up as sections enter the viewport) ---
     var revealEls = document.querySelectorAll('.reveal');
     if (revealEls.length) {
