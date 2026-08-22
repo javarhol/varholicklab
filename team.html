@@ -4,256 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team — Varholick Lab</title>
-    <meta name="description" content="Meet the Varholick Lab team at Kennesaw State University. We are a collaborative group studying tissue regeneration, behavioral neuroscience, and peripheral nerve recovery.">
+    <meta name="description" content="Meet the Varholick Lab at Kennesaw State University: Dr. Justin Varholick and the students studying regeneration, reinnervation, and functional recovery in spiny mice and salamanders. Positions open.">
     <meta property="og:title" content="Team — Varholick Lab">
-    <meta property="og:description" content="A team of curious problem-solvers studying regeneration, behavior, and neuroplasticity.">
-    <meta property="og:image" content="https://varholicklab.org/images/mus_uninjuredpad.png">
+    <meta property="og:description" content="Meet the Varholick Lab at Kennesaw State University: Dr. Justin Varholick and the students studying regeneration, reinnervation, and functional recovery in spiny mice and salamanders. Positions open.">
+    <meta property="og:image" content="https://varholicklab.org/images/varholickinlab.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://varholicklab.org/team.html">
     <meta property="og:site_name" content="Varholick Lab">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Team — Varholick Lab">
-    <meta name="twitter:description" content="A team of curious problem-solvers studying regeneration, behavior, and neuroplasticity.">
+    <meta name="twitter:description" content="Meet the Varholick Lab at Kennesaw State University: Dr. Justin Varholick and the students studying regeneration, reinnervation, and functional recovery in spiny mice and salamanders. Positions open.">
     <link rel="canonical" href="https://varholicklab.org/team.html">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/tailwind-config.js?v=r10"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css?v=r10">
-    <!-- Structured data: lab members -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ResearchOrganization",
-      "@id": "https://varholicklab.org/#organization",
-      "name": "Varholick Lab",
-      "url": "https://varholicklab.org/",
-      "parentOrganization": {
-        "@type": "CollegeOrUniversity",
-        "name": "Kennesaw State University"
-      },
-      "founder": {
-        "@type": "Person",
-        "name": "Justin Varholick",
-        "jobTitle": "Principal Investigator",
-        "sameAs": [
-          "https://scholar.google.com/citations?user=JustinVarholick",
-          "https://orcid.org/0000-0003-2822-9045"
-        ]
-      },
-      "member": [
-        { "@type": "Person", "name": "Justin Varholick", "jobTitle": "Principal Investigator" },
-        { "@type": "Person", "name": "Ito Osayi", "jobTitle": "Undergraduate Researcher" },
-        { "@type": "Person", "name": "Adilene Perez", "jobTitle": "Undergraduate Researcher" },
-        { "@type": "Person", "name": "Sienna Bennett", "jobTitle": "Undergraduate Researcher" },
-        { "@type": "Person", "name": "Kellyn Gilligan", "jobTitle": "Undergraduate Researcher" },
-        { "@type": "Person", "name": "Stefania Salazar", "jobTitle": "Undergraduate Researcher" }
-      ]
-    }
-    </script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bento.css?v=b1">
 </head>
-<body>
-    <a href="#team-full" class="skip-link">Skip to main content</a>
-
-    <!-- Header / Navigation -->
-    <header class="bg-white/95 backdrop-blur border-b border-ksu-grey/60 py-4 px-6 md:px-12 fixed w-full z-50">
-        <nav class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
-                <img src="images/repairlablogo.png" alt="Varholick Lab logo" class="brand-logo h-12 w-auto object-contain">
-                <span class="flex flex-col leading-none">
-                    <span class="text-xl font-extrabold text-ksu-black uppercase tracking-wide">Varholick Lab</span>
-                    <span class="text-xs text-gray-500 italic font-light mt-1">Decoding Repair. Restoring Function.</span>
-                </span>
-            </a>
-            <ul class="hidden md:flex items-center space-x-7 text-sm">
-                <li><a href="index.html#about" class="nav-link">About</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="team.html" class="nav-link is-active">Team</a></li>
-                <li><a href="news.html" class="nav-link">News</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                <li class="nav-dropdown">
-                    <button class="nav-link nav-dropdown-trigger" aria-haspopup="true">Spiny Mouse Resources <span class="caret">▾</span></button>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="acomys_library/index.html" class="nav-link">Acomys Library</a></li>
-                        <li><a href="antibody_db/index.html" class="nav-link">Antibody Database</a></li>
-                        <li><a href="brain_atlas/index.html" class="nav-link">Brain Atlas</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <button id="mobile-menu-button" class="md:hidden text-ksu-black focus:outline-none" aria-label="Open menu">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
-            <button id="close-mobile-menu" class="absolute top-6 right-6 text-ksu-black focus:outline-none" aria-label="Close menu">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <a href="index.html#about" class="nav-link">About</a>
-            <a href="research.html" class="nav-link">Research</a>
-            <a href="publications.html" class="nav-link">Publications</a>
-            <a href="team.html" class="nav-link is-active">Team</a>
-            <a href="news.html" class="nav-link">News</a>
-            <a href="index.html#contact" class="nav-link">Contact</a>
-            <details class="mobile-dropdown">
-                <summary class="nav-link">Spiny Mouse Resources <span class="caret">▾</span></summary>
-                <div class="mobile-submenu">
-                    <a href="acomys_library/index.html" class="nav-link text-white">Acomys Library</a>
-                    <a href="antibody_db/index.html" class="nav-link text-white">Antibody Database</a>
-                    <a href="brain_atlas/index.html" class="nav-link text-white">Brain Atlas</a>
+<body class="page">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="top">
+        <a href="index.html" class="brand" aria-label="Varholick Lab home">
+            <img src="images/repairlablogo.png" alt="">
+            <span><b>Varholick Lab</b><small>Kennesaw State University</small></span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="team.html" class="is-active">Team</a>
+            <a href="news.html">News</a>
+            <details class="dd">
+                <summary>Spiny mouse resources</summary>
+                <div class="dd-menu">
+                    <a href="acomys_library/index.html">Acomys Library<small>Every spiny mouse paper, searchable</small></a>
+                    <a href="antibody_db/index.html">Antibody Database<small>Antibodies validated in <em>Acomys</em> tissue</small></a>
+                    <a href="brain_atlas/index.html">Brain Atlas<small>MRI atlas of the spiny mouse brain</small></a>
                 </div>
             </details>
-        </div>
+            <a href="mailto:jvarhol2@kennesaw.edu" class="pill">Contact</a>
+        </nav>
+        <details class="mnav">
+            <summary aria-label="Open menu">Menu</summary>
+            <div class="mnav-menu">
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html" class="is-active">Team</a>
+                <a href="news.html">News</a>
+                <span class="label">Spiny mouse resources</span>
+                <a href="acomys_library/index.html" class="sub">Acomys Library</a>
+                <a href="antibody_db/index.html" class="sub">Antibody Database</a>
+                <a href="brain_atlas/index.html" class="sub">Brain Atlas</a>
+                <a href="mailto:jvarhol2@kennesaw.edu">Contact</a>
+            </div>
+        </details>
     </header>
 
-    <main id="team-full">
+    <main id="main" class="bento">
 
-        <!-- Page intro — dark band -->
-        <section class="section-dark pt-28 md:pt-36 pb-16 md:pb-20">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="max-w-3xl reveal">
-                    <span class="eyebrow">Our Team</span>
-                    <h1 class="text-4xl md:text-6xl font-bold mt-4 mb-5 leading-tight">Meet the people behind the science</h1>
-                    <p class="prose-width">
-                        We are a team of curious problem-solvers working across histology, behavioral neuroscience,
-                        and physiology. We believe good science is a team sport.
-                    </p>
-                </div>
+        <section class="tile tile--ink intro c8">
+            <p class="kicker">Team</p>
+            <h1>The people behind the science.</h1>
+            <p class="lead">A small team working across histology, behavioral neuroscience, and physiology. We believe good science is a team sport, and every member &mdash; from first-year undergraduates to graduate students &mdash; contributes to real research questions.</p>
+            <div class="actions">
+                <a href="#join" class="btn btn-gold">Join the lab</a>
+                <a href="mailto:jvarhol2@kennesaw.edu" class="btn btn-ghost">Email us</a>
             </div>
         </section>
+        <figure class="tile tile--photo c4">
+            <img src="images/varholickinlab.jpg" alt="Dr. Varholick pipetting at the bench">
+            <figcaption>Science Building, Room 360 &middot; Kennesaw State University</figcaption>
+        </figure>
 
-        <!-- Principal Investigator (featured) -->
-        <section class="section pt-8 bg-white">
-            <div class="container mx-auto px-6 md:px-12">
-                <div id="justin" class="content-row scroll-mt-28 reveal">
-                    <div class="content-row__media">
-                        <img src="images/varholick-profile.JPG" alt="Dr. Justin Varholick">
-                    </div>
-                    <div class="content-row__text">
-                        <h2 class="text-2xl md:text-3xl font-bold text-ksu-black mb-1">Dr. Justin Varholick</h2>
-                        <p class="text-ksu-gold font-semibold mb-3">Principal Investigator</p>
-                        <div class="flex gap-4 text-sm mb-5">
-                            <a href="https://scholar.google.com/citations?user=JustinVarholick" class="link-gold" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-                            <a href="https://orcid.org/0000-0003-2822-9045" class="link-gold" target="_blank" rel="noopener noreferrer">ORCID</a>
-                        </div>
-                        <p class="text-gray-700 leading-relaxed mb-4 prose-width">
-                            Dr. Varholick (Dr. V) started this lab around a single question: why do some animals rebuild working tissue after injury while humans scar? Answering it means refusing to stop at the tissue. Regeneration research often ends once the tissue regrows, and behavioral neuroscience rarely asks how that tissue was rebuilt in the first place. He works at the junction of the two, holding regeneration to a functional standard &mdash; tissue that regrows must also feel, move, and work &mdash; and using comparative biology to ask why regenerative species succeed where common laboratory mammals fail. The lab exists to carry those mechanisms toward translation, so that what spiny mice and salamanders do naturally can inform how human patients recover.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed prose-width">
-                            He holds a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern in Switzerland and an M.A. in Biopsychology from UNC Greensboro. He trained in regenerative biology during his postdoc under Prof. Malcolm Maden at the University of Florida, supported by an Early Postdoctoral grant from the Swiss National Science Foundation and an NIH Training Grant in Regenerative Medicine. His work has contributed to integrating animal behavior and phenotypic variability into basic biomedical research, and to establishing new model systems and frameworks for studying tissue regeneration.
-                        </p>
+        <!-- PI -->
+        <section id="justin" class="tile c12">
+            <div class="split">
+                <img src="images/varholick-profile.JPG" alt="Dr. Justin Varholick">
+                <div>
+                    <p class="kicker">Principal Investigator</p>
+                    <h2>Dr. Justin Varholick</h2>
+                    <p>Dr. Varholick (Dr. V) started this lab around a single question: why do some animals rebuild working tissue after injury while humans scar? Answering it means refusing to stop at the tissue. Regeneration research often ends once the tissue regrows, and behavioral neuroscience rarely asks how that tissue was rebuilt in the first place. He works at the junction of the two, holding regeneration to a functional standard &mdash; tissue that regrows must also feel, move, and work &mdash; and using comparative biology to ask why regenerative species succeed where common laboratory mammals fail. The lab exists to carry those mechanisms toward translation, so that what spiny mice and salamanders do naturally can inform how human patients recover.</p>
+                    <p>He holds a Ph.D. in Biomedical Science/Applied Ethology from the University of Bern in Switzerland and an M.A. in Biopsychology from UNC Greensboro. He trained in regenerative biology during his postdoc under Prof. Malcolm Maden at the University of Florida, supported by an Early Postdoctoral grant from the Swiss National Science Foundation and an NIH Training Grant in Regenerative Medicine. His work has contributed to integrating animal behavior and phenotypic variability into basic biomedical research, and to establishing new model systems and frameworks for studying tissue regeneration.</p>
+                    <div class="actions">
+                        <a href="https://scholar.google.com/citations?user=JustinVarholick" class="btn btn-line" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                        <a href="https://orcid.org/0000-0003-2822-9045" class="btn btn-line" target="_blank" rel="noopener noreferrer">ORCID</a>
+                        <a href="mailto:jvarhol2@kennesaw.edu" class="btn btn-ink">jvarhol2@kennesaw.edu</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Lab members -->
-        <section class="section pt-0 bg-white">
-            <div class="container mx-auto px-6 md:px-12">
-                <hr class="hairline mb-16">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-14 reveal">
-                    <!-- Ito -->
-                    <div id="ito" class="scroll-mt-28">
-                        <img src="images/osayi-profile.jpeg" alt="Ito Osayi" class="w-32 h-32 rounded-full mb-5 object-cover">
-                        <h3 class="text-lg font-bold text-ksu-black">Ito Osayi</h3>
-                        <p class="text-ksu-gold font-semibold text-sm mb-3">Undergraduate Researcher</p>
-                        <p class="text-gray-700 text-sm leading-relaxed">Ito Osayi is a 3rd year Biology and Environmental science double major with a goal of pursuing veterinary medicine. A few of her roles include being a vet mentor under the Pre Health Leadership Council, Furkids Volunteer, and biology teaching assistant. Ito has always been drawn towards biology from a young age especially regarding certain healing related topics such as animal regeneration! They're excited to investigate not only the genetic processes of different forms of regeneration but also help contribute to the overall field. In the Varholick Lab, Ito will be working on the neuroanatomy and peripheral innervation of salamanders.</p>
-                    </div>
-                    <!-- Adilene -->
-                    <div id="perez" class="scroll-mt-28">
-                        <img src="images/perez-profile.jpeg" alt="Adilene Perez" class="w-32 h-32 rounded-full mb-5 object-cover">
-                        <h3 class="text-lg font-bold text-ksu-black">Adilene Perez</h3>
-                        <p class="text-ksu-gold font-semibold text-sm mb-3">Undergraduate Researcher</p>
-                        <p class="text-gray-700 text-sm leading-relaxed">As a future scientist Adilene is intrigued in how the body can heal itself and how the nervous system reacts after injury. She is interested in learning how nerves heal and the cell activities that help with the recovery. At the Varholick Lab, she is getting practical experience in studying regeneration to prepare for a future career in forensic biology.</p>
-                    </div>
-                    <!-- Sienna -->
-                    <div id="bennett" class="scroll-mt-28">
-                        <img src="images/bennett-profile.jpeg" alt="Sienna Bennett" class="w-32 h-32 rounded-full mb-5 object-cover">
-                        <h3 class="text-lg font-bold text-ksu-black">Sienna Bennett</h3>
-                        <p class="text-ksu-gold font-semibold text-sm mb-3">First Year Scholar</p>
-                        <p class="text-gray-700 text-sm leading-relaxed">Sienna Bennett is a first-year undergraduate student currently majoring in Biochemistry and minoring in President's Emerging Global Scholars at Kennesaw State University. During her education at North Cobb High School, she was part of a WellStar program assisting new mothers in the Mother-Baby unit. She is on a pre-medicine track to become a Cardiologist. On this project she plans to participate in discoveries about nerve regeneration in regenerative animals and build connections to nerves in different areas.</p>
-                    </div>
-                    <!-- Kellyn -->
-                    <div id="kellyn" class="scroll-mt-28">
-                        <img src="images/kellyn-profile.jpg" alt="Kellyn Gilligan" class="w-32 h-32 rounded-full mb-5 object-cover">
-                        <h3 class="text-lg font-bold text-ksu-black">Kellyn Gilligan</h3>
-                        <p class="text-ksu-gold font-semibold text-sm mb-3">Undergraduate Researcher</p>
-                        <p class="text-gray-700 text-sm leading-relaxed">Kellyn Gilligan is a second year Biology major with a minor in Data Analysis and Statistics. She is working towards being a Biostatistician someday! In the Varholick Lab, she studies the neuroanatomy and peripheral innervation of salamanders. She is excited to gain hands-on experience in lab work &amp; explore the field of regenerative biology!</p>
-                    </div>
-                    <!-- Stefania -->
-                    <div id="stefania" class="scroll-mt-28">
-                        <img src="images/stefania.png" alt="Stefania Salazar" class="w-32 h-32 rounded-full mb-5 object-cover">
-                        <h3 class="text-lg font-bold text-ksu-black">Stefania Salazar</h3>
-                        <p class="text-ksu-gold font-semibold text-sm mb-3">Undergraduate Researcher</p>
-                        <p class="text-gray-700 text-sm leading-relaxed">Stefania Salazar is a first-year undergraduate student majoring in Biology with a human health concentration. She is working on the pre-medicine track to become a Dermatopathologist. In the Varholick Lab, she studies Schwann cells in regenerative tissue to discover the level of innervation these nerves seem to have.</p>
-                    </div>
+        <div class="sec"><h2>Lab members</h2></div>
+
+        <section id="ito" class="tile person c4">
+            <img src="images/osayi-profile.jpeg" alt="Ito Osayi">
+            <h3>Ito Osayi</h3>
+            <p class="role">Undergraduate Researcher</p>
+            <p>Ito Osayi is a 3rd year Biology and Environmental Science double major with a goal of pursuing veterinary medicine. A few of her roles include being a vet mentor under the Pre Health Leadership Council, Furkids volunteer, and biology teaching assistant. Ito has always been drawn towards biology from a young age, especially healing-related topics such as animal regeneration. They're excited to investigate not only the genetic processes of different forms of regeneration but also to help contribute to the overall field. In the Varholick Lab, Ito works on the neuroanatomy and peripheral innervation of salamanders.</p>
+        </section>
+        <section id="perez" class="tile person c4">
+            <img src="images/perez-profile.jpeg" alt="Adilene Perez">
+            <h3>Adilene Perez</h3>
+            <p class="role">Undergraduate Researcher</p>
+            <p>As a future scientist, Adilene is intrigued by how the body can heal itself and how the nervous system reacts after injury. She is interested in learning how nerves heal and the cell activities that help with recovery. At the Varholick Lab, she is getting practical experience in studying regeneration to prepare for a future career in forensic biology.</p>
+        </section>
+        <section id="bennett" class="tile person c4">
+            <img src="images/bennett-profile.jpeg" alt="Sienna Bennett">
+            <h3>Sienna Bennett</h3>
+            <p class="role">First-Year Scholar</p>
+            <p>Sienna Bennett is a first-year undergraduate majoring in Biochemistry and minoring in President's Emerging Global Scholars at Kennesaw State University. During her education at North Cobb High School, she was part of a WellStar program assisting new mothers in the Mother-Baby unit. She is on a pre-medicine track to become a cardiologist. On this project she plans to participate in discoveries about nerve regeneration in regenerative animals and build connections to nerves in different areas.</p>
+        </section>
+        <section id="kellyn" class="tile person c4">
+            <img src="images/kellyn-profile.jpg" alt="Kellyn Gilligan">
+            <h3>Kellyn Gilligan</h3>
+            <p class="role">Undergraduate Researcher</p>
+            <p>Kellyn Gilligan is a second-year Biology major with a minor in Data Analysis and Statistics, working towards being a biostatistician someday. In the Varholick Lab, she studies the neuroanatomy and peripheral innervation of salamanders. She is excited to gain hands-on experience in lab work and explore the field of regenerative biology.</p>
+        </section>
+        <section id="stefania" class="tile person c4">
+            <img src="images/stefania.png" alt="Stefania Salazar">
+            <h3>Stefania Salazar</h3>
+            <p class="role">First-Year Scholar</p>
+            <p>Stefania Salazar is a first-year undergraduate majoring in Biology with a human health concentration. She is on the pre-medicine track to become a dermatopathologist. In the Varholick Lab, she studies Schwann cells in regenerative tissue to discover the level of innervation these nerves seem to have.</p>
+        </section>
+        <a href="#join" class="tile tile--gold c4">
+            <p class="kicker">This could be you</p>
+            <h3>Curious? Come do science with us.</h3>
+            <p>We are always looking for passionate, driven people. Undergraduate and graduate positions are available.</p>
+            <span class="more">Open positions</span>
+        </a>
+
+        <!-- Join -->
+        <section id="join" class="tile c12">
+            <p class="kicker">Join the lab</p>
+            <h2>What you'll gain</h2>
+            <div class="grid3" style="margin-top: 10px;">
+                <div><h4>Histology &amp; immunohistochemistry</h4><p>Hands-on tissue processing, sectioning, staining, and microscopy from day one.</p></div>
+                <div><h4>Animal behavior quantification</h4><p>Design ethograms, run behavioral assays, and analyze video data in live animals.</p></div>
+                <div><h4>Scientific writing &amp; presenting</h4><p>Co-author manuscripts, present at conferences, and develop your scientific voice.</p></div>
+                <div><h4>Bioinformatics exposure</h4><p>Data analysis, statistics, and computational approaches to biological questions.</p></div>
+                <div><h4>Mentorship from day one</h4><p>Regular one-on-one meetings, career guidance, and support for graduate or professional applications.</p></div>
+                <div><h4>Collaborative lab culture</h4><p>Work alongside peers on real research questions in a supportive, team-oriented environment.</p></div>
+            </div>
+            <div class="kv" style="margin-top: 22px;">
+                <p class="k">Open positions</p>
+                <p class="v">We are recruiting a graduate student through the <a href="https://www.kennesaw.edu/csm/bridges/index.php" class="inline-link" target="_blank" rel="noopener noreferrer">Peach State Bridges to Doctorate Program</a>, and undergraduate positions are available. Interested? Email a CV and a brief statement of interest.</p>
+                <div class="actions" style="margin-top: 14px;">
+                    <a href="mailto:jvarhol2@kennesaw.edu" class="btn btn-gold">Apply today</a>
+                    <a href="pdfs/Varholick_Lab_Ad_Fall2026.pdf" class="btn btn-line" target="_blank" rel="noopener noreferrer">MS position flyer (PDF)</a>
                 </div>
             </div>
         </section>
 
-        <!-- Join Us -->
-        <section id="joinus" class="section section-dark scroll-mt-24">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="max-w-2xl mb-14 reveal">
-                    <span class="eyebrow">Join the Lab</span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-ksu-black mt-4 mb-5 leading-tight">Come do science with us</h2>
-                    <p class="text-gray-700 leading-relaxed prose-width">
-                        We are always looking for passionate and driven individuals. Every member of the lab — from
-                        first-year undergrads to graduate students — contributes meaningfully to our research.
-                    </p>
-                </div>
-
-                <h3 class="text-lg font-bold text-ksu-black mb-6">What you'll gain</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 mb-16 reveal">
-                    <div class="border-t-2 border-ksu-gold pt-4">
-                        <h4 class="font-bold text-ksu-black mb-1">Histology &amp; Immunohistochemistry</h4>
-                        <p class="text-gray-700 text-sm leading-relaxed">Hands-on tissue processing, sectioning, staining, and microscopy from day one.</p>
-                    </div>
-                    <div class="border-t-2 border-ksu-gold pt-4">
-                        <h4 class="font-bold text-ksu-black mb-1">Animal Behavior Quantification</h4>
-                        <p class="text-gray-700 text-sm leading-relaxed">Design ethograms, conduct behavioral assays, and analyze video data in live animals.</p>
-                    </div>
-                    <div class="border-t-2 border-ksu-gold pt-4">
-                        <h4 class="font-bold text-ksu-black mb-1">Scientific Writing &amp; Presentations</h4>
-                        <p class="text-gray-700 text-sm leading-relaxed">Co-author manuscripts, present at conferences, and develop your scientific voice.</p>
-                    </div>
-                    <div class="border-t-2 border-ksu-gold pt-4">
-                        <h4 class="font-bold text-ksu-black mb-1">Bioinformatics Exposure</h4>
-                        <p class="text-gray-700 text-sm leading-relaxed">Learn data analysis, statistics, and computational approaches to biological questions.</p>
-                    </div>
-                    <div class="border-t-2 border-ksu-gold pt-4">
-                        <h4 class="font-bold text-ksu-black mb-1">Mentorship from Day One</h4>
-                        <p class="text-gray-700 text-sm leading-relaxed">Regular one-on-one meetings, career guidance, and support for graduate school or professional applications.</p>
-                    </div>
-                    <div class="border-t-2 border-ksu-gold pt-4">
-                        <h4 class="font-bold text-ksu-black mb-1">Collaborative Lab Culture</h4>
-                        <p class="text-gray-700 text-sm leading-relaxed">Work alongside peers on real research questions in a supportive, team-oriented environment.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white/5 rounded-lg p-8 md:p-10 border border-white/15 reveal">
-                    <h3 class="text-xl font-bold text-ksu-black mb-3">Open Positions</h3>
-                    <p class="text-gray-700 leading-relaxed mb-6 prose-width">
-                        We are currently looking for a graduate student to join under the
-                        <a href="https://www.kennesaw.edu/csm/bridges/index.php" class="link-gold" target="_blank" rel="noopener">"Peach State Bridges to Doctorate Program."</a>
-                        Undergraduate positions are also available. If you are interested, please send an email with
-                        your CV and a brief statement of interest.
-                    </p>
-                    <a href="mailto:jvarhol2@kennesaw.edu" class="btn btn-gold">Apply Today</a>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="bg-ksu-black text-gray-400 border-t border-white/10 py-8 px-6 md:px-12">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p>&copy; 2026 Varholick Lab · Kennesaw State University</p>
-            <div class="flex gap-6">
-                <a href="https://scholar.google.com/citations?user=JustinVarholick" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-                <a href="https://orcid.org/0000-0003-2822-9045" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">ORCID</a>
-            </div>
-        </div>
+    <footer class="foot">
+        <p>&copy; 2026 Varholick Lab &middot; Dept. of Ecology, Evolution &amp; Organismal Biology &middot; Kennesaw State University</p>
+        <nav aria-label="External profiles">
+            <a href="https://scholar.google.com/citations?user=JustinVarholick" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://orcid.org/0000-0003-2822-9045" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://maps.app.goo.gl/tapfgM6zesQWtbbs5" target="_blank" rel="noopener noreferrer">Science Building, Rm 360</a>
+        </nav>
     </footer>
-
-    <script src="assets/site.js?v=r10"></script>
+    <script src="assets/bento.js?v=b1"></script>
 </body>
 </html>

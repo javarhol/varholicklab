@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varholick Lab — Discovering how animals regenerate functional tissues</title>
-    <meta name="description" content="The Varholick Lab at Kennesaw State University combines comparative biology, neuroscience, genomics, and behavior to uncover mechanisms that restore sensation, movement, and organ function after injury.">
-    <meta property="og:title" content="Varholick Lab — Discovering how animals regenerate functional tissues to advance regenerative medicine">
-    <meta property="og:description" content="Why do some vertebrates regenerate while mammals scar? We combine comparative biology, neuroscience, genomics, and behavior to find out.">
-    <meta property="og:image" content="https://varholicklab.org/images/hero-portrait.jpg">
+    <title>Varholick Lab — In the future, organs will repair themselves perfectly</title>
+    <meta name="description" content="The Varholick Lab at Kennesaw State University studies animals that already regenerate — spiny mice and salamanders — to learn how injured and transplanted organs can get their nerves back, heal without scar, and work again.">
+    <meta property="og:title" content="Varholick Lab — In the future, organs will repair themselves perfectly">
+    <meta property="og:description" content="The Varholick Lab at Kennesaw State University studies animals that already regenerate — spiny mice and salamanders — to learn how injured and transplanted organs can get their nerves back, heal without scar, and work again.">
+    <meta property="og:image" content="https://varholicklab.org/images/hero-spiny.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://varholicklab.org/">
     <meta property="og:site_name" content="Varholick Lab">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Varholick Lab — Discovering how animals regenerate functional tissues to advance regenerative medicine">
-    <meta name="twitter:description" content="Why do some vertebrates regenerate while mammals scar? We combine comparative biology, neuroscience, genomics, and behavior to find out.">
+    <meta name="twitter:title" content="Varholick Lab — In the future, organs will repair themselves perfectly">
+    <meta name="twitter:description" content="The Varholick Lab at Kennesaw State University studies animals that already regenerate — spiny mice and salamanders — to learn how injured and transplanted organs can get their nerves back, heal without scar, and work again.">
     <link rel="canonical" href="https://varholicklab.org/">
-    <!-- Google Search Console verification — replace REPLACE_WITH_GSC_TOKEN with the token from Search Console (see SEO_SETUP.md) -->
-    <meta name="google-site-verification" content="AMHNCLmHc2FngPYIS_c44Ik9fQ7c30aBf7yarGrw3BA">
-    <!-- Tailwind CSS CDN + shared KSU theme -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/tailwind-config.js?v=r10"></script>
-    <!-- Fonts: Space Grotesk (display) + Inter (body) -->
+    <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css?v=r10">
-    <!-- Structured data: research organization + site search box -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bento.css?v=b1">
+    <!-- Google Search Console verification (see SEO_SETUP.md) -->
+    <meta name="google-site-verification" content="AMHNCLmHc2FngPYIS_c44Ik9fQ7c30aBf7yarGrw3BA">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -37,8 +33,8 @@
           "alternateName": "Varholick Regeneration & Repair Lab",
           "url": "https://varholicklab.org/",
           "logo": "https://varholicklab.org/images/repairlablogo.png",
-          "image": "https://varholicklab.org/images/hero-portrait.jpg",
-          "description": "The Varholick Lab at Kennesaw State University combines comparative biology, neuroscience, genomics, and behavior to uncover mechanisms that restore sensation, movement, and organ function after injury, studying naturally regenerative animals such as spiny mice (Acomys) and salamanders.",
+          "image": "https://varholicklab.org/images/hero-spiny.jpg",
+          "description": "The Varholick Lab at Kennesaw State University studies naturally regenerative animals — spiny mice (Acomys) and salamanders — to improve the repair and transplantation of organs: higher-quality innervation, healing without fibrosis, and measurable functional recovery.",
           "parentOrganization": {
             "@type": "CollegeOrUniversity",
             "name": "Kennesaw State University",
@@ -68,306 +64,146 @@
     }
     </script>
 </head>
-<body>
-    <a href="#about" class="skip-link">Skip to main content</a>
-
-    <!-- Header / Navigation (transparent over hero, solid on scroll) -->
-    <header class="site-header fixed w-full z-50 py-4 px-6 md:px-12" data-transparent-header>
-        <nav class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
-                <img src="images/repairlablogo.png" alt="Varholick Lab logo" class="brand-logo h-12 w-auto object-contain">
-                <span class="flex flex-col leading-none">
-                    <span class="brand-title font-display text-xl font-bold uppercase tracking-wide">Varholick Lab</span>
-                    <span class="brand-subtitle text-xs italic font-light mt-1">Decoding Repair. Restoring Function.</span>
-                </span>
-            </a>
-            <ul class="hidden md:flex items-center space-x-7 text-sm">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="team.html" class="nav-link">Team</a></li>
-                <li><a href="#news" class="nav-link">News</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li class="nav-dropdown">
-                    <button class="nav-link nav-dropdown-trigger" aria-haspopup="true">Spiny Mouse Resources <span class="caret">▾</span></button>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="acomys_library/index.html" class="nav-link">Acomys Library</a></li>
-                        <li><a href="antibody_db/index.html" class="nav-link">Antibody Database</a></li>
-                        <li><a href="brain_atlas/index.html" class="nav-link">Brain Atlas</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <button id="mobile-menu-button" class="menu-icon md:hidden focus:outline-none" aria-label="Open menu">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </nav>
-        <!-- Mobile menu overlay -->
-        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-ksu-black z-40 flex flex-col items-center justify-center space-y-6 text-xl text-white">
-            <button id="close-mobile-menu" class="absolute top-6 right-6 text-white focus:outline-none" aria-label="Close menu">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <a href="#about" class="nav-link text-white">About</a>
-            <a href="research.html" class="nav-link text-white">Research</a>
-            <a href="publications.html" class="nav-link text-white">Publications</a>
-            <a href="team.html" class="nav-link text-white">Team</a>
-            <a href="#news" class="nav-link text-white">News</a>
-            <a href="#contact" class="nav-link text-white">Contact</a>
-            <details class="mobile-dropdown">
-                <summary class="nav-link text-white">Spiny Mouse Resources <span class="caret">▾</span></summary>
-                <div class="mobile-submenu">
-                    <a href="acomys_library/index.html" class="nav-link text-white">Acomys Library</a>
-                    <a href="antibody_db/index.html" class="nav-link text-white">Antibody Database</a>
-                    <a href="brain_atlas/index.html" class="nav-link text-white">Brain Atlas</a>
+<body class="page home">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="top">
+        <a href="index.html" class="brand" aria-label="Varholick Lab home">
+            <img src="images/repairlablogo.png" alt="">
+            <span><b>Varholick Lab</b><small>Kennesaw State University</small></span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="team.html">Team</a>
+            <a href="news.html">News</a>
+            <details class="dd">
+                <summary>Spiny mouse resources</summary>
+                <div class="dd-menu">
+                    <a href="acomys_library/index.html">Acomys Library<small>Every spiny mouse paper, searchable</small></a>
+                    <a href="antibody_db/index.html">Antibody Database<small>Antibodies validated in <em>Acomys</em> tissue</small></a>
+                    <a href="brain_atlas/index.html">Brain Atlas<small>MRI atlas of the spiny mouse brain</small></a>
                 </div>
             </details>
-        </div>
+            <a href="mailto:jvarhol2@kennesaw.edu" class="pill">Contact</a>
+        </nav>
+        <details class="mnav">
+            <summary aria-label="Open menu">Menu</summary>
+            <div class="mnav-menu">
+                <a href="index.html" class="is-active">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="news.html">News</a>
+                <span class="label">Spiny mouse resources</span>
+                <a href="acomys_library/index.html" class="sub">Acomys Library</a>
+                <a href="antibody_db/index.html" class="sub">Antibody Database</a>
+                <a href="brain_atlas/index.html" class="sub">Brain Atlas</a>
+                <a href="mailto:jvarhol2@kennesaw.edu">Contact</a>
+            </div>
+        </details>
     </header>
 
-    <main>
+    <main id="main" class="bento">
 
-        <!-- Hero — split: spiny mouse photo (left) + dark text panel (right) -->
-        <section id="home" class="relative min-h-screen grid md:grid-cols-2">
-            <!-- Image panel (left) -->
-            <div class="order-1 relative min-h-[42vh] md:min-h-screen" style="background: url('images/hero-portrait.jpg') center/cover no-repeat;">
-                <!-- blend the photo into the dark panel: right edge on desktop, bottom edge on mobile -->
-                <div class="hidden md:block absolute inset-0" style="background: linear-gradient(90deg, rgba(11,19,21,0) 80%, rgba(11,19,21,1) 100%);"></div>
-                <div class="md:hidden absolute inset-0" style="background: linear-gradient(180deg, rgba(11,19,21,0) 55%, rgba(11,19,21,1) 100%);"></div>
-            </div>
-            <!-- Text panel (right) -->
-            <div class="order-2 bg-ksu-black text-white flex items-center px-6 md:px-12 lg:pr-20 lg:pl-14 py-20 md:py-24">
-                <div class="max-w-xl ml-auto text-right reveal">
-                    <span class="inline-block bg-ksu-gold text-ksu-black text-xs font-bold uppercase tracking-widest px-3 py-1 rounded mb-8">Varholick Lab · Kennesaw State University</span>
-                    <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.06] mb-8">
-                        Discovering how animals regenerate functional tissues to advance regenerative medicine.
-                    </h1>
-                    <p class="text-lg md:text-xl font-light leading-relaxed mb-10 text-gray-300">
-                        We combine comparative biology, neuroscience, genomics, and behavior to uncover mechanisms that restore sensation, movement, and organ function after injury.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 sm:justify-end">
-                        <a href="research.html" class="btn btn-gold">Explore Our Research</a>
-                        <a href="team.html#joinus" class="btn btn-outline-light">Join the Lab</a>
-                    </div>
-                </div>
-            </div>
-            <!-- top scrim so the transparent nav stays legible over the light photo -->
-            <div class="pointer-events-none absolute inset-x-0 top-0 h-24 z-10" style="background: linear-gradient(180deg, rgba(11,19,21,0.5), rgba(11,19,21,0));"></div>
-            <!-- scroll cue -->
-            <div class="hidden md:block absolute bottom-8 left-3/4 -translate-x-1/2 z-10 text-white/60">
-                <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        <!-- Hero statement -->
+        <section class="tile tile--ink hero t-hero">
+            <span class="affil">Varholick Lab &middot; Kennesaw State University</span>
+            <h1>
+                <span class="l1">In the future, organs will repair themselves perfectly.</span>
+                <span class="l2">We are working toward that future.</span>
+            </h1>
+            <p class="lede">
+                We study animals that already regenerate &mdash; spiny mice and salamanders &mdash; to learn how
+                injured and transplanted organs can get their nerves back, heal without scar, and work again.
+            </p>
+            <div class="actions">
+                <a href="research.html" class="btn btn-gold">Our research</a>
+                <a href="team.html#join" class="btn btn-ghost">Join the lab</a>
             </div>
         </section>
 
-        <!-- Statement (dark, continues from hero then breaks to light) -->
-        <section class="section-dark section">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="max-w-4xl reveal">
-                    <span class="eyebrow">Our Mission</span>
-                    <p class="font-display text-3xl md:text-5xl font-medium leading-tight mt-6 text-white">
-                        Our mission is to understand how regenerative animals restore functional tissues
-                        and to translate those mechanisms into therapies that improve recovery after
-                        injury and disease.
-                    </p>
-                </div>
-            </div>
+        <!-- Hero image slot. To swap: change src, alt, and the caption below.
+             Planned: fluorescence image of an innervated whisker follicle. -->
+        <figure class="tile tile--photo t-photo">
+            <img src="images/hero-spiny.jpg" alt="An African spiny mouse (Acomys cahirinus) standing on a clear platform" style="object-position: 62% 50%;">
+            <figcaption><em>Acomys</em>, the spiny mouse &mdash; a mammal that regenerates skin, hair follicles, muscle, and nerve.</figcaption>
+        </figure>
+
+        <!-- Why it matters -->
+        <section class="tile t-why">
+            <p class="kicker">Why it matters</p>
+            <h3>Repaired is not the same as recovered.</h3>
+            <p>A transplanted heart beats without its nerves. A healed wound is sealed with scar that feels nothing. Organs can look fixed and still not work.</p>
         </section>
 
-        <!-- About (light) -->
-        <section id="about" class="section bg-white">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="content-row reveal">
-                    <div class="content-row__text">
-                        <span class="eyebrow">About the Lab</span>
-                        <h2 class="text-4xl md:text-5xl font-bold text-ksu-black mt-4 mb-6 leading-tight">
-                            One question drives everything we do.
-                        </h2>
-                        <p class="text-gray-700 mb-4 prose-width">
-                            Why do some vertebrates regenerate while mammals scar? Answering it requires a
-                            functional standard: tissue that regrows must also feel, move, and work. That
-                            standard organizes the entire lab.
-                        </p>
-                        <p class="text-gray-700 mb-8 prose-width">
-                            Our strategy is to study animals that already succeed. Spiny mice (<em>Acomys</em>)
-                            and salamanders rebuild working tissue where laboratory mice and humans lay down
-                            scar. Comparing what they do against what we cannot is how the mechanism becomes
-                            visible — and how it becomes something a patient could one day receive.
-                        </p>
-                        <div class="flex flex-wrap items-center gap-6">
-                            <a href="team.html" class="btn btn-primary">Meet the Team</a>
-                            <a href="publications.html" class="link-gold">Read our papers &rarr;</a>
-                        </div>
-                    </div>
-                    <div class="content-row__media">
-                        <img src="images/varholickinlab.jpg" alt="Dr. Varholick pipetting solutions in the lab">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Three goals -->
+        <a href="research.html#innervation" class="tile t-r1">
+            <div class="tile-head"><p class="kicker"><span class="num">01</span>Innervation</p><span class="arrow">&rarr;</span></div>
+            <h3>Get the nerves back.</h3>
+            <p>Function depends on nerves regrowing into the right targets and reconnecting with the brain. We study animals that manage it to learn what humans are missing.</p>
+        </a>
+        <a href="research.html#fibrosis" class="tile t-r2">
+            <div class="tile-head"><p class="kicker"><span class="num">02</span>Fibrosis</p><span class="arrow">&rarr;</span></div>
+            <h3>Heal without scar.</h3>
+            <p>Spiny mice replace lost tissue instead of walling it off. We are finding where healing turns toward fibrosis &mdash; and how to turn it back.</p>
+        </a>
+        <a href="research.html#function" class="tile t-r3">
+            <div class="tile-head"><p class="kicker"><span class="num">03</span>Functional recovery</p><span class="arrow">&rarr;</span></div>
+            <h3>Prove that it works.</h3>
+            <p>Regrown structure is not proof. We measure sensation, movement, and behavior to tell true restoration from clever compensation.</p>
+        </a>
 
-        <!-- Featured research: full-bleed alternating bands -->
-        <section id="research">
-            <!-- Research header + Theme 01 — one continuous dark band -->
-            <div class="section-dark section">
-                <div class="container mx-auto px-6 md:px-12">
-                    <div class="max-w-2xl mb-16 reveal">
-                        <span class="eyebrow">Research</span>
-                        <h2 class="text-4xl md:text-5xl font-bold mt-4 leading-tight">
-                            Two themes, one program.
-                        </h2>
-                    </div>
-                    <div class="content-row reveal">
-                        <div class="content-row__media">
-                            <img src="images/acomys-barrel-cortex.jpg" alt="Barrel cortex of a spiny mouse: the grid of cortical barrels that maps each whisker onto the brain">
-                        </div>
-                        <div class="content-row__text">
-                            <div class="mb-5"><span class="num-badge">01</span></div>
-                            <p class="text-ksu-gold font-semibold uppercase tracking-widest text-sm mb-3">Functional Regeneration</p>
-                            <h3 class="text-3xl md:text-4xl font-bold mb-5 leading-tight">
-                                Restoring sensation, movement, and neural circuitry after injury.
-                            </h3>
-                            <p class="prose-width">
-                                Regrowing tissue is not the same as restoring function. Skin can close, follicles can
-                                return, and the animal can still feel nothing. We hold regeneration to a functional
-                                standard: nerves must regrow into the right targets, those targets must reconnect with
-                                the brain, and the behavior that depends on that circuit must actually return. Spiny
-                                mice and salamanders let us watch all three happen at once, and let us find out what
-                                goes wrong when they come apart.
-                            </p>
-                            <div class="mt-8 pt-6 border-t border-ksu-grey max-w-xl">
-                                <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Key Publications</h4>
-                                <ul class="space-y-2 text-sm">
-                                    <li><span class="font-semibold text-ksu-black">Varholick et al. (2025).</span> Spiny mice regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation. <em class="italic">npj Regenerative Medicine</em>. <a href="publications.html#pub-whisker-2025" class="link-gold">Details</a></li>
-                                    <li><span class="font-semibold text-ksu-black">Varholick (2025).</span> Integrating regenerative biology with developmental psychobiology to understand behavioral recovery. <em class="italic">Developmental Dynamics</em>. <a href="publications.html#pub-theory-2025" class="link-gold">Details</a></li>
-                                    <li><span class="font-semibold text-ksu-black">Varholick et al. (2024).</span> Older spiny mice have delayed and spatially heterogeneous ear wound regeneration. <em class="italic">Biology Open</em>. <a href="publications.html#pub-ear-quality-2024" class="link-gold">Details</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Latest news (top 3, maintained by scripts/update_news.py from news.json) -->
+        <section class="tile t-news">
+            <div class="tile-head">
+                <p class="kicker">Latest news</p>
+                <a href="news.html" class="more">All news</a>
             </div>
-
-            <!-- Theme 02 — light -->
-            <div class="section bg-white">
-                <div class="container mx-auto px-6 md:px-12">
-                    <div class="content-row reverse reveal">
-                        <div class="content-row__media">
-                            <img src="images/regeneration-genes-heatmap.png" alt="Heatmap of selected regeneration genes across days 0 to 21 after injury, comparing Acomys with Mus">
-                        </div>
-                        <div class="content-row__text">
-                            <div class="mb-5"><span class="num-badge">02</span></div>
-                            <p class="text-ksu-gold font-semibold uppercase tracking-widest text-sm mb-3">Molecular Programs of Regeneration</p>
-                            <h3 class="text-3xl md:text-4xl font-bold text-ksu-black mb-5 leading-tight">
-                                Identifying conserved regenerative mechanisms across tissues and species.
-                            </h3>
-                            <p class="text-gray-700 prose-width">
-                                Functional recovery is the outcome; gene and cell programs are the cause. Using
-                                genomics, bioinformatics, and AI-assisted analysis, we ask which transcriptional
-                                programs separate regeneration from scarring — and whether the same programs recur
-                                across skin, ear, and nerve, and across spiny mice, salamanders, and laboratory mice.
-                                Mechanisms that are conserved across tissues and species are the ones most likely to
-                                transfer to human medicine.
-                            </p>
-                            <div class="mt-8 pt-6 border-t border-ksu-grey max-w-xl">
-                                <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Key Publications</h4>
-                                <p class="text-sm text-gray-500">Manuscripts in preparation.</p>
-                            </div>
-                            <div class="mt-8">
-                                <a href="research.html" class="btn btn-gold">See our research in depth</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Latest News (light) -->
-        <section id="news" class="section bg-white">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="flex flex-wrap items-end justify-between gap-4 mb-14 reveal">
-                    <div>
-                        <span class="eyebrow">News</span>
-                        <h2 class="text-4xl md:text-5xl font-bold text-ksu-black mt-4 leading-tight">Latest updates</h2>
-                    </div>
-                    <a href="news.html" class="link-gold">View all news &rarr;</a>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 reveal">
+            <ul class="list">
                     <!-- NEWS_ITEMS_START -->
-                    <!-- News Item: High School Researcher Selected for Regeneron ISEF -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <span class="inline-block bg-ksu-gold text-ksu-black text-[0.65rem] font-bold uppercase tracking-wider px-2 py-0.5 rounded mb-2">Latest</span>
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">February 2026</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">High School Researcher Selected for Regeneron ISEF 2026</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Rachel (Jaehyeon) Lee, a high school student from Walton High School in Marietta, GA, who worked in our lab over winter break, has been selected to present her research on planarian regeneration at Regeneron ISEF 2026 in Phoenix, Arizona. Congratulations, Rachel!
-                        </p>
-                    </article>
-                    <!-- News Item: Recruiting MS Student for Fall 2026 -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">January 2026</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Recruiting MS Student for Fall 2026</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            The lab has open positions for research projects on tissue regeneration, behavioral neuroscience, and physiology in highly regenerative rodents, salamanders, and planarians. Students will have opportunities to incorporate laboratory, bioinformatic, and possibly field methods and work collaboratively with other lab members. <a href="pdfs/Varholick_Lab_Ad_Fall2026.pdf" class="link-gold" target="_blank" rel="noopener noreferrer">Learn More</a>
-                        </p>
-                    </article>
-                    <!-- News Item: Lab Awarded internal grants; PrePI and Mentor Prot -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">December 2025</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Lab Awarded internal grants; PrePI and Mentor Protege</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            The Varholick Lab was awarded two internal grants. A $19k grant for "Unravelling synaptic resilience: neurobiological mechanisms of enhanced learning and memory in <i>Acomys cahirinus</i>." In collaboration with Dr. Vishnu Suppiramanian and Dr. Erica Holliday. The other is a $3.5k award to study "Exploring neuroanatomy and sensory innervation in polymorphic two-lined salamanders" with Dr. Todd Pierson and students Kellyn Gilligan and Ito Osayi.
-                        </p>
-                    </article>
+                    <li><span class="when">February 2026</span><a class="what" href="news.html#high-school-researcher-selected-for-regeneron-isef-2026">High School Researcher Selected for Regeneron ISEF 2026</a></li>
+                    <li><span class="when">January 2026</span><a class="what" href="news.html#recruiting-ms-student-for-fall-2026">Recruiting MS Student for Fall 2026</a></li>
+                    <li><span class="when">December 2025</span><a class="what" href="news.html#lab-awarded-internal-grants-prepi-and-mentor-protege">Lab Awarded internal grants; PrePI and Mentor Protege</a></li>
                     <!-- NEWS_ITEMS_END -->
-                </div>
-            </div>
+            </ul>
         </section>
 
-        <!-- Contact (dark) -->
-        <section id="contact" class="section-dark section">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="grid md:grid-cols-2 gap-12 items-start reveal">
-                    <div>
-                        <span class="eyebrow">Contact</span>
-                        <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6 leading-tight">Get in touch.</h2>
-                        <p class="max-w-prose">
-                            We're always open to collaborations, inquiries, and new talent. Whether you're an
-                            undergraduate looking for your first research experience or a collaborator with a new
-                            perspective, we'd love to hear from you.
-                        </p>
-                    </div>
-                    <div class="grid sm:grid-cols-2 gap-8">
-                        <div>
-                            <h3 class="text-sm font-bold uppercase tracking-wider text-ksu-gold mb-3">Email</h3>
-                            <p class="text-gray-200">
-                                <a href="mailto:jvarhol2@kennesaw.edu" class="hover:text-ksu-gold transition-colors">jvarhol2@kennesaw.edu</a>
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="text-sm font-bold uppercase tracking-wider text-ksu-gold mb-3">Visit</h3>
-                            <p class="text-gray-200 leading-relaxed">
-                                Science Building, Room 360<br>
-                                Kennesaw State University<br>
-                                Dept. of Ecology, Evolution &amp; Organismal Biology<br>
-                                Kennesaw, Georgia<br>
-                                <a href="https://maps.app.goo.gl/tapfgM6zesQWtbbs5" class="text-ksu-gold hover:underline" target="_blank" rel="noopener noreferrer">View on map &rarr;</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Featured paper -->
+        <a href="publications.html#pub-whisker-2025" class="tile t-paper">
+            <p class="kicker">Featured paper</p>
+            <h3>Spiny mice regenerate whisker pad skin with follicles, muscles, and targeted innervation.</h3>
+            <p><em>npj Regenerative Medicine</em>, 2025</p>
+            <span class="more">Read the paper</span>
+        </a>
+
+        <!-- Community resources -->
+        <section class="tile t-res">
+            <p class="kicker">Spiny mouse resources</p>
+            <ul class="list">
+                <li><a href="acomys_library/index.html" class="what">Acomys Library</a><small>Every spiny mouse paper, searchable</small></li>
+                <li><a href="antibody_db/index.html" class="what">Antibody Database</a><small>Antibodies validated in <em>Acomys</em> tissue</small></li>
+                <li><a href="brain_atlas/index.html" class="what">Brain Atlas</a><small>MRI atlas of the spiny mouse brain</small></li>
+            </ul>
         </section>
+
+        <!-- Join -->
+        <a href="team.html#join" class="tile tile--gold t-join">
+            <p class="kicker">Join us</p>
+            <h3>Curious? Come do science with us.</h3>
+            <p>Undergraduate and graduate positions.</p>
+            <span class="more">Open positions</span>
+        </a>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-ksu-black text-gray-400 border-t border-white/10 py-8 px-6 md:px-12">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p>&copy; 2026 Varholick Lab · Kennesaw State University</p>
-            <div class="flex gap-6">
-                <a href="https://scholar.google.com/citations?user=JustinVarholick" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-                <a href="https://orcid.org/0000-0003-2822-9045" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">ORCID</a>
-            </div>
-        </div>
+    <footer class="foot">
+        <p>&copy; 2026 Varholick Lab &middot; Dept. of Ecology, Evolution &amp; Organismal Biology &middot; Kennesaw State University</p>
+        <nav aria-label="External profiles">
+            <a href="https://scholar.google.com/citations?user=JustinVarholick" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://orcid.org/0000-0003-2822-9045" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://maps.app.goo.gl/tapfgM6zesQWtbbs5" target="_blank" rel="noopener noreferrer">Science Building, Rm 360</a>
+        </nav>
     </footer>
-
-    <script src="assets/site.js?v=r10"></script>
+    <script src="assets/bento.js?v=b1"></script>
 </body>
 </html>
