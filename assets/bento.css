@@ -239,17 +239,13 @@ a.tile:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(11, 19,
 .hero .actions { margin-top: 16px; }
 
 @media (min-width: 1024px) {
-    .home .bento { grid-template-rows: minmax(0, 3.4fr) minmax(0, 1.9fr) minmax(0, 1.9fr); }
+    .home .bento { grid-template-rows: minmax(0, 3fr) minmax(0, 1.4fr); }
     .t-hero  { grid-column: 1 / 9;   grid-row: 1; }
     .t-photo { grid-column: 9 / 13;  grid-row: 1; }
-    .t-why   { grid-column: 1 / 4;   grid-row: 2; }
-    .t-r1    { grid-column: 4 / 7;   grid-row: 2; }
-    .t-r2    { grid-column: 7 / 10;  grid-row: 2; }
-    .t-r3    { grid-column: 10 / 13; grid-row: 2; }
-    .t-news  { grid-column: 1 / 5;   grid-row: 3; }
-    .t-paper { grid-column: 5 / 8;   grid-row: 3; }
-    .t-res   { grid-column: 8 / 11;  grid-row: 3; }
-    .t-join  { grid-column: 11 / 13; grid-row: 3; }
+    .t-news  { grid-column: 1 / 5;   grid-row: 2; }
+    .t-paper { grid-column: 5 / 8;   grid-row: 2; }
+    .t-res   { grid-column: 8 / 11;  grid-row: 2; }
+    .t-join  { grid-column: 11 / 13; grid-row: 2; }
     .t-hero  { min-height: 360px; }
 }
 /* Lock the home page to the viewport when there is room for it */
@@ -262,7 +258,6 @@ a.tile:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(11, 19,
     .home .bento { grid-template-columns: repeat(6, minmax(0, 1fr)); }
     .t-hero  { grid-column: 1 / 7; min-height: 58vh; }
     .t-photo { grid-column: 1 / 7; min-height: 280px; }
-    .t-why, .t-r1, .t-r2, .t-r3 { grid-column: span 3; }
     .t-news  { grid-column: 1 / 7; }
     .t-paper, .t-res { grid-column: span 3; }
     .t-join  { grid-column: 1 / 7; }
