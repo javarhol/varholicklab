@@ -52,11 +52,12 @@
             if (on) { el.setAttribute('contenteditable', 'true'); el.setAttribute('spellcheck', 'true'); }
             else { el.removeAttribute('contenteditable'); el.removeAttribute('spellcheck'); }
         });
-        btnToggle.innerHTML = on ? 'Editing&hellip;' : '&#9998; Edit page';
-        btnToggle.disabled = on;
+        btnToggle.innerHTML = on ? 'Done' : '&#9998; Edit page';
         btnSave.disabled = !on;
         btnDiscard.disabled = !on;
-        status.textContent = on ? 'Click any text and type. News tiles are locked (edit news.json).' : '';
+        status.textContent = on
+            ? 'Click any text and type. Links are paused while editing \u2014 hit Done to browse again.'
+            : (dirty ? 'Unsaved changes \u2014 re-enter Edit and Save, or Discard.' : '');
     }
 
     // Don't navigate away when clicking links mid-edit.
@@ -144,7 +145,8 @@
         }).then(function (r) { return r.json(); }).then(function (res) {
             if (res.ok) {
                 dirty = false;
-                status.textContent = 'Saved ✓ (' + res.file + ')';
+                setEditing(false);
+                status.textContent = 'Saved \u2713 (' + res.file + ') \u2014 links work again.';
             } else {
                 status.textContent = 'Save failed: ' + (res.error || 'unknown');
             }
@@ -153,7 +155,7 @@
         });
     }
 
-    btnToggle.addEventListener('click', function () { setEditing(true); });
+    btnToggle.addEventListener('click', function () { setEditing(!editing); });
     btnSave.addEventListener('click', save);
     btnDiscard.addEventListener('click', function () {
         if (!dirty || confirm('Throw away unsaved edits on this page?')) { dirty = false; location.reload(); }
