@@ -4,164 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News — Varholick Lab</title>
-    <meta name="description" content="Latest news and updates from the Varholick Lab at Kennesaw State University, including publications, grants, and student achievements.">
+    <meta name="description" content="Grants, papers, people, and milestones from the Varholick Lab at Kennesaw State University, newest first.">
     <meta property="og:title" content="News — Varholick Lab">
-    <meta property="og:description" content="Latest news from the Varholick Lab: grants, publications, and team updates.">
-    <meta property="og:image" content="https://varholicklab.org/images/mus_uninjuredpad.png">
+    <meta property="og:description" content="Grants, papers, people, and milestones from the Varholick Lab at Kennesaw State University, newest first.">
+    <meta property="og:image" content="https://varholicklab.org/images/hero-spiny.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://varholicklab.org/news.html">
     <meta property="og:site_name" content="Varholick Lab">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="News — Varholick Lab">
-    <meta name="twitter:description" content="Latest news from the Varholick Lab: grants, publications, and team updates.">
+    <meta name="twitter:description" content="Grants, papers, people, and milestones from the Varholick Lab at Kennesaw State University, newest first.">
     <link rel="canonical" href="https://varholicklab.org/news.html">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/tailwind-config.js?v=r10"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css?v=r10">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bento.css?v=b2">
 </head>
-<body>
-    <a href="#news-full" class="skip-link">Skip to main content</a>
-
-    <!-- Header / Navigation -->
-    <header class="bg-white/95 backdrop-blur border-b border-ksu-grey/60 py-4 px-6 md:px-12 fixed w-full z-50">
-        <nav class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
-                <img src="images/repairlablogo.png" alt="Varholick Lab logo" class="brand-logo h-12 w-auto object-contain">
-                <span class="flex flex-col leading-none">
-                    <span class="text-xl font-extrabold text-ksu-black uppercase tracking-wide">Varholick Lab</span>
-                    <span class="text-xs text-gray-500 italic font-light mt-1">Decoding Repair. Restoring Function.</span>
-                </span>
-            </a>
-            <ul class="hidden md:flex items-center space-x-7 text-sm">
-                <li><a href="index.html#about" class="nav-link">About</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="team.html" class="nav-link">Team</a></li>
-                <li><a href="news.html" class="nav-link is-active">News</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                <li class="nav-dropdown">
-                    <button class="nav-link nav-dropdown-trigger" aria-haspopup="true">Spiny Mouse Resources <span class="caret">▾</span></button>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="acomys_library/index.html" class="nav-link">Acomys Library</a></li>
-                        <li><a href="antibody_db/index.html" class="nav-link">Antibody Database</a></li>
-                        <li><a href="brain_atlas/index.html" class="nav-link">Brain Atlas</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <button id="mobile-menu-button" class="md:hidden text-ksu-black focus:outline-none" aria-label="Open menu">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
-            <button id="close-mobile-menu" class="absolute top-6 right-6 text-ksu-black focus:outline-none" aria-label="Close menu">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <a href="index.html#about" class="nav-link">About</a>
-            <a href="research.html" class="nav-link">Research</a>
-            <a href="publications.html" class="nav-link">Publications</a>
-            <a href="team.html" class="nav-link">Team</a>
-            <a href="news.html" class="nav-link is-active">News</a>
-            <a href="index.html#contact" class="nav-link">Contact</a>
-            <details class="mobile-dropdown">
-                <summary class="nav-link">Spiny Mouse Resources <span class="caret">▾</span></summary>
-                <div class="mobile-submenu">
-                    <a href="acomys_library/index.html" class="nav-link text-white">Acomys Library</a>
-                    <a href="antibody_db/index.html" class="nav-link text-white">Antibody Database</a>
-                    <a href="brain_atlas/index.html" class="nav-link text-white">Brain Atlas</a>
+<body class="page">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="top">
+        <a href="index.html" class="brand" aria-label="Varholick Lab home">
+            <img src="images/repairlablogo.png" alt="">
+            <span><b>Varholick Lab</b><small>Kennesaw State University</small></span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="team.html">Team</a>
+            <a href="news.html" class="is-active">News</a>
+            <details class="dd">
+                <summary>Spiny mouse resources</summary>
+                <div class="dd-menu">
+                    <a href="acomys_library/index.html">Acomys Library<small>Search spiny mouse publications</small></a>
+                    <a href="antibody_db/index.html">Antibody Database<small>Antibodies validated in <em>Acomys</em> tissue</small></a>
+                    <a href="brain_atlas/index.html">Brain Atlas<small>MRI atlas of the spiny mouse brain</small></a>
                 </div>
             </details>
-        </div>
+            <a href="mailto:jvarhol2@kennesaw.edu" class="pill">Contact</a>
+        </nav>
+        <details class="mnav">
+            <summary aria-label="Open menu">Menu</summary>
+            <div class="mnav-menu">
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="news.html" class="is-active">News</a>
+                <span class="label">Spiny mouse resources</span>
+                <a href="acomys_library/index.html" class="sub">Acomys Library</a>
+                <a href="antibody_db/index.html" class="sub">Antibody Database</a>
+                <a href="brain_atlas/index.html" class="sub">Brain Atlas</a>
+                <a href="mailto:jvarhol2@kennesaw.edu">Contact</a>
+            </div>
+        </details>
     </header>
 
-    <main id="news-full">
-        <!-- Page intro — dark band -->
-        <section class="section-dark pt-28 md:pt-36 pb-16 md:pb-20">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="max-w-2xl reveal">
-                    <span class="eyebrow">News</span>
-                    <h1 class="text-4xl md:text-6xl font-bold mt-4 leading-tight">News &amp; updates</h1>
-                </div>
-            </div>
-        </section>
+    <main id="main" class="bento">
 
-        <section class="section bg-white">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 reveal">
+        <section class="tile tile--ink intro c8">
+            <p class="kicker">News</p>
+            <h1>What's new in the lab.</h1>
+            <p class="lead">Grants, papers, people, and milestones, newest first.</p>
+        </section>
+        <a href="team.html#join" class="tile tile--gold c4">
+            <p class="kicker">Open positions</p>
+            <h3>Currently recruiting graduate and postdoctoral researchers.</h3>
+            <p>Regeneration, behavioral neuroscience, and physiology in spiny mice, salamanders, and planarians.</p>
+            <span class="more">How to apply</span>
+        </a>
+
+        <!-- Maintained by scripts/update_news.py from news.json -->
+        <section class="tile c12">
+            <div class="news-list">
                     <!-- NEWS_ITEMS_START -->
-                    <!-- News Item: High School Researcher Selected for Regeneron ISEF -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <span class="inline-block bg-ksu-gold text-ksu-black text-[0.65rem] font-bold uppercase tracking-wider px-2 py-0.5 rounded mb-2">Latest</span>
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">February 2026</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">High School Researcher Selected for Regeneron ISEF 2026</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Rachel (Jaehyeon) Lee, a high school student from Walton High School in Marietta, GA, who worked in our lab over winter break, has been selected to present her research on planarian regeneration at Regeneron ISEF 2026 in Phoenix, Arizona. Congratulations, Rachel!
-                        </p>
+                    <article class="news-item" id="high-school-researcher-selected-for-regeneron-isef-2026">
+                        <p class="when">February 2026</p>
+                        <h3>High School Researcher Selected for Regeneron ISEF 2026 <span class="tag">Latest</span></h3>
+                        <p>Rachel (Jaehyeon) Lee, a high school student from Walton High School in Marietta, GA, who worked in our lab over winter break, has been selected to present her research on planarian regeneration at Regeneron ISEF 2026 in Phoenix, Arizona. Congratulations, Rachel!</p>
                     </article>
-                    <!-- News Item: Recruiting MS Student for Fall 2026 -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">January 2026</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Recruiting MS Student for Fall 2026</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            The lab has open positions for research projects on tissue regeneration, behavioral neuroscience, and physiology in highly regenerative rodents, salamanders, and planarians. Students will have opportunities to incorporate laboratory, bioinformatic, and possibly field methods and work collaboratively with other lab members. <a href="pdfs/Varholick_Lab_Ad_Fall2026.pdf" class="link-gold" target="_blank" rel="noopener noreferrer">Learn More</a>
-                        </p>
+                    <article class="news-item" id="recruiting-ms-student-for-fall-2026">
+                        <p class="when">January 2026</p>
+                        <h3>Recruiting MS Student for Fall 2026</h3>
+                        <p>The lab has open positions for research projects on tissue regeneration, behavioral neuroscience, and physiology in highly regenerative rodents, salamanders, and planarians. Students will have opportunities to incorporate laboratory, bioinformatic, and possibly field methods and work collaboratively with other lab members. <a href="pdfs/Varholick_Lab_Ad_Fall2026.pdf" class="inline-link" target="_blank" rel="noopener noreferrer">Learn More</a></p>
                     </article>
-                    <!-- News Item: Lab Awarded internal grants; PrePI and Mentor Prot -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">December 2025</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Lab Awarded internal grants; PrePI and Mentor Protege</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            The Varholick Lab was awarded two internal grants. A $19k grant for "Unravelling synaptic resilience: neurobiological mechanisms of enhanced learning and memory in <i>Acomys cahirinus</i>." In collaboration with Dr. Vishnu Suppiramanian and Dr. Erica Holliday. The other is a $3.5k award to study "Exploring neuroanatomy and sensory innervation in polymorphic two-lined salamanders" with Dr. Todd Pierson and students Kellyn Gilligan and Ito Osayi.
-                        </p>
+                    <article class="news-item" id="lab-awarded-internal-grants-prepi-and-mentor-protege">
+                        <p class="when">December 2025</p>
+                        <h3>Lab Awarded internal grants; PrePI and Mentor Protege</h3>
+                        <p>The Varholick Lab was awarded two internal grants. A $19k grant for "Unravelling synaptic resilience: neurobiological mechanisms of enhanced learning and memory in <i>Acomys cahirinus</i>." In collaboration with Dr. Vishnu Suppiramanian and Dr. Erica Holliday. The other is a $3.5k award to study "Exploring neuroanatomy and sensory innervation in polymorphic two-lined salamanders" with Dr. Todd Pierson and students Kellyn Gilligan and Ito Osayi.</p>
                     </article>
-                    <!-- News Item: Welcome our First Year Scholars -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">October 2025</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Welcome our First Year Scholars</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Stefania and Sienna have been awarded a First-Year Scholar scholarship to work on a project titled, "Uncovering What Regenerates When Skin Nerves Are Injured in Highly Regenerative Animals". Sponsored by the Office of Undergraduate Research.
-                        </p>
+                    <article class="news-item" id="welcome-our-first-year-scholars">
+                        <p class="when">October 2025</p>
+                        <h3>Welcome our First Year Scholars</h3>
+                        <p>Stefania and Sienna have been awarded a First-Year Scholar scholarship to work on a project titled, "Uncovering What Regenerates When Skin Nerves Are Injured in Highly Regenerative Animals". Sponsored by the Office of Undergraduate Research.</p>
                     </article>
-                    <!-- News Item: The Varholick Lab officially opens at Kennesaw Sta -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">August 2025</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">The Varholick Lab officially opens at Kennesaw State University</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Stop by SC 360 and say hello. Hopefully we'll start antibody staining soon, and have animals next semester.
-                        </p>
+                    <article class="news-item" id="the-varholick-lab-officially-opens-at-kennesaw-state-university">
+                        <p class="when">August 2025</p>
+                        <h3>The Varholick Lab officially opens at Kennesaw State University</h3>
+                        <p>Stop by SC 360 and say hello. Hopefully we'll start antibody staining soon, and have animals next semester.</p>
                     </article>
-                    <!-- News Item: Whisker research presented at ISRB 2025 -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">August 2025</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">Whisker research presented at ISRB 2025</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Prof. Malcolm Maden from the University of Florida presented our research on cutaneous nerve and whisker follicle regeneration at ISRB 2025.
-                        </p>
+                    <article class="news-item" id="whisker-research-presented-at-isrb-2025">
+                        <p class="when">August 2025</p>
+                        <h3>Whisker research presented at ISRB 2025</h3>
+                        <p>Prof. Malcolm Maden from the University of Florida presented our research on cutaneous nerve and whisker follicle regeneration at ISRB 2025.</p>
                     </article>
-                    <!-- News Item: New Publication in npj Regenerative Medicine -->
-                    <article class="border-t-2 border-ksu-gold pt-5">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">June 2025</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">New Publication in npj Regenerative Medicine</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            Here, Dr. Varholick and his team at the University of Florida, showed that Spiny Mice can regenerate their whisker follicles after they are removed from the face alongside regeneration of the muscles and cutaneous nerves with sheathing and all.
-                        </p>
+                    <article class="news-item" id="new-publication-in-npj-regenerative-medicine">
+                        <p class="when">June 2025</p>
+                        <h3>New Publication in npj Regenerative Medicine</h3>
+                        <p>Here, Dr. Varholick and his team at the University of Florida, showed that Spiny Mice can regenerate their whisker follicles after they are removed from the face alongside regeneration of the muscles and cutaneous nerves with sheathing and all.</p>
                     </article>
                     <!-- NEWS_ITEMS_END -->
-                </div>
             </div>
         </section>
+
     </main>
 
-    <footer class="bg-ksu-black text-gray-400 border-t border-white/10 py-8 px-6 md:px-12">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p>&copy; 2026 Varholick Lab · Kennesaw State University</p>
-            <div class="flex gap-6">
-                <a href="https://scholar.google.com/citations?user=JustinVarholick" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-                <a href="https://orcid.org/0000-0003-2822-9045" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">ORCID</a>
-            </div>
-        </div>
+    <footer class="foot">
+        <p>© 2026 Varholick Lab · Dept. of Ecology, Evolution &amp; Organismal Biology · Kennesaw State University</p>
+        <nav aria-label="External profiles">
+            <a href="https://scholar.google.com/citations?user=JustinVarholick" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://orcid.org/0000-0003-2822-9045" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://maps.app.goo.gl/tapfgM6zesQWtbbs5" target="_blank" rel="noopener noreferrer">Science Building, Rm 360</a>
+        </nav>
     </footer>
-
-    <script src="assets/site.js?v=r10"></script>
+    <script src="assets/bento.js?v=b2"></script>
 </body>
 </html>

@@ -3,13 +3,14 @@
 Rebuild the news sections of index.html and news.html from news.json.
 
 Usage:
-    python update_news.py
+    python scripts/update_news.py
 
 How it works:
     1. Reads news.json (array of news items, newest first)
-    2. Generates HTML cards for each item
+    2. Generates HTML for each item
     3. Replaces everything between <!-- NEWS_ITEMS_START --> and <!-- NEWS_ITEMS_END -->
-       in index.html (top 3 items) and news.html (all items)
+         - index.html: compact <li> rows for the top 3 items (date + title, linking to news.html#slug)
+         - news.html:  full <article class="news-item"> cards for every item
 
 news.json format — each item can have:
     "date"      (required) — e.g. "March 2026"
@@ -19,15 +20,17 @@ news.json format — each item can have:
     "link_text" (optional) — label for the link (default "Learn More")
 """
 
-import json, re, sys, os
+import json, re, os, unicodedata
 
-SCRIPT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-NEWS_JSON  = os.path.join(SCRIPT_DIR, "news.json")
-INDEX_HTML = os.path.join(SCRIPT_DIR, "index.html")
-NEWS_HTML  = os.path.join(SCRIPT_DIR, "news.html")
+ROOT       = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+NEWS_JSON  = os.path.join(ROOT, "news.json")
+INDEX_HTML = os.path.join(ROOT, "index.html")
+NEWS_HTML  = os.path.join(ROOT, "news.html")
 
 START_MARKER = "<!-- NEWS_ITEMS_START -->"
 END_MARKER   = "<!-- NEWS_ITEMS_END -->"
+HOME_COUNT   = 3
+INDENT       = " " * 20
 
 
 def load_news():
@@ -35,76 +38,79 @@ def load_news():
         return json.load(f)
 
 
-def make_card(item, is_latest=False):
-    """Return an HTML card string for one news item (minimalist KSU style)."""
-    badge = ""
-    if is_latest:
-        badge = (
-            '\n                        <span class="inline-block bg-ksu-gold text-ksu-black '
-            'text-[0.65rem] font-bold uppercase tracking-wider px-2 py-0.5 rounded mb-2">'
-            'Latest</span>'
-        )
+def slugify(text):
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    text = re.sub(r"<[^>]+>", "", text).lower()
+    text = re.sub(r"[^a-z0-9]+", "-", text).strip("-")
+    return text or "item"
 
+
+def unique_slugs(items):
+    seen, out = {}, []
+    for it in items:
+        s = slugify(it["title"])
+        if s in seen:
+            seen[s] += 1
+            s = f"{s}-{seen[s]}"
+        else:
+            seen[s] = 1
+        out.append(s)
+    return out
+
+
+def make_compact(item, slug):
+    """Home-page row: date + title linking into news.html."""
+    return (
+        f'{INDENT}<li><span class="when">{item["date"]}</span>'
+        f'<a class="what" href="news.html#{slug}">{item["title"]}</a></li>'
+    )
+
+
+def make_card(item, slug, is_latest=False):
+    """News-page card."""
+    tag = ' <span class="tag">Latest</span>' if is_latest else ""
     link_html = ""
     if item.get("link"):
         text = item.get("link_text", "Learn More")
         link_html = (
-            f' <a href="{item["link"]}" class="link-gold" '
+            f' <a href="{item["link"]}" class="inline-link" '
             f'target="_blank" rel="noopener noreferrer">{text}</a>'
         )
-
-    return f"""                    <!-- News Item: {item["title"][:50]} -->
-                    <article class="border-t-2 border-ksu-gold pt-5">{badge}
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-2">{item["date"]}</p>
-                        <h3 class="text-lg font-bold text-ksu-black mb-2 leading-snug">{item["title"]}</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">
-                            {item["body"]}{link_html}
-                        </p>
-                    </article>"""
+    return (
+        f'{INDENT}<article class="news-item" id="{slug}">\n'
+        f'{INDENT}    <p class="when">{item["date"]}</p>\n'
+        f'{INDENT}    <h3>{item["title"]}{tag}</h3>\n'
+        f'{INDENT}    <p>{item["body"]}{link_html}</p>\n'
+        f'{INDENT}</article>'
+    )
 
 
-def rebuild(html_path, cards_html):
-    """Replace everything between NEWS_ITEMS_START and NEWS_ITEMS_END."""
+def rebuild(html_path, inner):
     with open(html_path, "r", encoding="utf-8") as f:
         content = f.read()
-
-    pattern = re.escape(START_MARKER) + r'.*?' + re.escape(END_MARKER)
-    replacement = START_MARKER + '\n' + cards_html + '\n                    ' + END_MARKER
-
-    new_content, count = re.subn(pattern, replacement, content, flags=re.DOTALL)
+    pattern = re.escape(START_MARKER) + r".*?" + re.escape(END_MARKER)
+    replacement = START_MARKER + "\n" + inner + "\n" + INDENT + END_MARKER
+    new_content, count = re.subn(pattern, lambda m: replacement, content, flags=re.DOTALL)
     if count == 0:
         print(f"  WARNING: Could not find {START_MARKER} / {END_MARKER} in {os.path.basename(html_path)}")
         return False
-
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(new_content)
     return True
 
 
 def main():
-    news = load_news()
-    if not news:
-        print("news.json is empty — nothing to do.")
-        sys.exit(0)
+    items = load_news()
+    slugs = unique_slugs(items)
+    print(f"Loaded {len(items)} news items from news.json")
 
-    # Build cards for all items (first one gets "Latest" badge)
-    all_cards = []
-    for i, item in enumerate(news):
-        all_cards.append(make_card(item, is_latest=(i == 0)))
+    home = "\n".join(make_compact(it, s) for it, s in list(zip(items, slugs))[:HOME_COUNT])
+    full = "\n".join(make_card(it, s, is_latest=(i == 0)) for i, (it, s) in enumerate(zip(items, slugs)))
 
-    # index.html: top 3 only
-    index_cards = "\n".join(all_cards[:3])
-    ok1 = rebuild(INDEX_HTML, index_cards)
-
-    # news.html: all items
-    news_cards = "\n".join(all_cards)
-    ok2 = rebuild(NEWS_HTML, news_cards)
-
-    if ok1:
-        print(f"  ✓ index.html updated ({min(3, len(news))} items)")
-    if ok2:
-        print(f"  ✓ news.html  updated ({len(news)} items)")
-    print(f"\nDone — {len(news)} total news items in news.json.")
+    if rebuild(INDEX_HTML, home):
+        print(f"  index.html: top {min(HOME_COUNT, len(items))} items")
+    if rebuild(NEWS_HTML, full):
+        print(f"  news.html: {len(items)} items")
 
 
 if __name__ == "__main__":

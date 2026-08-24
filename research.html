@@ -3,342 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research — Why do some vertebrates regenerate while mammals scar?</title>
-    <meta name="description" content="One question organizes the Varholick Lab: why do some vertebrates regenerate while mammals scar? We study naturally regenerative animals across genes, cells, tissues, neural circuits, behavior, and translation to human regenerative medicine.">
-    <meta property="og:title" content="Research — Why do some vertebrates regenerate while mammals scar?">
-    <meta property="og:description" content="Our strategy is to study naturally regenerative animals, from genes and cells to neural circuits, behavior, and human regenerative medicine.">
-    <meta property="og:image" content="https://varholicklab.org/images/mus_uninjuredpad.png">
+    <title>Research — Varholick Lab</title>
+    <meta name="description" content="Why do some animals regenerate while we scar? The Varholick Lab studies spiny mice and salamanders to improve the repair and transplantation of organs: higher-quality innervation, healing without fibrosis, and measurable functional recovery.">
+    <meta property="og:title" content="Research — Varholick Lab">
+    <meta property="og:description" content="Why do some animals regenerate while we scar? The Varholick Lab studies spiny mice and salamanders to improve the repair and transplantation of organs: higher-quality innervation, healing without fibrosis, and measurable functional recovery.">
+    <meta property="og:image" content="https://varholicklab.org/images/regeneratedwhisker2.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://varholicklab.org/research.html">
     <meta property="og:site_name" content="Varholick Lab">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Research — Why do some vertebrates regenerate while mammals scar?">
-    <meta name="twitter:description" content="Our strategy is to study naturally regenerative animals, from genes and cells to neural circuits, behavior, and human regenerative medicine.">
+    <meta name="twitter:title" content="Research — Varholick Lab">
+    <meta name="twitter:description" content="Why do some animals regenerate while we scar? The Varholick Lab studies spiny mice and salamanders to improve the repair and transplantation of organs: higher-quality innervation, healing without fibrosis, and measurable functional recovery.">
     <link rel="canonical" href="https://varholicklab.org/research.html">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/tailwind-config.js?v=r10"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css?v=r10">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bento.css?v=b2">
 </head>
-<body>
-    <a href="#overview" class="skip-link">Skip to main content</a>
-
-    <!-- Header / Navigation -->
-    <header class="bg-white/95 backdrop-blur border-b border-ksu-grey/60 py-4 px-6 md:px-12 fixed w-full z-50">
-        <nav class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-3 group">
-                <img src="images/repairlablogo.png" alt="Varholick Lab logo" class="brand-logo h-12 w-auto object-contain">
-                <span class="flex flex-col leading-none">
-                    <span class="text-xl font-extrabold text-ksu-black uppercase tracking-wide">Varholick Lab</span>
-                    <span class="text-xs text-gray-500 italic font-light mt-1">Decoding Repair. Restoring Function.</span>
-                </span>
-            </a>
-            <ul class="hidden md:flex items-center space-x-7 text-sm">
-                <li><a href="index.html#about" class="nav-link">About</a></li>
-                <li><a href="research.html" class="nav-link is-active">Research</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="team.html" class="nav-link">Team</a></li>
-                <li><a href="news.html" class="nav-link">News</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-                <li class="nav-dropdown">
-                    <button class="nav-link nav-dropdown-trigger" aria-haspopup="true">Spiny Mouse Resources <span class="caret">▾</span></button>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="acomys_library/index.html" class="nav-link">Acomys Library</a></li>
-                        <li><a href="antibody_db/index.html" class="nav-link">Antibody Database</a></li>
-                        <li><a href="brain_atlas/index.html" class="nav-link">Brain Atlas</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <button id="mobile-menu-button" class="md:hidden text-ksu-black focus:outline-none" aria-label="Open menu">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-            </button>
-        </nav>
-        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-xl">
-            <button id="close-mobile-menu" class="absolute top-6 right-6 text-ksu-black focus:outline-none" aria-label="Close menu">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <a href="index.html#about" class="nav-link">About</a>
-            <a href="research.html" class="nav-link is-active">Research</a>
-            <a href="publications.html" class="nav-link">Publications</a>
-            <a href="team.html" class="nav-link">Team</a>
-            <a href="news.html" class="nav-link">News</a>
-            <a href="index.html#contact" class="nav-link">Contact</a>
-            <details class="mobile-dropdown">
-                <summary class="nav-link">Spiny Mouse Resources <span class="caret">▾</span></summary>
-                <div class="mobile-submenu">
-                    <a href="acomys_library/index.html" class="nav-link text-white">Acomys Library</a>
-                    <a href="antibody_db/index.html" class="nav-link text-white">Antibody Database</a>
-                    <a href="brain_atlas/index.html" class="nav-link text-white">Brain Atlas</a>
+<body class="page">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="top">
+        <a href="index.html" class="brand" aria-label="Varholick Lab home">
+            <img src="images/repairlablogo.png" alt="">
+            <span><b>Varholick Lab</b><small>Kennesaw State University</small></span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+            <a href="research.html" class="is-active">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="team.html">Team</a>
+            <a href="news.html">News</a>
+            <details class="dd">
+                <summary>Spiny mouse resources</summary>
+                <div class="dd-menu">
+                    <a href="acomys_library/index.html">Acomys Library<small>Search spiny mouse publications</small></a>
+                    <a href="antibody_db/index.html">Antibody Database<small>Antibodies validated in <em>Acomys</em> tissue</small></a>
+                    <a href="brain_atlas/index.html">Brain Atlas<small>MRI atlas of the spiny mouse brain</small></a>
                 </div>
             </details>
-        </div>
+            <a href="mailto:jvarhol2@kennesaw.edu" class="pill">Contact</a>
+        </nav>
+        <details class="mnav">
+            <summary aria-label="Open menu">Menu</summary>
+            <div class="mnav-menu">
+                <a href="index.html">Home</a>
+                <a href="research.html" class="is-active">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="team.html">Team</a>
+                <a href="news.html">News</a>
+                <span class="label">Spiny mouse resources</span>
+                <a href="acomys_library/index.html" class="sub">Acomys Library</a>
+                <a href="antibody_db/index.html" class="sub">Antibody Database</a>
+                <a href="brain_atlas/index.html" class="sub">Brain Atlas</a>
+                <a href="mailto:jvarhol2@kennesaw.edu">Contact</a>
+            </div>
+        </details>
     </header>
 
-    <main id="overview">
+    <main id="main" class="bento">
 
-        <!-- Page intro — the driving question (dark band) -->
-        <section class="section-dark pt-28 md:pt-36 pb-16 md:pb-20">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="max-w-4xl reveal">
-                    <span class="eyebrow">Research</span>
-                    <h1 class="text-4xl md:text-6xl font-bold mt-4 leading-tight">Why do some vertebrates regenerate while mammals scar?</h1>
-                </div>
-            </div>
+        <!-- Intro -->
+        <section class="tile tile--ink intro c8">
+            <p class="kicker">Research</p>
+            <h1>Working towards a future of perfect organ repair.</h1>
+        </section>
+        <figure class="tile tile--photo c4">
+            <img src="images/regeneratedwhisker2.jpg" alt="Histological section of a regenerated whisker follicle in spiny mouse skin with adjacent nerve bundles stained brown">
+            <figcaption>A regenerated whisker follicle in spiny mouse skin, with regrown nerve bundles (brown) beside it.</figcaption>
+        </figure>
+
+        <!-- 01 Goals -->
+        <div class="sec">
+            <span class="num">01</span>
+            <h2>Projects</h2>
+        </div>
+
+        <section id="innervation" class="tile c4">
+            <p class="kicker"><span class="num">Goal 01</span>Organ innervation</p>
+            <h3>Higher-quality innervation of repaired and transplanted organs.</h3>
+            <div class="kv"><p class="k">What we measure</p><p class="v">Nerve regrowth into defined targets · Schwann cells and myelination · Nerve response to injury</p></div>
         </section>
 
-        <!-- Our strategy -->
-        <section id="strategy" class="section bg-white scroll-mt-28">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="content-row reveal">
-                    <div class="content-row__text">
-                        <span class="eyebrow">Our Strategy</span>
-                        <h2 class="text-3xl md:text-4xl font-bold text-ksu-black mt-4 mb-5 leading-snug">Study naturally regenerative animals.</h2>
-                        <p class="text-gray-700 leading-relaxed mb-4 prose-width">
-                            Most vertebrates, humans included, answer injury with scar. Scar closes the wound quickly,
-                            but it is not the tissue that was lost: it does not grow hair, it does not house sensory
-                            end-organs, and it is poorly innervated. A handful of species do something else entirely.
-                            Spiny mice (<em>Acomys</em>) regrow skin, whisker follicles, muscle, and nerves after
-                            wounding. Salamanders rebuild entire limbs.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed prose-width">
-                            We work with those animals because a mechanism is only visible against a contrast. Comparing
-                            species that succeed with closely related species that fail turns an untestable question
-                            about human healing into a tractable one about biology. Everything below follows from that
-                            choice.
-                        </p>
-                    </div>
-                    <div class="content-row__media">
-                        <img src="images/Acomys_Muzzle_WhiskerpadInjury_trichrome.jpg" alt="Trichrome-stained cross-section of a spiny mouse muzzle after whisker pad injury">
-                    </div>
-                </div>
-            </div>
+        <section id="fibrosis" class="tile c4">
+            <p class="kicker"><span class="num">Goal 02</span>Fibrosis and regeneration</p>
+            <h3>Healing that avoids scarring</h3>
+            <p>With transcriptomics and AI-assisted analysis, we are looking for the decision point after injury where a tissue commits to rebuilding or to scarring, and the signals that push it one way or the other.</p>
+            <div class="kv"><p class="k">What we measure</p><p class="v">Regeneration vs. scarring gene programs (<em>Acomys</em> vs. <em>Mus</em>) · Fibroblast and immune cell behavior · Transcriptomics</p></div>
         </section>
 
-        <!-- Our approach — the seven levels -->
-        <section id="approach" class="section section-dark scroll-mt-28">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="max-w-3xl mb-12 reveal">
-                    <span class="eyebrow">Our Approach</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-5 leading-snug">We follow regeneration across every level of biological organization.</h2>
-                    <p class="prose-width">
-                        Regeneration is not a single event that can be measured at one scale. A gene program is
-                        meaningless if the tissue never works; a behavioral recovery is uninterpretable without knowing
-                        what the cells did. So we work the whole chain, from the transcript to the patient.
-                    </p>
-                </div>
-
-                <div class="max-w-3xl mb-16 reveal">
-                    <img src="images/researchoverview.png" alt="Diagram linking genetic activity, cellular activity, structural recovery, behavioral recovery, neuroplasticity, and environment during regeneration" class="w-full h-auto rounded-lg bg-white p-4">
-                </div>
-
-                <div class="max-w-4xl reveal">
-                    <div class="flex items-start gap-5 md:gap-8 py-6 border-t border-ksu-grey">
-                        <span class="num-badge flex-shrink-0">01</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold mb-1">Genes</h3>
-                            <p class="text-gray-700">The transcriptional programs that separate regeneration from scarring.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-5 md:gap-8 py-6 border-t border-ksu-grey">
-                        <span class="num-badge flex-shrink-0">02</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold mb-1">Cells</h3>
-                            <p class="text-gray-700">The Schwann cells, fibroblasts, and immune cells that carry those programs out.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-5 md:gap-8 py-6 border-t border-ksu-grey">
-                        <span class="num-badge flex-shrink-0">03</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold mb-1">Tissues</h3>
-                            <p class="text-gray-700">Whether regrown skin, follicles, and nerves rebuild the original architecture or only approximate it.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-5 md:gap-8 py-6 border-t border-ksu-grey">
-                        <span class="num-badge flex-shrink-0">04</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold mb-1">Neural circuits</h3>
-                            <p class="text-gray-700">Whether the brain reconnects to the rebuilt tissue and reads it correctly.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-5 md:gap-8 py-6 border-t border-ksu-grey">
-                        <span class="num-badge flex-shrink-0">05</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold mb-1">Behavior</h3>
-                            <p class="text-gray-700">Whether sensation and movement actually return — the only outcome that matters to the animal.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-5 md:gap-8 py-6 border-t border-ksu-grey">
-                        <span class="num-badge flex-shrink-0">06</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold mb-1">Translation</h3>
-                            <p class="text-gray-700">What regenerative species have that common laboratory mammals and humans lack.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-5 md:gap-8 py-6 border-t border-b border-ksu-grey">
-                        <span class="num-badge flex-shrink-0">07</span>
-                        <div>
-                            <h3 class="text-xl md:text-2xl font-bold mb-1">Human regenerative medicine</h3>
-                            <p class="text-gray-700">Nerve repair, transplantation, and rehabilitation strategies informed by what works in nature.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="function" class="tile c4">
+            <p class="kicker"><span class="num">Goal 03</span>Functional recovery</p>
+            <h3>Evidence that the organ actually works.</h3>
+            <p>We test whether structure predicts function — whether nerves regrew into the right places, whether those places reconnected with the brain, and whether the behavior that depends on that circuit return.</p>
+            <div class="kv"><p class="k">What we measure</p><p class="v">Sensation, movement, learning and memory · Structure–function alignment or dissociation · Baselines in uninjured animals</p></div>
         </section>
 
-        <!-- Theme 01 — Functional Regeneration -->
-        <section id="theme-functional-regeneration" class="section bg-white scroll-mt-28">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="content-row mb-14 reveal">
-                    <div class="content-row__media">
-                        <img src="images/acomys-barrel-cortex.jpg" alt="Barrel cortex of a spiny mouse: the grid of cortical barrels that maps each whisker onto the brain">
-                    </div>
-                    <div class="content-row__text">
-                        <div class="mb-4"><span class="num-badge">01</span></div>
-                        <span class="eyebrow">Theme One</span>
-                        <h2 class="text-2xl md:text-3xl font-bold text-ksu-black mt-4 mb-3 leading-snug">Functional Regeneration</h2>
-                        <p class="text-xl md:text-2xl font-display font-medium text-ksu-black mb-5 leading-snug prose-width">
-                            Restoring sensation, movement, and neural circuitry after injury.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed mb-4 prose-width">
-                            Organs and tissue depend on the nervous system to function. After injury, disease, or transplant, nerves must regrow into the organ or tissue, reconnect with the brain, and restore the behaviors that depend on them. This is functional reinnervation, and it fails in most animals, including humans. We study highly regenerative animals that achieve it to understand why they succeed and what that means for human patients.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed mb-4 prose-width">
-                            The difficulty is that after injury, regeneration and adaptation occur simultaneously. Tissue regrows while the nervous system rewires, sensation redistributes, and behavior changes to compensate. Both processes can restore function, and they are not distinguishable by outcome alone. An animal that scores well on a behavioral assay may have fully reinnervated its target organs, or it may have learned to compensate without them. These are not the same biological achievement, and they do not have the same implications for human therapy.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed prose-width">
-                            Functional reinnervation is the specific standard we apply. We ask whether nerves regrew into the right targets, whether those targets reconnected with the brain, and whether the behavior that depends on that circuit actually returned. When all three align, we can call it restoration. When they dissociate, we learn what compensation looks like and why it falls short.
-                        </p>
-                    </div>
-                </div>
+        <!-- 02 Papers & resources -->
+        <div class="sec">
+            <span class="num">02</span>
+            <h2>Papers and open resources</h2>
+        </div>
 
-                <div class="grid md:grid-cols-2 gap-10 max-w-5xl reveal">
-                    <div>
-                        <h4 class="text-lg font-bold text-ksu-black mb-2">Memory and Cognition in Spiny Mice</h4>
-                        <p class="text-gray-700 leading-relaxed">
-                            Recovery means returning to a baseline, and you cannot measure restoration without first knowing what you are restoring. Spiny mice show enhanced learning and memory relative to standard laboratory mice. We are characterizing this cognitive baseline in uninjured animals before studying how injury and reinnervation affect it. If the brain reintegrates new sensory signals after peripheral nerve regeneration, memory and learning are where that reintegration becomes measurable. This work is supported by an internal PrePI grant from Kennesaw State University, with Dr. Vishnu Suppiramaniam and Dr. Erica Holliday.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold text-ksu-black mb-2">Olfactory and Tactile Sensation in Salamanders</h4>
-                        <p class="text-gray-700 leading-relaxed">
-                            Before we can ask whether a salamander recovers its sensory abilities after injury, we need to know what those abilities are. We are characterizing olfactory and tactile sensation across salamander species as a baseline for future studies of functional reinnervation. Species that differ in how they use their bodies during recovery may differ in reinnervation outcomes, and those differences start with the animal's normal sensory world. This work is supported by an internal Mentor Protege grant from Kennesaw State University, with Dr. Todd Pierson.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold text-ksu-black mb-2">Does Structure Predict Function?</h4>
-                        <p class="text-gray-700 leading-relaxed">
-                            Regenerated tissue is not always equivalent to the original, so we quantify structural recovery at the level of individual nerves, end-organs, and skin architecture. Then we test whether that structure predicts behavior. Using behavioral assays alongside histological and electrophysiological measures, we ask whether the degree of structural reinnervation predicts the degree of functional recovery, or whether the two dissociate. Dissociation tells us compensation is doing the work. Alignment tells us reinnervation succeeded. Variability in these outcomes is not noise, it is the signal.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold text-ksu-black mb-2">The Whisker Pad as a Model for Functional Reinnervation</h4>
-                        <p class="text-gray-700 leading-relaxed">
-                            The spiny mouse whisker pad is a model system for studying how functional reinnervation happens at the organ level. Each whisker follicle is a discrete sensory end-organ with defined innervation targets, making it possible to ask precisely whether regenerating nerves find the right targets and restore the right signals. We use this system to identify the molecular, cellular, and behavioral conditions that support high-quality reinnervation, and to ask what common mammals lack.
-                        </p>
-                    </div>
-                    <div class="md:col-span-2">
-                        <h4 class="text-lg font-bold text-ksu-black mb-2">Behavioral&ndash;Sensory Feedback as a Driver of Reinnervation</h4>
-                        <p class="text-gray-700 leading-relaxed prose-width">
-                            Reinnervation does not happen without the brain and behavior. We hypothesize that active sensory feedback and behavioral engagement during recovery are not passive consequences of reinnervation but necessary drivers of it. Salamanders that use their limbs during recovery reinnervate differently than those that do not. Spiny mice that actively explore reinnervate differently than those that are sedentary. Identifying the critical windows when behavioral input most influences nerve guidance and target reinnervation is how we design rehabilitation strategies that work alongside molecular and surgical therapies, not after them.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="mt-10 pt-6 border-t border-ksu-grey max-w-5xl reveal">
-                    <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Key Publications</h4>
-                    <ul class="space-y-2 text-sm text-gray-700">
-                        <li><span class="font-semibold text-ksu-black">Varholick et al. (2025).</span> "Spiny mice regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation." <em class="italic">npj Regenerative Medicine</em>. <a href="publications.html#pub-whisker-2025" class="link-gold">Details</a></li>
-                        <li><span class="font-semibold text-ksu-black">Varholick (2025).</span> "Integrating regenerative biology with developmental psychobiology to understand behavioral recovery." <em class="italic">Developmental Dynamics</em>. <a href="publications.html#pub-theory-2025" class="link-gold">Details</a></li>
-                        <li><span class="font-semibold text-ksu-black">Varholick et al. (2024).</span> "Older 6-9-month-old spiny mice have delayed and spatially heterogeneous ear wound regeneration." <em class="italic">Biology Open</em>. <a href="publications.html#pub-ear-quality-2024" class="link-gold">Details</a></li>
-                    </ul>
-                </div>
+        <section class="tile c7">
+            <div class="tile-head">
+                <p class="kicker">Key publications</p>
+                <a href="publications.html" class="more">All publications</a>
             </div>
+            <ul class="list">
+                <li><a href="publications.html#pub-whisker-2025" class="what">Spiny mice regenerate wounded whisker pad skin with whisker follicles, muscles, and targeted innervation.</a><small>Varholick, Kondapaneni &amp; Maden (2025) · <em>npj Regenerative Medicine</em></small></li>
+                <li><a href="publications.html#pub-theory-2025" class="what">Integrating regenerative biology with developmental psychobiology to understand behavioral recovery.</a><small>Varholick (2025) · <em>Developmental Dynamics</em></small></li>
+                <li><a href="publications.html#pub-ear-quality-2024" class="what">Older spiny mice have delayed and spatially heterogeneous ear wound regeneration.</a><small>Varholick et al. (2024) · <em>Biology Open</em></small></li>
+            </ul>
+        </section>
+        <section class="tile c5">
+            <p class="kicker">Spiny mouse resources</p>
+            <p>Open tools we build and maintain for the <em>Acomys</em> community.</p>
+            <ul class="list" style="margin-top: 10px;">
+                <li><a href="acomys_library/index.html" class="what">Acomys Library</a><small>Search spiny mouse publications</small></li>
+                <li><a href="antibody_db/index.html" class="what">Antibody Database</a><small>Antibodies validated in <em>Acomys</em> tissue</small></li>
+                <li><a href="brain_atlas/index.html" class="what">Brain Atlas</a><small>MRI atlas of the spiny mouse brain</small></li>
+            </ul>
         </section>
 
-        <!-- Theme 02 — Molecular Programs of Regeneration -->
-        <section id="theme-molecular-programs" class="section section-dark scroll-mt-28">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="content-row reverse mb-14 reveal">
-                    <div class="content-row__media">
-                        <img src="images/regeneration-genes-heatmap.png" alt="Heatmap of selected regeneration genes across days 0 to 21 after injury, comparing Acomys with Mus" class="bg-white p-3">
-                    </div>
-                    <div class="content-row__text">
-                        <div class="mb-4"><span class="num-badge">02</span></div>
-                        <span class="eyebrow">Theme Two</span>
-                        <h2 class="text-2xl md:text-3xl font-bold text-ksu-black mt-4 mb-3 leading-snug">Molecular Programs of Regeneration</h2>
-                        <p class="text-xl md:text-2xl font-display font-medium text-ksu-black mb-5 leading-snug prose-width">
-                            Identifying conserved regenerative mechanisms across tissues and species.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed mb-4 prose-width">
-                            Functional recovery is the outcome. Gene and cell programs are the cause. If the first theme asks whether the animal got its sensation and movement back, this one asks what the tissue actually did to make that possible, and why the same injury in a laboratory mouse produces scar instead.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed prose-width">
-                            A mechanism found in one tissue of one species is a curiosity. A mechanism that recurs across skin, ear, and nerve, and across spiny mice, salamanders, and laboratory mice, is a candidate for therapy. Conservation is our filter for what is worth pursuing toward the clinic.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-10 max-w-5xl reveal">
-                    <div>
-                        <h4 class="text-lg font-bold text-ksu-black mb-2">Decoding Regeneration and Scarring with Genomics and AI</h4>
-                        <p class="text-gray-700 leading-relaxed">
-                            We are using transcriptomics, bioinformatics, and AI-assisted analysis to reveal the genes and cell populations that drive tissue regeneration in spiny mice, and to identify where the scarring response diverges from the regenerative one. The goal is not a gene list but a decision point: the moment after injury when a tissue commits to rebuilding or to repairing, and the signals that push it one way or the other.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-bold text-ksu-black mb-2">Conserved Mechanisms Across Tissues and Species</h4>
-                        <p class="text-gray-700 leading-relaxed">
-                            Spiny mice regenerate ear, skin, and whisker pad. Salamanders regenerate limbs. Laboratory mice regenerate almost nothing. Comparing these systems against each other, rather than studying any one in isolation, is what separates a mechanism specific to a tissue from a mechanism fundamental to regeneration. We build and maintain open resources for this comparison, including the <a href="acomys_library/index.html" class="link-gold">Acomys Literature Library</a>, <a href="antibody_db/index.html" class="link-gold">Antibody Database</a>, and <a href="brain_atlas/index.html" class="link-gold">Spiny Mouse Brain Atlas</a>.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="mt-10 pt-6 border-t border-ksu-grey max-w-5xl reveal">
-                    <h4 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Key Publications</h4>
-                    <p class="text-sm text-gray-500">Manuscripts in preparation.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Translation — where the program is headed -->
-        <section id="translation" class="section bg-white scroll-mt-28">
-            <div class="container mx-auto px-6 md:px-12">
-                <div class="content-row reveal">
-                    <div class="content-row__media">
-                        <img src="images/regeneratedwhisker2.jpg" alt="Regenerated whisker follicle and associated innervation in spiny mouse skin">
-                    </div>
-                    <div class="content-row__text">
-                        <span class="eyebrow">Translation</span>
-                        <h2 class="text-3xl md:text-4xl font-bold text-ksu-black mt-4 mb-5 leading-snug">Closing the gap in human organ repair.</h2>
-                        <p class="text-gray-700 leading-relaxed mb-4 prose-width">
-                            Every transplanted organ or tissue arrives denervated. The surgery reconnects blood supply, but the nervous system does not follow. A transplanted heart beats without autonomic regulation. A transplanted kidney filters without the sensory feedback that normally calibrates it. Even in injuries short of transplant, when nerves are severed and regrow, they rarely find their original targets with enough precision to restore full function. Patients live with permanent numbness, dysregulation, and incomplete recovery not because the organ failed but because the nervous system never fully reconnected.
-                        </p>
-                        <p class="text-gray-700 leading-relaxed prose-width">
-                            This is the gap we are working to close, and it is why both themes exist. By studying species that achieve functional reinnervation — where nerves regrow into the right targets, the brain reintegrates the new signals, and behavior returns — we aim to identify what drives successful reconnection and what blocks it in humans.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="py-16 bg-ksu-cream">
-            <div class="container mx-auto px-6 md:px-12 text-center">
-                <a href="publications.html" class="btn btn-primary">View Full Publication List</a>
-            </div>
-        </section>
     </main>
 
-    <footer class="bg-ksu-black text-gray-400 border-t border-white/10 py-8 px-6 md:px-12">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <p>&copy; 2026 Varholick Lab · Kennesaw State University</p>
-            <div class="flex gap-6">
-                <a href="https://scholar.google.com/citations?user=JustinVarholick" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-                <a href="https://orcid.org/0000-0003-2822-9045" class="hover:text-ksu-gold transition-colors" target="_blank" rel="noopener noreferrer">ORCID</a>
-            </div>
-        </div>
+    <footer class="foot">
+        <p>© 2026 Varholick Lab · Dept. of Ecology, Evolution &amp; Organismal Biology · Kennesaw State University</p>
+        <nav aria-label="External profiles">
+            <a href="https://scholar.google.com/citations?user=JustinVarholick" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://orcid.org/0000-0003-2822-9045" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://maps.app.goo.gl/tapfgM6zesQWtbbs5" target="_blank" rel="noopener noreferrer">Science Building, Rm 360</a>
+        </nav>
     </footer>
-
-    <script src="assets/site.js?v=r10"></script>
+    <script src="assets/bento.js?v=b2"></script>
 </body>
 </html>
