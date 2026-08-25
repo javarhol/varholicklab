@@ -5,6 +5,10 @@
 # Excluding them keeps the files in the repo for the weekly workflow while taking
 # them out of the published output.
 exclude:
-  - acomys_library/papers_pdf
-  - acomys_library/__pycache__
+  # Spiny Mouse Resources taken down 2026-08-25: excluding the whole directories
+  # makes every URL under them 404 while the files stay in the repo for the
+  # weekly workflow and for restoring the resources later.
+  - acomys_library
+  - antibody_db
+  - brain_atlas
   - scripts
