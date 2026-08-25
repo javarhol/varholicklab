@@ -429,8 +429,6 @@ def build_sitemap(target_slugs):
         (SITE + "/publications.html", "0.8"),
         (SITE + "/team.html", "0.6"),
         (SITE + "/news.html", "0.6"),
-        (SITE + "/acomys_library/", "0.9"),
-        (SITE + "/antibody_db/", "0.9"),
     ]
     for slug in target_slugs:
         urls.append((SITE + "/antibody_db/targets/%s.html" % slug, "0.5"))
