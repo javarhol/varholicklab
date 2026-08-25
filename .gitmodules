@@ -4,6 +4,3 @@
 [submodule "antibody_db"]
 	path = antibody_db
 	url = git@github.com:javarhol/acomys_antibody_database.git
-[submodule "brain_atlas"]
-	path = brain_atlas
-	url = git@github.com:javarhol/Spiny_Mouse_MRI_Brain_Atlas.git
