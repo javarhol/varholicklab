@@ -449,33 +449,35 @@ def build_sitemap(target_slugs):
 # main
 # --------------------------------------------------------------------------- #
 def main():
-    ab_data = json.loads(read(AB_JSON))
-    abs_ = ab_data.get("antibodies", [])
-    papers = json.loads(read(LIB_JSON))
+    abs_ = []
+    slugs = []
+    if os.path.exists(AB_JSON) and os.path.exists(AB_PAGE):
+        ab_data = json.loads(read(AB_JSON))
+        abs_ = ab_data.get("antibodies", [])
+        ab_html = read(AB_PAGE)
+        ab_html = replace_between(
+            ab_html, "<!-- SEO_PRERENDER_START -->", "<!-- SEO_PRERENDER_END -->",
+            build_antibody_prerender(abs_),
+        )
+        ab_html = replace_between(
+            ab_html, "<!-- SEO_DATASET_JSONLD_START -->", "<!-- SEO_DATASET_JSONLD_END -->",
+            build_antibody_dataset(abs_),
+        )
+        write(AB_PAGE, ab_html)
+        slugs = build_target_pages(abs_)
 
-    # Antibody page
-    ab_html = read(AB_PAGE)
-    ab_html = replace_between(
-        ab_html, "<!-- SEO_PRERENDER_START -->", "<!-- SEO_PRERENDER_END -->",
-        build_antibody_prerender(abs_),
-    )
-    ab_html = replace_between(
-        ab_html, "<!-- SEO_DATASET_JSONLD_START -->", "<!-- SEO_DATASET_JSONLD_END -->",
-        build_antibody_dataset(abs_),
-    )
-    write(AB_PAGE, ab_html)
-
-    # Library page
-    lib_html = read(LIB_PAGE)
-    lib_html = replace_between(
-        lib_html, "<!-- SEO_PRERENDER_START -->", "<!-- SEO_PRERENDER_END -->",
-        build_library_prerender(papers),
-    )
-    lib_html = replace_between(
-        lib_html, "<!-- SEO_DATASET_JSONLD_START -->", "<!-- SEO_DATASET_JSONLD_END -->",
-        build_library_dataset(papers),
-    )
-    write(LIB_PAGE, lib_html)
+    if os.path.exists(LIB_JSON) and os.path.exists(LIB_PAGE):
+        papers = json.loads(read(LIB_JSON))
+        lib_html = read(LIB_PAGE)
+        lib_html = replace_between(
+            lib_html, "<!-- SEO_PRERENDER_START -->", "<!-- SEO_PRERENDER_END -->",
+            build_library_prerender(papers),
+        )
+        lib_html = replace_between(
+            lib_html, "<!-- SEO_DATASET_JSONLD_START -->", "<!-- SEO_DATASET_JSONLD_END -->",
+            build_library_dataset(papers),
+        )
+        write(LIB_PAGE, lib_html)
 
     # Publications JSON-LD
     pub_html = read(PUB_PAGE)
@@ -489,14 +491,13 @@ def main():
     write(PUB_PAGE, pub_html)
 
     # Target pages + sitemap
-    slugs = build_target_pages(abs_)
     write(SITEMAP, build_sitemap(slugs))
 
     print("SEO assets regenerated:")
-    print("  antibodies:        %d entries, %d target pages" % (len(abs_), len(slugs)))
-    print("  library:           %d papers pre-rendered" % len(papers))
+    if abs_:
+        print("  antibodies:        %d entries, %d target pages" % (len(abs_), len(slugs)))
     print("  publications:      %d articles in JSON-LD" % n_pubs)
-    print("  sitemap.xml:       %d URLs" % (7 + len(slugs)))
+    print("  sitemap.xml:       %d URLs" % (5 + len(slugs)))
 
 
 if __name__ == "__main__":
